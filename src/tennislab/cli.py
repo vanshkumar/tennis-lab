@@ -7,6 +7,13 @@ import json
 from pathlib import Path
 from typing import Sequence
 
+from tennislab.analysis import (
+    ANALYSIS_VERSION,
+    AnalysisConfig,
+    build_slam_upset_analysis,
+    write_diagnostic_figures,
+    write_results_report,
+)
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.ratings import (
@@ -27,6 +34,8 @@ DEFAULT_ELO_CONFIG = Path("config/elo_model.json")
 DEFAULT_ELO_ARTIFACTS = Path("artifacts/elo")
 DEFAULT_COLD_START_PARQUET = Path("data/processed/slam_player_experience.parquet")
 DEFAULT_PREDICTIONS_PARQUET = Path("data/processed/predictions.parquet")
+DEFAULT_SLAM_ARTIFACTS = Path("artifacts/slam_upsets")
+DEFAULT_UPSET_MATCHES = Path("data/processed/upset_matches.csv")
 
 
 def _add_source_paths(parser: argparse.ArgumentParser) -> None:
@@ -95,6 +104,18 @@ def build_parser() -> argparse.ArgumentParser:
     ratings.add_argument("--output-dir", type=Path, default=DEFAULT_ELO_ARTIFACTS)
     ratings.add_argument("--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET)
     ratings.add_argument("--cold-start", type=Path, default=DEFAULT_COLD_START_PARQUET)
+
+    slam_analysis = subparsers.add_parser(
+        "analyze-slams",
+        help="build reviewed four-Slam upset aggregates and diagnostics",
+    )
+    slam_analysis.add_argument(
+        "--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET
+    )
+    slam_analysis.add_argument("--output-dir", type=Path, default=DEFAULT_SLAM_ARTIFACTS)
+    slam_analysis.add_argument("--details", type=Path, default=DEFAULT_UPSET_MATCHES)
+    slam_analysis.add_argument("--bootstrap-replicates", type=int, default=2_000)
+    slam_analysis.add_argument("--bootstrap-seed", type=int, default=20260714)
     return parser
 
 
@@ -159,6 +180,33 @@ def main(argv: Sequence[str] | None = None) -> int:
                 "readiness": readiness_result,
                 "selection": {"model_version": config["model_version"]},
                 "predictions": prediction_result,
+            }
+        )
+        return 0
+    if args.command == "analyze-slams":
+        config = AnalysisConfig(
+            bootstrap_replicates=args.bootstrap_replicates,
+            bootstrap_seed=args.bootstrap_seed,
+        )
+        tables = build_slam_upset_analysis(
+            args.predictions,
+            args.output_dir,
+            config,
+            observations_path=args.details,
+        )
+        report = write_results_report(tables, args.output_dir / "results.md")
+        figures = write_diagnostic_figures(tables, args.output_dir)
+        _emit(
+            {
+                "analysis_version": ANALYSIS_VERSION,
+                "score_observation_rows": len(tables.observations),
+                "summary_rows": len(tables.summaries),
+                "calibration_rows": len(tables.calibration),
+                "rolling_rows": len(tables.rolling_five_editions),
+                "details": str(args.details),
+                "output_dir": str(args.output_dir),
+                "report": str(report),
+                "diagnostic_figures": [str(path) for path in figures],
             }
         )
         return 0

@@ -34,6 +34,16 @@
 
 ## Patterns and Preferences
 
+**[2026-07-14] — Upset-metric denominator scopes**
+- Observation: Exact 50/50 Elo rows have no unique underdog or favorite but remain valid ID-oriented Brier/log-loss observations; dropping them from every metric changed proper-score denominators for all three models.
+- Action: Keep separate score, upset, and favorite-calibration eligibility/counts, and record metric-scoped exclusions in every future probability benchmark.
+- Confidence: high
+
+**[2026-07-14] — Slam uncertainty units**
+- Observation: Tournament-edition cluster resampling reproduces long-run uncertainty while preserving within-draw dependence, and completed-edition indexing correctly skips Wimbledon 2020 in rolling windows.
+- Action: Preserve edition IDs and derived fixed seeds; use completed-event windows rather than calendar rows for Slam trends and compare marginal intervals descriptively.
+- Confidence: high
+
 **[2026-07-14] — Historical rating chronology**
 - Observation: Sackmann's `tourney_date` is an event start date repeated across all rounds, and multiple events often share it; source row and match-number order do not establish wall-clock chronology.
 - Action: Generate every same-tour/date prediction from a frozen pre-date snapshot, then batch rating updates after all predictions on that date.

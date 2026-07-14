@@ -1,0 +1,24 @@
+key,value
+analysis_version,slam-upsets-v1
+bootstrap_replicates,2000
+bootstrap_seed,20260714
+bootstrap_unit,tour-Slam tournament edition
+confidence_level,0.95
+eligible_population_rows,226857
+end_year,2025
+favorite_calibration_tie_policy,exact 0.5 ties excluded because no unique favorite exists
+input_predictions_path,data/processed/predictions.parquet
+input_predictions_sha256,9e019d3b67188fe2319d6f9bd5d45efaf81a08530aa5d94391db28e0db35c079
+models,"overall_elo,surface_elo,surface_adjusted_elo"
+prediction_config_sha256,3e026123dadc63f3ff3ba65842dad90ab7a66ce47a8d83d611b813d9f0231846
+primary_population,"prediction eligible, completed, non-retirement, primary-score eligible"
+proper_score_orientation,player_1 ID orientation; exact 0.5 ties retained
+rolling_completed_editions,5
+scoped_prediction_rows,115062
+sensitivity_population,primary population plus retirements; all other primary exclusions retained
+slams,"Australian Open,Roland Garros,Wimbledon,US Open"
+source_lock_sha256,201897f18337ea1831821d8ebc3551e73590c69fb71e8011e943838be89529bb
+standardized_excess_formula,sum(actual_upset-p_under)/sqrt(sum(p_under*(1-p_under)))
+start_year,1988
+tours,"ATP,WTA"
+underdog_definition,"p_under=min(player_1_probability,player_2_probability); exact 0.5 ties ineligible"

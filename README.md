@@ -14,6 +14,7 @@ uv run tennislab fetch
 uv run tennislab build-matches
 uv run tennislab audit
 uv run tennislab ratings
+uv run tennislab analyze-slams
 ```
 
 The equivalent one-command pipeline is:
@@ -54,6 +55,14 @@ All same-tour matches sharing a source tournament date are predicted before any
 result on that date updates a rating. Walkovers are excluded. Retirements remain
 available as a flagged sensitivity population and are not primary score rows.
 
+`analyze-slams` consumes the frozen prediction table and writes reviewed
+1988–2025 expected, actual, and excess upset summaries for each tour, Slam, and
+Elo model. It also writes proper scores, favorite calibration, round/era/year
+diagnostics, 2,000-replicate tournament-edition cluster-bootstrap intervals,
+rolling five-completed-edition trends, a retirement sensitivity, and diagnostic
+SVGs under `artifacts/slam_upsets/`. The 137 MB match-level analysis CSV is kept
+in gitignored `data/processed/`.
+
 Raw data must never be edited. If an upstream pin is intentionally changed,
 remove the generated raw checkout as a unit, fetch it again, inspect the lock
 diff, rebuild, and rerun the audit.
@@ -68,6 +77,8 @@ same commit objects. The lock records both original and retrieval provenance.
 - [Canonical schema](docs/canonical_schema.md)
 - [Source provenance and licensing](docs/source_provenance.md)
 - [Historical Elo methodology](docs/methodology/elo.md)
+- [Slam upset metrics](docs/methodology/upset_metrics.md)
+- [Four-Slam analysis](analyses/slam_upsets/README.md)
 - [Elo model card](docs/model_cards/elo-v1.md)
 - [Rating-history scope decision](docs/decisions/0001-rating-history-scope.md)
 

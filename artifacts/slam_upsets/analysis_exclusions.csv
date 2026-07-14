@@ -1,0 +1,103 @@
+analysis_version,population,tour,slam,model,exclusion_scope,exclusion_reason,excluded_rows
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,retirement,175
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_elo,all_analysis_metrics,retirement,175
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,175
+slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict;retirement,4
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,retirement,145
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_elo,all_analysis_metrics,format_conflict;retirement,4
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_elo,all_analysis_metrics,retirement,145
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict;retirement,4
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,145
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,retirement,123
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_elo,all_analysis_metrics,retirement,123
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_elo,upset_and_favorite_calibration,exact_probability_tie,18
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,123
+slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,retirement,222
+slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_elo,all_analysis_metrics,retirement,222
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,3
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,222
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,59
+slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,retirement,56
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_elo,all_analysis_metrics,retirement,56
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_elo,upset_and_favorite_calibration,exact_probability_tie,19
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,56
+slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,retirement,52
+slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_elo,all_analysis_metrics,retirement,52
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,52
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,retirement_inclusive,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,ATP,Australian Open,surface_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict,4
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_elo,all_analysis_metrics,format_conflict,4
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict,4
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,surface_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,surface_elo,upset_and_favorite_calibration,exact_probability_tie,18
+slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,14
+slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,3
+slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,15
+slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+slam-upsets-v1,retirement_inclusive,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,retirement_inclusive,WTA,Australian Open,surface_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,retirement_inclusive,WTA,Australian Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,retirement_inclusive,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,4
+slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,surface_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,12
+slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,surface_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,surface_elo,upset_and_favorite_calibration,exact_probability_tie,19
+slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,8
+slam-upsets-v1,retirement_inclusive,WTA,US Open,overall_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,retirement_inclusive,WTA,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_elo,upset_and_favorite_calibration,exact_probability_tie,1
+slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,16
+slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
