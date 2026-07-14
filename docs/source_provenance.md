@@ -45,3 +45,27 @@ Data is compiled and published by **Jeff Sackmann** and is licensed under
 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 This repository's code is separate from the source data. Any distribution of raw
 or derived data must preserve attribution and comply with the license.
+
+## Tennis-Data betting workbooks
+
+The betting benchmark separately uses annual workbooks from
+`http://www.tennis-data.co.uk/alldata.php`:
+
+- ATP 2001–2025: `/{year}/{year}.xls` through 2012, then `.xlsx`;
+- WTA 2007–2025: `/{year}w/{year}.xls` through 2012, then `.xlsx`.
+
+`config/odds_sources.toml` records the provider archive, notes, terms, and annual
+URL patterns. `config/odds_sources.lock.json` records the 2026-07-14 retrieval,
+requested/effective URL, byte size, and SHA-256 for all 44 files. The parser
+supports legacy and current workbook formats and audits each file's actual schema
+rather than assuming a universal set of bookmaker columns.
+
+Tennis-Data says the files are free to access and use, while also claiming full
+copyright over spreadsheet-format data. No explicit redistribution license was
+found. Consequently, raw workbooks and match-level odds are never committed.
+Tracked outputs are limited to the checksum/provenance lock, reviewed minimal
+aliases, aggregate source/matching audits, and research summaries. The provider's
+notes attribute odds fields to OddsPortal and named bookmakers; this repository
+does not imply that Tennis-Data, OddsPortal, or any bookmaker endorses the
+analysis. See [`docs/methodology/odds.md`](methodology/odds.md) for field semantics
+and probability construction.

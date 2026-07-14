@@ -1,0 +1,47 @@
+benchmark_version,sample,key,value
+market-odds-v1,maximum_available,analysis_version,slam-upsets-v1
+market-odds-v1,maximum_available,bootstrap_replicates,2000
+market-odds-v1,maximum_available,bootstrap_seed,20260714
+market-odds-v1,maximum_available,bootstrap_unit,tour-Slam tournament edition
+market-odds-v1,maximum_available,confidence_level,0.95
+market-odds-v1,maximum_available,eligible_population_rows,194428
+market-odds-v1,maximum_available,end_year,2025
+market-odds-v1,maximum_available,favorite_calibration_tie_policy,exact 0.5 ties excluded because no unique favorite exists
+market-odds-v1,maximum_available,input_predictions_path,
+market-odds-v1,maximum_available,input_predictions_sha256,
+market-odds-v1,maximum_available,models,"overall_elo,surface_adjusted_elo,market_odds"
+market-odds-v1,maximum_available,prediction_config_sha256,"3e026123dadc63f3ff3ba65842dad90ab7a66ce47a8d83d611b813d9f0231846,dcdc9402924a2b509aafb811b1d920982e61cb218134af6bcd5b50de3c51acc7"
+market-odds-v1,maximum_available,primary_population,"prediction eligible, completed, non-retirement, primary-score eligible"
+market-odds-v1,maximum_available,proper_score_orientation,player_1 ID orientation; exact 0.5 ties retained
+market-odds-v1,maximum_available,rolling_completed_editions,5
+market-odds-v1,maximum_available,scoped_prediction_rows,98678
+market-odds-v1,maximum_available,sensitivity_population,primary population plus retirements; all other primary exclusions retained
+market-odds-v1,maximum_available,slams,"Australian Open,Roland Garros,Wimbledon,US Open"
+market-odds-v1,maximum_available,source_lock_sha256,"201897f18337ea1831821d8ebc3551e73590c69fb71e8011e943838be89529bb,f212b7ed36b6b41e097b48b85a9e57bc361ad4db0b6b16e41d9b00ea9edc551a"
+market-odds-v1,maximum_available,standardized_excess_formula,sum(actual_upset-p_under)/sqrt(sum(p_under*(1-p_under)))
+market-odds-v1,maximum_available,start_year,1988
+market-odds-v1,maximum_available,tours,"ATP,WTA"
+market-odds-v1,maximum_available,underdog_definition,"p_under=min(player_1_probability,player_2_probability); exact 0.5 ties ineligible"
+market-odds-v1,common_matched,analysis_version,slam-upsets-v1
+market-odds-v1,common_matched,bootstrap_replicates,2000
+market-odds-v1,common_matched,bootstrap_seed,20260714
+market-odds-v1,common_matched,bootstrap_unit,tour-Slam tournament edition
+market-odds-v1,common_matched,confidence_level,0.95
+market-odds-v1,common_matched,eligible_population_rows,129570
+market-odds-v1,common_matched,end_year,2025
+market-odds-v1,common_matched,favorite_calibration_tie_policy,exact 0.5 ties excluded because no unique favorite exists
+market-odds-v1,common_matched,input_predictions_path,
+market-odds-v1,common_matched,input_predictions_sha256,
+market-odds-v1,common_matched,models,"overall_elo,surface_adjusted_elo,market_odds"
+market-odds-v1,common_matched,prediction_config_sha256,"3e026123dadc63f3ff3ba65842dad90ab7a66ce47a8d83d611b813d9f0231846,dcdc9402924a2b509aafb811b1d920982e61cb218134af6bcd5b50de3c51acc7"
+market-odds-v1,common_matched,primary_population,"prediction eligible, completed, non-retirement, primary-score eligible"
+market-odds-v1,common_matched,proper_score_orientation,player_1 ID orientation; exact 0.5 ties retained
+market-odds-v1,common_matched,rolling_completed_editions,5
+market-odds-v1,common_matched,scoped_prediction_rows,65910
+market-odds-v1,common_matched,sensitivity_population,primary population plus retirements; all other primary exclusions retained
+market-odds-v1,common_matched,slams,"Australian Open,Roland Garros,Wimbledon,US Open"
+market-odds-v1,common_matched,source_lock_sha256,"201897f18337ea1831821d8ebc3551e73590c69fb71e8011e943838be89529bb,f212b7ed36b6b41e097b48b85a9e57bc361ad4db0b6b16e41d9b00ea9edc551a"
+market-odds-v1,common_matched,standardized_excess_formula,sum(actual_upset-p_under)/sqrt(sum(p_under*(1-p_under)))
+market-odds-v1,common_matched,start_year,1988
+market-odds-v1,common_matched,tours,"ATP,WTA"
+market-odds-v1,common_matched,underdog_definition,"p_under=min(player_1_probability,player_2_probability); exact 0.5 ties ineligible"

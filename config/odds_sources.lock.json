@@ -1,0 +1,433 @@
+{
+  "all_data_url": "http://www.tennis-data.co.uk/alldata.php",
+  "attribution": "Tennis-Data (www.tennis-data.co.uk)",
+  "base_url": "http://www.tennis-data.co.uk",
+  "complete": true,
+  "files": [
+    {
+      "bytes": 1176064,
+      "effective_url": "http://www.tennis-data.co.uk/2001/2001.xls",
+      "path": "atp/2001.xls",
+      "sha256": "a3161067b946881e1a2b067ec5a78f078155b8177e17ae307084e7e3facca2fc",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2001/2001.xls",
+      "year": 2001
+    },
+    {
+      "bytes": 1288704,
+      "effective_url": "http://www.tennis-data.co.uk/2002/2002.xls",
+      "path": "atp/2002.xls",
+      "sha256": "60bed111e535655bbba9a6634777ef5c8984a83d61f4116fda77e7fea7b68798",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2002/2002.xls",
+      "year": 2002
+    },
+    {
+      "bytes": 1597952,
+      "effective_url": "http://www.tennis-data.co.uk/2003/2003.xls",
+      "path": "atp/2003.xls",
+      "sha256": "d570759da44f474a9091c1143c6a077d4975ee5abae534ca63a583df7b3de382",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2003/2003.xls",
+      "year": 2003
+    },
+    {
+      "bytes": 1110016,
+      "effective_url": "http://www.tennis-data.co.uk/2004/2004.xls",
+      "path": "atp/2004.xls",
+      "sha256": "134f007467923e36eec83cef311dce89a711c46f7f2e70d4ad5c4c1bbd3292ca",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2004/2004.xls",
+      "year": 2004
+    },
+    {
+      "bytes": 1136128,
+      "effective_url": "http://www.tennis-data.co.uk/2005/2005.xls",
+      "path": "atp/2005.xls",
+      "sha256": "8c7d3aff7c00ccceef571d2ee4236636621da4d11def5aa9c707620e6c309908",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2005/2005.xls",
+      "year": 2005
+    },
+    {
+      "bytes": 1146880,
+      "effective_url": "http://www.tennis-data.co.uk/2006/2006.xls",
+      "path": "atp/2006.xls",
+      "sha256": "4317bc976cb17d0346a36ad5c09024b7957c28155ed5a59bd38e2df7226aa492",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2006/2006.xls",
+      "year": 2006
+    },
+    {
+      "bytes": 1107968,
+      "effective_url": "http://www.tennis-data.co.uk/2007/2007.xls",
+      "path": "atp/2007.xls",
+      "sha256": "77e2b8504a6f0376a76a1a1e55e55ec53b008e400beebba8fdc2e655eaff8449",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2007/2007.xls",
+      "year": 2007
+    },
+    {
+      "bytes": 1092608,
+      "effective_url": "http://www.tennis-data.co.uk/2008/2008.xls",
+      "path": "atp/2008.xls",
+      "sha256": "d374f8563fd417a1e3b57eeb6cc4f83042cd62bb63323a528ae5a3483fc0113c",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2008/2008.xls",
+      "year": 2008
+    },
+    {
+      "bytes": 1078272,
+      "effective_url": "http://www.tennis-data.co.uk/2009/2009.xls",
+      "path": "atp/2009.xls",
+      "sha256": "94028838328000f8c0b9c4ff2e8821a18e7a5d3653e7b5d0d870c81222bdc06d",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2009/2009.xls",
+      "year": 2009
+    },
+    {
+      "bytes": 1099264,
+      "effective_url": "http://www.tennis-data.co.uk/2010/2010.xls",
+      "path": "atp/2010.xls",
+      "sha256": "c90c5bfe3b801a351240110212c48dc71c46a2a83bb64f07fd9e1372730ce638",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2010/2010.xls",
+      "year": 2010
+    },
+    {
+      "bytes": 1093632,
+      "effective_url": "http://www.tennis-data.co.uk/2011/2011.xls",
+      "path": "atp/2011.xls",
+      "sha256": "56d5a35f05f1c74afe576bfb2f34710971d92229e56bf91e44164c36bbc16ef1",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2011/2011.xls",
+      "year": 2011
+    },
+    {
+      "bytes": 1065984,
+      "effective_url": "http://www.tennis-data.co.uk/2012/2012.xls",
+      "path": "atp/2012.xls",
+      "sha256": "c54d1b4d816479d0b4ecb37468dbf710140053a76b0494237c42773092687234",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2012/2012.xls",
+      "year": 2012
+    },
+    {
+      "bytes": 504086,
+      "effective_url": "http://www.tennis-data.co.uk/2013/2013.xlsx",
+      "path": "atp/2013.xlsx",
+      "sha256": "95b8af095a5ae0d64be2cbc838684a094ac542f5cb151da545ebf166ed21a80c",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2013/2013.xlsx",
+      "year": 2013
+    },
+    {
+      "bytes": 573801,
+      "effective_url": "http://www.tennis-data.co.uk/2014/2014.xlsx",
+      "path": "atp/2014.xlsx",
+      "sha256": "ebc5749b3b537cc6dafde5d416a330752dc64a1b2f3f4f9698699763a3ce7d9f",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2014/2014.xlsx",
+      "year": 2014
+    },
+    {
+      "bytes": 526784,
+      "effective_url": "http://www.tennis-data.co.uk/2015/2015.xlsx",
+      "path": "atp/2015.xlsx",
+      "sha256": "74d1ffa15ad8b13aea0ffd6eba17fa5dc05b2b57263515d20e7ee39be0354485",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2015/2015.xlsx",
+      "year": 2015
+    },
+    {
+      "bytes": 546990,
+      "effective_url": "http://www.tennis-data.co.uk/2016/2016.xlsx",
+      "path": "atp/2016.xlsx",
+      "sha256": "e55547add1d8c8cad17d1eb7be5a24de7757f33dd90fe4f91ca7d4ee8a3e4b08",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2016/2016.xlsx",
+      "year": 2016
+    },
+    {
+      "bytes": 526053,
+      "effective_url": "http://www.tennis-data.co.uk/2017/2017.xlsx",
+      "path": "atp/2017.xlsx",
+      "sha256": "d8d2e2af5bda1f7891de39b18739ba229719e00672c22d2892b3e347dc6e1537",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2017/2017.xlsx",
+      "year": 2017
+    },
+    {
+      "bytes": 474033,
+      "effective_url": "http://www.tennis-data.co.uk/2018/2018.xlsx",
+      "path": "atp/2018.xlsx",
+      "sha256": "3e52c70872c87736110bfe22f682bd224bb5883bf5367a7f8997aab991c7162a",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2018/2018.xlsx",
+      "year": 2018
+    },
+    {
+      "bytes": 411531,
+      "effective_url": "http://www.tennis-data.co.uk/2019/2019.xlsx",
+      "path": "atp/2019.xlsx",
+      "sha256": "a267a7a779406ccd89762b98cbe4bb6370839a658f2a95ac098310ea3394e827",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2019/2019.xlsx",
+      "year": 2019
+    },
+    {
+      "bytes": 206869,
+      "effective_url": "http://www.tennis-data.co.uk/2020/2020.xlsx",
+      "path": "atp/2020.xlsx",
+      "sha256": "310467bb81360e1981e9f3775946c63a5dc707a1d941e5ad4d9713da97daa752",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2020/2020.xlsx",
+      "year": 2020
+    },
+    {
+      "bytes": 395807,
+      "effective_url": "http://www.tennis-data.co.uk/2021/2021.xlsx",
+      "path": "atp/2021.xlsx",
+      "sha256": "dcbd273a4fa101f4783384dbfe3410bfc7ee7bed0aed4ab9a09afbffb294c4ca",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2021/2021.xlsx",
+      "year": 2021
+    },
+    {
+      "bytes": 417917,
+      "effective_url": "http://www.tennis-data.co.uk/2022/2022.xlsx",
+      "path": "atp/2022.xlsx",
+      "sha256": "9feaa1567783cb063e23b6f2d653d4c97210a48b001373eb367eb2d8b6a60a86",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2022/2022.xlsx",
+      "year": 2022
+    },
+    {
+      "bytes": 447088,
+      "effective_url": "http://www.tennis-data.co.uk/2023/2023.xlsx",
+      "path": "atp/2023.xlsx",
+      "sha256": "5789a33720cbd5da9c7909713cfca131927eedaf305ab2b111ec6f8dda842b29",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2023/2023.xlsx",
+      "year": 2023
+    },
+    {
+      "bytes": 445729,
+      "effective_url": "http://www.tennis-data.co.uk/2024/2024.xlsx",
+      "path": "atp/2024.xlsx",
+      "sha256": "d92a4d4167cfece60b624e81ba8d6724d90a4704637341bb0bc87539a36c746a",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2024/2024.xlsx",
+      "year": 2024
+    },
+    {
+      "bytes": 426707,
+      "effective_url": "http://www.tennis-data.co.uk/2025/2025.xlsx",
+      "path": "atp/2025.xlsx",
+      "sha256": "941aaa1abc49131f51e1f7f6eee93dac829dd72578ca10b341dfc4c9d41ba013",
+      "tour": "ATP",
+      "url": "http://www.tennis-data.co.uk/2025/2025.xlsx",
+      "year": 2025
+    },
+    {
+      "bytes": 970752,
+      "effective_url": "http://www.tennis-data.co.uk/2007w/2007.xls",
+      "path": "wta/2007.xls",
+      "sha256": "276b61366afe8016eb5b5822e0f83efe33b8449743ffc07781f0be48e2b8aa1a",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2007w/2007.xls",
+      "year": 2007
+    },
+    {
+      "bytes": 952832,
+      "effective_url": "http://www.tennis-data.co.uk/2008w/2008.xls",
+      "path": "wta/2008.xls",
+      "sha256": "eb745d440250d321f02353c135b91bc1fcb39d2c30757d116f60fd0f6a8902d9",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2008w/2008.xls",
+      "year": 2008
+    },
+    {
+      "bytes": 947712,
+      "effective_url": "http://www.tennis-data.co.uk/2009w/2009.xls",
+      "path": "wta/2009.xls",
+      "sha256": "20c2b846a5d20f4c297d5ea058503b12c8f8bfd9994ec298bdb64615e0f3234f",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2009w/2009.xls",
+      "year": 2009
+    },
+    {
+      "bytes": 988160,
+      "effective_url": "http://www.tennis-data.co.uk/2010w/2010.xls",
+      "path": "wta/2010.xls",
+      "sha256": "9eb750c4e8d17ea0255a9b9144f8e77460bd0926fdae992f5f47a650d8259039",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2010w/2010.xls",
+      "year": 2010
+    },
+    {
+      "bytes": 996352,
+      "effective_url": "http://www.tennis-data.co.uk/2011w/2011.xls",
+      "path": "wta/2011.xls",
+      "sha256": "bfa3c9803c8e2b4bc512f9d1a3938d0aed4a3079e0acc404f7f737359a4190f8",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2011w/2011.xls",
+      "year": 2011
+    },
+    {
+      "bytes": 969216,
+      "effective_url": "http://www.tennis-data.co.uk/2012w/2012.xls",
+      "path": "wta/2012.xls",
+      "sha256": "204e823154e57723ea8b7c00dd837e6eb319485373d59f82e41439abf8f87111",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2012w/2012.xls",
+      "year": 2012
+    },
+    {
+      "bytes": 515133,
+      "effective_url": "http://www.tennis-data.co.uk/2013w/2013.xlsx",
+      "path": "wta/2013.xlsx",
+      "sha256": "94b8c1033b45ebe01b25e6faf2f86a052c4c991ae1950d7100e1bb29d97ab492",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2013w/2013.xlsx",
+      "year": 2013
+    },
+    {
+      "bytes": 540026,
+      "effective_url": "http://www.tennis-data.co.uk/2014w/2014.xlsx",
+      "path": "wta/2014.xlsx",
+      "sha256": "0e1ae9ad8d781825ca79df0be18ebf861383b9f2b3630e4bcc0166a8adc9f047",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2014w/2014.xlsx",
+      "year": 2014
+    },
+    {
+      "bytes": 496722,
+      "effective_url": "http://www.tennis-data.co.uk/2015w/2015.xlsx",
+      "path": "wta/2015.xlsx",
+      "sha256": "f2625eb24820743514a635f2daf57945d40d0108c5aafd244345df8368197648",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2015w/2015.xlsx",
+      "year": 2015
+    },
+    {
+      "bytes": 496904,
+      "effective_url": "http://www.tennis-data.co.uk/2016w/2016.xlsx",
+      "path": "wta/2016.xlsx",
+      "sha256": "810ec9c7fe558614331cac2d9b328545ea6d3c0c840863ad5653efa0bbd9a40a",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2016w/2016.xlsx",
+      "year": 2016
+    },
+    {
+      "bytes": 463132,
+      "effective_url": "http://www.tennis-data.co.uk/2017w/2017.xlsx",
+      "path": "wta/2017.xlsx",
+      "sha256": "5476fa98ea38a885a5f7141e6aa6c4979dfb2d7f93715f7d13b46a17c1f140e0",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2017w/2017.xlsx",
+      "year": 2017
+    },
+    {
+      "bytes": 488666,
+      "effective_url": "http://www.tennis-data.co.uk/2018w/2018.xlsx",
+      "path": "wta/2018.xlsx",
+      "sha256": "e96cc8317a634f0238c51f375896bfc47f53de96554adb0291003cc9b26c7278",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2018w/2018.xlsx",
+      "year": 2018
+    },
+    {
+      "bytes": 383919,
+      "effective_url": "http://www.tennis-data.co.uk/2019w/2019.xlsx",
+      "path": "wta/2019.xlsx",
+      "sha256": "3302aa2b04e4873cd1079ef470d8b63778b35b9b821d2ca52621b933f88a567d",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2019w/2019.xlsx",
+      "year": 2019
+    },
+    {
+      "bytes": 168741,
+      "effective_url": "http://www.tennis-data.co.uk/2020w/2020.xlsx",
+      "path": "wta/2020.xlsx",
+      "sha256": "f7dd7c632d8fc3a02c259983ab2dfd83a2e4516a3011d9b70caef6cd49c3eae1",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2020w/2020.xlsx",
+      "year": 2020
+    },
+    {
+      "bytes": 382230,
+      "effective_url": "http://www.tennis-data.co.uk/2021w/2021.xlsx",
+      "path": "wta/2021.xlsx",
+      "sha256": "a364ca800b49b6ffc770b6766b8b15cec50ecfa9baf850c7973076dc936b1cc3",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2021w/2021.xlsx",
+      "year": 2021
+    },
+    {
+      "bytes": 370069,
+      "effective_url": "http://www.tennis-data.co.uk/2022w/2022.xlsx",
+      "path": "wta/2022.xlsx",
+      "sha256": "d173f08e2607e2a3259448261f50cbe5bed6f298dd204427ea07b7795b4cc155",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2022w/2022.xlsx",
+      "year": 2022
+    },
+    {
+      "bytes": 407251,
+      "effective_url": "http://www.tennis-data.co.uk/2023w/2023.xlsx",
+      "path": "wta/2023.xlsx",
+      "sha256": "ea4c4556c841ad696cd417885015fe0c63b7a2414c94d856f9515a238f2fef2a",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2023w/2023.xlsx",
+      "year": 2023
+    },
+    {
+      "bytes": 406783,
+      "effective_url": "http://www.tennis-data.co.uk/2024w/2024.xlsx",
+      "path": "wta/2024.xlsx",
+      "sha256": "0ce3a4e87c269253dd61e1ab4a3bbeb2d9acdd512f316189e5ad872c86c67b53",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2024w/2024.xlsx",
+      "year": 2024
+    },
+    {
+      "bytes": 399398,
+      "effective_url": "http://www.tennis-data.co.uk/2025w/2025.xlsx",
+      "path": "wta/2025.xlsx",
+      "sha256": "aac890b7465d0c74812578b2a962b4e5cb4c76455dccb6cece2efa5067448c13",
+      "tour": "WTA",
+      "url": "http://www.tennis-data.co.uk/2025w/2025.xlsx",
+      "year": 2025
+    }
+  ],
+  "liability_disclaimer_url": "http://www.tennis-data.co.uk/disclaimer.php",
+  "notes_url": "http://www.tennis-data.co.uk/notes.txt",
+  "provider": "Tennis-Data",
+  "retrieved_at": "2026-07-14T15:52:02.278560Z",
+  "rights_notice": "The provider describes the files as free to access and use but also claims full copyright over its spreadsheet-format data. Redistribution permission is unclear; keep raw workbooks gitignored.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "current_extension": "xlsx",
+      "directory_pattern": "{year}",
+      "end_year": 2025,
+      "extension_transition_year": 2013,
+      "filename_pattern": "{year}.{extension}",
+      "legacy_extension": "xls",
+      "start_year": 2001,
+      "tour": "ATP"
+    },
+    {
+      "current_extension": "xlsx",
+      "directory_pattern": "{year}w",
+      "end_year": 2025,
+      "extension_transition_year": 2013,
+      "filename_pattern": "{year}.{extension}",
+      "legacy_extension": "xls",
+      "start_year": 2007,
+      "tour": "WTA"
+    }
+  ],
+  "terms_url": "http://www.tennis-data.co.uk/data.php"
+}

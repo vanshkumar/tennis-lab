@@ -1,0 +1,1219 @@
+benchmark_version,tour,slam,year,round,match_status,rows
+market-odds-v1,ATP,Australian Open,2001,F,matched,1
+market-odds-v1,ATP,Australian Open,2001,QF,matched,4
+market-odds-v1,ATP,Australian Open,2001,R128,matched,64
+market-odds-v1,ATP,Australian Open,2001,R16,matched,8
+market-odds-v1,ATP,Australian Open,2001,R32,matched,16
+market-odds-v1,ATP,Australian Open,2001,R64,matched,32
+market-odds-v1,ATP,Australian Open,2001,SF,matched,2
+market-odds-v1,ATP,Australian Open,2002,F,matched,1
+market-odds-v1,ATP,Australian Open,2002,QF,matched,4
+market-odds-v1,ATP,Australian Open,2002,R128,matched,64
+market-odds-v1,ATP,Australian Open,2002,R16,matched,8
+market-odds-v1,ATP,Australian Open,2002,R32,matched,16
+market-odds-v1,ATP,Australian Open,2002,R64,matched,32
+market-odds-v1,ATP,Australian Open,2002,SF,matched,2
+market-odds-v1,ATP,Australian Open,2003,F,matched,1
+market-odds-v1,ATP,Australian Open,2003,QF,matched,4
+market-odds-v1,ATP,Australian Open,2003,R128,matched,64
+market-odds-v1,ATP,Australian Open,2003,R16,matched,8
+market-odds-v1,ATP,Australian Open,2003,R32,matched,16
+market-odds-v1,ATP,Australian Open,2003,R64,matched,32
+market-odds-v1,ATP,Australian Open,2003,SF,matched,2
+market-odds-v1,ATP,Australian Open,2004,F,matched,1
+market-odds-v1,ATP,Australian Open,2004,QF,matched,4
+market-odds-v1,ATP,Australian Open,2004,R128,matched,64
+market-odds-v1,ATP,Australian Open,2004,R16,matched,8
+market-odds-v1,ATP,Australian Open,2004,R32,matched,16
+market-odds-v1,ATP,Australian Open,2004,R64,matched,32
+market-odds-v1,ATP,Australian Open,2004,SF,matched,2
+market-odds-v1,ATP,Australian Open,2005,F,matched,1
+market-odds-v1,ATP,Australian Open,2005,QF,matched,4
+market-odds-v1,ATP,Australian Open,2005,R128,matched,64
+market-odds-v1,ATP,Australian Open,2005,R16,matched,8
+market-odds-v1,ATP,Australian Open,2005,R32,matched,16
+market-odds-v1,ATP,Australian Open,2005,R64,matched,32
+market-odds-v1,ATP,Australian Open,2005,SF,matched,2
+market-odds-v1,ATP,Australian Open,2006,F,matched,1
+market-odds-v1,ATP,Australian Open,2006,QF,matched,4
+market-odds-v1,ATP,Australian Open,2006,R128,matched,64
+market-odds-v1,ATP,Australian Open,2006,R16,matched,8
+market-odds-v1,ATP,Australian Open,2006,R32,matched,16
+market-odds-v1,ATP,Australian Open,2006,R64,matched,32
+market-odds-v1,ATP,Australian Open,2006,SF,matched,2
+market-odds-v1,ATP,Australian Open,2007,F,matched,1
+market-odds-v1,ATP,Australian Open,2007,QF,matched,4
+market-odds-v1,ATP,Australian Open,2007,R128,matched,64
+market-odds-v1,ATP,Australian Open,2007,R16,matched,8
+market-odds-v1,ATP,Australian Open,2007,R32,matched,16
+market-odds-v1,ATP,Australian Open,2007,R64,matched,32
+market-odds-v1,ATP,Australian Open,2007,SF,matched,2
+market-odds-v1,ATP,Australian Open,2008,F,matched,1
+market-odds-v1,ATP,Australian Open,2008,QF,matched,4
+market-odds-v1,ATP,Australian Open,2008,R128,matched,64
+market-odds-v1,ATP,Australian Open,2008,R16,matched,8
+market-odds-v1,ATP,Australian Open,2008,R32,matched,16
+market-odds-v1,ATP,Australian Open,2008,R64,matched,32
+market-odds-v1,ATP,Australian Open,2008,SF,matched,2
+market-odds-v1,ATP,Australian Open,2009,F,matched,1
+market-odds-v1,ATP,Australian Open,2009,QF,matched,4
+market-odds-v1,ATP,Australian Open,2009,R128,matched,64
+market-odds-v1,ATP,Australian Open,2009,R16,matched,8
+market-odds-v1,ATP,Australian Open,2009,R32,matched,16
+market-odds-v1,ATP,Australian Open,2009,R64,matched,32
+market-odds-v1,ATP,Australian Open,2009,SF,matched,2
+market-odds-v1,ATP,Australian Open,2010,F,matched,1
+market-odds-v1,ATP,Australian Open,2010,QF,matched,4
+market-odds-v1,ATP,Australian Open,2010,R128,matched,64
+market-odds-v1,ATP,Australian Open,2010,R16,matched,8
+market-odds-v1,ATP,Australian Open,2010,R32,matched,16
+market-odds-v1,ATP,Australian Open,2010,R64,matched,32
+market-odds-v1,ATP,Australian Open,2010,SF,matched,2
+market-odds-v1,ATP,Australian Open,2011,F,matched,1
+market-odds-v1,ATP,Australian Open,2011,QF,matched,4
+market-odds-v1,ATP,Australian Open,2011,R128,matched,64
+market-odds-v1,ATP,Australian Open,2011,R16,matched,8
+market-odds-v1,ATP,Australian Open,2011,R32,matched,16
+market-odds-v1,ATP,Australian Open,2011,R64,matched,32
+market-odds-v1,ATP,Australian Open,2011,SF,matched,2
+market-odds-v1,ATP,Australian Open,2012,F,matched,1
+market-odds-v1,ATP,Australian Open,2012,QF,matched,4
+market-odds-v1,ATP,Australian Open,2012,R128,matched,64
+market-odds-v1,ATP,Australian Open,2012,R16,matched,8
+market-odds-v1,ATP,Australian Open,2012,R32,matched,16
+market-odds-v1,ATP,Australian Open,2012,R64,matched,32
+market-odds-v1,ATP,Australian Open,2012,SF,matched,2
+market-odds-v1,ATP,Australian Open,2013,F,matched,1
+market-odds-v1,ATP,Australian Open,2013,QF,matched,4
+market-odds-v1,ATP,Australian Open,2013,R128,matched,64
+market-odds-v1,ATP,Australian Open,2013,R16,matched,8
+market-odds-v1,ATP,Australian Open,2013,R32,matched,16
+market-odds-v1,ATP,Australian Open,2013,R64,matched,32
+market-odds-v1,ATP,Australian Open,2013,SF,matched,2
+market-odds-v1,ATP,Australian Open,2014,F,matched,1
+market-odds-v1,ATP,Australian Open,2014,QF,matched,4
+market-odds-v1,ATP,Australian Open,2014,R128,matched,64
+market-odds-v1,ATP,Australian Open,2014,R16,matched,8
+market-odds-v1,ATP,Australian Open,2014,R32,matched,16
+market-odds-v1,ATP,Australian Open,2014,R64,matched,32
+market-odds-v1,ATP,Australian Open,2014,SF,matched,2
+market-odds-v1,ATP,Australian Open,2015,F,matched,1
+market-odds-v1,ATP,Australian Open,2015,QF,matched,4
+market-odds-v1,ATP,Australian Open,2015,R128,matched,64
+market-odds-v1,ATP,Australian Open,2015,R16,matched,8
+market-odds-v1,ATP,Australian Open,2015,R32,matched,16
+market-odds-v1,ATP,Australian Open,2015,R64,matched,32
+market-odds-v1,ATP,Australian Open,2015,SF,matched,2
+market-odds-v1,ATP,Australian Open,2016,F,matched,1
+market-odds-v1,ATP,Australian Open,2016,QF,matched,4
+market-odds-v1,ATP,Australian Open,2016,R128,matched,64
+market-odds-v1,ATP,Australian Open,2016,R16,matched,8
+market-odds-v1,ATP,Australian Open,2016,R32,matched,16
+market-odds-v1,ATP,Australian Open,2016,R64,matched,32
+market-odds-v1,ATP,Australian Open,2016,SF,matched,2
+market-odds-v1,ATP,Australian Open,2017,F,matched,1
+market-odds-v1,ATP,Australian Open,2017,QF,matched,4
+market-odds-v1,ATP,Australian Open,2017,R128,matched,64
+market-odds-v1,ATP,Australian Open,2017,R16,matched,8
+market-odds-v1,ATP,Australian Open,2017,R32,matched,16
+market-odds-v1,ATP,Australian Open,2017,R64,matched,32
+market-odds-v1,ATP,Australian Open,2017,SF,matched,2
+market-odds-v1,ATP,Australian Open,2018,F,matched,1
+market-odds-v1,ATP,Australian Open,2018,QF,matched,4
+market-odds-v1,ATP,Australian Open,2018,R128,matched,64
+market-odds-v1,ATP,Australian Open,2018,R16,matched,8
+market-odds-v1,ATP,Australian Open,2018,R32,matched,16
+market-odds-v1,ATP,Australian Open,2018,R64,matched,32
+market-odds-v1,ATP,Australian Open,2018,SF,matched,2
+market-odds-v1,ATP,Australian Open,2019,F,matched,1
+market-odds-v1,ATP,Australian Open,2019,QF,matched,4
+market-odds-v1,ATP,Australian Open,2019,R128,matched,64
+market-odds-v1,ATP,Australian Open,2019,R16,matched,8
+market-odds-v1,ATP,Australian Open,2019,R32,matched,16
+market-odds-v1,ATP,Australian Open,2019,R64,matched,32
+market-odds-v1,ATP,Australian Open,2019,SF,matched,2
+market-odds-v1,ATP,Australian Open,2020,F,matched,1
+market-odds-v1,ATP,Australian Open,2020,QF,matched,4
+market-odds-v1,ATP,Australian Open,2020,R128,matched,64
+market-odds-v1,ATP,Australian Open,2020,R16,matched,8
+market-odds-v1,ATP,Australian Open,2020,R32,matched,16
+market-odds-v1,ATP,Australian Open,2020,R64,matched,32
+market-odds-v1,ATP,Australian Open,2020,SF,matched,2
+market-odds-v1,ATP,Australian Open,2021,F,matched,1
+market-odds-v1,ATP,Australian Open,2021,QF,matched,4
+market-odds-v1,ATP,Australian Open,2021,R128,matched,64
+market-odds-v1,ATP,Australian Open,2021,R16,matched,8
+market-odds-v1,ATP,Australian Open,2021,R32,matched,16
+market-odds-v1,ATP,Australian Open,2021,R64,matched,32
+market-odds-v1,ATP,Australian Open,2021,SF,matched,2
+market-odds-v1,ATP,Australian Open,2022,F,matched,1
+market-odds-v1,ATP,Australian Open,2022,QF,matched,4
+market-odds-v1,ATP,Australian Open,2022,R128,matched,64
+market-odds-v1,ATP,Australian Open,2022,R16,matched,8
+market-odds-v1,ATP,Australian Open,2022,R32,matched,16
+market-odds-v1,ATP,Australian Open,2022,R64,matched,32
+market-odds-v1,ATP,Australian Open,2022,SF,matched,2
+market-odds-v1,ATP,Australian Open,2023,F,matched,1
+market-odds-v1,ATP,Australian Open,2023,QF,matched,4
+market-odds-v1,ATP,Australian Open,2023,R128,matched,64
+market-odds-v1,ATP,Australian Open,2023,R16,matched,8
+market-odds-v1,ATP,Australian Open,2023,R32,matched,16
+market-odds-v1,ATP,Australian Open,2023,R64,matched,32
+market-odds-v1,ATP,Australian Open,2023,SF,matched,2
+market-odds-v1,ATP,Australian Open,2024,F,matched,1
+market-odds-v1,ATP,Australian Open,2024,QF,matched,4
+market-odds-v1,ATP,Australian Open,2024,R128,matched,64
+market-odds-v1,ATP,Australian Open,2024,R16,matched,8
+market-odds-v1,ATP,Australian Open,2024,R32,matched,16
+market-odds-v1,ATP,Australian Open,2024,R64,matched,32
+market-odds-v1,ATP,Australian Open,2024,SF,matched,2
+market-odds-v1,ATP,Australian Open,2025,F,matched,1
+market-odds-v1,ATP,Australian Open,2025,QF,matched,4
+market-odds-v1,ATP,Australian Open,2025,R128,matched,64
+market-odds-v1,ATP,Australian Open,2025,R16,matched,8
+market-odds-v1,ATP,Australian Open,2025,R32,matched,16
+market-odds-v1,ATP,Australian Open,2025,R64,matched,32
+market-odds-v1,ATP,Australian Open,2025,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2001,F,matched,1
+market-odds-v1,ATP,Roland Garros,2001,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2001,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2001,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2001,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2001,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2001,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2002,F,matched,1
+market-odds-v1,ATP,Roland Garros,2002,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2002,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2002,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2002,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2002,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2002,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2003,F,matched,1
+market-odds-v1,ATP,Roland Garros,2003,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2003,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2003,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2003,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2003,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2003,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2004,F,matched,1
+market-odds-v1,ATP,Roland Garros,2004,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2004,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2004,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2004,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2004,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2004,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2005,F,matched,1
+market-odds-v1,ATP,Roland Garros,2005,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2005,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2005,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2005,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2005,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2005,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2006,F,matched,1
+market-odds-v1,ATP,Roland Garros,2006,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2006,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2006,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2006,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2006,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2006,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2007,F,matched,1
+market-odds-v1,ATP,Roland Garros,2007,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2007,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2007,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2007,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2007,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2007,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2008,F,matched,1
+market-odds-v1,ATP,Roland Garros,2008,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2008,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2008,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2008,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2008,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2008,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2009,F,matched,1
+market-odds-v1,ATP,Roland Garros,2009,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2009,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2009,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2009,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2009,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2009,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2010,F,matched,1
+market-odds-v1,ATP,Roland Garros,2010,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2010,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2010,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2010,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2010,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2010,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2011,F,matched,1
+market-odds-v1,ATP,Roland Garros,2011,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2011,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2011,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2011,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2011,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2011,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2012,F,matched,1
+market-odds-v1,ATP,Roland Garros,2012,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2012,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2012,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2012,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2012,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2012,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2013,F,matched,1
+market-odds-v1,ATP,Roland Garros,2013,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2013,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2013,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2013,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2013,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2013,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2014,F,matched,1
+market-odds-v1,ATP,Roland Garros,2014,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2014,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2014,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2014,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2014,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2014,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2015,F,matched,1
+market-odds-v1,ATP,Roland Garros,2015,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2015,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2015,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2015,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2015,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2015,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2016,F,matched,1
+market-odds-v1,ATP,Roland Garros,2016,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2016,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2016,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2016,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2016,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2016,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2017,F,matched,1
+market-odds-v1,ATP,Roland Garros,2017,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2017,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2017,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2017,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2017,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2017,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2018,F,matched,1
+market-odds-v1,ATP,Roland Garros,2018,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2018,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2018,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2018,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2018,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2018,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2019,F,matched,1
+market-odds-v1,ATP,Roland Garros,2019,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2019,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2019,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2019,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2019,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2019,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2020,F,matched,1
+market-odds-v1,ATP,Roland Garros,2020,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2020,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2020,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2020,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2020,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2020,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2021,F,matched,1
+market-odds-v1,ATP,Roland Garros,2021,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2021,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2021,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2021,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2021,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2021,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2022,F,matched,1
+market-odds-v1,ATP,Roland Garros,2022,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2022,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2022,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2022,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2022,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2022,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2023,F,matched,1
+market-odds-v1,ATP,Roland Garros,2023,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2023,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2023,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2023,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2023,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2023,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2024,F,matched,1
+market-odds-v1,ATP,Roland Garros,2024,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2024,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2024,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2024,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2024,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2024,SF,matched,2
+market-odds-v1,ATP,Roland Garros,2025,F,matched,1
+market-odds-v1,ATP,Roland Garros,2025,QF,matched,4
+market-odds-v1,ATP,Roland Garros,2025,R128,matched,64
+market-odds-v1,ATP,Roland Garros,2025,R16,matched,8
+market-odds-v1,ATP,Roland Garros,2025,R32,matched,16
+market-odds-v1,ATP,Roland Garros,2025,R64,matched,32
+market-odds-v1,ATP,Roland Garros,2025,SF,matched,2
+market-odds-v1,ATP,US Open,2001,F,matched,1
+market-odds-v1,ATP,US Open,2001,QF,matched,4
+market-odds-v1,ATP,US Open,2001,R128,matched,64
+market-odds-v1,ATP,US Open,2001,R16,matched,8
+market-odds-v1,ATP,US Open,2001,R32,matched,16
+market-odds-v1,ATP,US Open,2001,R64,matched,32
+market-odds-v1,ATP,US Open,2001,SF,matched,2
+market-odds-v1,ATP,US Open,2002,F,matched,1
+market-odds-v1,ATP,US Open,2002,QF,matched,4
+market-odds-v1,ATP,US Open,2002,R128,matched,64
+market-odds-v1,ATP,US Open,2002,R16,matched,8
+market-odds-v1,ATP,US Open,2002,R32,matched,16
+market-odds-v1,ATP,US Open,2002,R64,matched,32
+market-odds-v1,ATP,US Open,2002,SF,matched,2
+market-odds-v1,ATP,US Open,2003,F,matched,1
+market-odds-v1,ATP,US Open,2003,QF,matched,4
+market-odds-v1,ATP,US Open,2003,R128,matched,64
+market-odds-v1,ATP,US Open,2003,R16,matched,8
+market-odds-v1,ATP,US Open,2003,R32,matched,16
+market-odds-v1,ATP,US Open,2003,R64,matched,32
+market-odds-v1,ATP,US Open,2003,SF,matched,2
+market-odds-v1,ATP,US Open,2004,F,matched,1
+market-odds-v1,ATP,US Open,2004,QF,matched,4
+market-odds-v1,ATP,US Open,2004,R128,matched,64
+market-odds-v1,ATP,US Open,2004,R16,matched,8
+market-odds-v1,ATP,US Open,2004,R32,matched,16
+market-odds-v1,ATP,US Open,2004,R64,matched,32
+market-odds-v1,ATP,US Open,2004,SF,matched,2
+market-odds-v1,ATP,US Open,2005,F,matched,1
+market-odds-v1,ATP,US Open,2005,QF,matched,4
+market-odds-v1,ATP,US Open,2005,R128,matched,64
+market-odds-v1,ATP,US Open,2005,R16,matched,8
+market-odds-v1,ATP,US Open,2005,R32,matched,16
+market-odds-v1,ATP,US Open,2005,R64,matched,32
+market-odds-v1,ATP,US Open,2005,SF,matched,2
+market-odds-v1,ATP,US Open,2006,F,matched,1
+market-odds-v1,ATP,US Open,2006,QF,matched,4
+market-odds-v1,ATP,US Open,2006,R128,matched,64
+market-odds-v1,ATP,US Open,2006,R16,matched,8
+market-odds-v1,ATP,US Open,2006,R32,matched,16
+market-odds-v1,ATP,US Open,2006,R64,matched,32
+market-odds-v1,ATP,US Open,2006,SF,matched,2
+market-odds-v1,ATP,US Open,2007,F,matched,1
+market-odds-v1,ATP,US Open,2007,QF,matched,4
+market-odds-v1,ATP,US Open,2007,R128,matched,64
+market-odds-v1,ATP,US Open,2007,R16,matched,8
+market-odds-v1,ATP,US Open,2007,R32,matched,16
+market-odds-v1,ATP,US Open,2007,R64,matched,32
+market-odds-v1,ATP,US Open,2007,SF,matched,2
+market-odds-v1,ATP,US Open,2008,F,matched,1
+market-odds-v1,ATP,US Open,2008,QF,matched,4
+market-odds-v1,ATP,US Open,2008,R128,matched,64
+market-odds-v1,ATP,US Open,2008,R16,matched,8
+market-odds-v1,ATP,US Open,2008,R32,matched,16
+market-odds-v1,ATP,US Open,2008,R64,matched,32
+market-odds-v1,ATP,US Open,2008,SF,matched,2
+market-odds-v1,ATP,US Open,2009,F,matched,1
+market-odds-v1,ATP,US Open,2009,QF,matched,4
+market-odds-v1,ATP,US Open,2009,R128,matched,64
+market-odds-v1,ATP,US Open,2009,R16,matched,8
+market-odds-v1,ATP,US Open,2009,R32,matched,16
+market-odds-v1,ATP,US Open,2009,R64,matched,32
+market-odds-v1,ATP,US Open,2009,SF,matched,2
+market-odds-v1,ATP,US Open,2010,F,matched,1
+market-odds-v1,ATP,US Open,2010,QF,matched,4
+market-odds-v1,ATP,US Open,2010,R128,matched,64
+market-odds-v1,ATP,US Open,2010,R16,matched,8
+market-odds-v1,ATP,US Open,2010,R32,matched,16
+market-odds-v1,ATP,US Open,2010,R64,matched,32
+market-odds-v1,ATP,US Open,2010,SF,matched,2
+market-odds-v1,ATP,US Open,2011,F,matched,1
+market-odds-v1,ATP,US Open,2011,QF,matched,4
+market-odds-v1,ATP,US Open,2011,R128,matched,64
+market-odds-v1,ATP,US Open,2011,R16,matched,8
+market-odds-v1,ATP,US Open,2011,R32,matched,16
+market-odds-v1,ATP,US Open,2011,R64,matched,32
+market-odds-v1,ATP,US Open,2011,SF,matched,2
+market-odds-v1,ATP,US Open,2012,F,matched,1
+market-odds-v1,ATP,US Open,2012,QF,matched,4
+market-odds-v1,ATP,US Open,2012,R128,matched,64
+market-odds-v1,ATP,US Open,2012,R16,matched,8
+market-odds-v1,ATP,US Open,2012,R32,matched,16
+market-odds-v1,ATP,US Open,2012,R64,matched,32
+market-odds-v1,ATP,US Open,2012,SF,matched,2
+market-odds-v1,ATP,US Open,2013,F,matched,1
+market-odds-v1,ATP,US Open,2013,QF,matched,4
+market-odds-v1,ATP,US Open,2013,R128,matched,64
+market-odds-v1,ATP,US Open,2013,R16,matched,8
+market-odds-v1,ATP,US Open,2013,R32,matched,16
+market-odds-v1,ATP,US Open,2013,R64,matched,32
+market-odds-v1,ATP,US Open,2013,SF,matched,2
+market-odds-v1,ATP,US Open,2014,F,matched,1
+market-odds-v1,ATP,US Open,2014,QF,matched,4
+market-odds-v1,ATP,US Open,2014,R128,matched,64
+market-odds-v1,ATP,US Open,2014,R16,matched,8
+market-odds-v1,ATP,US Open,2014,R32,matched,16
+market-odds-v1,ATP,US Open,2014,R64,matched,32
+market-odds-v1,ATP,US Open,2014,SF,matched,2
+market-odds-v1,ATP,US Open,2015,F,matched,1
+market-odds-v1,ATP,US Open,2015,QF,matched,4
+market-odds-v1,ATP,US Open,2015,R128,matched,64
+market-odds-v1,ATP,US Open,2015,R16,matched,8
+market-odds-v1,ATP,US Open,2015,R32,matched,16
+market-odds-v1,ATP,US Open,2015,R64,matched,32
+market-odds-v1,ATP,US Open,2015,SF,matched,2
+market-odds-v1,ATP,US Open,2016,F,matched,1
+market-odds-v1,ATP,US Open,2016,QF,matched,4
+market-odds-v1,ATP,US Open,2016,R128,matched,64
+market-odds-v1,ATP,US Open,2016,R16,matched,8
+market-odds-v1,ATP,US Open,2016,R32,matched,16
+market-odds-v1,ATP,US Open,2016,R64,matched,32
+market-odds-v1,ATP,US Open,2016,SF,matched,2
+market-odds-v1,ATP,US Open,2017,F,matched,1
+market-odds-v1,ATP,US Open,2017,QF,matched,4
+market-odds-v1,ATP,US Open,2017,R128,matched,64
+market-odds-v1,ATP,US Open,2017,R16,matched,8
+market-odds-v1,ATP,US Open,2017,R32,matched,16
+market-odds-v1,ATP,US Open,2017,R64,matched,32
+market-odds-v1,ATP,US Open,2017,SF,matched,2
+market-odds-v1,ATP,US Open,2018,F,matched,1
+market-odds-v1,ATP,US Open,2018,QF,matched,4
+market-odds-v1,ATP,US Open,2018,R128,matched,64
+market-odds-v1,ATP,US Open,2018,R16,matched,8
+market-odds-v1,ATP,US Open,2018,R32,matched,16
+market-odds-v1,ATP,US Open,2018,R64,matched,32
+market-odds-v1,ATP,US Open,2018,SF,matched,2
+market-odds-v1,ATP,US Open,2019,F,matched,1
+market-odds-v1,ATP,US Open,2019,QF,matched,4
+market-odds-v1,ATP,US Open,2019,R128,matched,64
+market-odds-v1,ATP,US Open,2019,R16,matched,8
+market-odds-v1,ATP,US Open,2019,R32,matched,16
+market-odds-v1,ATP,US Open,2019,R64,matched,32
+market-odds-v1,ATP,US Open,2019,SF,matched,2
+market-odds-v1,ATP,US Open,2020,F,matched,1
+market-odds-v1,ATP,US Open,2020,QF,matched,4
+market-odds-v1,ATP,US Open,2020,R128,matched,64
+market-odds-v1,ATP,US Open,2020,R16,matched,8
+market-odds-v1,ATP,US Open,2020,R32,matched,16
+market-odds-v1,ATP,US Open,2020,R64,matched,32
+market-odds-v1,ATP,US Open,2020,SF,matched,2
+market-odds-v1,ATP,US Open,2021,F,matched,1
+market-odds-v1,ATP,US Open,2021,QF,matched,4
+market-odds-v1,ATP,US Open,2021,R128,matched,64
+market-odds-v1,ATP,US Open,2021,R16,matched,8
+market-odds-v1,ATP,US Open,2021,R32,matched,16
+market-odds-v1,ATP,US Open,2021,R64,matched,32
+market-odds-v1,ATP,US Open,2021,SF,matched,2
+market-odds-v1,ATP,US Open,2022,F,matched,1
+market-odds-v1,ATP,US Open,2022,QF,matched,4
+market-odds-v1,ATP,US Open,2022,R128,matched,64
+market-odds-v1,ATP,US Open,2022,R16,matched,8
+market-odds-v1,ATP,US Open,2022,R32,matched,16
+market-odds-v1,ATP,US Open,2022,R64,matched,32
+market-odds-v1,ATP,US Open,2022,SF,matched,2
+market-odds-v1,ATP,US Open,2023,F,matched,1
+market-odds-v1,ATP,US Open,2023,QF,matched,4
+market-odds-v1,ATP,US Open,2023,R128,matched,64
+market-odds-v1,ATP,US Open,2023,R16,matched,8
+market-odds-v1,ATP,US Open,2023,R32,matched,16
+market-odds-v1,ATP,US Open,2023,R64,matched,32
+market-odds-v1,ATP,US Open,2023,SF,matched,2
+market-odds-v1,ATP,US Open,2024,F,matched,1
+market-odds-v1,ATP,US Open,2024,QF,matched,4
+market-odds-v1,ATP,US Open,2024,R128,matched,64
+market-odds-v1,ATP,US Open,2024,R16,matched,8
+market-odds-v1,ATP,US Open,2024,R32,matched,16
+market-odds-v1,ATP,US Open,2024,R64,matched,32
+market-odds-v1,ATP,US Open,2024,SF,matched,2
+market-odds-v1,ATP,US Open,2025,F,matched,1
+market-odds-v1,ATP,US Open,2025,QF,matched,4
+market-odds-v1,ATP,US Open,2025,R128,matched,64
+market-odds-v1,ATP,US Open,2025,R16,matched,8
+market-odds-v1,ATP,US Open,2025,R32,matched,16
+market-odds-v1,ATP,US Open,2025,R64,matched,32
+market-odds-v1,ATP,US Open,2025,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2001,F,matched,1
+market-odds-v1,ATP,Wimbledon,2001,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2001,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2001,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2001,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2001,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2001,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2002,F,matched,1
+market-odds-v1,ATP,Wimbledon,2002,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2002,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2002,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2002,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2002,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2002,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2003,F,matched,1
+market-odds-v1,ATP,Wimbledon,2003,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2003,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2003,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2003,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2003,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2003,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2004,F,matched,1
+market-odds-v1,ATP,Wimbledon,2004,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2004,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2004,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2004,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2004,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2004,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2005,F,matched,1
+market-odds-v1,ATP,Wimbledon,2005,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2005,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2005,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2005,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2005,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2005,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2006,F,matched,1
+market-odds-v1,ATP,Wimbledon,2006,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2006,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2006,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2006,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2006,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2006,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2007,F,matched,1
+market-odds-v1,ATP,Wimbledon,2007,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2007,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2007,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2007,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2007,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2007,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2008,F,matched,1
+market-odds-v1,ATP,Wimbledon,2008,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2008,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2008,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2008,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2008,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2008,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2009,F,matched,1
+market-odds-v1,ATP,Wimbledon,2009,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2009,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2009,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2009,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2009,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2009,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2010,F,matched,1
+market-odds-v1,ATP,Wimbledon,2010,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2010,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2010,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2010,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2010,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2010,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2011,F,matched,1
+market-odds-v1,ATP,Wimbledon,2011,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2011,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2011,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2011,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2011,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2011,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2012,F,matched,1
+market-odds-v1,ATP,Wimbledon,2012,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2012,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2012,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2012,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2012,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2012,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2013,F,matched,1
+market-odds-v1,ATP,Wimbledon,2013,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2013,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2013,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2013,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2013,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2013,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2014,F,matched,1
+market-odds-v1,ATP,Wimbledon,2014,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2014,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2014,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2014,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2014,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2014,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2015,F,matched,1
+market-odds-v1,ATP,Wimbledon,2015,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2015,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2015,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2015,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2015,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2015,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2016,F,matched,1
+market-odds-v1,ATP,Wimbledon,2016,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2016,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2016,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2016,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2016,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2016,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2017,F,matched,1
+market-odds-v1,ATP,Wimbledon,2017,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2017,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2017,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2017,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2017,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2017,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2018,F,matched,1
+market-odds-v1,ATP,Wimbledon,2018,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2018,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2018,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2018,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2018,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2018,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2019,F,matched,1
+market-odds-v1,ATP,Wimbledon,2019,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2019,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2019,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2019,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2019,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2019,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2021,F,matched,1
+market-odds-v1,ATP,Wimbledon,2021,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2021,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2021,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2021,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2021,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2021,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2022,F,matched,1
+market-odds-v1,ATP,Wimbledon,2022,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2022,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2022,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2022,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2022,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2022,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2023,F,matched,1
+market-odds-v1,ATP,Wimbledon,2023,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2023,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2023,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2023,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2023,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2023,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2024,F,matched,1
+market-odds-v1,ATP,Wimbledon,2024,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2024,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2024,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2024,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2024,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2024,SF,matched,2
+market-odds-v1,ATP,Wimbledon,2025,F,matched,1
+market-odds-v1,ATP,Wimbledon,2025,QF,matched,4
+market-odds-v1,ATP,Wimbledon,2025,R128,matched,64
+market-odds-v1,ATP,Wimbledon,2025,R16,matched,8
+market-odds-v1,ATP,Wimbledon,2025,R32,matched,16
+market-odds-v1,ATP,Wimbledon,2025,R64,matched,32
+market-odds-v1,ATP,Wimbledon,2025,SF,matched,2
+market-odds-v1,WTA,Australian Open,2007,F,matched,1
+market-odds-v1,WTA,Australian Open,2007,QF,matched,4
+market-odds-v1,WTA,Australian Open,2007,R128,matched,64
+market-odds-v1,WTA,Australian Open,2007,R16,matched,8
+market-odds-v1,WTA,Australian Open,2007,R32,matched,16
+market-odds-v1,WTA,Australian Open,2007,R64,matched,32
+market-odds-v1,WTA,Australian Open,2007,SF,matched,2
+market-odds-v1,WTA,Australian Open,2008,F,matched,1
+market-odds-v1,WTA,Australian Open,2008,QF,matched,4
+market-odds-v1,WTA,Australian Open,2008,R128,matched,64
+market-odds-v1,WTA,Australian Open,2008,R16,matched,8
+market-odds-v1,WTA,Australian Open,2008,R32,matched,16
+market-odds-v1,WTA,Australian Open,2008,R64,matched,32
+market-odds-v1,WTA,Australian Open,2008,SF,matched,2
+market-odds-v1,WTA,Australian Open,2009,F,matched,1
+market-odds-v1,WTA,Australian Open,2009,QF,matched,4
+market-odds-v1,WTA,Australian Open,2009,R128,matched,64
+market-odds-v1,WTA,Australian Open,2009,R16,matched,8
+market-odds-v1,WTA,Australian Open,2009,R32,matched,16
+market-odds-v1,WTA,Australian Open,2009,R64,matched,32
+market-odds-v1,WTA,Australian Open,2009,SF,matched,2
+market-odds-v1,WTA,Australian Open,2010,F,matched,1
+market-odds-v1,WTA,Australian Open,2010,QF,matched,4
+market-odds-v1,WTA,Australian Open,2010,R128,matched,64
+market-odds-v1,WTA,Australian Open,2010,R16,matched,8
+market-odds-v1,WTA,Australian Open,2010,R32,matched,16
+market-odds-v1,WTA,Australian Open,2010,R64,matched,32
+market-odds-v1,WTA,Australian Open,2010,SF,matched,2
+market-odds-v1,WTA,Australian Open,2011,F,matched,1
+market-odds-v1,WTA,Australian Open,2011,QF,matched,4
+market-odds-v1,WTA,Australian Open,2011,R128,matched,64
+market-odds-v1,WTA,Australian Open,2011,R16,matched,8
+market-odds-v1,WTA,Australian Open,2011,R32,matched,16
+market-odds-v1,WTA,Australian Open,2011,R64,matched,32
+market-odds-v1,WTA,Australian Open,2011,SF,matched,2
+market-odds-v1,WTA,Australian Open,2012,F,matched,1
+market-odds-v1,WTA,Australian Open,2012,QF,matched,4
+market-odds-v1,WTA,Australian Open,2012,R128,matched,64
+market-odds-v1,WTA,Australian Open,2012,R16,matched,8
+market-odds-v1,WTA,Australian Open,2012,R32,matched,16
+market-odds-v1,WTA,Australian Open,2012,R64,matched,32
+market-odds-v1,WTA,Australian Open,2012,SF,matched,2
+market-odds-v1,WTA,Australian Open,2013,F,matched,1
+market-odds-v1,WTA,Australian Open,2013,QF,matched,4
+market-odds-v1,WTA,Australian Open,2013,R128,matched,64
+market-odds-v1,WTA,Australian Open,2013,R16,matched,8
+market-odds-v1,WTA,Australian Open,2013,R32,matched,16
+market-odds-v1,WTA,Australian Open,2013,R64,matched,32
+market-odds-v1,WTA,Australian Open,2013,SF,matched,2
+market-odds-v1,WTA,Australian Open,2014,F,matched,1
+market-odds-v1,WTA,Australian Open,2014,QF,matched,4
+market-odds-v1,WTA,Australian Open,2014,R128,matched,64
+market-odds-v1,WTA,Australian Open,2014,R16,matched,8
+market-odds-v1,WTA,Australian Open,2014,R32,matched,16
+market-odds-v1,WTA,Australian Open,2014,R64,matched,32
+market-odds-v1,WTA,Australian Open,2014,SF,matched,2
+market-odds-v1,WTA,Australian Open,2015,F,matched,1
+market-odds-v1,WTA,Australian Open,2015,QF,matched,4
+market-odds-v1,WTA,Australian Open,2015,R128,matched,64
+market-odds-v1,WTA,Australian Open,2015,R16,matched,8
+market-odds-v1,WTA,Australian Open,2015,R32,matched,16
+market-odds-v1,WTA,Australian Open,2015,R64,matched,32
+market-odds-v1,WTA,Australian Open,2015,SF,matched,2
+market-odds-v1,WTA,Australian Open,2016,F,matched,1
+market-odds-v1,WTA,Australian Open,2016,QF,matched,4
+market-odds-v1,WTA,Australian Open,2016,R128,matched,64
+market-odds-v1,WTA,Australian Open,2016,R16,matched,8
+market-odds-v1,WTA,Australian Open,2016,R32,matched,16
+market-odds-v1,WTA,Australian Open,2016,R64,matched,32
+market-odds-v1,WTA,Australian Open,2016,SF,matched,2
+market-odds-v1,WTA,Australian Open,2017,F,matched,1
+market-odds-v1,WTA,Australian Open,2017,QF,matched,4
+market-odds-v1,WTA,Australian Open,2017,R128,matched,64
+market-odds-v1,WTA,Australian Open,2017,R16,matched,8
+market-odds-v1,WTA,Australian Open,2017,R32,matched,16
+market-odds-v1,WTA,Australian Open,2017,R64,matched,32
+market-odds-v1,WTA,Australian Open,2017,SF,matched,2
+market-odds-v1,WTA,Australian Open,2018,F,matched,1
+market-odds-v1,WTA,Australian Open,2018,QF,matched,4
+market-odds-v1,WTA,Australian Open,2018,R128,matched,64
+market-odds-v1,WTA,Australian Open,2018,R16,matched,8
+market-odds-v1,WTA,Australian Open,2018,R32,matched,16
+market-odds-v1,WTA,Australian Open,2018,R64,matched,32
+market-odds-v1,WTA,Australian Open,2018,SF,matched,2
+market-odds-v1,WTA,Australian Open,2019,F,matched,1
+market-odds-v1,WTA,Australian Open,2019,QF,matched,4
+market-odds-v1,WTA,Australian Open,2019,R128,matched,64
+market-odds-v1,WTA,Australian Open,2019,R16,matched,8
+market-odds-v1,WTA,Australian Open,2019,R32,matched,16
+market-odds-v1,WTA,Australian Open,2019,R64,matched,32
+market-odds-v1,WTA,Australian Open,2019,SF,matched,2
+market-odds-v1,WTA,Australian Open,2020,F,matched,1
+market-odds-v1,WTA,Australian Open,2020,QF,matched,4
+market-odds-v1,WTA,Australian Open,2020,R128,matched,64
+market-odds-v1,WTA,Australian Open,2020,R16,matched,8
+market-odds-v1,WTA,Australian Open,2020,R32,matched,16
+market-odds-v1,WTA,Australian Open,2020,R64,matched,32
+market-odds-v1,WTA,Australian Open,2020,SF,matched,2
+market-odds-v1,WTA,Australian Open,2021,F,matched,1
+market-odds-v1,WTA,Australian Open,2021,QF,matched,4
+market-odds-v1,WTA,Australian Open,2021,R128,matched,64
+market-odds-v1,WTA,Australian Open,2021,R16,matched,8
+market-odds-v1,WTA,Australian Open,2021,R32,matched,16
+market-odds-v1,WTA,Australian Open,2021,R64,matched,32
+market-odds-v1,WTA,Australian Open,2021,SF,matched,2
+market-odds-v1,WTA,Australian Open,2022,F,matched,1
+market-odds-v1,WTA,Australian Open,2022,QF,matched,4
+market-odds-v1,WTA,Australian Open,2022,R128,matched,64
+market-odds-v1,WTA,Australian Open,2022,R16,matched,8
+market-odds-v1,WTA,Australian Open,2022,R32,matched,16
+market-odds-v1,WTA,Australian Open,2022,R64,matched,32
+market-odds-v1,WTA,Australian Open,2022,SF,matched,2
+market-odds-v1,WTA,Australian Open,2023,F,matched,1
+market-odds-v1,WTA,Australian Open,2023,QF,matched,4
+market-odds-v1,WTA,Australian Open,2023,R128,matched,64
+market-odds-v1,WTA,Australian Open,2023,R16,matched,8
+market-odds-v1,WTA,Australian Open,2023,R32,matched,16
+market-odds-v1,WTA,Australian Open,2023,R64,matched,32
+market-odds-v1,WTA,Australian Open,2023,SF,matched,2
+market-odds-v1,WTA,Australian Open,2024,F,matched,1
+market-odds-v1,WTA,Australian Open,2024,QF,matched,4
+market-odds-v1,WTA,Australian Open,2024,R128,matched,64
+market-odds-v1,WTA,Australian Open,2024,R16,matched,8
+market-odds-v1,WTA,Australian Open,2024,R32,matched,16
+market-odds-v1,WTA,Australian Open,2024,R64,matched,32
+market-odds-v1,WTA,Australian Open,2024,SF,matched,2
+market-odds-v1,WTA,Australian Open,2025,F,matched,1
+market-odds-v1,WTA,Australian Open,2025,QF,matched,4
+market-odds-v1,WTA,Australian Open,2025,R128,matched,64
+market-odds-v1,WTA,Australian Open,2025,R16,matched,8
+market-odds-v1,WTA,Australian Open,2025,R32,matched,16
+market-odds-v1,WTA,Australian Open,2025,R64,matched,32
+market-odds-v1,WTA,Australian Open,2025,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2007,F,matched,1
+market-odds-v1,WTA,Roland Garros,2007,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2007,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2007,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2007,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2007,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2007,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2008,F,matched,1
+market-odds-v1,WTA,Roland Garros,2008,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2008,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2008,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2008,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2008,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2008,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2009,F,matched,1
+market-odds-v1,WTA,Roland Garros,2009,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2009,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2009,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2009,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2009,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2009,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2010,F,matched,1
+market-odds-v1,WTA,Roland Garros,2010,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2010,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2010,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2010,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2010,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2010,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2011,F,matched,1
+market-odds-v1,WTA,Roland Garros,2011,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2011,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2011,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2011,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2011,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2011,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2012,F,matched,1
+market-odds-v1,WTA,Roland Garros,2012,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2012,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2012,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2012,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2012,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2012,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2013,F,matched,1
+market-odds-v1,WTA,Roland Garros,2013,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2013,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2013,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2013,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2013,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2013,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2014,F,matched,1
+market-odds-v1,WTA,Roland Garros,2014,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2014,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2014,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2014,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2014,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2014,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2015,F,matched,1
+market-odds-v1,WTA,Roland Garros,2015,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2015,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2015,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2015,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2015,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2015,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2016,F,matched,1
+market-odds-v1,WTA,Roland Garros,2016,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2016,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2016,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2016,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2016,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2016,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2017,F,matched,1
+market-odds-v1,WTA,Roland Garros,2017,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2017,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2017,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2017,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2017,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2017,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2018,F,matched,1
+market-odds-v1,WTA,Roland Garros,2018,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2018,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2018,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2018,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2018,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2018,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2019,F,matched,1
+market-odds-v1,WTA,Roland Garros,2019,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2019,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2019,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2019,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2019,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2019,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2020,F,matched,1
+market-odds-v1,WTA,Roland Garros,2020,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2020,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2020,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2020,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2020,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2020,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2021,F,matched,1
+market-odds-v1,WTA,Roland Garros,2021,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2021,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2021,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2021,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2021,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2021,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2022,F,matched,1
+market-odds-v1,WTA,Roland Garros,2022,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2022,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2022,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2022,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2022,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2022,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2023,F,matched,1
+market-odds-v1,WTA,Roland Garros,2023,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2023,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2023,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2023,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2023,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2023,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2024,F,matched,1
+market-odds-v1,WTA,Roland Garros,2024,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2024,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2024,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2024,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2024,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2024,SF,matched,2
+market-odds-v1,WTA,Roland Garros,2025,F,matched,1
+market-odds-v1,WTA,Roland Garros,2025,QF,matched,4
+market-odds-v1,WTA,Roland Garros,2025,R128,matched,64
+market-odds-v1,WTA,Roland Garros,2025,R16,matched,8
+market-odds-v1,WTA,Roland Garros,2025,R32,matched,16
+market-odds-v1,WTA,Roland Garros,2025,R64,matched,32
+market-odds-v1,WTA,Roland Garros,2025,SF,matched,2
+market-odds-v1,WTA,US Open,2007,F,matched,1
+market-odds-v1,WTA,US Open,2007,QF,matched,4
+market-odds-v1,WTA,US Open,2007,R128,matched,64
+market-odds-v1,WTA,US Open,2007,R16,matched,8
+market-odds-v1,WTA,US Open,2007,R32,matched,16
+market-odds-v1,WTA,US Open,2007,R64,matched,32
+market-odds-v1,WTA,US Open,2007,SF,matched,2
+market-odds-v1,WTA,US Open,2008,F,matched,1
+market-odds-v1,WTA,US Open,2008,QF,matched,4
+market-odds-v1,WTA,US Open,2008,R128,matched,64
+market-odds-v1,WTA,US Open,2008,R16,matched,8
+market-odds-v1,WTA,US Open,2008,R32,matched,16
+market-odds-v1,WTA,US Open,2008,R64,matched,32
+market-odds-v1,WTA,US Open,2008,SF,matched,2
+market-odds-v1,WTA,US Open,2009,F,matched,1
+market-odds-v1,WTA,US Open,2009,QF,matched,4
+market-odds-v1,WTA,US Open,2009,R128,matched,64
+market-odds-v1,WTA,US Open,2009,R16,matched,8
+market-odds-v1,WTA,US Open,2009,R32,matched,16
+market-odds-v1,WTA,US Open,2009,R64,matched,32
+market-odds-v1,WTA,US Open,2009,SF,matched,2
+market-odds-v1,WTA,US Open,2010,F,matched,1
+market-odds-v1,WTA,US Open,2010,QF,matched,4
+market-odds-v1,WTA,US Open,2010,R128,matched,64
+market-odds-v1,WTA,US Open,2010,R16,matched,8
+market-odds-v1,WTA,US Open,2010,R32,matched,16
+market-odds-v1,WTA,US Open,2010,R64,matched,32
+market-odds-v1,WTA,US Open,2010,SF,matched,2
+market-odds-v1,WTA,US Open,2011,F,matched,1
+market-odds-v1,WTA,US Open,2011,QF,matched,4
+market-odds-v1,WTA,US Open,2011,R128,matched,64
+market-odds-v1,WTA,US Open,2011,R16,matched,8
+market-odds-v1,WTA,US Open,2011,R32,matched,16
+market-odds-v1,WTA,US Open,2011,R64,matched,32
+market-odds-v1,WTA,US Open,2011,SF,matched,2
+market-odds-v1,WTA,US Open,2012,F,matched,1
+market-odds-v1,WTA,US Open,2012,QF,matched,4
+market-odds-v1,WTA,US Open,2012,R128,matched,64
+market-odds-v1,WTA,US Open,2012,R16,matched,8
+market-odds-v1,WTA,US Open,2012,R32,matched,16
+market-odds-v1,WTA,US Open,2012,R64,matched,32
+market-odds-v1,WTA,US Open,2012,SF,matched,2
+market-odds-v1,WTA,US Open,2013,F,matched,1
+market-odds-v1,WTA,US Open,2013,QF,matched,4
+market-odds-v1,WTA,US Open,2013,R128,matched,64
+market-odds-v1,WTA,US Open,2013,R16,matched,8
+market-odds-v1,WTA,US Open,2013,R32,matched,16
+market-odds-v1,WTA,US Open,2013,R64,matched,32
+market-odds-v1,WTA,US Open,2013,SF,matched,2
+market-odds-v1,WTA,US Open,2014,F,matched,1
+market-odds-v1,WTA,US Open,2014,QF,matched,4
+market-odds-v1,WTA,US Open,2014,R128,matched,64
+market-odds-v1,WTA,US Open,2014,R16,matched,8
+market-odds-v1,WTA,US Open,2014,R32,matched,16
+market-odds-v1,WTA,US Open,2014,R64,matched,32
+market-odds-v1,WTA,US Open,2014,SF,matched,2
+market-odds-v1,WTA,US Open,2015,F,matched,1
+market-odds-v1,WTA,US Open,2015,QF,matched,4
+market-odds-v1,WTA,US Open,2015,R128,matched,64
+market-odds-v1,WTA,US Open,2015,R16,matched,8
+market-odds-v1,WTA,US Open,2015,R32,matched,16
+market-odds-v1,WTA,US Open,2015,R64,matched,32
+market-odds-v1,WTA,US Open,2015,SF,matched,2
+market-odds-v1,WTA,US Open,2016,F,matched,1
+market-odds-v1,WTA,US Open,2016,QF,matched,4
+market-odds-v1,WTA,US Open,2016,R128,matched,64
+market-odds-v1,WTA,US Open,2016,R16,matched,8
+market-odds-v1,WTA,US Open,2016,R32,matched,16
+market-odds-v1,WTA,US Open,2016,R64,matched,32
+market-odds-v1,WTA,US Open,2016,SF,matched,2
+market-odds-v1,WTA,US Open,2017,F,matched,1
+market-odds-v1,WTA,US Open,2017,QF,matched,4
+market-odds-v1,WTA,US Open,2017,R128,matched,64
+market-odds-v1,WTA,US Open,2017,R16,matched,8
+market-odds-v1,WTA,US Open,2017,R32,matched,16
+market-odds-v1,WTA,US Open,2017,R64,matched,32
+market-odds-v1,WTA,US Open,2017,SF,matched,2
+market-odds-v1,WTA,US Open,2018,F,matched,1
+market-odds-v1,WTA,US Open,2018,QF,matched,4
+market-odds-v1,WTA,US Open,2018,R128,matched,64
+market-odds-v1,WTA,US Open,2018,R16,matched,8
+market-odds-v1,WTA,US Open,2018,R32,matched,16
+market-odds-v1,WTA,US Open,2018,R64,matched,32
+market-odds-v1,WTA,US Open,2018,SF,matched,2
+market-odds-v1,WTA,US Open,2019,F,matched,1
+market-odds-v1,WTA,US Open,2019,QF,matched,4
+market-odds-v1,WTA,US Open,2019,R128,matched,64
+market-odds-v1,WTA,US Open,2019,R16,matched,8
+market-odds-v1,WTA,US Open,2019,R32,matched,16
+market-odds-v1,WTA,US Open,2019,R64,matched,32
+market-odds-v1,WTA,US Open,2019,SF,matched,2
+market-odds-v1,WTA,US Open,2020,F,matched,1
+market-odds-v1,WTA,US Open,2020,QF,matched,4
+market-odds-v1,WTA,US Open,2020,R128,matched,64
+market-odds-v1,WTA,US Open,2020,R16,matched,8
+market-odds-v1,WTA,US Open,2020,R32,matched,16
+market-odds-v1,WTA,US Open,2020,R64,matched,32
+market-odds-v1,WTA,US Open,2020,SF,matched,2
+market-odds-v1,WTA,US Open,2021,F,matched,1
+market-odds-v1,WTA,US Open,2021,QF,matched,4
+market-odds-v1,WTA,US Open,2021,R128,matched,64
+market-odds-v1,WTA,US Open,2021,R16,matched,8
+market-odds-v1,WTA,US Open,2021,R32,matched,16
+market-odds-v1,WTA,US Open,2021,R64,matched,32
+market-odds-v1,WTA,US Open,2021,SF,matched,2
+market-odds-v1,WTA,US Open,2022,F,matched,1
+market-odds-v1,WTA,US Open,2022,QF,matched,4
+market-odds-v1,WTA,US Open,2022,R128,matched,64
+market-odds-v1,WTA,US Open,2022,R16,matched,8
+market-odds-v1,WTA,US Open,2022,R32,matched,16
+market-odds-v1,WTA,US Open,2022,R64,matched,32
+market-odds-v1,WTA,US Open,2022,SF,matched,2
+market-odds-v1,WTA,US Open,2023,F,matched,1
+market-odds-v1,WTA,US Open,2023,QF,matched,4
+market-odds-v1,WTA,US Open,2023,R128,matched,64
+market-odds-v1,WTA,US Open,2023,R16,matched,8
+market-odds-v1,WTA,US Open,2023,R32,matched,16
+market-odds-v1,WTA,US Open,2023,R64,matched,32
+market-odds-v1,WTA,US Open,2023,SF,matched,2
+market-odds-v1,WTA,US Open,2024,F,matched,1
+market-odds-v1,WTA,US Open,2024,QF,matched,4
+market-odds-v1,WTA,US Open,2024,R128,matched,64
+market-odds-v1,WTA,US Open,2024,R16,matched,8
+market-odds-v1,WTA,US Open,2024,R32,matched,16
+market-odds-v1,WTA,US Open,2024,R64,matched,32
+market-odds-v1,WTA,US Open,2024,SF,matched,2
+market-odds-v1,WTA,US Open,2025,F,matched,1
+market-odds-v1,WTA,US Open,2025,QF,matched,4
+market-odds-v1,WTA,US Open,2025,R128,matched,64
+market-odds-v1,WTA,US Open,2025,R16,matched,8
+market-odds-v1,WTA,US Open,2025,R32,matched,16
+market-odds-v1,WTA,US Open,2025,R64,matched,32
+market-odds-v1,WTA,US Open,2025,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2007,F,matched,1
+market-odds-v1,WTA,Wimbledon,2007,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2007,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2007,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2007,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2007,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2007,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2008,F,matched,1
+market-odds-v1,WTA,Wimbledon,2008,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2008,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2008,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2008,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2008,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2008,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2009,F,matched,1
+market-odds-v1,WTA,Wimbledon,2009,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2009,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2009,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2009,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2009,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2009,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2010,F,matched,1
+market-odds-v1,WTA,Wimbledon,2010,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2010,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2010,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2010,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2010,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2010,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2011,F,matched,1
+market-odds-v1,WTA,Wimbledon,2011,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2011,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2011,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2011,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2011,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2011,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2012,F,matched,1
+market-odds-v1,WTA,Wimbledon,2012,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2012,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2012,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2012,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2012,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2012,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2013,F,matched,1
+market-odds-v1,WTA,Wimbledon,2013,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2013,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2013,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2013,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2013,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2013,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2014,F,matched,1
+market-odds-v1,WTA,Wimbledon,2014,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2014,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2014,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2014,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2014,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2014,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2015,F,matched,1
+market-odds-v1,WTA,Wimbledon,2015,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2015,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2015,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2015,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2015,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2015,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2016,F,matched,1
+market-odds-v1,WTA,Wimbledon,2016,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2016,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2016,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2016,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2016,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2016,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2017,F,matched,1
+market-odds-v1,WTA,Wimbledon,2017,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2017,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2017,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2017,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2017,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2017,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2018,F,matched,1
+market-odds-v1,WTA,Wimbledon,2018,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2018,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2018,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2018,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2018,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2018,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2019,F,matched,1
+market-odds-v1,WTA,Wimbledon,2019,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2019,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2019,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2019,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2019,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2019,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2021,F,matched,1
+market-odds-v1,WTA,Wimbledon,2021,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2021,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2021,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2021,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2021,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2021,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2022,F,matched,1
+market-odds-v1,WTA,Wimbledon,2022,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2022,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2022,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2022,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2022,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2022,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2023,F,matched,1
+market-odds-v1,WTA,Wimbledon,2023,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2023,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2023,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2023,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2023,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2023,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2024,F,matched,1
+market-odds-v1,WTA,Wimbledon,2024,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2024,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2024,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2024,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2024,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2024,SF,matched,2
+market-odds-v1,WTA,Wimbledon,2025,F,matched,1
+market-odds-v1,WTA,Wimbledon,2025,QF,matched,4
+market-odds-v1,WTA,Wimbledon,2025,R128,matched,64
+market-odds-v1,WTA,Wimbledon,2025,R16,matched,8
+market-odds-v1,WTA,Wimbledon,2025,R32,matched,16
+market-odds-v1,WTA,Wimbledon,2025,R64,matched,32
+market-odds-v1,WTA,Wimbledon,2025,SF,matched,2

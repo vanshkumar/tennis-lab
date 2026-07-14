@@ -16,6 +16,7 @@ from tennislab.analysis import (
 )
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
+from tennislab.odds import build_market_benchmark, fetch_odds_sources
 from tennislab.ratings import (
     build_cold_start_audit,
     build_predictions,
@@ -36,6 +37,14 @@ DEFAULT_COLD_START_PARQUET = Path("data/processed/slam_player_experience.parquet
 DEFAULT_PREDICTIONS_PARQUET = Path("data/processed/predictions.parquet")
 DEFAULT_SLAM_ARTIFACTS = Path("artifacts/slam_upsets")
 DEFAULT_UPSET_MATCHES = Path("data/processed/upset_matches.csv")
+DEFAULT_ODDS_CONFIG = Path("config/odds_sources.toml")
+DEFAULT_ODDS_LOCK = Path("config/odds_sources.lock.json")
+DEFAULT_ODDS_RAW = Path("data/raw/odds/tennis-data")
+DEFAULT_ODDS_ALIASES = Path("config/odds_aliases.csv")
+DEFAULT_ODDS_ARTIFACTS = Path("artifacts/odds_benchmark")
+DEFAULT_MARKET_PREDICTIONS = Path("data/processed/market_predictions.parquet")
+DEFAULT_MARKET_OBSERVATIONS = Path("data/processed/market_benchmark_observations.csv")
+DEFAULT_ODDS_MATCHING_ISSUES = Path("data/processed/odds_matching_issues.csv")
 
 
 def _add_source_paths(parser: argparse.ArgumentParser) -> None:
@@ -56,6 +65,32 @@ def build_parser() -> argparse.ArgumentParser:
 
     fetch = subparsers.add_parser("fetch", help="fetch pinned raw CSVs and write checksums")
     _add_source_paths(fetch)
+
+    fetch_odds = subparsers.add_parser(
+        "fetch-odds", help="fetch and lock annual Tennis-Data odds workbooks"
+    )
+    fetch_odds.add_argument("--config", type=Path, default=DEFAULT_ODDS_CONFIG)
+    fetch_odds.add_argument("--lock", type=Path, default=DEFAULT_ODDS_LOCK)
+    fetch_odds.add_argument("--raw-dir", type=Path, default=DEFAULT_ODDS_RAW)
+
+    analyze_odds = subparsers.add_parser(
+        "analyze-odds", help="audit Tennis-Data matching and compare market odds with Elo"
+    )
+    analyze_odds.add_argument("--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET)
+    analyze_odds.add_argument("--config", type=Path, default=DEFAULT_ODDS_CONFIG)
+    analyze_odds.add_argument("--lock", type=Path, default=DEFAULT_ODDS_LOCK)
+    analyze_odds.add_argument("--aliases", type=Path, default=DEFAULT_ODDS_ALIASES)
+    analyze_odds.add_argument("--raw-dir", type=Path, default=DEFAULT_ODDS_RAW)
+    analyze_odds.add_argument("--output-dir", type=Path, default=DEFAULT_ODDS_ARTIFACTS)
+    analyze_odds.add_argument(
+        "--market-predictions", type=Path, default=DEFAULT_MARKET_PREDICTIONS
+    )
+    analyze_odds.add_argument("--observations", type=Path, default=DEFAULT_MARKET_OBSERVATIONS)
+    analyze_odds.add_argument(
+        "--matching-issues", type=Path, default=DEFAULT_ODDS_MATCHING_ISSUES
+    )
+    analyze_odds.add_argument("--bootstrap-replicates", type=int, default=2_000)
+    analyze_odds.add_argument("--bootstrap-seed", type=int, default=20260714)
 
     build = subparsers.add_parser(
         "build-matches", help="verify raw checksums and build canonical DuckDB/Parquet"
@@ -128,6 +163,27 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.command == "fetch":
         manifest = fetch_sources(args.config, args.raw_dir, args.lock)
         _emit({"files": len(manifest["files"]), "lock": str(args.lock)})
+        return 0
+    if args.command == "fetch-odds":
+        lock = fetch_odds_sources(args.config, args.raw_dir, args.lock)
+        _emit({"files": len(lock["files"]), "lock": str(args.lock)})
+        return 0
+    if args.command == "analyze-odds":
+        _emit(
+            build_market_benchmark(
+                predictions_path=args.predictions,
+                odds_config_path=args.config,
+                odds_lock_path=args.lock,
+                aliases_path=args.aliases,
+                raw_dir=args.raw_dir,
+                output_dir=args.output_dir,
+                market_predictions_path=args.market_predictions,
+                observation_path=args.observations,
+                matching_issues_path=args.matching_issues,
+                bootstrap_replicates=args.bootstrap_replicates,
+                bootstrap_seed=args.bootstrap_seed,
+            )
+        )
         return 0
     if args.command == "build-matches":
         _emit(

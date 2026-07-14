@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "duckdb==1.4.3",
+    "python-calamine==0.7.0",
 ]
 
 [project.scripts]

@@ -1,0 +1,79 @@
+tour,start_year,end_year,odds_name,canonical_player_id,canonical_name,reason,reviewed_on
+ATP,2010,2018,Dolgopolov O.,105238,Alexandr Dolgopolov,source given-initial variant reviewed against opponent/round,2026-07-14
+ATP,2014,2024,Ramos-Vinolas A.,105077,Albert Ramos,source surname variant reviewed against opponent/round,2026-07-14
+ATP,2012,2016,Bautista R.,105138,Roberto Bautista Agut,truncated source surname reviewed against opponent/round,2026-07-14
+ATP,2012,2022,Kuznetsov An.,105723,Andrey Kuznetsov,source disambiguating given-name abbreviation,2026-07-14
+ATP,2004,2014,Bogomolov A.,104166,Alex Bogomolov Jr,canonical suffix omitted by source,2026-07-14
+ATP,2014,2018,Estrella Burgos V.,103607,Victor Estrella,source surname variant reviewed against opponent/round,2026-07-14
+ATP,2021,2025,Zhang Zh.,111190,Zhizhen Zhang,source disambiguating given-name abbreviation,2026-07-14
+ATP,2023,2025,Mpetshi G.,208659,Giovanni Mpetshi Perricard,truncated source surname reviewed against opponent/round,2026-07-14
+ATP,2004,2009,Navarro-Pastor I.,103868,Ivan Navarro,source surname variant reviewed against opponent/round,2026-07-14
+ATP,2004,2007,Wang Y.T.,104499,Jimmy Wang,source and canonical given-name variants reviewed against opponent/round,2026-07-14
+ATP,2012,2016,Cervantes I.,105438,Inigo Cervantes Huegun,truncated source surname reviewed against opponent/round,2026-07-14
+ATP,2024,2025,Bu Y.,207352,Bu Yunchaokete,source name-order/spacing variant reviewed against opponent/round,2026-07-14
+ATP,2021,2023,Barrios M.,144642,Tomas Barrios Vera,truncated source surname reviewed against opponent/round,2026-07-14
+ATP,2001,2002,Damm M.,210013,Martin Damm Sr,year-scoped to distinguish later same-initial player,2026-07-14
+ATP,2013,2014,Kuznetsov Al.,104864,Alex Kuznetsov,source disambiguating given-name abbreviation,2026-07-14
+ATP,2007,2007,Guccione A.,104589,Chris Guccione,source given-initial error reviewed against opponent/round,2026-07-14
+ATP,2004,2004,Benneteau A.,103898,Julien Benneteau,source given-initial error reviewed against opponent/round,2026-07-14
+ATP,2025,2025,Blanch Dar.,210464,Darwin Blanch,source expanded given-name abbreviation,2026-07-14
+ATP,2011,2011,Dutra Da Silva R.,104297,Rogerio Dutra Silva,source surname variant reviewed against opponent/round,2026-07-14
+ATP,2002,2002,Kunitcin I.,103857,Igor Kunitsyn,source transliteration variant reviewed against opponent/round,2026-07-14
+ATP,2005,2005,March O.,103594,Oliver Marach,source spelling error reviewed against opponent/round,2026-07-14
+ATP,2014,2014,Mecir M.,105080,Miloslav Mecir Jr,canonical suffix omitted by source,2026-07-14
+ATP,2008,2008,Ram A.,104330,Rajeev Ram,source given-initial error reviewed against opponent/round,2026-07-14
+ATP,2010,2010,Riba-Madrid P.,105137,Pere Riba,source surname variant reviewed against opponent/round,2026-07-14
+ATP,2012,2012,Viola Mat.,104970,Matteo Viola,source expanded given-name abbreviation,2026-07-14
+WTA,2012,2024,Pliskova Ka.,201662,Karolina Pliskova,source disambiguating given-name abbreviation,2026-07-14
+WTA,2007,2019,Makarova E.,201505,Kate Makarova,source/canonical given-name variant reviewed across opponents,2026-07-14
+WTA,2010,2022,Riske A.,201590,Alison Riske Amritraj,canonical married suffix omitted by source,2026-07-14
+WTA,2011,2021,Pliskova Kr.,201697,Kristyna Pliskova,source disambiguating given-name abbreviation,2026-07-14
+WTA,2007,2015,Zahlavova Strycova B.,201366,Barbora Strycova,former surname variant reviewed across opponents,2026-07-14
+WTA,2007,2014,Zakopalova K.,201344,Klara Koukalova,former surname variant reviewed across opponents,2026-07-14
+WTA,2013,2021,Gavrilova D.,201611,Daria Saville,former surname variant reviewed across opponents,2026-07-14
+WTA,2019,2025,Wang Xin.,216133,Xin Yu Wang,source disambiguating given-name abbreviation,2026-07-14
+WTA,2021,2025,Osorio M.,215785,Camila Osorio,source/canonical given-name variant reviewed across opponents,2026-07-14
+WTA,2007,2015,Gallovits E.,201365,Edina Gallovits Hall,canonical married suffix omitted by source,2026-07-14
+WTA,2015,2021,Kozlova K.,203462,Kateryna Baindl,former surname variant reviewed across opponents,2026-07-14
+WTA,2009,2014,Rodionova An.,201370,Anastasia Rodionova,source disambiguating given-name abbreviation,2026-07-14
+WTA,2009,2014,Mayr P.,201537,Patricia Mayr Achleitner,canonical married suffix omitted by source,2026-07-14
+WTA,2007,2015,Foretz S.,200773,Stephanie Foretz Gacon,canonical married suffix omitted by source,2026-07-14
+WTA,2019,2025,Wang Xiy.,216016,Xiyu Wang,source disambiguating given-name abbreviation,2026-07-14
+WTA,2017,2022,Kuzmova V.,214149,Viktoria Hruncakova,former surname variant reviewed across opponents,2026-07-14
+WTA,2007,2009,Bremond S.,201392,Severine Beltrame,former surname variant reviewed across opponents,2026-07-14
+WTA,2009,2011,Groth J.,201457,Jarmila Gajdosova,former surname variant reviewed across opponents,2026-07-14
+WTA,2016,2018,Lucic-Baroni M.,200002,Mirjana Lucic,source surname variant reviewed across opponents,2026-07-14
+WTA,2007,2010,Olaru I.,201494,Raluca Olaru,source given-initial error reviewed across opponents,2026-07-14
+WTA,2007,2013,Malek T.,213583,Tatjana Maria,former surname variant reviewed across opponents,2026-07-14
+WTA,2011,2024,Rodionova Ar.,201613,Arina Rodionova,source disambiguating given-name abbreviation,2026-07-14
+WTA,2012,2014,Cadantu A.,202456,Alexandra Cadantu Ignatik,canonical married suffix omitted by source,2026-07-14
+WTA,2016,2020,Wang Yaf.,206374,Yafan Wang,source disambiguating given-name abbreviation,2026-07-14
+WTA,2007,2008,Mattek B.,201318,Bethanie Mattek Sands,canonical married suffix omitted by source,2026-07-14
+WTA,2007,2008,Poutchkova O.,201479,Olga Puchkova,source transliteration variant reviewed across opponents,2026-07-14
+WTA,2012,2014,Arruabarrena-Vecino L.,202418,Lara Arruabarrena,source surname variant reviewed across opponents,2026-07-14
+WTA,2014,2016,Mitu A.,202671,Cristina Andreea Mitu,source/canonical given-name variant reviewed across opponents,2026-07-14
+WTA,2014,2023,Sanders S.,204411,Storm Hunter,former surname variant reviewed across opponents,2026-07-14
+WTA,2009,2011,Manasieva V.,201570,Vesna Dolonc,former surname variant reviewed across opponents,2026-07-14
+WTA,2011,2011,Dolonts V.,201570,Vesna Dolonc,source transliteration variant reviewed across opponents,2026-07-14
+WTA,2022,2022,Harrison Ca.,202414,Catherine Harrison,source expanded given-name abbreviation,2026-07-14
+WTA,2007,2007,Kostanic J.,200056,Jelena Kostanic Tosic,canonical married suffix omitted by source,2026-07-14
+WTA,2023,2023,Betova M.,202506,Margarita Gasparyan,former surname variant reviewed against opponent/round,2026-07-14
+WTA,2008,2008,Pavlyuchen. A.,201499,Anastasia Pavlyuchenkova,truncated source surname reviewed against opponent/round,2026-07-14
+WTA,2007,2007,Smashnova-Pistolesi A.,200040,Anna Smashnova,source surname variant reviewed against opponent/round,2026-07-14
+WTA,2019,2019,Badosa Gibert P.,211651,Paula Badosa,source surname variant reviewed against opponent/round,2026-07-14
+WTA,2024,2024,Bassols M.,215453,Marina Bassols Ribera,truncated source surname reviewed against opponent/round,2026-07-14
+WTA,2009,2010,Dulko G.,201363,Gisela Dulko,reviewed against exact Slam round and opponent,2026-07-14
+WTA,2009,2009,Duque M. M.,201531,Mariana Duque Marino,source name abbreviation reviewed against opponent/round,2026-07-14
+WTA,2008,2008,Kostanic T. J.,200056,Jelena Kostanic Tosic,source name abbreviation reviewed against opponent/round,2026-07-14
+WTA,2010,2010,Kucova K.,201389,Zuzana Kucova,year-scoped to distinguish Kristina Kucova,2026-07-14
+WTA,2010,2010,Kucova K.,201568,Kristina Kucova,same-year reviewed candidate resolved jointly with exact opponent,2026-07-14
+WTA,2019,2019,Kucova K.,201568,Kristina Kucova,year-scoped to distinguish Zuzana Kucova,2026-07-14
+WTA,2008,2008,Llagostera V.,201291,Nuria Llagostera Vives,truncated source surname reviewed against opponent/round,2026-07-14
+WTA,2014,2014,Melzer I.,201331,Iveta Benesova,former surname variant reviewed against opponent/round,2026-07-14
+WTA,2008,2008,Petkovic,201492,Andrea Petkovic,missing source given initial reviewed against opponent/round,2026-07-14
+WTA,2009,2009,Sema E.,201579,Yurika Sema,source given-initial error reviewed against opponent/round,2026-07-14
+WTA,2007,2007,Smashnovai A.,200040,Anna Smashnova,source spelling error reviewed against opponent/round,2026-07-14
+WTA,2025,2025,Sobolieva A.,222506,Anastasiya Soboleva,source transliteration variant reviewed against opponent/round,2026-07-14
+WTA,2009,2009,Stoop G.,201569,Georgie Gent,former surname variant reviewed against opponent/round,2026-07-14
+WTA,2008,2008,Vogele S.,201527,Stefanie Voegele,source diacritic/transliteration variant reviewed against opponent/round,2026-07-14
+WTA,2016,2016,Wolfe J.,201457,Jarmila Gajdosova,former surname variant reviewed against opponent/round,2026-07-14

@@ -1,0 +1,205 @@
+benchmark_version,sample,analysis_version,population,tour,slam,model,exclusion_scope,exclusion_reason,excluded_rows
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,retirement,175
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,175
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,market_odds,all_analysis_metrics,retirement,123
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,market_odds,all_analysis_metrics,walkover,6
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,retirement,145
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,145
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,retirement,105
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,walkover,11
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,retirement,123
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,123
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,all_analysis_metrics,retirement,98
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,retirement,222
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,walkover,15
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,222
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,15
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,all_analysis_metrics,retirement,161
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,5
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,retirement,59
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,4
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,59
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,4
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,all_analysis_metrics,retirement,29
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,all_analysis_metrics,walkover,1
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,retirement,59
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,59
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,all_analysis_metrics,retirement,36
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,all_analysis_metrics,walkover,7
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,retirement,56
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,8
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,56
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,8
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,all_analysis_metrics,retirement,38
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,all_analysis_metrics,walkover,5
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,retirement,52
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,walkover,16
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,52
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,16
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,all_analysis_metrics,retirement,28
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,maximum_available,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,market_odds,all_analysis_metrics,walkover,6
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,all_analysis_metrics,format_conflict,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,all_analysis_metrics,walkover,11
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,14
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,market_odds,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,all_analysis_metrics,walkover,15
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,15
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,ATP,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,6
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,4
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,market_odds,all_analysis_metrics,walkover,1
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,market_odds,all_analysis_metrics,walkover,7
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,8
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,8
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,market_odds,all_analysis_metrics,walkover,5
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,overall_elo,all_analysis_metrics,walkover,16
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,16
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,maximum_available,slam-upsets-v1,retirement_inclusive,WTA,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,4
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,retirement,123
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,123
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,market_odds,all_analysis_metrics,retirement,123
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Australian Open,market_odds,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,retirement,105
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,105
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,format_conflict;retirement,4
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,retirement,105
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,retirement,98
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,98
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,all_analysis_metrics,retirement,98
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,retirement,161
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,161
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,all_analysis_metrics,retirement,161
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,ATP,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,5
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,retirement,29
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,retirement,29
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,all_analysis_metrics,retirement,29
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Australian Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,retirement,36
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,retirement,36
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,all_analysis_metrics,retirement,36
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,retirement,38
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,retirement,38
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,all_analysis_metrics,retirement,38
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,retirement,28
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,overall_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,retirement,28
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,all_analysis_metrics,retirement,28
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,completed_non_retirement,WTA,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,4
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,overall_elo,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Australian Open,market_odds,all_analysis_metrics,walkover,6
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,format_conflict,4
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,overall_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,format_conflict,4
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,all_analysis_metrics,format_conflict,4
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,all_analysis_metrics,walkover,11
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,overall_elo,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,market_odds,all_analysis_metrics,walkover,12
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,overall_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,surface_adjusted_elo,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,ATP,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,6
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,overall_elo,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,surface_adjusted_elo,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,market_odds,all_analysis_metrics,walkover,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Australian Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,2
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,overall_elo,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,surface_adjusted_elo,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,market_odds,all_analysis_metrics,walkover,7
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Roland Garros,market_odds,upset_and_favorite_calibration,exact_probability_tie,3
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,overall_elo,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,surface_adjusted_elo,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,market_odds,all_analysis_metrics,walkover,5
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,Wimbledon,market_odds,upset_and_favorite_calibration,exact_probability_tie,1
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,US Open,overall_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,US Open,surface_adjusted_elo,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,US Open,market_odds,all_analysis_metrics,walkover,10
+market-odds-v1,common_matched,slam-upsets-v1,retirement_inclusive,WTA,US Open,market_odds,upset_and_favorite_calibration,exact_probability_tie,4

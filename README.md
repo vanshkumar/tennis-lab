@@ -15,6 +15,8 @@ uv run tennislab build-matches
 uv run tennislab audit
 uv run tennislab ratings
 uv run tennislab analyze-slams
+uv run tennislab fetch-odds
+uv run tennislab analyze-odds
 ```
 
 The equivalent one-command pipeline is:
@@ -63,6 +65,15 @@ rolling five-completed-edition trends, a retirement sensitivity, and diagnostic
 SVGs under `artifacts/slam_upsets/`. The 137 MB match-level analysis CSV is kept
 in gitignored `data/processed/`.
 
+`fetch-odds` retrieves and byte-locks 44 official Tennis-Data annual workbooks
+for ATP 2001–2025 and WTA 2007–2025. `analyze-odds` parses documented late
+pre-match price fields, removes bookmaker margin, matches identities through
+exact rules plus a reviewed alias table, and compares market odds with overall
+and surface-adjusted Elo on model-maximal and exact common-match samples. Raw
+workbooks and match-level odds stay gitignored because redistribution permission
+is unclear. Audits and aggregate outputs are written under
+`artifacts/odds_benchmark/`.
+
 Raw data must never be edited. If an upstream pin is intentionally changed,
 remove the generated raw checkout as a unit, fetch it again, inspect the lock
 diff, rebuild, and rerun the audit.
@@ -78,11 +89,14 @@ same commit objects. The lock records both original and retrieval provenance.
 - [Source provenance and licensing](docs/source_provenance.md)
 - [Historical Elo methodology](docs/methodology/elo.md)
 - [Slam upset metrics](docs/methodology/upset_metrics.md)
+- [Betting-market methodology](docs/methodology/odds.md)
 - [Four-Slam analysis](analyses/slam_upsets/README.md)
 - [Elo model card](docs/model_cards/elo-v1.md)
+- [Market benchmark model card](docs/model_cards/market-odds-v1.md)
 - [Rating-history scope decision](docs/decisions/0001-rating-history-scope.md)
 
-The data sources are Jeff Sackmann's ATP and WTA repositories. His data is
+The canonical match sources are Jeff Sackmann's ATP and WTA repositories. His data is
 licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/);
 derived data must retain attribution and the license's non-commercial/share-alike
-conditions.
+conditions. The market benchmark uses Tennis-Data under its separate, unclear
+redistribution terms; see the source and odds methodology documents.

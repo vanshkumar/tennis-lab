@@ -34,6 +34,21 @@
 
 ## Patterns and Preferences
 
+**[2026-07-14] — Tennis-Data identity resolution**
+- Observation: The same surname/initial key can identify different players in one season (`Kucova K.` for both sisters at the 2010 Australian Open), while `Damm M.` changes identity across eras; exact tour/year/Slam/round/opponent orientation resolves these cases.
+- Action: Keep aliases year-scoped and candidate-preserving, validate every canonical ID/name target, and require a unique full match context; never collapse an abbreviation to one global player or accept a fuzzy proposal.
+- Confidence: high
+
+**[2026-07-14] — Odds anomaly auditing**
+- Observation: Averaging contributor overrounds hid eight rows with one anomalous bookmaker pair even though the mean looked ordinary.
+- Action: Retain valid rows but flag anomalies at the individual contributor level, persist contributor names and min/max overround, and include flagged-row exclusion in robustness checks.
+- Confidence: high
+
+**[2026-07-14] — Market Parquet typing**
+- Observation: JSON-to-Parquet inference typed all-null market-only Elo parameter fields as JSON, preventing a name-aligned union with the Elo prediction table.
+- Action: Cast all-null ratings, parameters, dates, strings, and booleans explicitly when exporting market predictions, and preserve the union-compatibility regression test.
+- Confidence: high
+
 **[2026-07-14] — Upset-metric denominator scopes**
 - Observation: Exact 50/50 Elo rows have no unique underdog or favorite but remain valid ID-oriented Brier/log-loss observations; dropping them from every metric changed proper-score denominators for all three models.
 - Action: Keep separate score, upset, and favorite-calibration eligibility/counts, and record metric-scoped exclusions in every future probability benchmark.
