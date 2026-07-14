@@ -885,9 +885,9 @@ def _write_prediction_diagnostics(
         )
         SELECT model, tour, dimension, value,
                count(*) AS matches,
-               avg(pow(1.0 - p_winner, 2)) AS brier_score,
-               avg(-ln(greatest(p_winner, 1e-12))) AS log_loss,
-               avg(CASE WHEN p_winner >= 0.5 THEN 1.0 ELSE 0.0 END) AS accuracy
+               round(avg(pow(1.0 - p_winner, 2)), 12) AS brier_score,
+               round(avg(-ln(greatest(p_winner, 1e-12))), 12) AS log_loss,
+               round(avg(CASE WHEN p_winner >= 0.5 THEN 1.0 ELSE 0.0 END), 12) AS accuracy
         FROM grouped
         GROUP BY model, tour, dimension, value
         ORDER BY model, tour, dimension, value
@@ -921,8 +921,8 @@ def _write_prediction_diagnostics(
             FROM eligible
         )
         SELECT model, tour, probability_bin, count(*) AS matches,
-               avg(probability) AS mean_probability,
-               avg(outcome) AS observed_win_rate
+               round(avg(probability), 12) AS mean_probability,
+               round(avg(outcome), 12) AS observed_win_rate
         FROM binned
         GROUP BY model, tour, probability_bin
         ORDER BY model, tour, probability_bin
@@ -966,9 +966,9 @@ def _write_prediction_diagnostics(
             FROM eligible
         )
         SELECT model, tour, dimension, value, count(*) AS matches,
-               avg(pow(1.0 - p_winner, 2)) AS brier_score,
-               avg(-ln(greatest(p_winner, 1e-12))) AS log_loss,
-               avg(CASE WHEN p_winner >= 0.5 THEN 1.0 ELSE 0.0 END) AS accuracy
+               round(avg(pow(1.0 - p_winner, 2)), 12) AS brier_score,
+               round(avg(-ln(greatest(p_winner, 1e-12))), 12) AS log_loss,
+               round(avg(CASE WHEN p_winner >= 0.5 THEN 1.0 ELSE 0.0 END), 12) AS accuracy
         FROM grouped
         GROUP BY model, tour, dimension, value
         ORDER BY model, tour, dimension, value
@@ -992,8 +992,8 @@ def _write_prediction_diagnostics(
             FROM eligible
         )
         SELECT model, tour, slam, probability_bin, count(*) AS matches,
-               avg(probability) AS mean_probability,
-               avg(outcome) AS observed_win_rate
+               round(avg(probability), 12) AS mean_probability,
+               round(avg(outcome), 12) AS observed_win_rate
         FROM binned
         GROUP BY model, tour, slam, probability_bin
         ORDER BY model, tour, slam, probability_bin
@@ -1054,11 +1054,21 @@ def build_predictions(
             for batch in _date_batches(tour_rows):
                 engine.process_date(batch, emit=writer)
         writer.flush()
+        # DuckDB parallel floating aggregates can differ in their last bits across
+        # identical runs. Diagnostics are publication summaries, so use one thread
+        # plus 12-decimal SQL rounding and export predictions in a total order.
+        connection.execute("SET threads = 1")
         result = _write_prediction_diagnostics(connection, diagnostics_dir)
         temporary_parquet.parent.mkdir(parents=True, exist_ok=True)
         quoted = str(temporary_parquet).replace("'", "''")
         connection.execute(
-            f"COPY predictions_new TO '{quoted}' (FORMAT PARQUET, COMPRESSION ZSTD)"
+            f"""
+            COPY (
+                SELECT * FROM predictions_new
+                ORDER BY tour, tourney_date NULLS LAST, year, tourney_id,
+                         source_file, source_row_number, match_id, model
+            ) TO '{quoted}' (FORMAT PARQUET, COMPRESSION ZSTD)
+            """
         )
         connection.execute("DROP TABLE IF EXISTS predictions")
         connection.execute("ALTER TABLE predictions_new RENAME TO predictions")

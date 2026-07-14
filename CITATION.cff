@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use tennis-lab, cite the software and preserve the source-data attribution described in LICENSES.md."
+title: "tennis-lab: reproducible Grand Slam upset analysis"
+type: software
+version: 0.1.0
+date-released: 2026-07-14
+license: MIT
+repository-code: "https://github.com/vanshkumar/tennis-lab"
+authors:
+  - family-names: Kumar
+    given-names: Vansh
+keywords:
+  - tennis
+  - Elo
+  - sports analytics
+  - reproducible research
+abstract: >-
+  A leakage-safe historical ATP/WTA pipeline comparing expected, actual, and
+  excess Grand Slam upsets from overall Elo, surface-adjusted Elo, and audited
+  betting-market probabilities.

@@ -60,3 +60,38 @@ in `normalization_issues`; they are never silently corrected or dropped.
 The canonical `year` is the yearly source-file season. `tourney_date` preserves
 the source event date, so tournaments crossing a calendar boundary can differ
 from `year` by one; those rows remain intact and are exposed in the audit.
+
+## Generated prediction layer
+
+The `predictions` table in DuckDB and `data/processed/predictions.parquet` are
+long-form: one canonical match produces separate `overall_elo`, `surface_elo`,
+and `surface_adjusted_elo` rows. Important field families are:
+
+- identity/context: `match_id`, `model`, `model_version`, tour, year, Slam,
+  surface, round, event date, and player orientation;
+- pre-match forecast: both ratings, both probabilities, and which player won;
+- frozen parameters: K factor, initialization, inactivity setting, surface
+  blend, and best-of-five conversion;
+- information coverage: prior overall/surface matches, cold-start flags,
+  prediction eligibility, and exclusion reasons;
+- provenance: model-config and source-lock hashes.
+
+Ratings and probabilities are captured before the current result updates model
+state. Market predictions use a compatible typed schema so exact common-match
+panels can union by field name; market-only Elo parameters remain explicit nulls.
+See the [Elo](model_cards/elo-v1.md) and
+[market](model_cards/market-odds-v1.md) model cards.
+
+## Analysis and publication schemas
+
+Match/model-level upset observations are generated under `data/processed/` and
+remain untracked. Tracked `artifacts/slam_upsets/upset_summary.csv` and
+`artifacts/odds_benchmark/benchmark_summary.csv` expose population, sample,
+tour, Slam, model, dimension/group, metric-specific denominators, expected,
+actual, excess, proper scores, bootstrap settings, and confidence limits.
+
+The final renderer contract is
+`artifacts/publication/final_figure_data.csv`: each row names figure version,
+panel, tour, Slam, model, sample, period/window, metric, point estimate,
+confidence limits, match count, and repository-relative source artifact. Its
+metadata file pins the complete input/output hashes.

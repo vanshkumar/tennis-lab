@@ -2,10 +2,12 @@ from __future__ import annotations
 
 from copy import deepcopy
 
+import duckdb
 import pytest
 
 from tennislab.analysis.robustness import (
     RobustnessError,
+    _canonical_database_content_sha256,
     _prediction_observation,
     paired_model_differences,
     summarize_scenario,
@@ -143,3 +145,28 @@ def test_balanced_panel_rejects_missing_or_duplicate_model_rows() -> None:
         validate_balanced_model_panel(
             rows, match_ids={"m1", "m2"}, models={"a", "b"}, label="fixture"
         )
+
+
+def test_canonical_content_hash_ignores_database_storage_order(tmp_path) -> None:
+    paths = [tmp_path / "first.duckdb", tmp_path / "second.duckdb"]
+    rows = [("b", "wta/b.csv", 2, 20), ("a", "atp/a.csv", 1, 10)]
+    for path, inserted in zip(paths, (rows, list(reversed(rows))), strict=True):
+        connection = duckdb.connect(str(path))
+        try:
+            connection.execute(
+                """
+                CREATE TABLE matches (
+                    match_id VARCHAR,
+                    source_file VARCHAR,
+                    source_row_number BIGINT,
+                    value INTEGER
+                )
+                """
+            )
+            connection.executemany("INSERT INTO matches VALUES (?, ?, ?, ?)", inserted)
+        finally:
+            connection.close()
+
+    assert _canonical_database_content_sha256(paths[0]) == (
+        _canonical_database_content_sha256(paths[1])
+    )

@@ -8,7 +8,7 @@ eligible_population_rows,226857
 end_year,2025
 favorite_calibration_tie_policy,exact 0.5 ties excluded because no unique favorite exists
 input_predictions_path,data/processed/predictions.parquet
-input_predictions_sha256,9e019d3b67188fe2319d6f9bd5d45efaf81a08530aa5d94391db28e0db35c079
+input_predictions_sha256,636bc534fdcae66633c2c888e2a764ebfca3a8b5b1ea33b07acef6a529bfcff7
 models,"overall_elo,surface_elo,surface_adjusted_elo"
 prediction_config_sha256,3e026123dadc63f3ff3ba65842dad90ab7a66ce47a8d83d611b813d9f0231846
 primary_population,"prediction eligible, completed, non-retirement, primary-score eligible"

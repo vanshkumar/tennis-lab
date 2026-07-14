@@ -8,10 +8,10 @@
 - Pushed Slam-analysis SHA: `b5c7a44297ff19325f91fc5b6b529f25a99fc4e2`
 - Pushed betting-market SHA: `d2ad665719f90847b2c9432c0c148a5fe1108d4f`
 - Pushed robustness SHA: `67d1924867b7e8fab3106fadc9b0d7ce95e0785c`
+- Pushed publication SHA: `0526e15ab7a430562d54787f048b9f2a631e7afa`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: final publication graphic complete, deterministic, and
-  independently reviewed; Stage 6 commit/push next, then final reproducibility
-  and repository QA
+- Current stage: Stage 7 complete locally; the final reproducibility/QA commit is
+  the commit containing this status file and is the only remaining push
 
 ## Completed work
 
@@ -51,7 +51,7 @@
   retirement sensitivity, rolling windows, and edition-cluster bootstrap.
 - Completed an independent source/matching/overround review. Its contributor-
   anomaly P1 was fixed; 14 retained price rows are now explicitly flagged.
-- Built a 632-cell robustness matrix covering maximum/common samples,
+- Built a 704-cell robustness matrix covering maximum/common samples,
   retirements, early/late rounds, fixed eras, rolling windows, 2020–2022,
   Wimbledon 2022, overround flags, price missingness, cold starts, surface
   history, extreme probabilities, and outcome-driven influence diagnostics.
@@ -82,27 +82,22 @@
 
 ```bash
 uv sync --frozen
-.venv/bin/pytest
-.venv/bin/tennislab build-matches
-.venv/bin/tennislab audit
-.venv/bin/tennislab rating-readiness
-.venv/bin/tennislab select-elo
-.venv/bin/tennislab build-predictions
-.venv/bin/tennislab analyze-slams
-.venv/bin/tennislab fetch-odds
-.venv/bin/tennislab analyze-odds
-.venv/bin/tennislab robustness
-.venv/bin/tennislab publish-figure
+uv run --frozen pytest
+uv run --frozen tennislab reproduce
+# Fresh raw checkout only:
+uv run --frozen tennislab reproduce --fetch
 ```
 
-Current results: 85/85 tests passed; 358,827 canonical matches; 2,844 normalization
+Current results: 96/96 tests passed; 358,827 canonical matches; 2,844 normalization
 observations; 481,988 audit findings/signals; primary period ready. The prediction
-build contains 1,076,481 rows, 983,621 prediction-eligible rows, and 112,092
-completed primary Slam score rows (37,364 matches × three models). The generated
-prediction Parquet SHA-256 is
-`9e019d3b67188fe2319d6f9bd5d45efaf81a08530aa5d94391db28e0db35c079`.
-Repeated cold-start, model-selection, configuration, and tracked artifact builds
-were byte-identical.
+build contains 1,076,481 rows, 983,621 prediction-eligible rows, 114,777
+primary-Slam eligible model rows before completed-match exclusions, and 112,092
+completed primary Slam score rows (37,364 matches × three models). Its totally
+ordered Parquet SHA-256 is
+`636bc534fdcae66633c2c888e2a764ebfca3a8b5b1ea33b07acef6a529bfcff7`.
+Three independent exports of that table were byte-identical. Diagnostics use a
+single aggregate thread and fixed 12-decimal publication precision; robustness
+records a logical canonical-row hash rather than DuckDB's physical file layout.
 
 The odds lock contains all 44 configured workbooks. Repeated full odds builds
 were byte-identical, including the typed market Parquet, 2,000-replicate
@@ -189,7 +184,7 @@ direct contrasts but do not make them causal or confirmatory.
 
 ## Exact next stage
 
-Commit/push Stage 6, then run the final clean-checkout reproducibility and
-repository QA pass. Document one command for already-fetched data and one for a
-full source fetch, strengthen CI, verify links/licenses/citations, and freeze the
-final output index without changing the reviewed research claims.
+No required project stage remains after the final cleanup commit is pushed and
+its GitHub Actions run passes. A sensible optional next analysis is a broader
+tour-level ATP/WTA surface study, with new source locks or model versions kept
+separate from the frozen four-Slam result.

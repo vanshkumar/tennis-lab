@@ -54,6 +54,39 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _canonical_database_content_sha256(path: Path) -> str:
+    """Hash canonical rows, not DuckDB's non-semantic physical file layout."""
+
+    digest = hashlib.sha256()
+    connection = duckdb.connect(str(path), read_only=True)
+    try:
+        cursor = connection.execute(
+            """
+            SELECT * FROM matches
+            ORDER BY match_id, source_file, source_row_number
+            """
+        )
+        columns = [description[0] for description in cursor.description]
+        digest.update(
+            (json.dumps(columns, separators=(",", ":"), ensure_ascii=False) + "\n").encode(
+                "utf-8"
+            )
+        )
+        while batch := cursor.fetchmany(10_000):
+            for row in batch:
+                payload = json.dumps(
+                    row,
+                    default=str,
+                    separators=(",", ":"),
+                    ensure_ascii=False,
+                )
+                digest.update(payload.encode("utf-8"))
+                digest.update(b"\n")
+    finally:
+        connection.close()
+    return digest.hexdigest()
+
+
 def _write_csv(path: Path, rows: Sequence[Mapping[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields: list[str] = []
@@ -1599,7 +1632,10 @@ def build_robustness_analysis(
         {"key": "predictions_sha256", "value": _sha256(predictions_path)},
         {"key": "market_predictions_sha256", "value": _sha256(market_predictions_path)},
         {"key": "market_observations_sha256", "value": _sha256(market_observations_path)},
-        {"key": "canonical_database_sha256", "value": _sha256(database_path)},
+        {
+            "key": "canonical_database_content_sha256",
+            "value": _canonical_database_content_sha256(database_path),
+        },
         {"key": "elo_config_sha256", "value": _sha256(elo_config_path)},
         {"key": "odds_config_sha256", "value": _sha256(odds_config_path)},
         {"key": "odds_lock_sha256", "value": _sha256(odds_lock_path)},

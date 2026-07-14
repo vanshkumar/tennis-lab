@@ -12,7 +12,12 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from tennislab.sources.config import SourceConfig, SourceSpec, load_source_config
-from tennislab.sources.manifest import ManifestError, verify_manifest
+from tennislab.sources.manifest import (
+    load_manifest,
+    safe_raw_path,
+    validate_manifest,
+    verify_manifest,
+)
 
 
 Downloader = Callable[[str], bytes]
@@ -70,13 +75,32 @@ def fetch_sources(
     config: SourceConfig = load_source_config(config_path)
 
     if manifest_path.exists():
-        try:
-            verify_manifest(manifest_path, raw_dir, config)
-        except ManifestError:
-            pass
-        else:
-            with manifest_path.open(encoding="utf-8") as handle:
-                return json.load(handle)
+        entries = validate_manifest(manifest_path, config)
+        for item in entries:
+            path = safe_raw_path(raw_dir, Path(str(item["path"])))
+            if path.exists():
+                if (
+                    not path.is_file()
+                    or path.stat().st_size != item["bytes"]
+                    or hashlib.sha256(path.read_bytes()).hexdigest() != item["sha256"]
+                ):
+                    raise SourceFetchError(
+                        f"refusing to modify existing raw file {path}; remove the raw "
+                        "checkout and fetch again if the source lock intentionally changes"
+                    )
+                continue
+            content = downloader(str(item["url"]))
+            if (
+                len(content) != item["bytes"]
+                or hashlib.sha256(content).hexdigest() != item["sha256"]
+            ):
+                raise SourceFetchError(
+                    f"upstream drift for locked source {item['path']}; downloaded bytes "
+                    "do not match config/sources.lock.json"
+                )
+            _write_new_raw(path, content)
+        verify_manifest(manifest_path, raw_dir, config)
+        return load_manifest(manifest_path)
 
     files: list[dict[str, object]] = []
     for source in config.sources:
@@ -85,7 +109,7 @@ def fetch_sources(
             relative = Path(source.tour.lower()) / filename
             url = _raw_url(source, filename)
             content = downloader(url)
-            _write_new_raw(raw_dir / relative, content)
+            _write_new_raw(safe_raw_path(raw_dir, relative), content)
             item: dict[str, object] = {
                 "tour": source.tour,
                 "year": year,

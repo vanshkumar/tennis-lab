@@ -30,6 +30,18 @@ formulas and uncertainty.
 
 ## Reproduction and outputs
 
+Rebuild the complete reviewed project from already-fetched locked raw files with:
+
+```bash
+uv run --frozen tennislab reproduce
+```
+
+Add `--fetch` in a fresh checkout to restore every missing raw file against the
+tracked immutable locks before rebuilding. Both forms rerun the documented
+pre-1988 Elo selector and must regenerate the reviewed model config
+deterministically; source locks, aliases, and the robustness matrix are not
+rewritten.
+
 From already-built canonical and prediction data, run:
 
 ```bash

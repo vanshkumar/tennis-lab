@@ -1,9 +1,13 @@
 [project]
 name = "tennislab"
 version = "0.1.0"
-description = "Reproducible tennis match data normalization and quality audits"
+description = "Reproducible historical Grand Slam upset analysis with Elo and market odds"
 readme = "README.md"
 requires-python = ">=3.12"
+license = "MIT"
+authors = [
+    { name = "Vansh Kumar" },
+]
 dependencies = [
     "duckdb==1.4.3",
     "pillow==12.2.0",
@@ -13,6 +17,9 @@ dependencies = [
 
 [project.scripts]
 tennislab = "tennislab.cli:main"
+
+[project.urls]
+Repository = "https://github.com/vanshkumar/tennis-lab"
 
 [dependency-groups]
 dev = [

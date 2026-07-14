@@ -104,6 +104,16 @@
 - Action: Separate filesystem resolution from exported provenance labels, keep source paths repository-relative, and preserve the pinned Pillow/ReportLab plus invariant-PDF renderer contract.
 - Confidence: high
 
+**[2026-07-14] — Immutable raw-source restoration**
+- Observation: In a fresh checkout, an existing complete source lock must remain authoritative even when every raw file is absent; treating missing raw bytes as a first fetch would regenerate timestamps and weaken the reviewed provenance boundary.
+- Action: Validate the existing lock before downloading, restore only bytes matching its size and SHA-256, never rewrite it during restoration, and apply path/symlink containment to both restore and initial-lock modes.
+- Confidence: high
+
+**[2026-07-14] — Full-scale artifact determinism**
+- Observation: The million-row replay exposed nondeterminism invisible in fixtures: parallel DuckDB averages varied in their last bits, unordered Parquet rows changed file hashes, and identical canonical rows could produce different physical DuckDB bytes.
+- Action: Keep Elo diagnostic aggregation single-threaded at fixed 12-decimal publication precision, export prediction Parquet in a total provenance order, and hash ordered canonical rows/schema rather than DuckDB storage pages.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

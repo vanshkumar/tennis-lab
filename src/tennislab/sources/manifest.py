@@ -37,11 +37,24 @@ def load_manifest(path: Path) -> dict[str, Any]:
     return manifest
 
 
-def verify_manifest(
+def safe_raw_path(raw_dir: Path, relative: Path) -> Path:
+    """Resolve a locked relative path and reject symlink/path escapes."""
+
+    if relative.is_absolute() or ".." in relative.parts:
+        raise ManifestError(f"unsafe raw path in source lock: {relative}")
+    root = raw_dir.resolve()
+    target = (raw_dir / relative).resolve(strict=False)
+    if not target.is_relative_to(root):
+        raise ManifestError(f"raw path escapes the configured source directory: {relative}")
+    return target
+
+
+def validate_manifest(
     manifest_path: Path,
-    raw_dir: Path,
     config: SourceConfig | None = None,
 ) -> list[dict[str, Any]]:
+    """Validate lock structure and configured provenance without reading raw files."""
+
     manifest = load_manifest(manifest_path)
     if manifest.get("complete") is not True:
         raise ManifestError(
@@ -105,15 +118,6 @@ def verify_manifest(
             raise ManifestError(f"invalid byte size in source lock for {relative}")
         if not isinstance(item.get("sha256"), str) or not SHA256.fullmatch(item["sha256"]):
             raise ManifestError(f"invalid SHA-256 in source lock for {relative}")
-        path = raw_dir / relative
-        if not path.is_file():
-            raise ManifestError(f"locked raw file is missing: {path}")
-        actual_size = path.stat().st_size
-        actual_sha = sha256_file(path)
-        if actual_size != item.get("bytes") or actual_sha != item.get("sha256"):
-            raise ManifestError(
-                f"raw file differs from its immutable lock: {path}; never edit raw files"
-            )
         verified.append(dict(item))
 
     if expected_by_key is not None and found != expected_by_key.keys():
@@ -124,3 +128,24 @@ def verify_manifest(
             f"source lock file set differs from config (missing={missing}, extra={extra})"
         )
     return sorted(verified, key=lambda item: (item["tour"], item["year"], item["path"]))
+
+
+def verify_manifest(
+    manifest_path: Path,
+    raw_dir: Path,
+    config: SourceConfig | None = None,
+) -> list[dict[str, Any]]:
+    """Validate an immutable lock and every raw file it names."""
+
+    entries = validate_manifest(manifest_path, config)
+    for item in entries:
+        path = safe_raw_path(raw_dir, Path(str(item["path"])))
+        if not path.is_file():
+            raise ManifestError(f"locked raw file is missing: {path}")
+        actual_size = path.stat().st_size
+        actual_sha = sha256_file(path)
+        if actual_size != item["bytes"] or actual_sha != item["sha256"]:
+            raise ManifestError(
+                f"raw file differs from its immutable lock: {path}; never edit raw files"
+            )
+    return entries

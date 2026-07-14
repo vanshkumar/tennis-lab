@@ -117,6 +117,104 @@ def test_checksum_verification_and_fetch_refuse_modified_raw_bytes(tmp_path: Pat
         fetch_sources(config_path, raw_dir, lock_path, downloader=downloader)
 
 
+def test_fresh_raw_checkout_restores_exact_locked_bytes_without_relocking(
+    tmp_path: Path,
+) -> None:
+    config_path = tmp_path / "sources.toml"
+    lock_path = tmp_path / "sources.lock.json"
+    original_raw = tmp_path / "original"
+    fresh_raw = tmp_path / "fresh"
+    write_config(config_path)
+    contents = {
+        "atp_matches_2024.csv": b"atp",
+        "wta_matches_2024.csv": b"wta",
+    }
+    downloader = lambda url: contents[url.rsplit("/", 1)[-1]]
+    fetch_sources(config_path, original_raw, lock_path, downloader=downloader)
+    original_lock = lock_path.read_bytes()
+
+    restored = fetch_sources(
+        config_path,
+        fresh_raw,
+        lock_path,
+        downloader=downloader,
+        now=lambda: datetime(2030, 1, 1, tzinfo=timezone.utc),
+    )
+
+    assert lock_path.read_bytes() == original_lock
+    assert restored["generated_at"] != "2030-01-01T00:00:00Z"
+    assert verify_manifest(lock_path, fresh_raw, load_source_config(config_path))
+
+
+def test_locked_source_upstream_drift_cannot_replace_manifest(tmp_path: Path) -> None:
+    config_path = tmp_path / "sources.toml"
+    lock_path = tmp_path / "sources.lock.json"
+    original_raw = tmp_path / "original"
+    fresh_raw = tmp_path / "fresh"
+    write_config(config_path)
+    contents = {
+        "atp_matches_2024.csv": b"atp",
+        "wta_matches_2024.csv": b"wta",
+    }
+    fetch_sources(
+        config_path,
+        original_raw,
+        lock_path,
+        downloader=lambda url: contents[url.rsplit("/", 1)[-1]],
+    )
+    original_lock = lock_path.read_bytes()
+
+    with pytest.raises(SourceFetchError, match="upstream drift"):
+        fetch_sources(
+            config_path,
+            fresh_raw,
+            lock_path,
+            downloader=lambda url: b"changed",
+        )
+
+    assert lock_path.read_bytes() == original_lock
+
+
+def test_locked_source_restore_rejects_symlink_escape(tmp_path: Path) -> None:
+    config_path = tmp_path / "sources.toml"
+    lock_path = tmp_path / "sources.lock.json"
+    original_raw = tmp_path / "original"
+    fresh_raw = tmp_path / "fresh"
+    escaped = tmp_path / "escaped"
+    write_config(config_path)
+    contents = {
+        "atp_matches_2024.csv": b"atp",
+        "wta_matches_2024.csv": b"wta",
+    }
+    downloader = lambda url: contents[url.rsplit("/", 1)[-1]]
+    fetch_sources(config_path, original_raw, lock_path, downloader=downloader)
+    fresh_raw.mkdir()
+    escaped.mkdir()
+    (fresh_raw / "atp").symlink_to(escaped, target_is_directory=True)
+
+    with pytest.raises(ManifestError, match="escapes the configured source directory"):
+        fetch_sources(config_path, fresh_raw, lock_path, downloader=downloader)
+
+    assert not list(escaped.iterdir())
+
+
+def test_first_source_fetch_rejects_symlink_escape(tmp_path: Path) -> None:
+    config_path = tmp_path / "sources.toml"
+    lock_path = tmp_path / "sources.lock.json"
+    raw_dir = tmp_path / "raw"
+    escaped = tmp_path / "escaped"
+    write_config(config_path)
+    raw_dir.mkdir()
+    escaped.mkdir()
+    (raw_dir / "atp").symlink_to(escaped, target_is_directory=True)
+
+    with pytest.raises(ManifestError, match="escapes the configured source directory"):
+        fetch_sources(config_path, raw_dir, lock_path, downloader=lambda url: b"atp")
+
+    assert not lock_path.exists()
+    assert not list(escaped.iterdir())
+
+
 @pytest.mark.parametrize("field", ["repository_url", "commit", "url"])
 def test_manifest_rejects_per_file_provenance_tampering(
     tmp_path: Path, field: str

@@ -19,6 +19,7 @@ from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
 from tennislab.publication import FIGURE_VERSION, build_final_figure
+from tennislab.reproduction import reproduce_project
 from tennislab.ratings import (
     build_cold_start_audit,
     build_predictions,
@@ -180,6 +181,16 @@ def build_parser() -> argparse.ArgumentParser:
         "publish-figure", help="render the reviewed final Slam-upsets graphic"
     )
     publication.add_argument("--config", type=Path, default=DEFAULT_FINAL_FIGURE_CONFIG)
+
+    reproduction = subparsers.add_parser(
+        "reproduce",
+        help="rebuild the complete reviewed project from locked source bytes",
+    )
+    reproduction.add_argument(
+        "--fetch",
+        action="store_true",
+        help="restore missing source bytes from existing immutable locks",
+    )
     return parser
 
 
@@ -317,6 +328,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.command == "publish-figure":
         result = build_final_figure(config_path=args.config)
         _emit({"figure_version": FIGURE_VERSION, **result})
+        return 0
+    if args.command == "reproduce":
+        _emit(reproduce_project(fetch_external=args.fetch))
         return 0
     if args.command == "pipeline":
         manifest = fetch_sources(args.config, args.raw_dir, args.lock)

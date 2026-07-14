@@ -24,8 +24,11 @@ route, exact URL, byte size, and SHA-256 for every file.
 
 The tracked `config/sources.toml` defines repository, immutable commit, year range,
 file pattern, and source category. A successful fetch atomically replaces
-`config/sources.lock.json` with retrieval time, every included filename, exact URL,
-byte size, and SHA-256 checksum. Builds validate the whole lock before reading data.
+`config/sources.lock.json` only when creating the first lock, recording retrieval
+time, every included filename, exact URL, byte size, and SHA-256 checksum. When a
+lock already exists, a fresh raw checkout is restored only from exact matching
+downloads and the lock remains byte-identical. Builds validate the whole lock
+before reading data.
 
 The category is explicit, and the loader accepts multiple non-colliding specs per
 tour with optional per-spec year ranges. Qualifying, Challenger, Futures, and ITF
@@ -44,7 +47,10 @@ Data is compiled and published by **Jeff Sackmann** and is licensed under
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 This repository's code is separate from the source data. Any distribution of raw
-or derived data must preserve attribution and comply with the license.
+or covered derived data must preserve attribution and comply with the license.
+The code's MIT terms and the separate data/provider constraints are summarized
+in [`LICENSES.md`](../LICENSES.md); the MIT license does not relicense source or
+data-derived content.
 
 ## Tennis-Data betting workbooks
 
