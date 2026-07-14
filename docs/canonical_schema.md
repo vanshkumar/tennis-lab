@@ -94,5 +94,5 @@ The final renderer contract is
 `artifacts/publication/final_figure_data.csv`: each row names figure version,
 panel, tour, Slam, model, sample, period/window, metric, point estimate,
 confidence limits, match count, and repository-relative source artifact. Its
-metadata file pins input/config hashes, byte-stable output hashes, and the
-decoded PNG pixel hash.
+metadata file pins input/config hashes, byte-stable output hashes, and byte/pixel
+hashes for the reviewed PNG reference export.

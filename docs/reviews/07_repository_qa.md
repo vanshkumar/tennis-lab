@@ -44,12 +44,15 @@ An isolated temporary checkout installed the frozen environment, passed all 96
 tests, and rebuilt the publication outputs with zero diff. No raw or processed
 research data was copied into that checkout.
 
-The first Linux CI run then exposed a non-semantic PNG-container difference:
-all portable outputs were byte-identical, while only Pillow's platform-zlib PNG
-bytes and their metadata hash changed. CI now verifies decoded RGB pixels for
-PNG and retains byte comparison for every other publication output.
+The first Linux CI runs then isolated PNG as the sole platform-dependent output:
+Pillow/FreeType changed both raster pixels and zlib container bytes, while the
+semantic SVG, vector PDF, figure data, and all other outputs remained
+byte-identical. The tracked PNG is therefore a reviewed reference export with
+locked byte/pixel hashes; cross-platform CI uses SVG/PDF as its visual sources of
+truth and retains byte comparison for every portable output.
 
 No P0, P1, or P2 repository-QA finding remains. CI intentionally remains
 offline: it installs the frozen environment, runs the unit/fixture/hygiene suite,
-rebuilds publication artifacts, byte-checks portable outputs, and rejects decoded
-PNG pixel drift while allowing non-semantic platform-zlib compression bytes.
+rebuilds publication artifacts, and byte-checks the semantic SVG/PDF plus every
+portable data/metadata output. The reviewed PNG reference is validated before
+the smoke rebuild by the repository-hygiene suite.

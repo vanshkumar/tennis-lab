@@ -98,8 +98,10 @@ model cards document generated prediction layers.
 - Tournament-edition bootstrap and rolling completed-edition windows preserve
   draw clustering and correctly skip the canceled Wimbledon 2020 event.
 - The final graphic consumes reviewed aggregate CSVs only and records every
-  input/config hash, byte hashes for portable outputs, and the decoded PNG pixel
-  hash so platform zlib differences cannot masquerade as visual drift.
+  input/config hash, byte hashes for portable outputs, and locked byte/pixel
+  hashes for the reviewed PNG reference. Cross-platform CI treats the byte-stable
+  semantic SVG and vector PDF as the visual sources of truth because
+  Pillow/FreeType rasterization differs by operating system.
 
 ## Documentation
 

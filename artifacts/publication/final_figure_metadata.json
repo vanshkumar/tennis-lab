@@ -11,7 +11,7 @@
     "US Open": "#79549A",
     "Wimbledon": "#2E7D4F"
   },
-  "config_sha256": "ff6db5100b916415cdb15774ddd21b530ff6163201166916eecce2a5774025ac",
+  "config_sha256": "75d35d2249461c4ecbc1eb3bac5c83b8549f8a26bed141cd5cc9c5e3250b82a3",
   "data_rows": 330,
   "figure_version": "slam-upsets-final-v1",
   "font": "Bitstream Vera Sans bundled with pinned ReportLab",
@@ -39,10 +39,14 @@
     "market_model_validation",
     "direct_wimbledon_contrast"
   ],
-  "png_pixel_sha256": "d63d09c3f0ef23819a775bec39a02888ed74c591ba3b4976c184f62b9d637db9",
   "png_pixels": {
     "height": 4400,
     "width": 3200
+  },
+  "reference_png": {
+    "file_sha256": "be1161f10b2084984e2c5a2c53744301151813e6777b0f5b6b02a3166aae4b2e",
+    "pixel_sha256": "d63d09c3f0ef23819a775bec39a02888ed74c591ba3b4976c184f62b9d637db9",
+    "render_environment": "reviewed macOS reference; SVG and PDF are the cross-platform semantic sources of truth"
   },
   "render_packages": {
     "pillow": "12.2.0",

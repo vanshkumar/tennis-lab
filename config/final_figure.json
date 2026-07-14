@@ -31,5 +31,10 @@
     "market_atp": "2001-2025",
     "market_wta": "2007-2025",
     "primary": "1988-2025"
+  },
+  "reference_png": {
+    "file_sha256": "be1161f10b2084984e2c5a2c53744301151813e6777b0f5b6b02a3166aae4b2e",
+    "pixel_sha256": "d63d09c3f0ef23819a775bec39a02888ed74c591ba3b4976c184f62b9d637db9",
+    "render_environment": "reviewed macOS reference; SVG and PDF are the cross-platform semantic sources of truth"
   }
 }

@@ -40,9 +40,10 @@ verification workstation it took about 34 minutes.
 - An isolated temporary checkout installed from `uv.lock`, passed the same 96
   tests, and rebuilt every publication file with zero diff from its staged
   snapshot.
-- CI runs frozen/offline tests, byte-checks portable publication outputs, and
-  checks decoded PNG pixels across platform-zlib versions; it never downloads
-  the external research sources.
+- CI runs frozen/offline tests and byte-checks the semantic SVG/PDF plus every
+  portable data/metadata output. Local hygiene tests pin the reviewed PNG's
+  bytes and pixels because Pillow/FreeType rasterization varies across operating
+  systems. CI never downloads the external research sources.
 
 ## Principal outputs
 

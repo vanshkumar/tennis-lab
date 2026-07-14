@@ -98,9 +98,10 @@ def test_publication_metadata_and_portable_provenance_match_outputs() -> None:
     )
     for key, expected in metadata["output_sha256"].items():
         assert _sha256(REPO_ROOT / config["outputs"][key]) == expected
-    assert _png_pixel_sha256(REPO_ROOT / config["outputs"]["png"]) == (
-        metadata["png_pixel_sha256"]
-    )
+    png_path = REPO_ROOT / config["outputs"]["png"]
+    assert metadata["reference_png"] == config["reference_png"]
+    assert _sha256(png_path) == config["reference_png"]["file_sha256"]
+    assert _png_pixel_sha256(png_path) == config["reference_png"]["pixel_sha256"]
 
     with (REPO_ROOT / "artifacts/publication/final_figure_data.csv").open(
         encoding="utf-8", newline=""
