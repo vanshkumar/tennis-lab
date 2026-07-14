@@ -32,6 +32,12 @@ tour with optional per-spec year ranges. Qualifying, Challenger, Futures, and IT
 inputs can therefore be added as more source specs without changing the fetcher
 or canonical match schema. No such files are included in this milestone.
 
+The exact pinned trees also contain ATP qualifying/Challenger files from 1978 and
+WTA qualifying/ITF files from 1968. `elo-v1` does not silently ingest them: the
+combined file scopes, cross-source duplicate risk, and event-date ordering require
+a separate rating-only ingestion audit. The decision and acceptance gates are in
+`docs/decisions/0001-rating-history-scope.md`.
+
 ## Attribution
 
 Data is compiled and published by **Jeff Sackmann** and is licensed under

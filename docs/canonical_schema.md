@@ -21,6 +21,8 @@ their match rows.
 | `best_of` | INTEGER | Sets needed format reported by the source |
 | `match_num` | INTEGER | Source match number |
 | `winner_id`, `loser_id` | BIGINT | Source player identifiers; null when absent |
+| `winner_seed`, `loser_seed` | VARCHAR | Source pre-event seed labels, preserved as text |
+| `winner_entry`, `loser_entry` | VARCHAR | Source entry codes such as `Q`, `WC`, or `LL`, normalized to uppercase |
 | `winner_name`, `loser_name` | VARCHAR | Source player display names |
 | `winner_rank`, `loser_rank` | INTEGER | Source pre-event rankings |
 | `winner_rank_points`, `loser_rank_points` | INTEGER | Source pre-event ranking points |

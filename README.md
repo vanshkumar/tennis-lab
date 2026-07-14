@@ -1,8 +1,8 @@
 # tennis-lab
 
-A reproducible first milestone for tennis analysis: immutable source retrieval,
-a canonical ATP/WTA match table, and coverage/data-quality audits. It intentionally
-does not include ratings, odds, upset metrics, notebooks, graphics, or a website.
+A reproducible historical tennis research pipeline: immutable source retrieval,
+a canonical ATP/WTA match table, coverage/data-quality audits, cold-start analysis,
+and leakage-safe pre-match overall and surface Elo probabilities.
 
 ## Setup and commands
 
@@ -13,6 +13,7 @@ uv sync --frozen
 uv run tennislab fetch
 uv run tennislab build-matches
 uv run tennislab audit
+uv run tennislab ratings
 ```
 
 The equivalent one-command pipeline is:
@@ -38,6 +39,21 @@ file matches that lock, then writes `data/processed/tennislab.duckdb` and
 - `artifacts/data_audit/issues.csv`
 - `artifacts/data_audit/report.md`
 
+`ratings` preserves the canonical main-draw population, audits how much tour-level
+history every 1988–2025 Slam player had strictly before the recorded tournament
+date, selects separate ATP/WTA Elo parameters only on pre-1988 non-Slam outcomes,
+and writes:
+
+- `config/elo_model.json`
+- `artifacts/elo/`
+- `data/processed/slam_player_experience.parquet`
+- `data/processed/predictions.parquet`
+- rating and prediction tables in `data/processed/tennislab.duckdb`
+
+All same-tour matches sharing a source tournament date are predicted before any
+result on that date updates a rating. Walkovers are excluded. Retirements remain
+available as a flagged sensitivity population and are not primary score rows.
+
 Raw data must never be edited. If an upstream pin is intentionally changed,
 remove the generated raw checkout as a unit, fetch it again, inspect the lock
 diff, rebuild, and rerun the audit.
@@ -51,6 +67,9 @@ same commit objects. The lock records both original and retrieval provenance.
 
 - [Canonical schema](docs/canonical_schema.md)
 - [Source provenance and licensing](docs/source_provenance.md)
+- [Historical Elo methodology](docs/methodology/elo.md)
+- [Elo model card](docs/model_cards/elo-v1.md)
+- [Rating-history scope decision](docs/decisions/0001-rating-history-scope.md)
 
 The data sources are Jeff Sackmann's ATP and WTA repositories. His data is
 licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/);

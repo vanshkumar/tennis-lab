@@ -1,0 +1,86 @@
+{
+  "model_version": "elo-v1",
+  "retirement_policy": "included as completed result",
+  "schema_version": 1,
+  "selection_design": {
+    "candidate_grid": {
+      "best_of_five_conversion": [
+        false,
+        true
+      ],
+      "inactivity_half_life_days": [
+        null,
+        1095,
+        1825
+      ],
+      "initialization": [
+        "fixed",
+        "rank"
+      ],
+      "k_factor": [
+        16,
+        24,
+        32
+      ],
+      "surface_weight": [
+        0.25,
+        0.5,
+        0.75
+      ]
+    },
+    "expanding_origin_windows": [
+      "1978-1982",
+      "1983-1987"
+    ],
+    "objective": "minimum pooled log loss, deterministic name tie-break",
+    "outcomes": "non-Slam only",
+    "primary_period_not_used_for_selection": "1988-2025",
+    "rolling_sensitivity_objective": "minimum 1983-1987 log loss with earlier warm-up",
+    "same_date_batching": true,
+    "warmup": "1968-1977"
+  },
+  "sensitivity_tours": {
+    "rolling_1983_1987": {
+      "ATP": {
+        "best_of_five_conversion": true,
+        "inactivity_half_life_days": 1825,
+        "initial_rating": 1500.0,
+        "initialization": "fixed",
+        "k_factor": 32.0,
+        "rating_scale": 400.0,
+        "surface_weight": 0.25
+      },
+      "WTA": {
+        "best_of_five_conversion": true,
+        "inactivity_half_life_days": 1825,
+        "initial_rating": 1500.0,
+        "initialization": "fixed",
+        "k_factor": 32.0,
+        "rating_scale": 400.0,
+        "surface_weight": 0.25
+      }
+    }
+  },
+  "source_scope": "tour_main_draw_singles",
+  "tours": {
+    "ATP": {
+      "best_of_five_conversion": false,
+      "inactivity_half_life_days": 1825,
+      "initial_rating": 1500.0,
+      "initialization": "fixed",
+      "k_factor": 32.0,
+      "rating_scale": 400.0,
+      "surface_weight": 0.25
+    },
+    "WTA": {
+      "best_of_five_conversion": true,
+      "inactivity_half_life_days": null,
+      "initial_rating": 1500.0,
+      "initialization": "fixed",
+      "k_factor": 32.0,
+      "rating_scale": 400.0,
+      "surface_weight": 0.25
+    }
+  },
+  "walkover_policy": "excluded from prediction and update"
+}

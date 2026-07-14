@@ -1,0 +1,7 @@
+model,tour,rows,eligible,primary_slam_eligible,walkovers,unsupported
+overall_elo,ATP,197940,196606,19122,1295,0
+overall_elo,WTA,160887,159535,19137,1256,0
+surface_adjusted_elo,ATP,197940,172924,19122,1295,23682
+surface_adjusted_elo,WTA,160887,140816,19137,1256,18719
+surface_elo,ATP,197940,172924,19122,1295,23682
+surface_elo,WTA,160887,140816,19137,1256,18719

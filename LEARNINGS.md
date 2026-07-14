@@ -34,6 +34,21 @@
 
 ## Patterns and Preferences
 
+**[2026-07-14] — Historical rating chronology**
+- Observation: Sackmann's `tourney_date` is an event start date repeated across all rounds, and multiple events often share it; source row and match-number order do not establish wall-clock chronology.
+- Action: Generate every same-tour/date prediction from a frozen pre-date snapshot, then batch rating updates after all predictions on that date.
+- Confidence: high
+
+**[2026-07-14] — Elo selector isolation**
+- Observation: Filtering Slam rows only from candidate metrics still leaked Slam information through rating updates and inactivity decay.
+- Action: Remove all Slam rows before candidate batching/state preparation; retain the outcome-perturbation and inactivity regression tests.
+- Confidence: high
+
+**[2026-07-14] — Rating-history scope**
+- Observation: Exact pinned ATP qualifying/Challenger and WTA qualifying/ITF families exist, but immediate ingestion would lose source category, risk cross-source duplicates, and introduce unresolved same-week ordering; bounded rank initialization also lost to fixed initialization in pre-1988 validation.
+- Action: Keep `elo-v1` on audited main-draw history, expose cold-start flags, and gate lower-tier ingestion behind category, duplicate, temporal-order, and forward-validation audits.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

@@ -156,6 +156,8 @@ def normalize_match(
     round_name = _text(row.get("round"))
     round_name = round_name.upper() if round_name else None
     score = _text(row.get("score"))
+    winner_entry = _text(row.get("winner_entry"))
+    loser_entry = _text(row.get("loser_entry"))
 
     decision = identify_slam(
         tour=tour,
@@ -184,10 +186,14 @@ def normalize_match(
         "best_of": integers["best_of"],
         "match_num": integers["match_num"],
         "winner_id": integers["winner_id"],
+        "winner_seed": _text(row.get("winner_seed")),
+        "winner_entry": winner_entry.upper() if winner_entry else None,
         "winner_name": _text(row.get("winner_name")),
         "winner_rank": integers["winner_rank"],
         "winner_rank_points": integers["winner_rank_points"],
         "loser_id": integers["loser_id"],
+        "loser_seed": _text(row.get("loser_seed")),
+        "loser_entry": loser_entry.upper() if loser_entry else None,
         "loser_name": _text(row.get("loser_name")),
         "loser_rank": integers["loser_rank"],
         "loser_rank_points": integers["loser_rank_points"],

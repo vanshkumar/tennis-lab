@@ -36,10 +36,14 @@ def test_schema_contains_required_stable_columns() -> None:
         "best_of",
         "match_num",
         "winner_id",
+        "winner_seed",
+        "winner_entry",
         "winner_name",
         "winner_rank",
         "winner_rank_points",
         "loser_id",
+        "loser_seed",
+        "loser_entry",
         "loser_name",
         "loser_rank",
         "loser_rank_points",
@@ -155,3 +159,18 @@ def test_missing_and_malformed_fields_are_retained_as_null_with_issues(
     assert match["draw_size"] is None
     assert match["score"] is None
     assert any(issue.field == "draw_size" and issue.raw_value == "unknown" for issue in issues)
+
+
+def test_seed_and_entry_fields_are_preserved(sample_row: dict[str, str]) -> None:
+    row = {
+        **sample_row,
+        "winner_seed": "1",
+        "winner_entry": "wc",
+        "loser_seed": "Q",
+        "loser_entry": " q ",
+    }
+    match, _ = normalize(row)
+    assert match["winner_seed"] == "1"
+    assert match["winner_entry"] == "WC"
+    assert match["loser_seed"] == "Q"
+    assert match["loser_entry"] == "Q"
