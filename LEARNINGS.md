@@ -94,6 +94,16 @@
 - Action: Keep the robustness CLI import direct from `tennislab.analysis.robustness`; do not re-export modules that depend back on `tennislab.odds` from the shared analysis package initializer.
 - Confidence: high
 
+**[2026-07-14] — Publication figure evidence contract**
+- Observation: Placing the WTA latest-versus-earliest expected/actual result beneath an excess-upset chart made it look like a claim about the plotted endpoints until the separate comparison was labeled and its 16 supporting aggregate rows were added to the figure data.
+- Action: Keep every contextual publication claim explicitly tied to its metric and retain its reviewed aggregate inputs in `final_figure_data.csv`, even when those rows support an annotation rather than plotted marks.
+- Confidence: high
+
+**[2026-07-14] — Portable deterministic publication exports**
+- Observation: Passing resolved input paths into the renderer leaked workstation-absolute paths into the tidy figure data; fixed config labels and invariant ReportLab output made all seven publication files byte-identical across complete builds.
+- Action: Separate filesystem resolution from exported provenance labels, keep source paths repository-relative, and preserve the pinned Pillow/ReportLab plus invariant-PDF renderer contract.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

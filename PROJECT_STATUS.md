@@ -7,9 +7,11 @@
 - Pushed Elo SHA: `aa6796bc3fbe8a6a285d70eb90e526fd42f69edb`
 - Pushed Slam-analysis SHA: `b5c7a44297ff19325f91fc5b6b529f25a99fc4e2`
 - Pushed betting-market SHA: `d2ad665719f90847b2c9432c0c148a5fe1108d4f`
+- Pushed robustness SHA: `67d1924867b7e8fab3106fadc9b0d7ce95e0785c`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: robustness and synthesis complete, deterministic, and
-  independently reviewed; Stage 5 commit/push next, then final graphic
+- Current stage: final publication graphic complete, deterministic, and
+  independently reviewed; Stage 6 commit/push next, then final reproducibility
+  and repository QA
 
 ## Completed work
 
@@ -70,6 +72,11 @@
 - Resolved narrative-review findings on model-specific Wimbledon language, WTA
   endpoint wording, period/timing caveats, Wimbledon 2022, and other-Slam
   comparisons. No material narrative concern remains.
+- Built the single publication graphic from reviewed Stage 3–5 aggregates only,
+  with PNG, SVG, PDF, tidy data, input/output hashes, alt text, and methodology.
+- Resolved independent visual-review findings on the ATP rolling-title scope,
+  separate WTA era context, numeric alt text, portable provenance, and redundant
+  line-shape encoding. No publication-blocking visual finding remains.
 
 ## Commands and verification
 
@@ -85,9 +92,10 @@ uv sync --frozen
 .venv/bin/tennislab fetch-odds
 .venv/bin/tennislab analyze-odds
 .venv/bin/tennislab robustness
+.venv/bin/tennislab publish-figure
 ```
 
-Current results: 81/81 tests passed; 358,827 canonical matches; 2,844 normalization
+Current results: 85/85 tests passed; 358,827 canonical matches; 2,844 normalization
 observations; 481,988 audit findings/signals; primary period ready. The prediction
 build contains 1,076,481 rows, 983,621 prediction-eligible rows, and 112,092
 completed primary Slam score rows (37,364 matches × three models). The generated
@@ -156,6 +164,14 @@ direct contrasts but do not make them causal or confirmatory.
 - `artifacts/robustness/missing_odds_source_accounting.csv`
 - `artifacts/robustness/reference_uncertainty.csv`
 - generated `data/processed/robustness_predictions.parquet`
+- `config/final_figure.json`
+- `artifacts/publication/slam_upsets_final.png`
+- `artifacts/publication/slam_upsets_final.svg`
+- `artifacts/publication/slam_upsets_final.pdf`
+- `artifacts/publication/final_figure_data.csv`
+- `artifacts/publication/final_figure_metadata.json`
+- `artifacts/publication/alt_text.md`
+- `artifacts/publication/methodology_and_sources.md`
 
 ## Unresolved questions
 
@@ -173,6 +189,7 @@ direct contrasts but do not make them causal or confirmatory.
 
 ## Exact next stage
 
-Commit/push Stage 5, then design the single publication graphic from reviewed
-aggregate outputs. Keep the model-specific Wimbledon expectation, lack of
-cross-model excess, and WTA endpoint caveat visible.
+Commit/push Stage 6, then run the final clean-checkout reproducibility and
+repository QA pass. Document one command for already-fetched data and one for a
+full source fetch, strengthen CI, verify links/licenses/citations, and freeze the
+final output index without changing the reviewed research claims.

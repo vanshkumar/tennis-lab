@@ -1,0 +1,399 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2200" viewBox="0 0 1600 2200" role="img" aria-labelledby="title desc">
+<title id="title">Surface-adjusted Elo expects more Wimbledon upsets; underdogs do not consistently beat expectations</title>
+<desc id="desc">Three-panel Grand Slam comparison of long-run expected and actual upsets, rolling excess, and market agreement for ATP and WTA.</desc>
+<g font-family="Bitstream Vera Sans, DejaVu Sans, Arial, sans-serif" shape-rendering="geometricPrecision">
+<rect x="0" y="0" width="1600" height="2200" rx="0.0" fill="#F7F5F0" stroke="none" stroke-width="1.0"/>
+<text x="90" y="83.580" fill="#56616C" font-size="19" font-weight="700" text-anchor="start">GRAND SLAM UPSETS  •  ATP &amp; WTA  •  1988-2025</text>
+<text x="90" y="148.080" fill="#17212B" font-size="44" font-weight="700" text-anchor="start">Surface-adjusted Elo expects more Wimbledon upsets.</text>
+<text x="90" y="202.080" fill="#17212B" font-size="44" font-weight="700" text-anchor="start">Underdogs still don’t beat expectations consistently.</text>
+<text x="90" y="242.400" fill="#56616C" font-size="20" font-weight="400" text-anchor="start">Market/overall-Elo Wimbledon expected gaps are small and uncertain. WTA latest-era expected + actual rates exceed 1988-99 at all four Slams.</text>
+<text x="90" y="277.120" fill="#56616C" font-size="16" font-weight="700" text-anchor="start">Wimbledon vs other-Slam mean, per 100 (surface Elo)</text>
+<text x="90" y="302.120" fill="#56616C" font-size="16" font-weight="400" text-anchor="start">Expected:  ATP +1.6 [1.2, 1.9]  •  WTA +1.9 [1.3, 2.5]     |     Excess:  ATP -0.9 [-2.3, 0.4]  •  WTA -0.4 [-2.5, 1.7]</text>
+<line x1="90" y1="316" x2="1510" y2="316" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="90" y="375.680" fill="#56616C" font-size="24" font-weight="700" text-anchor="start">1</text>
+<text x="132" y="377.240" fill="#17212B" font-size="32" font-weight="700" text-anchor="start">Long run: actual vs. expected underdog wins</text>
+<text x="132" y="409.580" fill="#56616C" font-size="19" font-weight="400" text-anchor="start">Selected surface-adjusted Elo • completed non-retirements • 1988-2025 • 95% edition-bootstrap intervals</text>
+<polygon points="1235,364 1242,371 1235,378 1228,371" fill="#F7F5F0" stroke="#56616C" stroke-width="2" stroke-linejoin="round"/>
+<text x="1250" y="372.940" fill="#56616C" font-size="17" font-weight="400" text-anchor="start">expected</text>
+<circle cx="1415" cy="371" r="7" fill="#56616C" stroke="#56616C" stroke-width="1"/>
+<text x="1430" y="372.940" fill="#56616C" font-size="17" font-weight="400" text-anchor="start">actual</text>
+<text x="90" y="466.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">ATP</text>
+<text x="740" y="463.120" fill="#56616C" font-size="16" font-weight="400" text-anchor="end">upsets per 100</text>
+<line x1="238" y1="496" x2="592" y2="496" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="238.0" y1="491" x2="238.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="238.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">20</text>
+<line x1="326.5" y1="491" x2="326.5" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="326.5" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">24</text>
+<line x1="415.0" y1="491" x2="415.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="415.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">28</text>
+<line x1="503.5" y1="491" x2="503.5" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="503.5" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">32</text>
+<line x1="592.0" y1="491" x2="592.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="592.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">36</text>
+<text x="90" y="561.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Australian Open</text>
+<line x1="413.1304160379392" y1="561" x2="493.26716940360177" y2="561" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="481.7691462843644" y1="554" x2="504.91617740680437" y2="554" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="481.7691462843644" y1="549" x2="481.7691462843644" y2="559" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="504.91617740680437" y1="549" x2="504.91617740680437" y2="559" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="383.93769586311896" y1="568" x2="444.8388862366918" y2="568" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="383.93769586311896" y1="563" x2="383.93769586311896" y2="573" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="444.8388862366918" y1="563" x2="444.8388862366918" y2="573" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="493.26716940360177,547 500.26716940360177,554 493.26716940360177,561 486.26716940360177,554" fill="#F7F5F0" stroke="#2468A2" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="413.1304160379392" cy="568" r="7" fill="#2468A2" stroke="#2468A2" stroke-width="2"/>
+<text x="740" y="562.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 31.5  A 27.9</text>
+<text x="90" y="630.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Roland Garros</text>
+<line x1="423.98101265822777" y1="630" x2="500.5553180472205" y2="630" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="488.7374743117275" y1="623" x2="511.6527054164779" y2="623" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="488.7374743117275" y1="618" x2="488.7374743117275" y2="628" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="511.6527054164779" y1="618" x2="511.6527054164779" y2="628" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="385.08876084429727" y1="637" x2="464.4995686296402" y2="637" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="385.08876084429727" y1="632" x2="385.08876084429727" y2="642" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="464.4995686296402" y1="632" x2="464.4995686296402" y2="642" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="500.5553180472205,616 507.5553180472205,623 500.5553180472205,630 493.5553180472205,623" fill="#F7F5F0" stroke="#C15B2A" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="423.98101265822777" cy="637" r="7" fill="#C15B2A" stroke="#C15B2A" stroke-width="2"/>
+<text x="740" y="631.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 31.9  A 28.4</text>
+<text x="90" y="699.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Wimbledon</text>
+<line x1="431.31488382288467" y1="699" x2="528.0096334884888" y2="699" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="515.7620083926668" y1="692" x2="539.3352070860087" y2="692" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="515.7620083926668" y1="687" x2="515.7620083926668" y2="697" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="539.3352070860087" y1="687" x2="539.3352070860087" y2="697" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="400.509447769927" y1="706" x2="461.66903008119937" y2="706" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="400.509447769927" y1="701" x2="400.509447769927" y2="711" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="461.66903008119937" y1="701" x2="461.66903008119937" y2="711" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="528.0096334884888,685 535.0096334884888,692 528.0096334884888,699 521.0096334884888,692" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="431.31488382288467" cy="706" r="7" fill="#2E7D4F" stroke="#2E7D4F" stroke-width="2"/>
+<text x="740" y="700.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 33.1  A 28.7</text>
+<text x="90" y="768.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">US Open</text>
+<line x1="396.0150425114454" y1="768" x2="497.07507476671384" y2="768" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="484.0577431774457" y1="761" x2="509.546279566537" y2="761" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="484.0577431774457" y1="756" x2="484.0577431774457" y2="766" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="509.546279566537" y1="756" x2="509.546279566537" y2="766" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="366.3701034969422" y1="775" x2="424.6916356497623" y2="775" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="366.3701034969422" y1="770" x2="366.3701034969422" y2="780" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="424.6916356497623" y1="770" x2="424.6916356497623" y2="780" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="497.07507476671384,754 504.07507476671384,761 497.07507476671384,768 490.07507476671384,761" fill="#F7F5F0" stroke="#79549A" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="396.0150425114454" cy="775" r="7" fill="#79549A" stroke="#79549A" stroke-width="2"/>
+<text x="740" y="769.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 31.7  A 27.1</text>
+<text x="850" y="466.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">WTA</text>
+<text x="1500" y="463.120" fill="#56616C" font-size="16" font-weight="400" text-anchor="end">upsets per 100</text>
+<line x1="998" y1="496" x2="1352" y2="496" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="998.0" y1="491" x2="998.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="998.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">20</text>
+<line x1="1086.5" y1="491" x2="1086.5" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1086.5" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">24</text>
+<line x1="1175.0" y1="491" x2="1175.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1175.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">28</text>
+<line x1="1263.5" y1="491" x2="1263.5" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1263.5" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">32</text>
+<line x1="1352.0" y1="491" x2="1352.0" y2="501" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1352.0" y="517.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">36</text>
+<text x="850" y="561.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Australian Open</text>
+<line x1="1148.6550118193222" y1="561" x2="1168.199454125551" y2="561" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="1137.9955186754119" y1="554" x2="1158.6573704904415" y2="554" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1137.9955186754119" y1="549" x2="1137.9955186754119" y2="559" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1158.6573704904415" y1="549" x2="1158.6573704904415" y2="559" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1139.2563135203432" y1="568" x2="1199.675299871927" y2="568" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1139.2563135203432" y1="563" x2="1139.2563135203432" y2="573" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1199.675299871927" y1="563" x2="1199.675299871927" y2="573" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="1148.6550118193222,547 1155.6550118193222,554 1148.6550118193222,561 1141.6550118193222,554" fill="#F7F5F0" stroke="#2468A2" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1168.199454125551" cy="568" r="7" fill="#2468A2" stroke="#2468A2" stroke-width="2"/>
+<text x="1500" y="562.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 26.8  A 27.7</text>
+<text x="850" y="630.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Roland Garros</text>
+<line x1="1166.9398849533172" y1="630" x2="1193.891167192429" y2="630" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="1154.799088102219" y1="623" x2="1179.440437237489" y2="623" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1154.799088102219" y1="618" x2="1154.799088102219" y2="628" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1179.440437237489" y1="618" x2="1179.440437237489" y2="628" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1157.9674811026591" y1="637" x2="1229.7639088881085" y2="637" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1157.9674811026591" y1="632" x2="1157.9674811026591" y2="642" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1229.7639088881085" y1="632" x2="1229.7639088881085" y2="642" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="1166.9398849533172,616 1173.9398849533172,623 1166.9398849533172,630 1159.9398849533172,623" fill="#F7F5F0" stroke="#C15B2A" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1193.891167192429" cy="637" r="7" fill="#C15B2A" stroke="#C15B2A" stroke-width="2"/>
+<text x="1500" y="631.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 27.6  A 28.9</text>
+<text x="850" y="699.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">Wimbledon</text>
+<line x1="1177.482200647249" y1="699" x2="1189.353958937012" y2="699" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="1175.7514680140248" y1="692" x2="1203.1088534947557" y2="692" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1175.7514680140248" y1="687" x2="1175.7514680140248" y2="697" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1203.1088534947557" y1="687" x2="1203.1088534947557" y2="697" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1142.3871498210967" y1="706" x2="1213.1811368836447" y2="706" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1142.3871498210967" y1="701" x2="1142.3871498210967" y2="711" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1213.1811368836447" y1="701" x2="1213.1811368836447" y2="711" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="1189.353958937012,685 1196.353958937012,692 1189.353958937012,699 1182.353958937012,692" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1177.482200647249" cy="706" r="7" fill="#2E7D4F" stroke="#2E7D4F" stroke-width="2"/>
+<text x="1500" y="700.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 28.6  A 28.1</text>
+<text x="850" y="768.940" fill="#17212B" font-size="17" font-weight="700" text-anchor="start">US Open</text>
+<line x1="1136.414967416439" y1="768" x2="1148.5696908272682" y2="768" stroke="#D7D9D6" stroke-width="3" stroke-linecap="round"/>
+<line x1="1135.8790199136802" y1="761" x2="1162.3559051824793" y2="761" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1135.8790199136802" y1="756" x2="1135.8790199136802" y2="766" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1162.3559051824793" y1="756" x2="1162.3559051824793" y2="766" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1107.9274758701904" y1="775" x2="1163.5775333677975" y2="775" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1107.9274758701904" y1="770" x2="1107.9274758701904" y2="780" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="1163.5775333677975" y1="770" x2="1163.5775333677975" y2="780" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<polygon points="1148.5696908272682,754 1155.5696908272682,761 1148.5696908272682,768 1141.5696908272682,761" fill="#F7F5F0" stroke="#79549A" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="1136.414967416439" cy="775" r="7" fill="#79549A" stroke="#79549A" stroke-width="2"/>
+<text x="1500" y="769.120" fill="#17212B" font-size="16" font-weight="400" text-anchor="end">E 26.8  A 26.3</text>
+<line x1="90" y1="810" x2="1510" y2="810" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="90" y="870.680" fill="#56616C" font-size="24" font-weight="700" text-anchor="start">2</text>
+<text x="132" y="872.240" fill="#17212B" font-size="32" font-weight="700" text-anchor="start">Five-edition excess: ATP finishes below zero at all four Slams</text>
+<text x="132" y="904.580" fill="#56616C" font-size="19" font-weight="400" text-anchor="start">Selected surface-adjusted Elo • five completed editions • excess = actual minus expected • Wimbledon 2020 is skipped, not zero</text>
+<text x="90" y="944.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">ATP</text>
+<line x1="90" y1="1351.0" x2="605" y2="1351.0" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="78" y="1352.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">-10</text>
+<line x1="90" y1="1231.625" x2="605" y2="1231.625" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="78" y="1233.105" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">-5</text>
+<line x1="90" y1="1112.25" x2="605" y2="1112.25" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="78" y="1113.730" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">+0</text>
+<line x1="90" y1="992.875" x2="605" y2="992.875" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="78" y="994.355" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">+5</text>
+<line x1="90.0" y1="1351" x2="90.0" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="90.0" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">1992</text>
+<line x1="214.84848484848487" y1="1351" x2="214.84848484848487" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="214.84848484848487" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2000</text>
+<line x1="370.9090909090909" y1="1351" x2="370.9090909090909" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="370.9090909090909" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2010</text>
+<line x1="526.969696969697" y1="1351" x2="526.969696969697" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="526.969696969697" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2020</text>
+<line x1="605.0" y1="1351" x2="605.0" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="605.0" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2025</text>
+<polyline points="90.0,1108.2610017301383 105.60606060606061,1176.8597665164655 121.21212121212122,1195.055993087496 136.8181818181818,1175.4893496104462 152.42424242424244,1211.9824146699307 168.03030303030303,1213.5385243050814 183.63636363636363,1168.685359027128 199.24242424242425,1137.4650153118096 214.84848484848487,1159.6912139053948 230.45454545454544,1157.3349071291414 246.06060606060606,1180.8521644512175 261.66666666666663,1201.6902670762543 277.27272727272725,1206.2321246143947 292.8787878787879,1221.7981279590012 308.4848484848485,1197.2199659908817 324.0909090909091,1200.4487220725869 339.69696969696975,1215.4984150850426 355.3030303030303,1236.7227327087987 370.9090909090909,1229.8773022263667 386.51515151515156,1215.3763086807871 402.1212121212121,1204.4356723176954 417.72727272727275,1200.5483632014107 433.3333333333333,1189.589520997929 448.93939393939394,1198.7278988029925 464.54545454545456,1268.4756547565523 480.1515151515151,1291.7317884872348 495.75757575757575,1274.4786121680004 511.3636363636364,1266.7573285984474 526.969696969697,1246.980818518909 542.5757575757575,1199.7329900021894 558.1818181818182,1204.091481169347 573.7878787878788,1209.6548355999337 589.3939393939395,1182.1876591973298 605.0,1209.8562281726508" fill="none" stroke="#2468A2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="90.0" cy="1108.2610017301383" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="214.84848484848487" cy="1159.6912139053948" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="339.69696969696975" cy="1215.4984150850426" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="464.54545454545456" cy="1268.4756547565523" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="589.3939393939395" cy="1182.1876591973298" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="605.0" cy="1209.8562281726508" r="5.5" fill="#2468A2" stroke="#F7F5F0" stroke-width="1.5"/>
+<polyline points="90.0,1195.7219975059918 105.60606060606061,1181.6306552325889 121.21212121212122,1143.1585143243908 136.8181818181818,1127.139949804537 152.42424242424244,1146.0287282632974 168.03030303030303,1113.3946734221568 183.63636363636363,1113.1354148210557 199.24242424242425,1105.7278321454833 214.84848484848487,1133.5301073887595 230.45454545454544,1087.6632152342256 246.06060606060606,1137.580405796879 261.66666666666663,1158.0596175417445 277.27272727272725,1162.199401035875 292.8787878787879,1102.169207284985 308.4848484848485,1126.6482807884595 324.0909090909091,1114.737054319262 339.69696969696975,1118.0937910470857 355.3030303030303,1142.1514897434463 370.9090909090909,1151.6942314905532 386.51515151515156,1160.792555471277 402.1212121212121,1223.3184657420845 417.72727272727275,1263.9662517328522 433.3333333333333,1272.909863223359 448.93939393939394,1298.9916777552096 464.54545454545456,1324.1763619091569 480.1515151515151,1306.8062340769027 495.75757575757575,1251.1290851417953 511.3636363636364,1274.8759138060095 526.969696969697,1251.5947269452706 542.5757575757575,1243.5175728921474 558.1818181818182,1245.6633966230693 573.7878787878788,1246.3288214651468 589.3939393939395,1240.6806044699529 605.0,1260.2519283298102" fill="none" stroke="#C15B2A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="90.0,1191.2219975059918 94.5,1195.7219975059918 90.0,1200.2219975059918 85.5,1195.7219975059918" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="214.84848484848487,1129.0301073887595 219.34848484848487,1133.5301073887595 214.84848484848487,1138.0301073887595 210.34848484848487,1133.5301073887595" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="339.69696969696975,1113.5937910470857 344.19696969696975,1118.0937910470857 339.69696969696975,1122.5937910470857 335.19696969696975,1118.0937910470857" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="464.54545454545456,1319.6763619091569 469.04545454545456,1324.1763619091569 464.54545454545456,1328.6763619091569 460.04545454545456,1324.1763619091569" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="589.3939393939395,1236.1806044699529 593.8939393939395,1240.6806044699529 589.3939393939395,1245.1806044699529 584.8939393939395,1240.6806044699529" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="605.0,1254.7519283298102 610.5,1260.2519283298102 605.0,1265.7519283298102 599.5,1260.2519283298102" fill="#C15B2A" stroke="#F7F5F0" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="90.0,1186.215882777458 105.60606060606061,1205.601606817065 121.21212121212122,1219.0341048997198 136.8181818181818,1193.1245456499685 152.42424242424244,1168.4893187330592 168.03030303030303,1196.7548779538968 183.63636363636363,1176.6913513101258 199.24242424242425,1201.1482884340585 214.84848484848487,1163.4052189754673 230.45454545454544,1183.777536725132 246.06060606060606,1157.4268483773994 261.66666666666663,1165.8357961545835 277.27272727272725,1142.2106291081375 292.8787878787879,1177.4461955169693 308.4848484848485,1210.603998002076 324.0909090909091,1239.719728984169 339.69696969696975,1258.4564032870978 355.3030303030303,1281.1067438372665 370.9090909090909,1281.7337150600774 386.51515151515156,1272.097774511963 402.1212121212121,1250.7442913239759 417.72727272727275,1228.799354465371 433.3333333333333,1215.9707011141725 448.93939393939394,1224.247632652372 464.54545454545456,1233.067190079232 480.1515151515151,1260.978971200022 495.75757575757575,1261.0467717921954 511.3636363636364,1241.753447940201 542.5757575757575,1222.5040288669857 558.1818181818182,1250.7018106738276 573.7878787878788,1245.7248358096579 589.3939393939395,1251.1919088128493 605.0,1246.8954118592203" fill="none" stroke="#2E7D4F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="90.0,1181.715882777458 94.5,1190.715882777458 85.5,1190.715882777458" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="214.84848484848487,1158.9052189754673 219.34848484848487,1167.9052189754673 210.34848484848487,1167.9052189754673" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="339.69696969696975,1253.9564032870978 344.19696969696975,1262.9564032870978 335.19696969696975,1262.9564032870978" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="464.54545454545456,1228.567190079232 469.04545454545456,1237.567190079232 460.04545454545456,1237.567190079232" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="605.0,1242.3954118592203 609.5,1251.3954118592203 600.5,1251.3954118592203" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="605.0,1241.3954118592203 610.5,1252.3954118592203 599.5,1252.3954118592203" fill="#2E7D4F" stroke="#F7F5F0" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="90.0,1246.0077524501276 105.60606060606061,1262.2288140555663 121.21212121212122,1259.086604088347 136.8181818181818,1259.386154646013 152.42424242424244,1241.6428934275425 168.03030303030303,1230.1272183298458 183.63636363636363,1247.5690644758417 199.24242424242425,1246.6338432422197 214.84848484848487,1263.910851842499 230.45454545454544,1291.7362304757708 246.06060606060606,1250.7489912862827 261.66666666666663,1260.249555978425 277.27272727272725,1240.084430042475 292.8787878787879,1245.264466694289 308.4848484848485,1208.366856738383 324.0909090909091,1220.24419416013 339.69696969696975,1201.5186305761029 355.3030303030303,1241.1489921695556 370.9090909090909,1224.3985478922039 386.51515151515156,1255.9729813789027 402.1212121212121,1272.3938691862456 417.72727272727275,1253.1193211106943 433.3333333333333,1220.7625470090188 448.93939393939394,1226.9887235678543 464.54545454545456,1216.5180647011007 480.1515151515151,1179.36058098084 495.75757575757575,1220.1537742182609 511.3636363636364,1195.0189490777304 526.969696969697,1179.5175792000891 542.5757575757575,1167.4293161060411 558.1818181818182,1203.7165608283358 573.7878787878788,1154.1934163749124 589.3939393939395,1188.3693630250357 605.0,1176.2675778019147" fill="none" stroke="#79549A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="85.5" y="1241.5077524501276" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="210.34848484848487" y="1259.410851842499" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="335.19696969696975" y="1197.0186305761029" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="460.04545454545456" y="1212.0180647011007" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="584.8939393939395" y="1183.8693630250357" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="599.5" y="1170.7675778019147" width="11.0" height="11.0" rx="0.0" fill="#79549A" stroke="#F7F5F0" stroke-width="1.5"/>
+<line x1="612.0" y1="1209.8562281726508" x2="732" y2="1218.8562281726508" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<text x="740" y="1222.976" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">AO -4.1</text>
+<line x1="612.0" y1="1260.2519283298102" x2="732" y2="1283.8954118592203" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<text x="740" y="1288.015" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">RG -6.2</text>
+<line x1="612.0" y1="1246.8954118592203" x2="732" y2="1255.8954118592203" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<text x="740" y="1260.015" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">WIM -5.6</text>
+<line x1="612.0" y1="1176.2675778019147" x2="732" y2="1185.2675778019147" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<text x="740" y="1189.388" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">US -2.7</text>
+<text x="850" y="944.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">WTA</text>
+<line x1="850" y1="1351.0" x2="1365" y2="1351.0" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="838" y="1352.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">-10</text>
+<line x1="850" y1="1231.625" x2="1365" y2="1231.625" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="838" y="1233.105" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">-5</text>
+<line x1="850" y1="1112.25" x2="1365" y2="1112.25" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="838" y="1113.730" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">+0</text>
+<line x1="850" y1="992.875" x2="1365" y2="992.875" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="838" y="994.355" fill="#56616C" font-size="14" font-weight="400" text-anchor="end">+5</text>
+<line x1="850.0" y1="1351" x2="850.0" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="850.0" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">1992</text>
+<line x1="974.8484848484849" y1="1351" x2="974.8484848484849" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="974.8484848484849" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2000</text>
+<line x1="1130.909090909091" y1="1351" x2="1130.909090909091" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1130.909090909091" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2010</text>
+<line x1="1286.969696969697" y1="1351" x2="1286.969696969697" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1286.969696969697" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2020</text>
+<line x1="1365.0" y1="1351" x2="1365.0" y2="1357" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1365.0" y="1374.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">2025</text>
+<polyline points="850.0,1077.4319286872235 865.6060606060606,1113.5597439411627 881.2121212121212,1148.093603831689 896.8181818181819,1163.0390231930658 912.4242424242424,1182.0194490405756 928.030303030303,1162.669245643686 943.6363636363636,1168.5121653770636 959.2424242424242,1101.1790464066219 974.8484848484849,1077.9334152137562 990.4545454545455,1068.7467264998163 1006.060606060606,1078.257721425961 1021.6666666666666,1072.5249661632333 1037.2727272727273,1123.6483312624314 1052.878787878788,1147.8032735907852 1068.4848484848485,1135.3454499101972 1084.090909090909,1126.7582648333039 1099.6969696969697,1071.2485212662832 1115.3030303030303,1055.2627812913809 1130.909090909091,1052.94045266984 1146.5151515151515,1084.4824226005233 1162.121212121212,1077.827965765516 1177.7272727272727,1100.9874787486006 1193.3333333333333,1108.4241432262163 1208.939393939394,1091.3793323848672 1224.5454545454545,1053.5542600825524 1240.151515151515,1049.6533836719568 1255.7575757575758,1044.5883510932197 1271.3636363636365,1049.3848534613444 1286.969696969697,1048.556699289491 1302.5757575757575,1110.4679463973598 1318.1818181818182,1111.657201550437 1333.7878787878788,1114.5499419699465 1349.3939393939395,1057.1263798258376 1365.0,1073.7607330577355" fill="none" stroke="#2468A2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="850.0" cy="1077.4319286872235" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="974.8484848484849" cy="1077.9334152137562" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="1099.6969696969697" cy="1071.2485212662832" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="1224.5454545454545" cy="1053.5542600825524" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="1349.3939393939395" cy="1057.1263798258376" r="4.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2"/>
+<circle cx="1365.0" cy="1073.7607330577355" r="5.5" fill="#2468A2" stroke="#F7F5F0" stroke-width="1.5"/>
+<polyline points="850.0,1085.2866158152892 865.6060606060606,1138.8381937024046 881.2121212121212,1139.9720791587738 896.8181818181819,1106.8073445979878 912.4242424242424,1112.4993425074097 928.030303030303,1097.3396285816023 943.6363636363636,1072.4570173315642 959.2424242424242,1124.5577981623094 974.8484848484849,1101.8098469633678 990.4545454545455,1069.616962552619 1006.060606060606,1030.9489180055393 1021.6666666666666,1058.2868188240368 1037.2727272727273,1015.7567178739835 1052.878787878788,1057.8576006371738 1068.4848484848485,1117.8626035297639 1084.090909090909,1154.1305200163717 1099.6969696969697,1115.8084403296205 1115.3030303030303,1157.4991974023542 1130.909090909091,1149.496163073781 1146.5151515151515,1099.1298673044762 1162.121212121212,1044.8786554217252 1177.7272727272727,1084.9186805304942 1193.3333333333333,1057.6323727576805 1208.939393939394,1053.9527924481952 1224.5454545454545,1070.5000802933112 1240.151515151515,1104.5487538642406 1255.7575757575758,1104.2955919812057 1271.3636363636365,1124.5645020165152 1286.969696969697,1080.6793429069464 1302.5757575757575,1080.7218005276727 1318.1818181818182,1085.3217927441501 1333.7878787878788,1032.4766034122217 1349.3939393939395,1031.3291566579571 1365.0,1075.930550752877" fill="none" stroke="#C15B2A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="850.0,1080.7866158152892 854.5,1085.2866158152892 850.0,1089.7866158152892 845.5,1085.2866158152892" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="974.8484848484849,1097.3098469633678 979.3484848484849,1101.8098469633678 974.8484848484849,1106.3098469633678 970.3484848484849,1101.8098469633678" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1099.6969696969697,1111.3084403296205 1104.1969696969697,1115.8084403296205 1099.6969696969697,1120.3084403296205 1095.1969696969697,1115.8084403296205" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1224.5454545454545,1066.0000802933112 1229.0454545454545,1070.5000802933112 1224.5454545454545,1075.0000802933112 1220.0454545454545,1070.5000802933112" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1349.3939393939395,1026.8291566579571 1353.8939393939395,1031.3291566579571 1349.3939393939395,1035.8291566579571 1344.8939393939395,1031.3291566579571" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1365.0,1070.430550752877 1370.5,1075.930550752877 1365.0,1081.430550752877 1359.5,1075.930550752877" fill="#C15B2A" stroke="#F7F5F0" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="850.0,1150.1849364869722 865.6060606060606,1181.8478524382851 881.2121212121212,1178.6262327939198 896.8181818181819,1219.046683826355 912.4242424242424,1212.3692293253116 928.030303030303,1161.9733116325767 943.6363636363636,1163.8404913308998 959.2424242424242,1147.219798227878 974.8484848484849,1113.6943690247308 990.4545454545455,1143.7712650685569 1006.060606060606,1183.9497882986936 1021.6666666666666,1181.5072138547368 1037.2727272727273,1177.666801596225 1052.878787878788,1157.1348658147383 1068.4848484848485,1128.644061813363 1084.090909090909,1133.710343985301 1099.6969696969697,1087.4695766509517 1115.3030303030303,1119.3687666435947 1130.909090909091,1113.709901583381 1146.5151515151515,1106.5981052310965 1162.121212121212,1083.297060048317 1177.7272727272727,1109.4491879641294 1193.3333333333333,1077.8720863996125 1208.939393939394,1078.752488526819 1224.5454545454545,1092.6818965850541 1240.151515151515,1114.7093258102477 1255.7575757575758,1068.3426679192758 1271.3636363636365,1069.1833495074225 1302.5757575757575,1104.767136229137 1318.1818181818182,1049.8367906915255 1333.7878787878788,1042.568648298035 1349.3939393939395,1067.3456126458577 1365.0,1107.351547340111" fill="none" stroke="#2E7D4F" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="850.0,1145.6849364869722 854.5,1154.6849364869722 845.5,1154.6849364869722" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="974.8484848484849,1109.1943690247308 979.3484848484849,1118.1943690247308 970.3484848484849,1118.1943690247308" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1099.6969696969697,1082.9695766509517 1104.1969696969697,1091.9695766509517 1095.1969696969697,1091.9695766509517" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1224.5454545454545,1088.1818965850541 1229.0454545454545,1097.1818965850541 1220.0454545454545,1097.1818965850541" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1365.0,1102.851547340111 1369.5,1111.851547340111 1360.5,1111.851547340111" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="1365.0,1101.851547340111 1370.5,1112.851547340111 1359.5,1112.851547340111" fill="#2E7D4F" stroke="#F7F5F0" stroke-width="1.5" stroke-linejoin="round"/>
+<polyline points="850.0,1130.6498130653913 865.6060606060606,1096.558447461885 881.2121212121212,1070.239494115117 896.8181818181819,1055.5998236206942 912.4242424242424,1048.7550390186739 928.030303030303,1062.261089545663 943.6363636363636,1102.5975284887438 959.2424242424242,1147.151086322126 974.8484848484849,1192.7112690990757 990.4545454545455,1230.30597764953 1006.060606060606,1223.6922700820699 1021.6666666666666,1234.16093232653 1037.2727272727273,1183.5148849456114 1052.878787878788,1170.8925731205106 1068.4848484848485,1175.5411158495963 1084.090909090909,1176.0874676320504 1099.6969696969697,1143.2590391657181 1115.3030303030303,1149.8844624785647 1130.909090909091,1131.022692857152 1146.5151515151515,1102.5548346666753 1162.121212121212,1092.7586967909847 1177.7272727272727,1084.666767736077 1193.3333333333333,1058.1856949571031 1208.939393939394,1010.1257544330392 1224.5454545454545,1036.9561628023112 1240.151515151515,1051.5637587813496 1255.7575757575758,1058.0815936709646 1271.3636363636365,1102.1355385093555 1286.969696969697,1139.1525171412457 1302.5757575757575,1129.4852107560964 1318.1818181818182,1138.7358793925637 1333.7878787878788,1141.4918026064493 1349.3939393939395,1123.3449413046199 1365.0,1135.2817886227951" fill="none" stroke="#79549A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="845.5" y="1126.1498130653913" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="970.3484848484849" y="1188.2112690990757" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="1095.1969696969697" y="1138.7590391657181" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="1220.0454545454545" y="1032.4561628023112" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="1344.8939393939395" y="1118.8449413046199" width="9.0" height="9.0" rx="0.0" fill="#F7F5F0" stroke="#79549A" stroke-width="2"/>
+<rect x="1359.5" y="1129.7817886227951" width="11.0" height="11.0" rx="0.0" fill="#79549A" stroke="#F7F5F0" stroke-width="1.5"/>
+<line x1="1372.0" y1="1073.7607330577355" x2="1492" y2="1082.7607330577355" stroke="#2468A2" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1500" y="1086.881" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">AO +1.6</text>
+<line x1="1372.0" y1="1075.930550752877" x2="1492" y2="1110.7607330577355" stroke="#C15B2A" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1500" y="1114.881" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">RG +1.5</text>
+<line x1="1372.0" y1="1107.351547340111" x2="1492" y2="1138.7607330577355" stroke="#2E7D4F" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1500" y="1142.881" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">WIM +0.2</text>
+<line x1="1372.0" y1="1135.2817886227951" x2="1492" y2="1166.7607330577355" stroke="#79549A" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1500" y="1170.881" fill="#17212B" font-size="16" font-weight="700" text-anchor="end">US -1.0</text>
+<text x="90" y="1413.760" fill="#56616C" font-size="18" font-weight="400" text-anchor="start">Separate era comparison: WTA expected + model-defined actual rates are higher in the latest era vs 1988-99 at all four Slams; not monotonic/model-independent.</text>
+<line x1="90" y1="1466" x2="1510" y2="1466" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<text x="90" y="1527.680" fill="#56616C" font-size="24" font-weight="700" text-anchor="start">3</text>
+<text x="132" y="1529.240" fill="#17212B" font-size="32" font-weight="700" text-anchor="start">Market check: ATP agrees; WTA favorite definitions do not</text>
+<text x="132" y="1561.580" fill="#56616C" font-size="19" font-weight="400" text-anchor="start">Exact common matches • ATP 2001-2025; WTA 2007-2025 • model-relative underdogs • 95% edition-bootstrap intervals</text>
+<polygon points="1050,1594 1056,1606 1044,1606" fill="#F7F5F0" stroke="#56616C" stroke-width="2" stroke-linejoin="round"/>
+<text x="1064" y="1603.300" fill="#56616C" font-size="15" font-weight="400" text-anchor="start">overall Elo</text>
+<circle cx="1235" cy="1600" r="6" fill="#F7F5F0" stroke="#56616C" stroke-width="2"/>
+<text x="1249" y="1603.300" fill="#56616C" font-size="15" font-weight="400" text-anchor="start">surface Elo</text>
+<rect x="1424" y="1594" width="12" height="12" rx="0.0" fill="#56616C" stroke="none" stroke-width="1.0"/>
+<text x="1445" y="1603.300" fill="#56616C" font-size="15" font-weight="400" text-anchor="start">market</text>
+<text x="90" y="1642.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">ATP</text>
+<line x1="222" y1="1673" x2="590" y2="1673" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="222.0" y1="1668" x2="222.0" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="222.0" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">-8</text>
+<line x1="327.1428571428571" y1="1668" x2="327.1428571428571" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="327.1428571428571" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">-4</text>
+<line x1="432.2857142857143" y1="1668" x2="432.2857142857143" y2="1953" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="432.2857142857143" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">+0</text>
+<line x1="537.4285714285713" y1="1668" x2="537.4285714285713" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="537.4285714285713" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">+4</text>
+<text x="90" y="1722.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Australian Open</text>
+<line x1="296.8140917105103" y1="1711" x2="363.27150987030086" y2="1711" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="296.8140917105103" y1="1706" x2="296.8140917105103" y2="1716" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="363.27150987030086" y1="1706" x2="363.27150987030086" y2="1716" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="330.030535484793,1704.5 336.530535484793,1717.5 323.530535484793,1717.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="280.24364011282" y1="1721" x2="348.06744124100055" y2="1721" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="280.24364011282" y1="1716" x2="280.24364011282" y2="1726" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="348.06744124100055" y1="1716" x2="348.06744124100055" y2="1726" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="314.4715660566358" cy="1721" r="6" fill="#F7F5F0" stroke="#2468A2" stroke-width="2.5"/>
+<line x1="316.34613642884074" y1="1731" x2="370.8398174789711" y2="1731" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="316.34613642884074" y1="1726" x2="316.34613642884074" y2="1736" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="370.8398174789711" y1="1726" x2="370.8398174789711" y2="1736" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="337.6531037725665" y="1725" width="12" height="12" rx="0.0" fill="#2468A2" stroke="#2468A2" stroke-width="1"/>
+<text x="740" y="1720.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O -3.9  S -4.5  M -3.4</text>
+<text x="90" y="1784.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Roland Garros</text>
+<line x1="311.02570463453924" y1="1773" x2="414.6378250397515" y2="1773" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="311.02570463453924" y1="1768" x2="311.02570463453924" y2="1778" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="414.6378250397515" y1="1768" x2="414.6378250397515" y2="1778" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="364.1750104873322,1766.5 370.6750104873322,1779.5 357.6750104873322,1779.5" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="274.16013985122675" y1="1783" x2="373.3009898637136" y2="1783" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="274.16013985122675" y1="1778" x2="274.16013985122675" y2="1788" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="373.3009898637136" y1="1778" x2="373.3009898637136" y2="1788" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="323.8614726917724" cy="1783" r="6" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2.5"/>
+<line x1="297.61374615264145" y1="1793" x2="372.59122532299733" y2="1793" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="297.61374615264145" y1="1788" x2="297.61374615264145" y2="1798" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="372.59122532299733" y1="1788" x2="372.59122532299733" y2="1798" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="328.93811962634874" y="1787" width="12" height="12" rx="0.0" fill="#C15B2A" stroke="#C15B2A" stroke-width="1"/>
+<text x="740" y="1782.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O -2.6  S -4.1  M -3.7</text>
+<text x="90" y="1846.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Wimbledon</text>
+<line x1="345.4796920747461" y1="1835" x2="404.51052101676026" y2="1835" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="345.4796920747461" y1="1830" x2="345.4796920747461" y2="1840" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="404.51052101676026" y1="1830" x2="404.51052101676026" y2="1840" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="377.1169380447834,1828.5 383.6169380447834,1841.5 370.6169380447834,1841.5" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="263.5447538708048" y1="1845" x2="329.6683429421323" y2="1845" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="263.5447538708048" y1="1840" x2="263.5447538708048" y2="1850" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="329.6683429421323" y1="1840" x2="329.6683429421323" y2="1850" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="297.5632247603166" cy="1845" r="6" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2.5"/>
+<line x1="275.02667426870727" y1="1855" x2="355.74808692288457" y2="1855" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="275.02667426870727" y1="1850" x2="275.02667426870727" y2="1860" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="355.74808692288457" y1="1850" x2="355.74808692288457" y2="1860" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="312.1424563611371" y="1849" width="12" height="12" rx="0.0" fill="#2E7D4F" stroke="#2E7D4F" stroke-width="1"/>
+<text x="740" y="1844.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O -2.1  S -5.1  M -4.3</text>
+<text x="90" y="1908.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">US Open</text>
+<line x1="311.6828123319038" y1="1897" x2="382.24013773608357" y2="1897" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="311.6828123319038" y1="1892" x2="311.6828123319038" y2="1902" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="382.24013773608357" y1="1892" x2="382.24013773608357" y2="1902" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="347.35958127044705,1890.5 353.85958127044705,1903.5 340.85958127044705,1903.5" fill="#F7F5F0" stroke="#79549A" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="285.06305016649753" y1="1907" x2="366.983515980681" y2="1907" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="285.06305016649753" y1="1902" x2="285.06305016649753" y2="1912" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="366.983515980681" y1="1902" x2="366.983515980681" y2="1912" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="325.2307615736152" cy="1907" r="6" fill="#F7F5F0" stroke="#79549A" stroke-width="2.5"/>
+<line x1="344.6087080073673" y1="1917" x2="408.2110229345566" y2="1917" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="344.6087080073673" y1="1912" x2="344.6087080073673" y2="1922" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="408.2110229345566" y1="1912" x2="408.2110229345566" y2="1922" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="370.1533206662594" y="1911" width="12" height="12" rx="0.0" fill="#79549A" stroke="#79549A" stroke-width="1"/>
+<text x="740" y="1906.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O -3.2  S -4.1  M -2.1</text>
+<text x="850" y="1642.860" fill="#17212B" font-size="23" font-weight="700" text-anchor="start">WTA</text>
+<line x1="982" y1="1673" x2="1350" y2="1673" stroke="#D7D9D6" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="982.0" y1="1668" x2="982.0" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="982.0" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">-8</text>
+<line x1="1087.142857142857" y1="1668" x2="1087.142857142857" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="1087.142857142857" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">-4</text>
+<line x1="1192.2857142857142" y1="1668" x2="1192.2857142857142" y2="1953" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="1192.2857142857142" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">+0</text>
+<line x1="1297.4285714285713" y1="1668" x2="1297.4285714285713" y2="1953" stroke="#D7D9D6" stroke-width="1" stroke-linecap="round"/>
+<text x="1297.4285714285713" y="1656.480" fill="#56616C" font-size="14" font-weight="400" text-anchor="middle">+4</text>
+<text x="850" y="1722.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Australian Open</text>
+<line x1="1209.267004126147" y1="1711" x2="1294.6349698764975" y2="1711" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1209.267004126147" y1="1706" x2="1209.267004126147" y2="1716" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1294.6349698764975" y1="1706" x2="1294.6349698764975" y2="1716" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="1248.1031774299822,1704.5 1254.6031774299822,1717.5 1241.6031774299822,1717.5" fill="#F7F5F0" stroke="#2468A2" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="1198.4398257996577" y1="1721" x2="1278.1312567083605" y2="1721" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1198.4398257996577" y1="1716" x2="1198.4398257996577" y2="1726" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1278.1312567083605" y1="1716" x2="1278.1312567083605" y2="1726" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="1235.785184582658" cy="1721" r="6" fill="#F7F5F0" stroke="#2468A2" stroke-width="2.5"/>
+<line x1="1121.9227963000435" y1="1731" x2="1208.9004795379692" y2="1731" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1121.9227963000435" y1="1726" x2="1121.9227963000435" y2="1736" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1208.9004795379692" y1="1726" x2="1208.9004795379692" y2="1736" stroke="#2468A2" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="1155.965956561292" y="1725" width="12" height="12" rx="0.0" fill="#2468A2" stroke="#2468A2" stroke-width="1"/>
+<text x="1500" y="1720.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O +2.1  S +1.7  M -1.2</text>
+<text x="850" y="1784.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Roland Garros</text>
+<line x1="1221.7749786293969" y1="1773" x2="1316.1059859697034" y2="1773" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1221.7749786293969" y1="1768" x2="1221.7749786293969" y2="1778" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1316.1059859697034" y1="1768" x2="1316.1059859697034" y2="1778" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="1266.5458708199967,1766.5 1273.0458708199967,1779.5 1260.0458708199967,1779.5" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="1184.7421056530666" y1="1783" x2="1276.1915733409264" y2="1783" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1184.7421056530666" y1="1778" x2="1184.7421056530666" y2="1788" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1276.1915733409264" y1="1778" x2="1276.1915733409264" y2="1788" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="1228.447810561713" cy="1783" r="6" fill="#F7F5F0" stroke="#C15B2A" stroke-width="2.5"/>
+<line x1="1118.4099122880934" y1="1793" x2="1205.7959076097989" y2="1793" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1118.4099122880934" y1="1788" x2="1118.4099122880934" y2="1798" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1205.7959076097989" y1="1788" x2="1205.7959076097989" y2="1798" stroke="#C15B2A" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="1154.9110017453722" y="1787" width="12" height="12" rx="0.0" fill="#C15B2A" stroke="#C15B2A" stroke-width="1"/>
+<text x="1500" y="1782.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O +2.8  S +1.4  M -1.2</text>
+<text x="850" y="1846.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">Wimbledon</text>
+<line x1="1248.4034203888705" y1="1835" x2="1336.145477996004" y2="1835" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1248.4034203888705" y1="1830" x2="1248.4034203888705" y2="1840" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1336.145477996004" y1="1830" x2="1336.145477996004" y2="1840" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="1291.0595144691918,1828.5 1297.5595144691918,1841.5 1284.5595144691918,1841.5" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="1164.354586724644" y1="1845" x2="1261.8968960576176" y2="1845" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1164.354586724644" y1="1840" x2="1164.354586724644" y2="1850" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1261.8968960576176" y1="1840" x2="1261.8968960576176" y2="1850" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="1212.3787060448283" cy="1845" r="6" fill="#F7F5F0" stroke="#2E7D4F" stroke-width="2.5"/>
+<line x1="1128.4506954049052" y1="1855" x2="1220.31686966807" y2="1855" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1128.4506954049052" y1="1850" x2="1128.4506954049052" y2="1860" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1220.31686966807" y1="1850" x2="1220.31686966807" y2="1860" stroke="#2E7D4F" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="1170.213552121073" y="1849" width="12" height="12" rx="0.0" fill="#2E7D4F" stroke="#2E7D4F" stroke-width="1"/>
+<text x="1500" y="1844.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O +3.8  S +0.8  M -0.6</text>
+<text x="850" y="1908.120" fill="#17212B" font-size="16" font-weight="700" text-anchor="start">US Open</text>
+<line x1="1173.3079819329785" y1="1897" x2="1241.09031636568" y2="1897" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1173.3079819329785" y1="1892" x2="1173.3079819329785" y2="1902" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1241.09031636568" y1="1892" x2="1241.09031636568" y2="1902" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="1205.8418625775703,1890.5 1212.3418625775703,1903.5 1199.3418625775703,1903.5" fill="#F7F5F0" stroke="#79549A" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="1174.9010195739907" y1="1907" x2="1245.3461870689691" y2="1907" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1174.9010195739907" y1="1902" x2="1174.9010195739907" y2="1912" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1245.3461870689691" y1="1902" x2="1245.3461870689691" y2="1912" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<circle cx="1207.5661326565103" cy="1907" r="6" fill="#F7F5F0" stroke="#79549A" stroke-width="2.5"/>
+<line x1="1098.056993615231" y1="1917" x2="1158.2807256391882" y2="1917" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1098.056993615231" y1="1912" x2="1098.056993615231" y2="1922" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<line x1="1158.2807256391882" y1="1912" x2="1158.2807256391882" y2="1922" stroke="#79549A" stroke-width="1.3" stroke-linecap="round"/>
+<rect x="1120.1105083662624" y="1911" width="12" height="12" rx="0.0" fill="#79549A" stroke="#79549A" stroke-width="1"/>
+<text x="1500" y="1906.480" fill="#17212B" font-size="14" font-weight="400" text-anchor="end">O +0.5  S +0.6  M -2.5</text>
+<line x1="90" y1="1970" x2="1510" y2="1970" stroke="#17212B" stroke-width="2" stroke-linecap="round"/>
+<text x="90" y="2016.760" fill="#56616C" font-size="18" font-weight="700" text-anchor="start">HOW TO READ IT</text>
+<text x="90" y="2059.220" fill="#17212B" font-size="21" font-weight="700" text-anchor="start">Higher actual + higher expected ≠ excess.</text>
+<text x="90" y="2092.400" fill="#17212B" font-size="20" font-weight="700" text-anchor="start">ATP excess is negative under all three common-sample models; WTA excess changes with the model.</text>
+<text x="90" y="2134.300" fill="#56616C" font-size="15" font-weight="400" text-anchor="start">Sources: Jeff Sackmann ATP/WTA match histories; Tennis-Data latest-available prices (generally most recent before play; exact timestamps unavailable).</text>
+<text x="90" y="2162.300" fill="#56616C" font-size="15" font-weight="400" text-anchor="start">Limits: ‘actual upset’ is model-relative; rolling paths omit interval bands for legibility; event comparisons do not isolate a causal grass effect.</text>
+<text x="1510" y="2189.660" fill="#56616C" font-size="13" font-weight="400" text-anchor="end">slam-upsets-final-v1</text>
+</g>
+</svg>

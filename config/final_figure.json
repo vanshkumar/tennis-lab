@@ -1,0 +1,35 @@
+{
+  "figure_version": "slam-upsets-final-v1",
+  "schema_version": 1,
+  "canvas": {
+    "height": 2200,
+    "png_scale": 2,
+    "width": 1600
+  },
+  "colors": {
+    "Australian Open": "#2468A2",
+    "Roland Garros": "#C15B2A",
+    "Wimbledon": "#2E7D4F",
+    "US Open": "#79549A"
+  },
+  "inputs": {
+    "market_summary": "artifacts/odds_benchmark/benchmark_summary.csv",
+    "robustness_contrasts": "artifacts/robustness/wimbledon_contrasts.csv",
+    "slam_rolling": "artifacts/slam_upsets/rolling_five_editions.csv",
+    "slam_summary": "artifacts/slam_upsets/upset_summary.csv"
+  },
+  "outputs": {
+    "aggregate_csv": "artifacts/publication/final_figure_data.csv",
+    "alt_text": "artifacts/publication/alt_text.md",
+    "metadata": "artifacts/publication/final_figure_metadata.json",
+    "methodology": "artifacts/publication/methodology_and_sources.md",
+    "pdf": "artifacts/publication/slam_upsets_final.pdf",
+    "png": "artifacts/publication/slam_upsets_final.png",
+    "svg": "artifacts/publication/slam_upsets_final.svg"
+  },
+  "periods": {
+    "market_atp": "2001-2025",
+    "market_wta": "2007-2025",
+    "primary": "1988-2025"
+  }
+}

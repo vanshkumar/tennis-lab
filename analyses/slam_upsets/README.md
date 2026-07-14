@@ -58,6 +58,20 @@ uv run tennislab robustness
 uv run python analyses/slam_upsets/run_robustness.py
 ```
 
+Render the reviewed publication graphic from aggregate artifacts only with:
+
+```bash
+uv run tennislab publish-figure
+# or
+uv run python analyses/slam_upsets/run_publication.py
+```
+
+Publication outputs under `artifacts/publication/` include a 3,200 × 4,400 PNG,
+scalable SVG, vector PDF, 330-row tidy figure-data CSV, renderer/input hashes,
+alt text, and a methodology/source note. The SVG or PDF is preferred when the
+complete portrait graphic is displayed at narrow widths because its dense chart
+labels remain zoomable.
+
 Tracked outputs under `artifacts/slam_upsets/` include long-run aggregates,
 event-year and round/era summaries, rolling five-edition trends, calibration,
 cluster-bootstrap intervals, analysis metadata, and a Markdown results report.

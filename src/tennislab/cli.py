@@ -18,6 +18,7 @@ from tennislab.analysis.robustness import ROBUSTNESS_VERSION, build_robustness_a
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
+from tennislab.publication import FIGURE_VERSION, build_final_figure
 from tennislab.ratings import (
     build_cold_start_audit,
     build_predictions,
@@ -49,6 +50,7 @@ DEFAULT_ODDS_MATCHING_ISSUES = Path("data/processed/odds_matching_issues.csv")
 DEFAULT_ROBUSTNESS_CONFIG = Path("config/robustness.json")
 DEFAULT_ROBUSTNESS_ARTIFACTS = Path("artifacts/robustness")
 DEFAULT_ROBUSTNESS_PREDICTIONS = Path("data/processed/robustness_predictions.parquet")
+DEFAULT_FINAL_FIGURE_CONFIG = Path("config/final_figure.json")
 
 
 def _add_source_paths(parser: argparse.ArgumentParser) -> None:
@@ -173,6 +175,11 @@ def build_parser() -> argparse.ArgumentParser:
     robustness.add_argument("--market-summary", type=Path, default=DEFAULT_ODDS_ARTIFACTS / "benchmark_summary.csv")
     robustness.add_argument("--output-dir", type=Path, default=DEFAULT_ROBUSTNESS_ARTIFACTS)
     robustness.add_argument("--variant-predictions", type=Path, default=DEFAULT_ROBUSTNESS_PREDICTIONS)
+
+    publication = subparsers.add_parser(
+        "publish-figure", help="render the reviewed final Slam-upsets graphic"
+    )
+    publication.add_argument("--config", type=Path, default=DEFAULT_FINAL_FIGURE_CONFIG)
     return parser
 
 
@@ -306,6 +313,10 @@ def main(argv: Sequence[str] | None = None) -> int:
             variant_predictions_path=args.variant_predictions,
         )
         _emit({"robustness_version": ROBUSTNESS_VERSION, **result})
+        return 0
+    if args.command == "publish-figure":
+        result = build_final_figure(config_path=args.config)
+        _emit({"figure_version": FIGURE_VERSION, **result})
         return 0
     if args.command == "pipeline":
         manifest = fetch_sources(args.config, args.raw_dir, args.lock)

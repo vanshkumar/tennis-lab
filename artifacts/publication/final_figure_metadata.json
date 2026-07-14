@@ -1,0 +1,52 @@
+{
+  "claim_guardrails": [
+    "Wimbledon expected-rate distinction is specific to selected surface-adjusted Elo",
+    "actual upset is model-relative",
+    "WTA historical comparison is latest-versus-earliest, not monotonic",
+    "no causal grass claim"
+  ],
+  "colors": {
+    "Australian Open": "#2468A2",
+    "Roland Garros": "#C15B2A",
+    "US Open": "#79549A",
+    "Wimbledon": "#2E7D4F"
+  },
+  "config_sha256": "ff6db5100b916415cdb15774ddd21b530ff6163201166916eecce2a5774025ac",
+  "data_rows": 330,
+  "figure_version": "slam-upsets-final-v1",
+  "font": "Bitstream Vera Sans bundled with pinned ReportLab",
+  "input_sha256": {
+    "market_summary": "a69d2425bba4cb168d06e50f1702ecb9d1dc0cbbeeb4658bac722b771e171a8a",
+    "robustness_contrasts": "b09189383522c7d5a03a5cd99af0ade29b2408cef5ebf3d0c15c7de9755400c6",
+    "slam_rolling": "52e8333a149a44c280d371eae2f5639db43f98048ac8deb4aa6f208b0e19a532",
+    "slam_summary": "c1a6985766ea2abede1121d760ef642f5ce102d72bb3d5c7e6f1c98166d44dc3"
+  },
+  "logical_canvas": {
+    "height": 2200,
+    "width": 1600
+  },
+  "output_sha256": {
+    "aggregate_csv": "7f5228b6550ae2768f94759c687bcf76b0bd112f7e17e66d80bce8f2dae843f4",
+    "alt_text": "fc827bbdb57de58c0669e8fdc7603e50ca298c9d947bbc14350e96a2f4f05d74",
+    "methodology": "6f7aaf25eecbe0167a2edf0b23fe23c4aefda2a3ef26a355614f0182f860daad",
+    "pdf": "50da21ed8048ddb3b8f33c7e9a44533d23db2b9755ab177639632368275b8871",
+    "png": "be1161f10b2084984e2c5a2c53744301151813e6777b0f5b6b02a3166aae4b2e",
+    "svg": "66c22a9f589ceb70c6f4b66fb2a06e410ddf90c749495feb48045b6da38419c6"
+  },
+  "panels": [
+    "long_run_actual_expected",
+    "wta_latest_era_context",
+    "rolling_five_excess",
+    "market_model_validation",
+    "direct_wimbledon_contrast"
+  ],
+  "png_pixels": {
+    "height": 4400,
+    "width": 3200
+  },
+  "render_packages": {
+    "pillow": "12.2.0",
+    "reportlab": "4.4.9"
+  },
+  "schema_version": 1
+}
