@@ -1,0 +1,73 @@
+{
+  "bootstrap_reference_replicates": 2000,
+  "cold_start_min_prior_matches": 20,
+  "common_sample_models": [
+    "overall_elo",
+    "surface_adjusted_elo",
+    "market_odds"
+  ],
+  "broad_disruption_sensitivity_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "era_ranges": {
+    "1988-1999": [
+      1988,
+      1999
+    ],
+    "2000-2009": [
+      2000,
+      2009
+    ],
+    "2010-2019": [
+      2010,
+      2019
+    ],
+    "2020-2025": [
+      2020,
+      2025
+    ]
+  },
+  "extreme_favorite_probability_threshold": 0.05,
+  "model_version": "slam-robustness-v1",
+  "parameter_variants": {
+    "elo_k24_surface_0_25": {
+      "description": "Prespecified grid value K=24 with all other selected tour parameters retained",
+      "kind": "k_factor",
+      "value": 24.0
+    },
+    "elo_rank_init_surface_0_25": {
+      "description": "Prespecified rank-informed initialization with selected fallback and all other parameters retained",
+      "kind": "initialization",
+      "value": "rank"
+    },
+    "elo_rolling_selection_surface_0_25": {
+      "description": "Parameters selected by the prespecified rolling 1983-1987 sensitivity objective",
+      "kind": "rolling_selection"
+    }
+  },
+  "round_scopes": {
+    "early_rounds": [
+      "R128",
+      "R64",
+      "R32"
+    ],
+    "late_rounds": [
+      "R16",
+      "QF",
+      "SF",
+      "F"
+    ]
+  },
+  "schema_version": 1,
+  "surface_blend_weights": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "top_residual_upsets_to_remove": 10,
+  "wimbledon_structural_year": 2022
+}

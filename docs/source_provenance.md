@@ -69,3 +69,12 @@ notes attribute odds fields to OddsPortal and named bookmakers; this repository
 does not imply that Tennis-Data, OddsPortal, or any bookmaker endorses the
 analysis. See [`docs/methodology/odds.md`](methodology/odds.md) for field semantics
 and probability construction.
+
+## Robustness artifacts
+
+Stage 5 introduces no additional external source. Alternative Elo histories use
+the same locked Sackmann rows, while surface blends use stored pre-match ratings.
+Rank/seed descriptions come from the preserved canonical source fields. Missing-
+price checks reparse the same locked Tennis-Data workbooks. The generated
+variant-prediction Parquet remains gitignored; tracked robustness files are
+aggregate, non-substitutive research outputs with input/config hashes.

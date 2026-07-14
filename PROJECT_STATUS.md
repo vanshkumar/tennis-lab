@@ -6,9 +6,10 @@
 - Pushed foundation SHA: `c06d3e002d993065bd5d992f4c8041167119ecb6`
 - Pushed Elo SHA: `aa6796bc3fbe8a6a285d70eb90e526fd42f69edb`
 - Pushed Slam-analysis SHA: `b5c7a44297ff19325f91fc5b6b529f25a99fc4e2`
+- Pushed betting-market SHA: `d2ad665719f90847b2c9432c0c148a5fe1108d4f`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: betting-market benchmark complete and independently reviewed;
-  robustness/synthesis next
+- Current stage: robustness and synthesis complete, deterministic, and
+  independently reviewed; Stage 5 commit/push next, then final graphic
 
 ## Completed work
 
@@ -48,6 +49,27 @@
   retirement sensitivity, rolling windows, and edition-cluster bootstrap.
 - Completed an independent source/matching/overround review. Its contributor-
   anomaly P1 was fixed; 14 retained price rows are now explicitly flagged.
+- Built a 632-cell robustness matrix covering maximum/common samples,
+  retirements, early/late rounds, fixed eras, rolling windows, 2020–2022,
+  Wimbledon 2022, overround flags, price missingness, cold starts, surface
+  history, extreme probabilities, and outcome-driven influence diagnostics.
+- Replayed three complete chronological alternative Elo histories and recombined
+  frozen pre-match ratings at five surface weights. The selected 0.25 blend
+  reproduces primary probabilities within `2.3e-16`.
+- Added joint-calendar Wimbledon contrasts, paired edition-bootstrap model-score
+  differences, leave-one-edition influence, and official rank/seed descriptive
+  baselines. Lower-tier inclusion is explicitly infeasible under the locked
+  main-draw-only source scope; no unverified proxy is substituted.
+- Selected an evidence-driven claim: only surface-adjusted Elo clearly gives
+  Wimbledon more upset-prone matchups, and no model shows a robust cross-model
+  excess-upset effect. The broader WTA latest-versus-earliest endpoint shift
+  appears at all four Slams and is not a monotonic or causal grass result.
+- Resolved statistical-review findings on complete input hashes, config-driven
+  variants, seed-field regimes, balanced common panels, paired extreme-match
+  removal, and delta references. The final reviewer found no remaining P0/P1/P2.
+- Resolved narrative-review findings on model-specific Wimbledon language, WTA
+  endpoint wording, period/timing caveats, Wimbledon 2022, and other-Slam
+  comparisons. No material narrative concern remains.
 
 ## Commands and verification
 
@@ -62,9 +84,10 @@ uv sync --frozen
 .venv/bin/tennislab analyze-slams
 .venv/bin/tennislab fetch-odds
 .venv/bin/tennislab analyze-odds
+.venv/bin/tennislab robustness
 ```
 
-Final results: 76/76 tests passed; 358,827 canonical matches; 2,844 normalization
+Current results: 81/81 tests passed; 358,827 canonical matches; 2,844 normalization
 observations; 481,988 audit findings/signals; primary period ready. The prediction
 build contains 1,076,481 rows, 983,621 prediction-eligible rows, and 112,092
 completed primary Slam score rows (37,364 matches × three models). The generated
@@ -79,11 +102,19 @@ aggregates, calibration, rolling windows, and detailed observations. An
 independent DuckDB calculation reconciled all 24 common primary
 tour/Slam/model groups with zero count or point-estimate mismatches.
 
+The robustness common sample contains 21,286 matches and 63,858 model
+observations. The direct surface-adjusted Wimbledon-minus-other-Slams excess
+contrast is -0.90 [-2.29, 0.38] per 100 for ATP and -0.44 [-2.48, 1.66] for WTA.
+The corresponding expected-rate contrasts are +1.56 [1.16, 1.90] and +1.87
+[1.30, 2.54]. Two complete robustness builds, including the variant Parquet and
+all 2,000-replicate artifacts, were byte-identical.
+
 The Slam analysis contains 37,364 primary proper-score matches per model.
 Surface-adjusted ATP actual upset rates are 27.92–28.74 per 100 versus expected
 rates of 31.54–33.11; WTA actual rates are 26.26–28.85 versus expected rates of
 26.81–28.65. Wimbledon is not an excess-upset outlier in this Elo-only view.
-Every cross-event contrast remains descriptive pending odds and robustness.
+This table remains descriptive; completed odds and robustness stages provide
+direct contrasts but do not make them causal or confirmatory.
 
 ## Important outputs
 
@@ -115,6 +146,16 @@ Every cross-event contrast remains descriptive pending odds and robustness.
 - `artifacts/odds_benchmark/source_field_audit.csv`
 - generated `data/processed/market_predictions.parquet`
 - generated `data/processed/market_benchmark_observations.csv`
+- `config/robustness.json`
+- `analyses/slam_upsets/results_synthesis.md`
+- `artifacts/robustness/results.md`
+- `artifacts/robustness/robustness_checks.csv`
+- `artifacts/robustness/wimbledon_contrasts.csv`
+- `artifacts/robustness/paired_model_differences.csv`
+- `artifacts/robustness/influence_diagnostics.csv`
+- `artifacts/robustness/missing_odds_source_accounting.csv`
+- `artifacts/robustness/reference_uncertainty.csv`
+- generated `data/processed/robustness_predictions.parquet`
 
 ## Unresolved questions
 
@@ -127,12 +168,11 @@ Every cross-event contrast remains descriptive pending odds and robustness.
   timestamped closing lines; raw spreadsheet redistribution permission is
   unclear, so only locks, aliases, audits, and aggregates are tracked.
 - Fourteen valid price rows have an anomalous contributor overround and remain in
-  primary results; robustness must rerun the common sample without them.
+  primary results. All 14 occur in the common primary population and are removed
+  from every model together without changing claim selection.
 
 ## Exact next stage
 
-Run the full robustness matrix: model and surface-blend alternatives, market and
-common samples, flagged-price exclusion, retirements, rounds/eras, cold starts,
-COVID/ranking-freeze years, Wimbledon 2022, and event/era concentration. Synthesize
-what is robust, model-dependent, and uncertain; obtain skeptical statistical and
-narrative reviews before choosing the final claim.
+Commit/push Stage 5, then design the single publication graphic from reviewed
+aggregate outputs. Keep the model-specific Wimbledon expectation, lack of
+cross-model excess, and WTA endpoint caveat visible.

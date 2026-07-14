@@ -30,3 +30,15 @@ live under `artifacts/elo/`.
 - Raw surface ratings have thinner histories, particularly for grass.
 - Best-of-five conversion assumes independent, identically distributed sets.
 - Probability differences across Slams do not identify causal surface effects.
+
+## Completed robustness
+
+`slam-robustness-v1` leaves this primary model frozen and replays K=24,
+rank-initialized, and rolling-selection histories separately. It also recombines
+the stored overall/surface ratings at five weights; weight 0.25 reproduces this
+model within floating-point precision. ATP excess remains negative at every
+Slam under all prespecified alternatives. WTA excess is model-dependent, while
+selected-Elo expected and model-defined actual WTA rates are higher in the
+latest era than the earliest at all four Slams. This is not a monotonic or
+model-independent trend claim. See the
+[`slam-robustness-v1` card](slam-robustness-v1.md).

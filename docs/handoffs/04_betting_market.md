@@ -33,7 +33,7 @@ overround could hide an anomalous individual book. No P0/P1 remains. Repeated
 2,000-replicate builds are byte-identical, the full suite passes 76/76, and 24
 common long-run groups independently reconcile to DuckDB.
 
-Next run the robustness matrix, especially exclusion of 14 flagged odds rows,
-fixed eras/rounds, retirements, alternative blends, cold starts, COVID years,
-Wimbledon 2022, and extreme-match influence. Obtain skeptical statistical and
-narrative reviews before freezing the synthesis.
+Stage 5 supersedes this checkpoint with the completed robustness matrix in
+`artifacts/robustness/`, including screening of all 14 flagged source rows,
+fixed eras/rounds, retirements, alternative blends, cold starts, the 2020–2022
+broad-period window, Wimbledon 2022, and extreme-match influence.

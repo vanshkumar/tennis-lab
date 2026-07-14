@@ -74,6 +74,26 @@
 - Action: Keep `elo-v1` on audited main-draw history, expose cold-start flags, and gate lower-tier ingestion behind category, duplicate, temporal-order, and forward-validation audits.
 - Confidence: high
 
+**[2026-07-14] — Common-sample robustness panels**
+- Observation: Model-specific extreme-probability filtering broke exact market/Elo pairing even though the starting sample was common; explicit gates confirmed the reviewed baseline is 21,286 unique match IDs with exactly one row for each of three models.
+- Action: For cross-model sensitivities, remove the union of affected match IDs from every model and require a balanced unique `(match_id, model)` panel before scoring; keep within-model filters explicitly labeled when pairing is not intended.
+- Confidence: high
+
+**[2026-07-14] — WTA historical interpretation**
+- Observation: Selected surface Elo has higher expected and model-defined actual WTA upset rates plus worse proper scores in the latest versus earliest era at every Slam, but intermediate eras are not monotonic and market/overall-Elo results do not justify intrinsic-randomness language.
+- Action: Describe this as a latest-versus-earliest endpoint and forecast-difficulty result; distinguish closer modeled matchups, model-relative excess, and Elo forecast drift from a model-independent rise in randomness.
+- Confidence: high
+
+**[2026-07-14] — Robustness configuration and provenance**
+- Observation: The initial robustness runner duplicated alternative-model values in source and hashed only its main prediction inputs even though it also consumed the canonical database, odds lock/config/aliases, and Stage 3/4 summaries.
+- Action: Read every sensitivity value from `config/robustness.json`, hash every consumed database/config/summary input, rely on the verified odds lock for raw workbook bytes, and persist per-variant parameter/source hashes.
+- Confidence: high
+
+**[2026-07-14] — Analysis package import boundary**
+- Observation: Re-exporting the robustness runner from `tennislab.analysis` created a collection-time cycle because robustness uses odds matching while the odds benchmark imports shared analysis types.
+- Action: Keep the robustness CLI import direct from `tennislab.analysis.robustness`; do not re-export modules that depend back on `tennislab.odds` from the shared analysis package initializer.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

@@ -1,0 +1,17 @@
+robustness_version,tour,slam,odds_availability,matched_source_rows,completed_non_retirement_rows,primary_excluded_rows,imputation_policy
+slam-robustness-v1,ATP,Australian Open,observed_probability,3087,2958,129,none
+slam-robustness-v1,ATP,Australian Open,missing_probability,88,84,4,none
+slam-robustness-v1,ATP,Roland Garros,observed_probability,3156,3036,120,none
+slam-robustness-v1,ATP,Roland Garros,missing_probability,19,18,1,none
+slam-robustness-v1,ATP,Wimbledon,observed_probability,3043,2933,110,none
+slam-robustness-v1,ATP,Wimbledon,missing_probability,5,5,0,none
+slam-robustness-v1,ATP,US Open,observed_probability,3163,2992,171,none
+slam-robustness-v1,ATP,US Open,missing_probability,12,10,2,none
+slam-robustness-v1,WTA,Australian Open,observed_probability,2412,2382,30,none
+slam-robustness-v1,WTA,Australian Open,missing_probability,1,1,0,none
+slam-robustness-v1,WTA,Roland Garros,observed_probability,2411,2368,43,none
+slam-robustness-v1,WTA,Roland Garros,missing_probability,2,0,2,none
+slam-robustness-v1,WTA,Wimbledon,observed_probability,2285,2242,43,none
+slam-robustness-v1,WTA,Wimbledon,missing_probability,1,1,0,none
+slam-robustness-v1,WTA,US Open,observed_probability,2413,2375,38,none
+slam-robustness-v1,WTA,US Open,missing_probability,0,0,0,none

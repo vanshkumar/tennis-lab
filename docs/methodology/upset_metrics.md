@@ -96,3 +96,25 @@ An independent reviewer reconciled all 48 long-run population/model/tour/Slam
 groups against direct DuckDB aggregation. Maximum metric discrepancy was below
 `2e-11`, and all endpoints of an independently reconstructed 2,000-replicate
 edition-cluster bootstrap matched within `8e-15`.
+
+## Direct event contrasts and influence
+
+The robustness analysis supplements marginal event intervals with a direct
+Wimbledon contrast. For each tour and model it computes Wimbledon minus the
+equal-weight mean of the other three Slams. The bootstrap resamples calendar
+years and applies each sampled year's weight jointly to all four events, so the
+contrast retains cross-event calendar shocks. Wimbledon 2020 remains absent;
+it is not turned into a zero. Betting-model contrasts necessarily use their
+shorter common coverage.
+
+Paired model differences use exact shared match IDs and edition-clustered
+resampling. Fixed eras, rolling five completed editions, early rounds
+(R128–R32), and late rounds (R16–final) are labeled sensitivities. Official
+rank/seed ordering is descriptive and never substituted for a probability.
+
+Removing pre-match extreme favorites is a prespecified sensitivity. Removing
+the largest realized positive residuals is outcome-driven and therefore only an
+influence diagnostic; it cannot be selected as a preferred result. Likewise,
+leave-one-edition-out deltas measure concentration but do not justify deleting a
+draw. These guardrails prevent robustness exploration from silently changing
+the estimand after seeing outcomes.

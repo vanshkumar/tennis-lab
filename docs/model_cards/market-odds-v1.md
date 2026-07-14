@@ -63,5 +63,13 @@ at the US Open.
   information, so model agreement is evidentiary triangulation, not causal grass
   identification.
 - Actual-upset orientation can differ by model on the same match.
-- Robustness must exclude the 14 flagged rows, inspect source eras/missingness,
-  and test whether a few extreme probabilities drive conclusions.
+- The completed robustness build excludes all 14 flagged match IDs from every
+  model in the common primary population. It audits all 128 missing prices
+  without imputation and reports extreme-probability and outcome-driven
+  influence checks separately.
+
+The flagged-price exclusion does not change claim selection. Of 128 matched
+price-missing source rows, 119 are eligible completed non-retirements; the cells
+are reported without extrapolating their tiny, concentrated samples. Market
+odds retain the lowest long-run common-sample Brier score and log loss in every
+tour–Slam cell. See the [`slam-robustness-v1` card](slam-robustness-v1.md).

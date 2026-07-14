@@ -107,3 +107,25 @@ surface, era, format, and experience buckets on non-Slam matches. Accuracy is
 secondary because it discards probability quality. The output does not identify
 a causal surface effect: tournament conditions, draws, scheduling, era, and
 player composition can all differ by Slam.
+
+## Robustness replays
+
+The primary `elo-v1` history remains frozen. Stage 5 replays three separately
+labeled histories from the beginning of the canonical chronology: K=24 with the
+selected settings, rank-informed initialization with the selected settings, and
+the already-frozen 1983–1987 rolling-selection parameters. Each replay preserves
+tour separation, strict pre-match capture, and same-date batching. It writes to
+`data/processed/robustness_predictions.parquet` and cannot replace the primary
+prediction table.
+
+Surface-weight sensitivity does not require outcome replay: the stored pre-match
+overall and raw-surface ratings are recombined at weights 0, 0.25, 0.50, 0.75,
+and 1 before applying the same probability and format conversion. The 0.25
+reconstruction reproduces the selected surface-adjusted probabilities within
+`2.3e-16`, an explicit build invariant.
+
+Cold-start checks require both players to have at least 1, 5, or 20 prior tour
+matches, plus a separate both-players-have-surface-history check. A real
+lower-tier-history comparison remains infeasible under the locked main-draw-only
+scope described above; the robustness build records that limitation rather than
+calling rank initialization or row deletion “lower-tier included.”

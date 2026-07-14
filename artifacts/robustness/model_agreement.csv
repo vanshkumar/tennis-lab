@@ -1,0 +1,9 @@
+robustness_version,tour,slam,overall_elo_excess_direction,surface_adjusted_elo_excess_direction,market_odds_excess_direction,all_models_same_excess_direction,lowest_brier_model,lowest_log_loss_model,interpretation
+slam-robustness-v1,ATP,Australian Open,negative,negative,negative,True,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,ATP,Roland Garros,negative,negative,negative,True,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,ATP,US Open,negative,negative,negative,True,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,ATP,Wimbledon,negative,negative,negative,True,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,WTA,Australian Open,positive,positive,negative,False,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,WTA,Roland Garros,positive,positive,negative,False,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,WTA,US Open,positive,positive,negative,False,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality
+slam-robustness-v1,WTA,Wimbledon,positive,positive,negative,False,market_odds,market_odds,direction concerns model-relative underdog excess; proper-score ranking concerns overall forecast quality

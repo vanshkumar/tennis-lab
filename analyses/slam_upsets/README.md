@@ -11,7 +11,8 @@ separate and reports ATP and WTA independently. Overall Elo, raw surface Elo, an
 surface-adjusted Elo are evaluated on their pre-match prediction rows; the
 surface-adjusted model is the principal Elo view selected before any principal-
 period Slam outcome was evaluated. A separate market checkpoint uses Tennis-Data
-latest-available pre-match odds for ATP 2001–2025 and WTA 2007–2025.
+prices that are generally the provider's most recent before play for ATP
+2001–2025 and WTA 2007–2025; exact timestamps are unavailable.
 
 ## Population
 
@@ -47,6 +48,14 @@ After the locked odds workbooks are present, reproduce the market benchmark with
 uv run tennislab analyze-odds
 # or
 uv run python analyses/slam_upsets/run_market.py
+```
+
+Run the prespecified robustness matrix and claim-selection build with:
+
+```bash
+uv run tennislab robustness
+# or
+uv run python analyses/slam_upsets/run_robustness.py
 ```
 
 Tracked outputs under `artifacts/slam_upsets/` include long-run aggregates,
@@ -87,8 +96,9 @@ This checkpoint does not support a claim that Wimbledon produces unexplained
 extra upsets. ATP Wimbledon has the highest Elo-expected upset rate of the four
 Slams but fewer actual upsets than expected; WTA Wimbledon is close to its Elo
 expectation. Overall Elo, raw surface Elo, and retirement inclusion change the
-magnitudes, so all cross-Slam/model contrasts remain descriptive until the odds
-benchmark and robustness synthesis are complete.
+magnitudes. This historical Elo-only checkpoint is descriptive; the completed
+odds and robustness stages add direct contrasts but do not make them causal or
+confirmatory.
 
 The statistical reviewer independently reconciled all 48 long-run groups to
 DuckDB and reproduced a complete 2,000-replicate cluster bootstrap. The initial
@@ -123,10 +133,42 @@ market odds are near zero for the first three Slams and negative at the US Open.
 For WTA Wimbledon specifically, surface-adjusted Elo is +0.76 [-1.06, 2.65] and
 the market is -0.61 [-2.43, 1.07]. This still does not support an unexplained
 Wimbledon excess or a causal grass claim. Cross-event interval comparisons are
-descriptive and the robustness stage must test the 14 flagged price rows,
-period/round sensitivity, and era concentration.
+descriptive. The completed robustness build tests flagged prices, periods,
+rounds, eras, cold starts, missing odds, Wimbledon 2022, blend weights, and
+alternative Elo histories.
 
 Tracked market artifacts under `artifacts/odds_benchmark/` include source-field,
 coverage, matching, exclusion, calibration, long-run/year/round/era, rolling,
 metadata, and results files. Gitignored `data/processed/market_predictions.parquet`
 and `market_benchmark_observations.csv` retain the match-level audit trail.
+
+## Robustness synthesis
+
+The exact common sample contains 21,286 matches and 63,858 model observations.
+ATP has negative excess underdog wins at all four Slams under overall Elo,
+surface-adjusted Elo, and market odds; the direction also survives every frozen
+blend weight and alternative Elo history. WTA is model-dependent: under selected
+surface-adjusted Elo, latest-era expected and model-defined actual rates are
+higher than in 1988–1999 and proper scores are worse, but this is an endpoint
+comparison rather than a monotonic or model-independent trend. Excess flips with
+favorite definition and model settings.
+
+The latest-era label is 2020–2025 except at Wimbledon, where it covers
+2021–2025 because the 2020 event was canceled.
+
+A joint-calendar contrast finds that surface-adjusted Elo expects Wimbledon to
+have 1.56 more ATP and 1.87 more WTA upsets per 100 than the mean of the other
+Slams. The corresponding excess differences are -0.90 [-2.29, 0.38] and -0.44
+[-2.48, 1.66]. This supports more upset-prone matchups, not unexplained excess.
+WTA overall Elo is the one positive excess contrast, but the market and selected
+surface adjustment do not confirm it. Wimbledon 2022 materially affects the
+recent WTA window; excluding it shifts long-run estimates less and does not
+change long-run claim selection.
+
+See [`results_synthesis.md`](results_synthesis.md) for claim selection and
+`artifacts/robustness/` for the full matrix, joint contrasts, paired-model
+bootstrap, influence diagnostics, missing-price audit, and rank/seed descriptive
+checks. Top-residual removal is outcome-driven and diagnostic only; the
+extreme-favorite exclusion uses only prespecified pre-match probabilities.
+Lower-tier sensitivity is recorded as infeasible under the locked source scope;
+no proxy is substituted.

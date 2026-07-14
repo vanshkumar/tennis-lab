@@ -113,3 +113,18 @@ two models can disagree about which player was the underdog on the same match.
   tour–Slam–model long-run groups with zero count or point-estimate differences.
 - Repeated full 2,000-replicate builds reproduce the Parquet, detailed
   observations, and every tracked benchmark artifact byte-for-byte.
+
+## Robustness treatment
+
+The robustness build removes all 14 flagged source match IDs from every model in
+the common completed/non-retirement population, preserving paired
+comparability. It also rebuilds source
+matching to audit the 128 matched price-missing rows without imputing a value.
+Of those source rows, 119 remain in the completed non-retirement Elo population;
+the accounting table shows the nine primary exclusions and zero-count cells as
+well as observed/missing Elo behavior by tour, Slam, year, and round.
+
+Paired model-score differences use the exact same match IDs and resample whole
+tour–Slam editions. A negative market-minus-Elo Brier or log-loss difference
+means the market forecast scored better; this sign convention is stored in the
+artifact rather than left implicit.

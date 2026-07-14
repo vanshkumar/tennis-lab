@@ -14,6 +14,7 @@ from tennislab.analysis import (
     write_diagnostic_figures,
     write_results_report,
 )
+from tennislab.analysis.robustness import ROBUSTNESS_VERSION, build_robustness_analysis
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
@@ -45,6 +46,9 @@ DEFAULT_ODDS_ARTIFACTS = Path("artifacts/odds_benchmark")
 DEFAULT_MARKET_PREDICTIONS = Path("data/processed/market_predictions.parquet")
 DEFAULT_MARKET_OBSERVATIONS = Path("data/processed/market_benchmark_observations.csv")
 DEFAULT_ODDS_MATCHING_ISSUES = Path("data/processed/odds_matching_issues.csv")
+DEFAULT_ROBUSTNESS_CONFIG = Path("config/robustness.json")
+DEFAULT_ROBUSTNESS_ARTIFACTS = Path("artifacts/robustness")
+DEFAULT_ROBUSTNESS_PREDICTIONS = Path("data/processed/robustness_predictions.parquet")
 
 
 def _add_source_paths(parser: argparse.ArgumentParser) -> None:
@@ -151,6 +155,24 @@ def build_parser() -> argparse.ArgumentParser:
     slam_analysis.add_argument("--details", type=Path, default=DEFAULT_UPSET_MATCHES)
     slam_analysis.add_argument("--bootstrap-replicates", type=int, default=2_000)
     slam_analysis.add_argument("--bootstrap-seed", type=int, default=20260714)
+
+    robustness = subparsers.add_parser(
+        "robustness", help="run prespecified Slam robustness and claim-selection checks"
+    )
+    robustness.add_argument("--config", type=Path, default=DEFAULT_ROBUSTNESS_CONFIG)
+    robustness.add_argument("--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET)
+    robustness.add_argument("--market-predictions", type=Path, default=DEFAULT_MARKET_PREDICTIONS)
+    robustness.add_argument("--market-observations", type=Path, default=DEFAULT_MARKET_OBSERVATIONS)
+    robustness.add_argument("--database", type=Path, default=DEFAULT_DATABASE)
+    robustness.add_argument("--elo-config", type=Path, default=DEFAULT_ELO_CONFIG)
+    robustness.add_argument("--odds-config", type=Path, default=DEFAULT_ODDS_CONFIG)
+    robustness.add_argument("--odds-lock", type=Path, default=DEFAULT_ODDS_LOCK)
+    robustness.add_argument("--odds-aliases", type=Path, default=DEFAULT_ODDS_ALIASES)
+    robustness.add_argument("--odds-raw-dir", type=Path, default=DEFAULT_ODDS_RAW)
+    robustness.add_argument("--slam-summary", type=Path, default=DEFAULT_SLAM_ARTIFACTS / "upset_summary.csv")
+    robustness.add_argument("--market-summary", type=Path, default=DEFAULT_ODDS_ARTIFACTS / "benchmark_summary.csv")
+    robustness.add_argument("--output-dir", type=Path, default=DEFAULT_ROBUSTNESS_ARTIFACTS)
+    robustness.add_argument("--variant-predictions", type=Path, default=DEFAULT_ROBUSTNESS_PREDICTIONS)
     return parser
 
 
@@ -265,6 +287,25 @@ def main(argv: Sequence[str] | None = None) -> int:
                 "diagnostic_figures": [str(path) for path in figures],
             }
         )
+        return 0
+    if args.command == "robustness":
+        result = build_robustness_analysis(
+            robustness_config_path=args.config,
+            predictions_path=args.predictions,
+            market_predictions_path=args.market_predictions,
+            market_observations_path=args.market_observations,
+            database_path=args.database,
+            elo_config_path=args.elo_config,
+            odds_config_path=args.odds_config,
+            odds_lock_path=args.odds_lock,
+            odds_aliases_path=args.odds_aliases,
+            odds_raw_dir=args.odds_raw_dir,
+            slam_summary_path=args.slam_summary,
+            market_summary_path=args.market_summary,
+            output_dir=args.output_dir,
+            variant_predictions_path=args.variant_predictions,
+        )
+        _emit({"robustness_version": ROBUSTNESS_VERSION, **result})
         return 0
     if args.command == "pipeline":
         manifest = fetch_sources(args.config, args.raw_dir, args.lock)
