@@ -98,7 +98,8 @@ model cards document generated prediction layers.
 - Tournament-edition bootstrap and rolling completed-edition windows preserve
   draw clustering and correctly skip the canceled Wimbledon 2020 event.
 - The final graphic consumes reviewed aggregate CSVs only and records every
-  input/config/output hash.
+  input/config hash, byte hashes for portable outputs, and the decoded PNG pixel
+  hash so platform zlib differences cannot masquerade as visual drift.
 
 ## Documentation
 

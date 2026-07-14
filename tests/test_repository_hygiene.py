@@ -7,6 +7,8 @@ from pathlib import Path
 import re
 import subprocess
 
+from PIL import Image
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
@@ -17,6 +19,15 @@ def _sha256(path: Path) -> str:
     with path.open("rb") as handle:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _png_pixel_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with Image.open(path) as source:
+        image = source.convert("RGB")
+        digest.update(f"RGB:{image.width}x{image.height}\n".encode("ascii"))
+        digest.update(image.tobytes())
     return digest.hexdigest()
 
 
@@ -87,6 +98,9 @@ def test_publication_metadata_and_portable_provenance_match_outputs() -> None:
     )
     for key, expected in metadata["output_sha256"].items():
         assert _sha256(REPO_ROOT / config["outputs"][key]) == expected
+    assert _png_pixel_sha256(REPO_ROOT / config["outputs"]["png"]) == (
+        metadata["png_pixel_sha256"]
+    )
 
     with (REPO_ROOT / "artifacts/publication/final_figure_data.csv").open(
         encoding="utf-8", newline=""

@@ -34,5 +34,9 @@ jobs:
 
       - name: Verify smoke artifacts and whitespace
         run: |
-          git diff --exit-code -- artifacts/publication
+          # Pillow uses the platform zlib, so PNG byte compression may differ
+          # while decoded pixels remain identical. Metadata stores the pixel
+          # hash; all other publication files remain byte-diffed here.
+          git diff --exit-code -- artifacts/publication \
+            ':(exclude)artifacts/publication/slam_upsets_final.png'
           git diff --check

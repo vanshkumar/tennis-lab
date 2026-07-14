@@ -46,6 +46,17 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _png_pixel_sha256(path: Path) -> str:
+    """Hash decoded RGB pixels so PNG compression-library drift is non-semantic."""
+
+    digest = hashlib.sha256()
+    with Image.open(path) as source:
+        image = source.convert("RGB")
+        digest.update(f"RGB:{image.width}x{image.height}\n".encode("ascii"))
+        digest.update(image.tobytes())
+    return digest.hexdigest()
+
+
 def _read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle))
@@ -1194,10 +1205,13 @@ def build_final_figure(
                 "alt_text",
                 "methodology",
                 "pdf",
-                "png",
                 "svg",
             )
         },
+        # Pillow delegates compression to the platform zlib. Different zlib
+        # versions can encode identical PNG pixels into different byte streams,
+        # so cross-platform reproducibility is enforced on decoded pixels.
+        "png_pixel_sha256": _png_pixel_sha256(outputs["png"]),
         "claim_guardrails": [
             "Wimbledon expected-rate distinction is specific to selected surface-adjusted Elo",
             "actual upset is model-relative",

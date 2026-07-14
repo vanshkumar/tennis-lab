@@ -114,6 +114,11 @@
 - Action: Keep Elo diagnostic aggregation single-threaded at fixed 12-decimal publication precision, export prediction Parquet in a total provenance order, and hash ordered canonical rows/schema rather than DuckDB storage pages.
 - Confidence: high
 
+**[2026-07-14] — Cross-platform PNG provenance**
+- Observation: Pinned Pillow rendered the same publication scene on macOS and Linux, but their zlib versions encoded the PNG into different byte streams while SVG, PDF, data, and all other outputs remained byte-identical.
+- Action: Keep byte hashes for portable publication outputs, store and verify the decoded RGB pixel hash for PNG, and exclude only the PNG container bytes from cross-platform CI diffs.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

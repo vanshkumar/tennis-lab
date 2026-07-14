@@ -11,7 +11,7 @@ match-level detail remain under gitignored `data/` directories.
 | [`publication/slam_upsets_final.svg`](publication/slam_upsets_final.svg) | semantic scalable vector graphic |
 | [`publication/slam_upsets_final.pdf`](publication/slam_upsets_final.pdf) | one-page vector print export |
 | [`publication/final_figure_data.csv`](publication/final_figure_data.csv) | exact 330-row tidy renderer input |
-| [`publication/final_figure_metadata.json`](publication/final_figure_metadata.json) | input/config/output hashes and claim guards |
+| [`publication/final_figure_metadata.json`](publication/final_figure_metadata.json) | input/config/portable-output hashes, PNG pixel hash, and claim guards |
 | [`publication/alt_text.md`](publication/alt_text.md) | accessible textual description |
 | [`publication/methodology_and_sources.md`](publication/methodology_and_sources.md) | concise figure methods, sources, and limits |
 

@@ -9,9 +9,10 @@
 - Pushed betting-market SHA: `d2ad665719f90847b2c9432c0c148a5fe1108d4f`
 - Pushed robustness SHA: `67d1924867b7e8fab3106fadc9b0d7ce95e0785c`
 - Pushed publication SHA: `0526e15ab7a430562d54787f048b9f2a631e7afa`
+- Pushed final cleanup SHA: `47293f22736551adcb73cecea612318dc6ffe86e`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: Stage 7 complete locally; the final reproducibility/QA commit is
-  the commit containing this status file and is the only remaining push
+- Current stage: complete; the cross-platform PNG provenance correction is the
+  commit containing this status file
 
 ## Completed work
 

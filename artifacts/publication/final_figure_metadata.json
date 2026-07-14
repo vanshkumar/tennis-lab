@@ -30,7 +30,6 @@
     "alt_text": "fc827bbdb57de58c0669e8fdc7603e50ca298c9d947bbc14350e96a2f4f05d74",
     "methodology": "6f7aaf25eecbe0167a2edf0b23fe23c4aefda2a3ef26a355614f0182f860daad",
     "pdf": "50da21ed8048ddb3b8f33c7e9a44533d23db2b9755ab177639632368275b8871",
-    "png": "be1161f10b2084984e2c5a2c53744301151813e6777b0f5b6b02a3166aae4b2e",
     "svg": "66c22a9f589ceb70c6f4b66fb2a06e410ddf90c749495feb48045b6da38419c6"
   },
   "panels": [
@@ -40,6 +39,7 @@
     "market_model_validation",
     "direct_wimbledon_contrast"
   ],
+  "png_pixel_sha256": "d63d09c3f0ef23819a775bec39a02888ed74c591ba3b4976c184f62b9d637db9",
   "png_pixels": {
     "height": 4400,
     "width": 3200
