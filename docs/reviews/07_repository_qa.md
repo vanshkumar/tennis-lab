@@ -51,6 +51,10 @@ byte-identical. The tracked PNG is therefore a reviewed reference export with
 locked byte/pixel hashes; cross-platform CI uses SVG/PDF as its visual sources of
 truth and retains byte comparison for every portable output.
 
+The corrected Ubuntu run passed all 96 tests, rebuilt the publication, and
+reported zero drift for the semantic SVG/PDF, data, metadata, alt text, and
+methodology outputs ([run 29361443953](https://github.com/vanshkumar/tennis-lab/actions/runs/29361443953)).
+
 No P0, P1, or P2 repository-QA finding remains. CI intentionally remains
 offline: it installs the frozen environment, runs the unit/fixture/hygiene suite,
 rebuilds publication artifacts, and byte-checks the semantic SVG/PDF plus every

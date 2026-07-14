@@ -44,6 +44,8 @@ verification workstation it took about 34 minutes.
   portable data/metadata output. Local hygiene tests pin the reviewed PNG's
   bytes and pixels because Pillow/FreeType rasterization varies across operating
   systems. CI never downloads the external research sources.
+- GitHub Actions passed the complete Ubuntu job at functional commit
+  `848869c7dd568fc3e546dafb7a7dd08030810a15` ([run 29361443953](https://github.com/vanshkumar/tennis-lab/actions/runs/29361443953)).
 
 ## Principal outputs
 

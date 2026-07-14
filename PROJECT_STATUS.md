@@ -10,9 +10,11 @@
 - Pushed robustness SHA: `67d1924867b7e8fab3106fadc9b0d7ce95e0785c`
 - Pushed publication SHA: `0526e15ab7a430562d54787f048b9f2a631e7afa`
 - Pushed final cleanup SHA: `47293f22736551adcb73cecea612318dc6ffe86e`
+- Pushed cross-platform CI SHA: `848869c7dd568fc3e546dafb7a7dd08030810a15`
+- Final functional CI: passed on Ubuntu, run `29361443953`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: complete; the cross-platform PNG provenance correction is the
-  commit containing this status file
+- Current stage: complete; this status-only closure follows the passing
+  functional head and changes no executable or research output
 
 ## Completed work
 
