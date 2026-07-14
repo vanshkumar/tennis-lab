@@ -1,0 +1,21 @@
+schema_version = 1
+start_year = 1968
+end_year = 2025
+license = "CC BY-NC-SA 4.0"
+attribution = "Jeff Sackmann"
+
+[[sources]]
+tour = "ATP"
+repository_url = "https://github.com/JeffSackmann/tennis_atp"
+retrieval_repository_url = "https://github.com/racketbracket/tennis_atp"
+commit = "712be0c5ade693cdab9e69c23a71a0edf5a23c44"
+file_pattern = "atp_matches_{year}.csv"
+category = "tour_main_draw_singles"
+
+[[sources]]
+tour = "WTA"
+repository_url = "https://github.com/JeffSackmann/tennis_wta"
+retrieval_repository_url = "https://github.com/VictorSquidWei/tennis_wta"
+commit = "1bde6315e2a642109935171d5b18fba85f7b827b"
+file_pattern = "wta_matches_{year}.csv"
+category = "tour_main_draw_singles"

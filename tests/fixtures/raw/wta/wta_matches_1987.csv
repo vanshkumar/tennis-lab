@@ -1,0 +1,2 @@
+tourney_id,tourney_name,surface,draw_size,tourney_level,tourney_date,match_num,winner_id,winner_name,winner_rank,winner_rank_points,loser_id,loser_name,loser_rank,loser_rank_points,score,best_of,round
+1987-901,Australian Chps.,Grass,128,G,19870112,1,100001,Example Winner,1,1000,100002,Example Loser,50,100,6-4 3-2 RET,3,R128

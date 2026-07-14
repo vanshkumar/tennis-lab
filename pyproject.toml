@@ -1,0 +1,28 @@
+[project]
+name = "tennislab"
+version = "0.1.0"
+description = "Reproducible tennis match data normalization and quality audits"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb==1.4.3",
+]
+
+[project.scripts]
+tennislab = "tennislab.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.2",
+]
+
+[build-system]
+requires = ["hatchling==1.28.0"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.uv]
+package = true
