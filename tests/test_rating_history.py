@@ -9,6 +9,7 @@ import pytest
 from tennislab.analysis.rating_history import (
     RatingHistoryError,
     _common_ids,
+    _duplicate_audit,
     _write_csv,
     paired_probability_differences,
     underdog_identity_changes,
@@ -320,6 +321,39 @@ def test_probable_duplicate_keep_one_is_input_order_independent_and_updates_once
     for rows in emissions:
         assert _overall(rows, "first")["rating_update_eligible"] is True
         assert _overall(rows, "second")["rating_update_eligible"] is False
+
+
+def test_duplicate_audit_separates_selection_from_base_update_eligibility() -> None:
+    value_date = date(2020, 1, 1)
+    members = [
+        _match(
+            "first",
+            value_date,
+            winner_id=1,
+            loser_id=1,
+            probable_duplicate=True,
+            source_row_number=1,
+        ),
+        _match(
+            "second",
+            value_date,
+            winner_id=1,
+            loser_id=1,
+            probable_duplicate=True,
+            source_row_number=2,
+        ),
+    ]
+    audit = _duplicate_audit(members)
+    selected = next(row for row in audit if row["selected_representative"])
+    excluded = next(row for row in audit if not row["selected_representative"])
+    assert selected["keep_one_selection_decision"] == "selected_representative"
+    assert selected["base_rating_update_eligible"] is False
+    assert selected["base_exclusion_reason"] == "identical_player_ids"
+    assert selected["effective_rating_history_decision"] == "excluded_by_base_rules"
+    assert excluded["keep_one_selection_decision"] == "excluded_group_member"
+    assert excluded["effective_rating_history_decision"] == (
+        "excluded_by_base_rules_and_keep_one"
+    )
 
 
 def test_keep_one_rejects_non_unique_provenance_order() -> None:

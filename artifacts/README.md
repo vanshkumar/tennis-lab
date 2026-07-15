@@ -25,6 +25,15 @@ match-level detail remain under gitignored `data/` directories.
 | [`robustness/paired_model_differences.csv`](robustness/paired_model_differences.csv) | paired model score differences |
 | [`robustness/influence_diagnostics.csv`](robustness/influence_diagnostics.csv) | edition and match influence checks |
 | [`robustness/robustness_metadata.csv`](robustness/robustness_metadata.csv) | consumed input/config hashes |
+| [`robustness/rating_history_variant_config.csv`](robustness/rating_history_variant_config.csv) | immutable replay policies, selected parameters, and hashes |
+| [`robustness/rating_history_sensitivities.csv`](robustness/rating_history_sensitivities.csv) | full/common tour–Slam rating-history summaries and intervals |
+| [`robustness/rating_history_paired_differences.csv`](robustness/rating_history_paired_differences.csv) | exact-ID variant-minus-primary paired differences |
+| [`robustness/rating_history_wimbledon_contrasts.csv`](robustness/rating_history_wimbledon_contrasts.csv) | rating-policy joint-calendar contrasts |
+| [`robustness/rating_history_underdog_identity_changes.csv`](robustness/rating_history_underdog_identity_changes.csv) | match-level flip and tie-transition audit |
+| [`robustness/probable_duplicate_representative_audit.csv`](robustness/probable_duplicate_representative_audit.csv) | keep-one selection and effective base-eligibility decisions |
+| [`robustness/rating_history_selection_sensitivity.csv`](robustness/rating_history_selection_sensitivity.csv) | pre-1988 selector results by policy |
+| [`robustness/rating_history_selection_diagnostics.csv`](robustness/rating_history_selection_diagnostics.csv) | selector candidate diagnostics |
+| [`robustness/rating_history_metadata.csv`](robustness/rating_history_metadata.csv) | rating sensitivity inputs, controls, and artifact hashes |
 
 ## Four-Slam Elo analysis
 

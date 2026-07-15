@@ -43,3 +43,45 @@ The primary comparison uses the exact matches shared by overall Elo, surface-adj
 Retirement, round, era, 2020–2022 broad-period, Wimbledon 2022, cold-start, overround, blend-weight, and alternative-parameter checks are in `robustness_checks.csv`. The pre-match extreme-favorite exclusion is a prespecified sensitivity. Top-residual removal is outcome-driven and appears only as an influence diagnostic. Official seeds/ranks are descriptive orderings rather than calibrated probability models. Lower-tier-history sensitivity is infeasible under the locked tour-only source scope and is recorded as a limitation.
 
 The missing-odds audit contains 14 all-period cells. No missing price is imputed. Uncertainty in the primary long-run tables is retained in `reference_uncertainty.csv`; `wimbledon_contrasts.csv` contains 6 joint-calendar contrasts, and `model_agreement.csv` contains 8 tour–Slam cells.
+
+## Rating-history accuracy follow-up
+
+Seven prespecified full-chronology replays leave `elo-v1` unchanged. Both
+control policies reproduce the frozen selected surface-adjusted probabilities,
+ratings, and prior counts exactly on all 37,364 primary Slam IDs. Every fixed
+variant also covers the exact 21,286-match market-era common panel.
+
+With frozen primary parameters, retirement handling moves any common-panel
+tour–Slam expected rate by at most 0.395 and excess by at most 0.353 per 100.
+The direct Wimbledon expected contrast remains positive for ATP (+1.56 to
++1.59) and WTA (+1.87 to +1.93); the corresponding excess point contrast
+remains negative (ATP -0.90 to -0.71, WTA -0.65 to -0.30). Half-result history
+flips 251 common-panel underdog identities; zero-result and strict-skip each
+flip 446. The zero-result and strict-skip scored probabilities are effectively
+identical here, although the audit verifies that their participation counts and
+activity state differ as specified.
+
+Probable-duplicate policies are negligible on the common panel: zero underdog
+flips, at most 0.000232 per 100 of cell excess movement, and at most 0.000065
+per 100 of direct-contrast movement. On the full panel, skip-all changes cell
+excess by at most 0.066 per 100 and flips 10 underdog identities; keep-one flips
+4. The audit retains all 242 members in 121 groups. Exactly 117 selected
+representatives are base-update-eligible; four selected representatives remain
+excluded by the ordinary Elo eligibility rules. This is a rating-history
+sensitivity, not canonical deduplication.
+
+The secondary selector check is less stable and is reported separately. Under
+zero-result history it changes the selected WTA inactivity setting, moving
+common-panel cell expected rates by as much as 3.395 per 100 and changing all
+four WTA cell excess signs from positive to negative. Under strict-skip history
+it changes the ATP best-of-five setting, with up to 3.094 expected and 3.080
+excess points per 100 of cell movement. Even in these reselected replays, direct
+Wimbledon expected contrasts remain positive (ATP +1.59 to +1.79; WTA +1.62 to
++1.93), while direct excess point contrasts remain negative (ATP -0.96 to
+-0.86; WTA -0.65 to -0.21). This parameter-selection variation is a genuine
+model-specification limitation, but it does not create a robust positive
+Wimbledon excess result.
+
+Detailed point estimates, edition-cluster intervals, direct joint-calendar
+contrasts, paired differences, identity changes, selector diagnostics, and
+input/config hashes are in the adjacent `rating_history_*.csv` artifacts.

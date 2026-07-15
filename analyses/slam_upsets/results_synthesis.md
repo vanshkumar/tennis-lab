@@ -18,6 +18,14 @@ expectations depends on the model and a few editions.
 Nothing in the four-event comparison identifies a causal grass effect. Surface,
 event, draw, player mix, format, calendar position, and era are inseparable here.
 
+The rating-history accuracy follow-up does not change that conclusion. With
+the frozen selected parameters, reducing or removing retirement result deltas
+moves any market-common tour–Slam expected rate by at most 0.395 and excess by
+at most 0.353 per 100. Omitting all flagged probable-duplicate history changes
+common-panel cell excess by at most 0.000232 per 100. Every retirement and
+duplicate replay retains a positive direct Wimbledon expected contrast and a
+negative direct excess point contrast for both tours.
+
 ## What is robust
 
 - In the full 1988–2025 surface-adjusted analysis, ATP excess ranges from -3.46
@@ -87,6 +95,14 @@ result, so it is model-dependent rather than a robust Wimbledon effect.
   Garros can lead recent WTA realized/excess rates, while the US Open can lead
   ATP market-oriented realized rates. No event has robust model-independent
   positive excess.
+- A secondary pre-1988 selector rerun is more sensitive than the fixed-parameter
+  retirement replay. Zero-result history changes the selected WTA inactivity
+  setting and moves common-panel expected rates by as much as 3.395 per 100;
+  strict-skip changes the ATP best-of-five setting and moves expected rates by
+  as much as 3.094 per 100. These reselected models still give Wimbledon a
+  positive expected contrast and a negative excess point contrast. They widen
+  the model-specification envelope and are not substituted for frozen
+  `elo-v1`.
 
 ## Uncertainty and limitations
 
@@ -124,3 +140,9 @@ The complete matrix is in `artifacts/robustness/robustness_checks.csv`; joint
 contrasts, paired score comparisons, influence diagnostics, missing-price
 accounting, rank/seed descriptions, and reference intervals are adjacent in
 `artifacts/robustness/`.
+
+The adjacent rating-history artifacts add seven full chronological replays,
+paired exact-ID differences, 2,000-replicate intervals, selector diagnostics,
+and a 121-group probable-duplicate representative audit. The independent
+review reconstructed every summary point and selected full bootstraps from the
+gitignored match-level observations without calling the production summarizers.

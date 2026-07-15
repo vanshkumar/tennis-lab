@@ -30,8 +30,26 @@ calling the production summary helpers.
 
 ## Status
 
-Rating-history policy and methodology prespecification is implemented; production
-generation and independent result review are pending. Market-method
-prespecification and implementation follow as a separate intermediate commit.
-The final claim decision and any maximum movements will be added only after both
-families pass independent review.
+Rating-history production and review are complete. Nine replay specifications
+(seven fixed-parameter and two changed-parameter secondary replays) form exact
+37,364-ID full and 21,286-ID common panels. Both controls reproduce frozen
+probabilities, ratings, and counts exactly. An independent script that imports
+no production summarizers reconstructed all 144 summary points, all 5,974
+identity changes, direct and paired contrasts, and a complete 2,000-replicate
+edition bootstrap; the largest numerical discrepancy was approximately
+`1.1e-14`.
+
+Fixed-parameter retirement policies move common cell expected/excess rates by
+at most 0.395/0.353 per 100. Duplicate policies have zero common underdog flips
+and at most 0.000232 excess points per 100 of common-cell movement. The
+secondary selector result is deliberately retained: changed WTA/ATP settings
+produce expected-rate movements up to 3.395/3.094 per 100. All replayed direct
+Wimbledon expected contrasts remain positive and all direct excess point
+contrasts remain negative.
+
+The probable-duplicate audit retains 242 rows in 121 groups and explicitly
+separates keep-one selection from base eligibility: 117 selected rows can
+update state and four cannot. The canonical table is unchanged. Agent A and
+Agent C found no unresolved P0/P1 issue. Market-method prespecification and
+implementation follow as a separate intermediate commit; the final claim
+decision follows review of that family.

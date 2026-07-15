@@ -48,5 +48,16 @@ probable-duplicate history policies without changing this model card's primary
 defaults or the `elo-v1` prediction artifact. Zero retirement result-delta still
 counts the appearance and refreshes activity; strict skip removes the row from
 participation history as well. Probable-duplicate keep-one is an audited
-sensitivity and never rewrites the canonical table. Production findings are
-published only after the policy configuration and fixture tests are committed.
+sensitivity and never rewrites the canonical table.
+
+The fixed-primary replays change any common-panel cell expected rate by at most
+0.395 and excess by at most 0.353 per 100 for retirement policy, while the
+probable-duplicate maximum excess movement is 0.000232 per 100. Direct
+Wimbledon expected contrasts remain positive and direct excess point contrasts
+remain negative for both tours. A separate selector rerun is more sensitive:
+the selected WTA inactivity setting changes under zero-result history and the
+ATP best-of-five setting changes under strict-skip history, producing common
+cell expected-rate movements up to 3.395 and 3.094 per 100, respectively. These
+secondary reselected models are not substituted for frozen `elo-v1`; they make
+parameter-selection uncertainty explicit without yielding robust positive
+Wimbledon excess.

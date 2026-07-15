@@ -37,6 +37,7 @@ from tennislab.ratings.history_policy import (
 from tennislab.ratings.model import EloParameters
 from tennislab.ratings.pipeline import (
     HistoricalElo,
+    _base_exclusion,
     _candidate_name,
     _date_batches,
     _rows,
@@ -567,6 +568,15 @@ def _duplicate_audit(match_rows: Sequence[Mapping[str, Any]]) -> list[dict[str, 
         ).hexdigest()
         for rank, row in enumerate(ordered, start=1):
             selected = representative_sort_key(row) == selected_key
+            base_exclusion = _base_exclusion(row)
+            if selected and base_exclusion is None:
+                effective_decision = "updates_state_under_keep_one"
+            elif selected:
+                effective_decision = "excluded_by_base_rules"
+            elif base_exclusion is None:
+                effective_decision = "excluded_by_keep_one"
+            else:
+                effective_decision = "excluded_by_base_rules_and_keep_one"
             output.append(
                 {
                     "analysis_version": RATING_HISTORY_VERSION,
@@ -582,7 +592,14 @@ def _duplicate_audit(match_rows: Sequence[Mapping[str, Any]]) -> list[dict[str, 
                     "conflicting_recorded_winner": conflicting_winner,
                     "representative_rank": rank,
                     "selected_representative": selected,
-                    "decision": "retained_for_keep_one" if selected else "excluded_for_keep_one",
+                    "keep_one_selection_decision": (
+                        "selected_representative"
+                        if selected
+                        else "excluded_group_member"
+                    ),
+                    "base_rating_update_eligible": base_exclusion is None,
+                    "base_exclusion_reason": base_exclusion,
+                    "effective_rating_history_decision": effective_decision,
                     "source_file": row["source_file"],
                     "source_row_number": row["source_row_number"],
                     "match_id": row["match_id"],

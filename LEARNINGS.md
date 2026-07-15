@@ -124,6 +124,11 @@
 - Action: Treat SVG/PDF as the cross-platform visual sources of truth, pin byte and decoded-pixel hashes for the reviewed PNG reference, and exclude only the regenerated PNG from cross-platform CI diffs.
 - Confidence: high
 
+**[2026-07-14] — Probable-duplicate replay audit**
+- Observation: The deterministic keep-one order selected one representative in every flagged group, but four selected representatives were still ineligible under the ordinary Elo rules, so a selection-only label could imply state updates that never occurred.
+- Action: Report keep-one selection, base rating-update eligibility and reason, and the effective history decision as separate fields; never equate a policy representative with an eligible rating update.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

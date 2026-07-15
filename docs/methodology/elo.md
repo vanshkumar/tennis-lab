@@ -166,3 +166,12 @@ tie transitions explicitly. Direct Wimbledon contrasts retain the existing
 joint-calendar bootstrap. The pre-1988 non-Slam selector is rerun under the
 zero-result, strict-skip, and duplicate-skip-all policies without overwriting
 `config/elo_model.json`.
+
+Production controls reproduce frozen selected-Elo ratings, probabilities, and
+counts exactly. The representative audit distinguishes the deterministic
+keep-one selection decision from ordinary rating-update eligibility: of 121
+selected representatives, 117 can update state and four are still excluded by
+base rules. Thus “selected” never implies that an otherwise invalid row updated
+ratings. The fixed-parameter retirement replays produce only modest scored-panel
+movement, while separately labeled policy-reselected models expose larger
+parameter-selection variation; neither layer replaces the primary model.
