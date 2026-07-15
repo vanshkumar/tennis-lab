@@ -146,3 +146,24 @@ paired exact-ID differences, 2,000-replicate intervals, selector diagnostics,
 and a 121-group probable-duplicate representative audit. The independent
 review reconstructed every summary point and selected full bootstraps from the
 gitignored match-level observations without calling the production summarizers.
+
+The market-probability follow-up reparses the locked workbooks under seven
+de-margining/consensus policies. The exact proportional control reproduces all
+21,970 frozen source prices and 21,286 common IDs. Named-books-preferred methods
+lose five one-book ATP matches; every comparison removes those IDs from all
+models, and the global panel contains 21,281 IDs.
+
+The largest market-method movement in a tour–Slam cell is 2.200 expected and
+2.429 excess upsets per 100. Power/primary makes ATP US Open excess slightly
+positive (+0.072 per 100), so the frozen primary pattern of negative market
+excess at every ATP Slam is not invariant. Its 95% interval [-1.071, +1.253]
+is wide around zero, and no other result suggests consistent ATP underdog
+overperformance. WTA market excess signs also vary by construction; positive
+power/additive cells have intervals spanning zero.
+
+Every market construction still beats both Elo models on Brier score and log
+loss in all eight balanced tour–Slam cells. Market direct Wimbledon expected
+contrasts remain +0.283 to +0.333 ATP and +0.302 to +0.365 WTA, with all
+intervals crossing zero; direct excess is likewise uncertain. This leaves the
+selected surface-adjusted Wimbledon expected-rate distinction model-specific
+and does not create a robust positive excess-upset outlier.

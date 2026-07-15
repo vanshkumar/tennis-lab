@@ -53,6 +53,24 @@ class MarketProbabilitySensitivityError(RuntimeError):
     """Raised when market sensitivity coverage or provenance drifts."""
 
 
+def validate_tracked_identity_boundary(rows: Sequence[Mapping[str, Any]]) -> None:
+    forbidden = {
+        "match_id",
+        "odds_row_id",
+        "player_1_id",
+        "player_2_id",
+        "primary_player_1_probability",
+        "variant_player_1_probability",
+        "primary_underdog_player_id",
+        "variant_underdog_player_id",
+    }
+    leaked = sorted({field for row in rows for field in forbidden if field in row})
+    if leaked:
+        raise MarketProbabilitySensitivityError(
+            f"tracked market identity audit contains substitutive match detail: {leaked}"
+        )
+
+
 def _write_csv(path: Path, rows: Sequence[Mapping[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields: list[str] = []
@@ -264,6 +282,81 @@ def _identity_rows(
                     **{key: value for key, value in row.items() if key != "model"},
                 }
             )
+    return output
+
+
+def _aggregate_identity_changes(
+    variant_rows: Sequence[Mapping[str, Any]],
+    frozen: Mapping[str, Sequence[Mapping[str, Any]]],
+    *,
+    sample: str,
+    changes: Sequence[Mapping[str, Any]],
+) -> list[dict[str, Any]]:
+    """Publish non-substitutive flip/tie counts; match detail stays gitignored."""
+
+    if not variant_rows:
+        return []
+    variant_label = str(variant_rows[0]["model"])
+    variant_by_id = {str(row["match_id"]): row for row in variant_rows}
+    ids = set(variant_by_id)
+    change_counts = Counter(
+        (
+            str(row["comparison_model"]),
+            str(row["tour"]),
+            str(row["slam"]),
+            str(row["change_type"]),
+        )
+        for row in changes
+    )
+    output: list[dict[str, Any]] = []
+    for comparator in COMPARISON_MODELS:
+        comparator_by_id = {
+            str(row["match_id"]): row
+            for row in frozen[comparator]
+            if str(row["match_id"]) in ids
+        }
+        if set(comparator_by_id) != ids:
+            raise MarketProbabilitySensitivityError(
+                f"identity audit comparator panel is not exact for {variant_label}/{comparator}"
+            )
+        for tour in ("ATP", "WTA"):
+            for slam in SLAMS:
+                cell_ids = sorted(
+                    match_id
+                    for match_id, row in comparator_by_id.items()
+                    if row["tour"] == tour and row["slam"] == slam
+                )
+                for change_type in ("flip", "tie_created", "tie_removed"):
+                    output.append(
+                        {
+                            "analysis_version": MARKET_SENSITIVITY_VERSION,
+                            "sample": sample,
+                            "variant_label": variant_label,
+                            "comparison_model": comparator,
+                            "tour": tour,
+                            "slam": slam,
+                            "change_type": change_type,
+                            "compared_matches": len(cell_ids),
+                            "joint_non_tie_matches": sum(
+                                bool(variant_by_id[match_id]["upset_eligible"])
+                                and bool(comparator_by_id[match_id]["upset_eligible"])
+                                for match_id in cell_ids
+                            ),
+                            "variant_exact_ties": sum(
+                                not bool(variant_by_id[match_id]["upset_eligible"])
+                                for match_id in cell_ids
+                            ),
+                            "comparator_exact_ties": sum(
+                                not bool(comparator_by_id[match_id]["upset_eligible"])
+                                for match_id in cell_ids
+                            ),
+                            "change_matches": change_counts[
+                                (comparator, tour, slam, change_type)
+                            ],
+                            "actual_upset_semantics": "model-relative underdog orientation",
+                            "match_level_detail_tracked": False,
+                        }
+                    )
     return output
 
 
@@ -762,7 +855,12 @@ def build_market_probability_sensitivities(
                 if ids <= common_ids
                 else []
             )
-            identity_rows.extend(changes)
+            if ids <= common_ids:
+                identity_rows.extend(
+                    _aggregate_identity_changes(
+                        rows, frozen, sample=sample, changes=changes
+                    )
+                )
             sensitivity_rows.extend(
                 _summary_rows(
                     rows,
@@ -909,6 +1007,7 @@ def build_market_probability_sensitivities(
             ),
         ),
     }
+    validate_tracked_identity_boundary(identity_rows)
     for filename, rows in outputs.items():
         _write_csv(output_dir / filename, rows)
     _write_observation_detail(

@@ -12,9 +12,11 @@ from tennislab.odds.benchmark import consensus_probability
 from tennislab.analysis.market_probability import (
     MarketProbabilitySensitivityError,
     _variant_observation,
+    _aggregate_identity_changes,
     _write_observation_detail,
     _write_pair_detail,
     validate_exact_model_panel,
+    validate_tracked_identity_boundary,
 )
 import tennislab.analysis.market_probability as market_probability
 from tennislab.odds.probability_policy import (
@@ -422,3 +424,52 @@ def test_detail_writers_are_byte_deterministic_under_input_reordering(
     _write_pair_detail(first_pairs, odds_rows, policies())
     _write_pair_detail(second_pairs, list(reversed(odds_rows)), policies())
     assert first_pairs.read_bytes() == second_pairs.read_bytes()
+
+
+def test_tracked_identity_audit_is_aggregate_and_forbids_match_detail() -> None:
+    variant = [
+        {
+            "match_id": "m",
+            "model": "variant",
+            "tour": "ATP",
+            "slam": "Wimbledon",
+            "upset_eligible": True,
+        }
+    ]
+    frozen = {
+        model: [
+            {
+                "match_id": "m",
+                "model": model,
+                "tour": "ATP",
+                "slam": "Wimbledon",
+                "upset_eligible": True,
+            }
+        ]
+        for model in ("market_odds", "overall_elo", "surface_adjusted_elo")
+    }
+    changes = [
+        {
+            "comparison_model": "market_odds",
+            "tour": "ATP",
+            "slam": "Wimbledon",
+            "change_type": "flip",
+        }
+    ]
+    audit = _aggregate_identity_changes(
+        variant, frozen, sample="balanced", changes=changes
+    )
+    validate_tracked_identity_boundary(audit)
+    row = next(
+        item
+        for item in audit
+        if item["comparison_model"] == "market_odds"
+        and item["tour"] == "ATP"
+        and item["slam"] == "Wimbledon"
+        and item["change_type"] == "flip"
+    )
+    assert row["compared_matches"] == 1
+    assert row["change_matches"] == 1
+    assert row["match_level_detail_tracked"] is False
+    with pytest.raises(MarketProbabilitySensitivityError, match="substitutive"):
+        validate_tracked_identity_boundary([{**row, "match_id": "m"}])

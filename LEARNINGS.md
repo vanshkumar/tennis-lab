@@ -134,6 +134,11 @@
 - Action: Reparse the exact locked workbooks for alternative consensus policies, keep a separate gitignored full pair inventory, and verify the proportional control against frozen market IDs, probabilities, contributor provenance, and anomaly flags.
 - Confidence: high
 
+**[2026-07-14] — Market sensitivity artifact boundary**
+- Observation: A tracked identity-change audit initially carried match IDs, player IDs, and variant bookmaker probabilities, making a nominal audit artifact substitutive even though raw pairs were gitignored.
+- Action: Track only aggregate market flip/tie counts and unavailable IDs/reasons without prices; keep exact probability and identity-change reconstruction in gitignored processed detail and enforce the tracked schema with a forbidden-field test.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

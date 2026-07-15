@@ -85,3 +85,44 @@ Wimbledon excess result.
 Detailed point estimates, edition-cluster intervals, direct joint-calendar
 contrasts, paired differences, identity changes, selector diagnostics, and
 input/config hashes are in the adjacent `rating_history_*.csv` artifacts.
+
+## Market-probability accuracy follow-up
+
+Seven prespecified constructions reparse the 44 locked Tennis-Data workbooks
+without changing `market-odds-v1`. The proportional/primary-mean control
+reproduces all 21,970 frozen source rows and all 21,286 common IDs exactly:
+probabilities, contributors, anomaly flags, identity method, and source
+provenance have zero mismatches. Primary-hierarchy variants retain all common
+IDs. Named-books-preferred variants require two contributors and lose the same
+five one-book ATP matches, producing an exact 21,281-ID all-seven panel with no
+imputation.
+
+Across the all-seven panel, the largest tour–Slam movement from the frozen
+market control is 2.200 expected and 2.429 excess upsets per 100. The largest
+Brier/log-loss movements are 0.001631/0.007751. Method choice therefore matters
+for calibration magnitude and model-relative underdog orientation, especially
+for power de-margining. It does not erase the market benchmark's proper-score
+advantage: every variant has lower Brier score and log loss than both Elo models
+in every ATP/WTA–Slam cell.
+
+One literal primary-result pattern is not invariant. Power de-margining with
+the primary hierarchy gives ATP US Open excess +0.072 per 100 on the global
+panel, but its edition-bootstrap interval is [-1.071, +1.253]. Power methods
+also give positive WTA point excess at the Australian Open, Roland Garros, and
+Wimbledon; additive is positive at the Australian Open and Wimbledon. Every
+one of those positive WTA intervals includes zero. The variants therefore do
+not show consistent underdog overperformance.
+
+Market direct Wimbledon expected contrasts remain small and uncertain: ATP
++0.283 to +0.333 and WTA +0.302 to +0.365 per 100, with every interval crossing
+zero. Direct excess ranges from -1.318 to -1.025 for ATP and +0.982 to +1.198
+for WTA, again with every interval crossing zero. The maximum movement from the
+control direct contrasts is 0.049 expected and 0.234 excess points per 100. No
+construction makes Wimbledon a robust positive excess outlier or supplies a
+market analogue of the selected surface-Elo expected-rate distinction.
+
+Tracked identity output contains aggregate flip/tie counts only; bookmaker
+probabilities and exact changed-match reconstruction stay gitignored. Coverage,
+all lost IDs and reasons, variant configurations, point estimates, uncertainty,
+paired scores, direct contrasts, and complete input/config hashes are in the
+adjacent `market_*.csv` artifacts.

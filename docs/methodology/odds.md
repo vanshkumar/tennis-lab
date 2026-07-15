@@ -172,3 +172,20 @@ comparators; scoring requires the exact Cartesian match/model panel. A global
 all-seven intersection is reported separately from each variant's balanced
 panel. Match-level price/probability provenance remains gitignored, while
 tracked coverage and unavailable-row artifacts contain no raw prices.
+
+Production control gates reproduce all 21,970 frozen market probabilities and
+provenance fields exactly. The four primary-hierarchy variants retain the full
+21,286-ID common panel; each named-books-preferred variant loses the same five
+one-book rows and uses a balanced 21,281-ID panel. Every lost ID and reason is
+tracked without a price value. The global all-seven panel is the intersection
+of those 21,281 IDs.
+
+Power and additive alternatives materially change probability magnitude but
+not the broad claim selection. The largest tour–Slam expected/excess movements
+from proportional control are 2.200/2.429 per 100. Power with the primary
+hierarchy makes ATP US Open excess +0.072 per 100, but its 95% edition interval
+[-1.071, +1.253] includes zero. Market direct Wimbledon expected and excess
+contrasts remain uncertain under every policy, while all seven constructions
+retain lower Brier score and log loss than both Elo models in all eight balanced
+cells. Match-level identity changes and raw pair probabilities remain
+gitignored; the tracked identity artifact contains aggregate counts only.

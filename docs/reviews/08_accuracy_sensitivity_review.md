@@ -60,3 +60,25 @@ hierarchies, strict unavailable behavior, two-book minimum, exact-panel rules,
 and all bootstrap settings are configuration—not outcome-driven choices.
 Implementation and fixture verification precede production inspection; the
 final claim decision follows independent review of its generated detail.
+
+Market production and independent review are complete. The control has zero
+probability, contributor, anomaly, identity, or source-provenance differences
+across 21,970 source rows and 21,286 common IDs. The global seven-policy panel
+contains 21,281 IDs after exactly five one-book rows are removed from every
+compared model. An independent script that imports no production summarizers
+re-solved every available pair, reconstructed all source hierarchies, all 168
+summary rows, all 504 paired rows, the complete panel/coverage accounting, all
+identity changes, a joint-calendar contrast, and a full 2,000-replicate paired
+interval without material discrepancy.
+
+The review preserves the contrary sign result: power/primary ATP US Open excess
+is +0.072 per 100 with 95% CI [-1.071, +1.253], so “negative at every ATP Slam
+under every construction” is too strong. No method produces consistent
+underdog outperformance or a robust positive Wimbledon excess contrast. Every
+market variant remains better than both Elo models on Brier and log loss in all
+eight cells. The central claim and no-causal-grass conclusion remain accurate.
+
+A post-production boundary review found that the first identity-change artifact
+contained match-level bookmaker probabilities. Before publication it was
+replaced with aggregate flip/tie counts and protected by a schema test; exact
+reconstruction remains possible only from gitignored detail.

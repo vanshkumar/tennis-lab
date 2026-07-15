@@ -34,6 +34,14 @@ match-level detail remain under gitignored `data/` directories.
 | [`robustness/rating_history_selection_sensitivity.csv`](robustness/rating_history_selection_sensitivity.csv) | pre-1988 selector results by policy |
 | [`robustness/rating_history_selection_diagnostics.csv`](robustness/rating_history_selection_diagnostics.csv) | selector candidate diagnostics |
 | [`robustness/rating_history_metadata.csv`](robustness/rating_history_metadata.csv) | rating sensitivity inputs, controls, and artifact hashes |
+| [`robustness/market_probability_variant_config.csv`](robustness/market_probability_variant_config.csv) | de-margining/consensus policies and stable hashes |
+| [`robustness/market_probability_sensitivities.csv`](robustness/market_probability_sensitivities.csv) | variant long-run summaries and edition intervals |
+| [`robustness/market_probability_paired_differences.csv`](robustness/market_probability_paired_differences.csv) | exact-ID paired market/Elo score and upset differences |
+| [`robustness/market_probability_wimbledon_contrasts.csv`](robustness/market_probability_wimbledon_contrasts.csv) | market-method joint-calendar contrasts |
+| [`robustness/market_underdog_identity_changes.csv`](robustness/market_underdog_identity_changes.csv) | aggregate flip and tie-transition counts without bookmaker probabilities |
+| [`robustness/market_variant_coverage.csv`](robustness/market_variant_coverage.csv) | source, scored, common, and global coverage by variant and tour–Slam |
+| [`robustness/market_variant_unavailable_rows.csv`](robustness/market_variant_unavailable_rows.csv) | unavailable/lost IDs and method-status reasons without prices |
+| [`robustness/market_probability_metadata.csv`](robustness/market_probability_metadata.csv) | market sensitivity inputs, control gates, detail hashes, and locks |
 
 ## Four-Slam Elo analysis
 

@@ -82,3 +82,14 @@ single price, clipped probability, or imputed row is introduced. Comparisons
 use exact balanced ID panels and recompute model-relative upset orientation.
 Production findings are published only after the complete seven-policy config,
 implementation, equations, and fixture tests are committed.
+
+The completed sensitivity reproduces this frozen model exactly and finds five
+common IDs unavailable only to the two-book-required hierarchies. Alternative
+methods move individual cell expected/excess rates by as much as 2.200/2.429
+per 100. Power/primary gives ATP US Open a small positive excess point estimate
+(+0.072) with a wide interval spanning zero; WTA excess signs also vary. These
+are model-specification changes, not consistent underdog overperformance.
+Crucially, all seven constructions retain lower Brier score and log loss than
+both Elo baselines in every balanced tour–Slam cell. All market Wimbledon
+expected and excess direct intervals cross zero, so the primary claim and
+non-causal interpretation remain unchanged.
