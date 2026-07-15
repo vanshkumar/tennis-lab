@@ -73,3 +73,12 @@ price-missing source rows, 119 are eligible completed non-retirements; the cells
 are reported without extrapolating their tiny, concentrated samples. Market
 odds retain the lowest long-run common-sample Brier score and log loss in every
 tour–Slam cell. See the [`slam-robustness-v1` card](slam-robustness-v1.md).
+
+An adjacent accuracy analysis leaves this model and all reviewed artifacts
+frozen while testing proportional, power, and additive pair de-margining plus
+mean/median and named-books-preferred consensus. Named-preferred policies
+require at least two valid named books and fall back only to `AvgW/AvgL`; no
+single price, clipped probability, or imputed row is introduced. Comparisons
+use exact balanced ID panels and recompute model-relative upset orientation.
+Production findings are published only after the complete seven-policy config,
+implementation, equations, and fixture tests are committed.

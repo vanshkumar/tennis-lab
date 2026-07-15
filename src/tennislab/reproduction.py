@@ -14,6 +14,7 @@ from tennislab.analysis import (
 )
 from tennislab.analysis.robustness import build_robustness_analysis
 from tennislab.analysis.rating_history import build_rating_history_sensitivities
+from tennislab.analysis.market_probability import build_market_probability_sensitivities
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
@@ -63,6 +64,15 @@ class ReproductionPaths:
     )
     rating_history_selection: Path = Path(
         "data/processed/rating_history_selection"
+    )
+    market_sensitivity_config: Path = Path(
+        "config/market_probability_sensitivities.json"
+    )
+    market_sensitivity_detail: Path = Path(
+        "data/processed/market_probability_sensitivity_observations.csv"
+    )
+    market_pair_detail: Path = Path(
+        "data/processed/market_probability_pair_audit.csv"
     )
     publication_config: Path = Path("config/final_figure.json")
 
@@ -162,6 +172,20 @@ def reproduce_project(
         selection_work_dir=paths.rating_history_selection,
     )
 
+    market_sensitivity = build_market_probability_sensitivities(
+        sensitivity_config_path=paths.market_sensitivity_config,
+        predictions_path=paths.predictions_parquet,
+        market_predictions_path=paths.market_predictions,
+        market_observations_path=paths.market_observations,
+        odds_config_path=paths.odds_config,
+        odds_lock_path=paths.odds_lock,
+        aliases_path=paths.odds_aliases,
+        raw_dir=paths.raw_odds,
+        output_dir=paths.robustness_artifacts,
+        observation_detail_path=paths.market_sensitivity_detail,
+        pair_detail_path=paths.market_pair_detail,
+    )
+
     robustness = build_robustness_analysis(
         robustness_config_path=paths.robustness_config,
         predictions_path=paths.predictions_parquet,
@@ -199,6 +223,7 @@ def reproduce_project(
         },
         "market": market,
         "rating_history_sensitivities": rating_history,
+        "market_probability_sensitivities": market_sensitivity,
         "robustness": robustness,
         "publication": publication,
     }

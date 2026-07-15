@@ -50,6 +50,13 @@ contrasts remain negative.
 The probable-duplicate audit retains 242 rows in 121 groups and explicitly
 separates keep-one selection from base eligibility: 117 selected rows can
 update state and four cannot. The canonical table is unchanged. Agent A and
-Agent C found no unresolved P0/P1 issue. Market-method prespecification and
-implementation follow as a separate intermediate commit; the final claim
-decision follows review of that family.
+Agent C found no unresolved P0/P1 issue.
+
+The market family is now prespecified in seven immutable policies. It reparses
+the locked workbooks because frozen primary rows retain only contributors
+selected by the primary hierarchy. Proportional, power, and additive equations,
+the fixed power solver, mean/median aggregation, primary and named-preferred
+hierarchies, strict unavailable behavior, two-book minimum, exact-panel rules,
+and all bootstrap settings are configuration—not outcome-driven choices.
+Implementation and fixture verification precede production inspection; the
+final claim decision follows independent review of its generated detail.

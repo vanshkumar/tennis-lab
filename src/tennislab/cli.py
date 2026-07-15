@@ -19,6 +19,10 @@ from tennislab.analysis.rating_history import (
     RATING_HISTORY_VERSION,
     build_rating_history_sensitivities,
 )
+from tennislab.analysis.market_probability import (
+    MARKET_SENSITIVITY_VERSION,
+    build_market_probability_sensitivities,
+)
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
@@ -61,6 +65,15 @@ DEFAULT_RATING_HISTORY_DETAIL = Path(
 )
 DEFAULT_RATING_HISTORY_SELECTION = Path(
     "data/processed/rating_history_selection"
+)
+DEFAULT_MARKET_SENSITIVITY_CONFIG = Path(
+    "config/market_probability_sensitivities.json"
+)
+DEFAULT_MARKET_SENSITIVITY_DETAIL = Path(
+    "data/processed/market_probability_sensitivity_observations.csv"
+)
+DEFAULT_MARKET_PAIR_DETAIL = Path(
+    "data/processed/market_probability_pair_audit.csv"
 )
 DEFAULT_FINAL_FIGURE_CONFIG = Path("config/final_figure.json")
 
@@ -204,6 +217,44 @@ def build_parser() -> argparse.ArgumentParser:
     rating_history.add_argument("--details", type=Path, default=DEFAULT_RATING_HISTORY_DETAIL)
     rating_history.add_argument(
         "--selection-work-dir", type=Path, default=DEFAULT_RATING_HISTORY_SELECTION
+    )
+
+    market_sensitivity = subparsers.add_parser(
+        "market-probability-sensitivities",
+        help="run prespecified de-margining and bookmaker-consensus sensitivities",
+    )
+    market_sensitivity.add_argument(
+        "--config", type=Path, default=DEFAULT_MARKET_SENSITIVITY_CONFIG
+    )
+    market_sensitivity.add_argument(
+        "--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET
+    )
+    market_sensitivity.add_argument(
+        "--market-predictions", type=Path, default=DEFAULT_MARKET_PREDICTIONS
+    )
+    market_sensitivity.add_argument(
+        "--market-observations", type=Path, default=DEFAULT_MARKET_OBSERVATIONS
+    )
+    market_sensitivity.add_argument(
+        "--odds-config", type=Path, default=DEFAULT_ODDS_CONFIG
+    )
+    market_sensitivity.add_argument(
+        "--odds-lock", type=Path, default=DEFAULT_ODDS_LOCK
+    )
+    market_sensitivity.add_argument(
+        "--odds-aliases", type=Path, default=DEFAULT_ODDS_ALIASES
+    )
+    market_sensitivity.add_argument(
+        "--odds-raw-dir", type=Path, default=DEFAULT_ODDS_RAW
+    )
+    market_sensitivity.add_argument(
+        "--output-dir", type=Path, default=DEFAULT_ROBUSTNESS_ARTIFACTS
+    )
+    market_sensitivity.add_argument(
+        "--details", type=Path, default=DEFAULT_MARKET_SENSITIVITY_DETAIL
+    )
+    market_sensitivity.add_argument(
+        "--pair-details", type=Path, default=DEFAULT_MARKET_PAIR_DETAIL
     )
 
     publication = subparsers.add_parser(
@@ -367,6 +418,22 @@ def main(argv: Sequence[str] | None = None) -> int:
             selection_work_dir=args.selection_work_dir,
         )
         _emit({"rating_history_version": RATING_HISTORY_VERSION, **result})
+        return 0
+    if args.command == "market-probability-sensitivities":
+        result = build_market_probability_sensitivities(
+            sensitivity_config_path=args.config,
+            predictions_path=args.predictions,
+            market_predictions_path=args.market_predictions,
+            market_observations_path=args.market_observations,
+            odds_config_path=args.odds_config,
+            odds_lock_path=args.odds_lock,
+            aliases_path=args.odds_aliases,
+            raw_dir=args.odds_raw_dir,
+            output_dir=args.output_dir,
+            observation_detail_path=args.details,
+            pair_detail_path=args.pair_details,
+        )
+        _emit({"market_sensitivity_version": MARKET_SENSITIVITY_VERSION, **result})
         return 0
     if args.command == "publish-figure":
         result = build_final_figure(config_path=args.config)

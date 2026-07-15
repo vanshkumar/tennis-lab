@@ -83,6 +83,20 @@ gitignored processed-data layer. Compact policy, selection, panel, contrast,
 paired-score, identity-change, and provenance artifacts are adjacent to the
 existing robustness outputs.
 
+Run the separately versioned market-probability sensitivities with:
+
+```bash
+uv run --frozen tennislab market-probability-sensitivities
+# or
+uv run --frozen python analyses/slam_upsets/run_market_probability_sensitivities.py
+```
+
+This command reparses only the locked Tennis-Data workbooks, reuses the reviewed
+identity join, and writes raw pair and match-level detail only to gitignored
+processed data. Tracked outputs contain policy hashes, coverage and unavailable
+reasons, exact-panel summaries, paired scores, direct contrasts, identity
+changes, and input hashes.
+
 Render the reviewed publication graphic from aggregate artifacts only with:
 
 ```bash

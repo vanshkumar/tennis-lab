@@ -250,6 +250,51 @@ def consensus_probability(row: Mapping[str, Any]) -> dict[str, Any] | None:
     }
 
 
+def _price_pair_inventory(row: Mapping[str, Any]) -> list[dict[str, Any]]:
+    """Retain every eligible W/L pair for adjacent, gitignored sensitivities."""
+
+    pairs = [("Avg", "AvgW", "AvgL"), *(
+        (bookmaker, fields[0], fields[1])
+        for bookmaker, fields in BOOKMAKER_FIELDS.items()
+    )]
+    output: list[dict[str, Any]] = []
+    for contributor, winner_field, loser_field in pairs:
+        winner_raw = row.get(winner_field)
+        loser_raw = row.get(loser_field)
+        winner_odds = _as_decimal(winner_raw)
+        loser_odds = _as_decimal(loser_raw)
+        if winner_odds is None:
+            winner_status = "missing_winner_odd" if winner_raw in {None, ""} else "invalid_winner_odd"
+        else:
+            winner_status = "available"
+        if loser_odds is None:
+            loser_status = "missing_loser_odd" if loser_raw in {None, ""} else "invalid_loser_odd"
+        else:
+            loser_status = "available"
+        pair_input_status = (
+            "available"
+            if winner_odds is not None and loser_odds is not None
+            else ";".join(
+                value
+                for value in (winner_status, loser_status)
+                if value != "available"
+            )
+        )
+        output.append(
+            {
+                "contributor": contributor,
+                "winner_field": winner_field,
+                "loser_field": loser_field,
+                "winner_odds": winner_odds,
+                "loser_odds": loser_odds,
+                "winner_input_status": winner_status,
+                "loser_input_status": loser_status,
+                "pair_input_status": pair_input_status,
+            }
+        )
+    return output
+
+
 def _read_workbook(path: Path) -> tuple[list[str], list[dict[str, Any]]]:
     try:
         values = CalamineWorkbook.from_path(path).get_sheet_by_index(0).to_python()
@@ -437,6 +482,7 @@ def _parse_slam_odds(
                     "source_url": str(item["url"]),
                     "source_workbook_sha256": str(item["sha256"]),
                     "source_row_number": source_row_number,
+                    "_price_pair_inventory": _price_pair_inventory(row),
                     **(probability or {}),
                 }
             )

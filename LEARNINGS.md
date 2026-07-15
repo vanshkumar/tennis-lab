@@ -129,6 +129,11 @@
 - Action: Report keep-one selection, base rating-update eligibility and reason, and the effective history decision as separate fields; never equate a policy representative with an eligible rating update.
 - Confidence: high
 
+**[2026-07-14] — Market contributor sensitivities**
+- Observation: Frozen `market_predictions.parquet` preserves only the price contributors selected by the primary hierarchy, so `AvgW/AvgL` rows cannot support a named-books-preferred replay from that file alone.
+- Action: Reparse the exact locked workbooks for alternative consensus policies, keep a separate gitignored full pair inventory, and verify the proportional control against frozen market IDs, probabilities, contributor provenance, and anomaly flags.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

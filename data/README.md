@@ -32,6 +32,12 @@ The forks are not represented as the original authors.
 - `market_benchmark_observations.csv`: market/Elo benchmark observations;
 - `odds_matching_issues.csv`: unmatched/ambiguous audit rows, if any;
 - `robustness_predictions.parquet`: replayed alternative Elo histories.
+- `rating_history_sensitivity_observations.csv`: policy-replayed selected-Elo
+  match observations;
+- `market_probability_sensitivity_observations.csv`: de-margining/consensus
+  variant observations and exact-panel flags;
+- `market_probability_pair_audit.csv`: full eligible-pair input/status and
+  method-level de-margining provenance from the locked workbooks.
 
 These files are reproducible but may be large, contain provider-derived detail,
 or be unsuitable for redistribution. Use the tracked aggregate artifacts for

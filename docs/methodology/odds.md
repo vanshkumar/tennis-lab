@@ -128,3 +128,47 @@ Paired model-score differences use the exact same match IDs and resample whole
 tour–Slam editions. A negative market-minus-Elo Brier or log-loss difference
 means the market forecast scored better; this sign convention is stored in the
 artifact rather than left implicit.
+
+## Prespecified market-probability sensitivities
+
+The frozen `market-odds-v1` construction above remains unchanged. The adjacent
+[`market_probability_sensitivities.json`](../../config/market_probability_sensitivities.json)
+prespecifies seven outcome-independent constructions before production results
+are inspected. Each policy serializes its pair method, source hierarchy,
+aggregation, invalid-pair behavior, minimum contributors, numerical tolerances,
+and deterministic solver settings to a stable SHA-256.
+
+For raw inverse probabilities (q_i=1/o_i), the three pair methods are:
+
+\[
+\text{proportional:}\quad p_i=\frac{q_i}{q_W+q_L};
+\]
+
+\[
+\text{power:}\quad q_W^k+q_L^k=1,\qquad p_i=q_i^k;
+\]
+
+\[
+\text{additive:}\quad m=q_W+q_L-1,\qquad p_i=q_i-\frac{m}{2}.
+\]
+
+Power uses deterministic bracket expansion and bisection with a fixed
+iteration cap and residual check. Additive outputs are validated as computed;
+they are never clipped or renormalized. A failed pair is unavailable with an
+explicit reason.
+
+`primary_hierarchy` uses a method-valid `AvgW/AvgL` pair first, then one or more
+method-valid named-book pairs. `named_books_preferred` requires at least two
+method-valid named-book pairs even when `AvgW/AvgL` exists, then falls back only
+to a valid average pair. It never falls through to a single book. Mean or
+median aggregation occurs after each selected pair is de-margined. `MaxW/MaxL`
+and undocumented exchange fields remain excluded.
+
+All variants reparse the 44 locked workbooks so average-price rows retain the
+otherwise unselected named-book inventory. The reviewed deterministic identity
+join is reused without accepting fuzzy proposals. No price is imputed. A
+variant that loses a frozen-common ID removes that ID from market and both Elo
+comparators; scoring requires the exact Cartesian match/model panel. A global
+all-seven intersection is reported separately from each variant's balanced
+panel. Match-level price/probability provenance remains gitignored, while
+tracked coverage and unavailable-row artifacts contain no raw prices.
