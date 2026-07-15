@@ -11,10 +11,14 @@
 - Pushed publication SHA: `0526e15ab7a430562d54787f048b9f2a631e7afa`
 - Pushed final cleanup SHA: `47293f22736551adcb73cecea612318dc6ffe86e`
 - Pushed cross-platform CI SHA: `848869c7dd568fc3e546dafb7a7dd08030810a15`
+- Pushed rating-policy SHA: `06a2c12a26bb3e9c0549c486886cd1307610c1be`
+- Pushed rating-results SHA: `e697555cdafabc00fdb61113c49fb426619053a2`
+- Pushed market-policy SHA: `110d2670d7694dd7deb8f822108a19a021c65f10`
+- Pushed market-results SHA: `1b4f4d50fcf7900eab3da1d78889968dc3717d38`
 - Final functional CI: passed on Ubuntu, run `29361443953`
 - Foundation verification: clean and byte-reproducible on 2026-07-14
-- Current stage: complete; this status-only closure follows the passing
-  functional head and changes no executable or research output
+- Current stage: accuracy sensitivity follow-up complete; the frozen primary
+  models and publication remain unchanged
 
 ## Completed work
 
@@ -80,6 +84,21 @@
 - Resolved independent visual-review findings on the ATP rolling-title scope,
   separate WTA era context, numeric alt text, portable provenance, and redundant
   line-shape encoding. No publication-blocking visual finding remains.
+- Replayed four retirement-update and three probable-duplicate-history policies
+  over the full chronology. Controls reproduce frozen `elo-v1` exactly;
+  fixed-parameter retirement movements are modest and duplicate effects are
+  negligible on the exact common panel.
+- Reran pre-1988 selection under the prespecified state policies. The WTA
+  inactivity and ATP best-of-five choices change in two secondary replays, which
+  exposes genuine model-specification variation without producing a robust
+  positive Wimbledon excess contrast.
+- Reparsed the locked odds workbooks under seven de-margining/consensus policies.
+  The control reproduces 21,970 prices and 21,286 common IDs exactly; the
+  two-book hierarchies lose five audited IDs and use a balanced 21,281-ID panel.
+- Independently reconstructed rating and market cells, panels, orientation
+  changes, direct and paired contrasts, and complete 2,000-replicate intervals.
+  Every market variant remains better than both Elo models on Brier and log loss
+  in every tour–Slam cell.
 
 ## Commands and verification
 
@@ -91,9 +110,9 @@ uv run --frozen tennislab reproduce
 uv run --frozen tennislab reproduce --fetch
 ```
 
-Current results: 96/96 tests passed; 358,827 canonical matches; 2,844 normalization
-observations; 481,988 audit findings/signals; primary period ready. The prediction
-build contains 1,076,481 rows, 983,621 prediction-eligible rows, 114,777
+Current results: the full test suite passes; 358,827 canonical matches; 2,844
+normalization observations; 481,988 audit findings/signals; primary period
+ready. The prediction build contains 1,076,481 rows, 983,621 prediction-eligible rows, 114,777
 primary-Slam eligible model rows before completed-match exclusions, and 112,092
 completed primary Slam score rows (37,364 matches × three models). Its totally
 ordered Parquet SHA-256 is
@@ -115,6 +134,22 @@ The corresponding expected-rate contrasts are +1.56 [1.16, 1.90] and +1.87
 [1.30, 2.54]. Two complete robustness builds, including the variant Parquet and
 all 2,000-replicate artifacts, were byte-identical.
 
+The rating-history controls reproduce frozen selected-Elo probabilities,
+ratings, and counts exactly. Fixed-parameter retirement policies move a common
+tour–Slam cell by at most 0.395 expected and 0.353 excess upsets per 100;
+probable-duplicate policies move common-cell excess by at most 0.000232 and
+produce no common-panel underdog flips. Across all rating replays, including
+secondary parameter reselection, direct Wimbledon expected/excess contrasts
+move by at most 0.251/0.228 per 100 and retain their positive/negative signs.
+
+The market sensitivity control is exact to machine identity. Alternative
+methods move a tour–Slam cell by at most 2.200 expected and 2.429 excess upsets
+per 100, and move the direct Wimbledon contrasts by at most 0.049/0.234. Power
+de-margining makes ATP US Open excess +0.072 per 100, but its interval
+[-1.071, +1.253] spans zero. No construction creates a robust positive
+Wimbledon excess result or a market analogue of the selected surface-Elo
+expected-rate distinction.
+
 The Slam analysis contains 37,364 primary proper-score matches per model.
 Surface-adjusted ATP actual upset rates are 27.92–28.74 per 100 versus expected
 rates of 31.54–33.11; WTA actual rates are 26.26–28.85 versus expected rates of
@@ -123,6 +158,9 @@ This table remains descriptive; completed odds and robustness stages provide
 direct contrasts but do not make them causal or confirmatory.
 
 ## Important outputs
+
+This is a representative handoff list; [`artifacts/README.md`](artifacts/README.md)
+is the authoritative complete tracked-artifact index.
 
 - `artifacts/data_audit/report.md`
 - `artifacts/elo/cold_start_report.md`
@@ -153,6 +191,8 @@ direct contrasts but do not make them causal or confirmatory.
 - generated `data/processed/market_predictions.parquet`
 - generated `data/processed/market_benchmark_observations.csv`
 - `config/robustness.json`
+- `config/rating_history_sensitivities.json`
+- `config/market_probability_sensitivities.json`
 - `analyses/slam_upsets/results_synthesis.md`
 - `artifacts/robustness/results.md`
 - `artifacts/robustness/robustness_checks.csv`
@@ -161,6 +201,13 @@ direct contrasts but do not make them causal or confirmatory.
 - `artifacts/robustness/influence_diagnostics.csv`
 - `artifacts/robustness/missing_odds_source_accounting.csv`
 - `artifacts/robustness/reference_uncertainty.csv`
+- `artifacts/robustness/rating_history_sensitivities.csv`
+- `artifacts/robustness/rating_history_wimbledon_contrasts.csv`
+- `artifacts/robustness/rating_history_selection_sensitivity.csv`
+- `artifacts/robustness/market_probability_sensitivities.csv`
+- `artifacts/robustness/market_probability_wimbledon_contrasts.csv`
+- `artifacts/robustness/market_variant_coverage.csv`
+- `docs/reviews/08_accuracy_sensitivity_review.md`
 - generated `data/processed/robustness_predictions.parquet`
 - `config/final_figure.json`
 - `artifacts/publication/slam_upsets_final.png`
@@ -176,18 +223,25 @@ direct contrasts but do not make them causal or confirmatory.
 - Lower-tier sources remain a future rating-only sensitivity behind the gates in
   Decision 0001; they are not a blocker for the selected confirmatory model.
 - Probable duplicate groups outside the primary Slams remain audit signals because
-  the key can also identify legitimate round-robin rematches; downstream
-  robustness must expose their influence rather than silently collapse them.
+  the key can also identify legitimate round-robin rematches. The new replay
+  sensitivities expose negligible common-panel influence without silently
+  collapsing them.
 - Tennis-Data prices are generally the most recent before play but are not
   timestamped closing lines; raw spreadsheet redistribution permission is
   unclear, so only locks, aliases, audits, and aggregates are tracked.
 - Fourteen valid price rows have an anomalous contributor overround and remain in
   primary results. All 14 occur in the common primary population and are removed
   from every model together without changing claim selection.
+- Rating parameter selection is sensitive to retirement-state history in two
+  secondary policy reruns. These alternatives remain versioned sensitivities,
+  not replacements for the frozen precommitted primary model.
+- Five one-book ATP rows cannot meet the named-book two-contributor minimum.
+  They remain audited and are removed from every model in those balanced
+  comparisons; no prices are imputed.
 
 ## Exact next stage
 
-No required project stage remains after the final cleanup commit is pushed and
-its GitHub Actions run passes. A sensible optional next analysis is a broader
-tour-level ATP/WTA surface study, with new source locks or model versions kept
-separate from the frozen four-Slam result.
+No required analysis stage remains after the accuracy-integration commit is
+pushed and its GitHub Actions run passes. A sensible optional next analysis is
+a broader tour-level ATP/WTA surface study, with new source locks or model
+versions kept separate from the frozen four-Slam result.

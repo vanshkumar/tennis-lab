@@ -94,8 +94,8 @@ uv run --frozen python analyses/slam_upsets/run_market_probability_sensitivities
 This command reparses only the locked Tennis-Data workbooks, reuses the reviewed
 identity join, and writes raw pair and match-level detail only to gitignored
 processed data. Tracked outputs contain policy hashes, coverage and unavailable
-reasons, exact-panel summaries, paired scores, direct contrasts, identity
-changes, and input hashes.
+reasons, exact-panel summaries, paired scores, direct contrasts, aggregate
+identity-change counts, and input hashes.
 
 Render the reviewed publication graphic from aggregate artifacts only with:
 
@@ -179,8 +179,9 @@ On the common sample, the market model's long-run rates per 100 are:
 | WTA | Wimbledon | 28.81 | 28.20 | -0.61 [-2.43, 1.07] |
 | WTA | US Open | 28.37 | 25.85 | -2.52 [-3.58, -1.29] |
 
-ATP agrees across overall Elo, surface-adjusted Elo, and market odds that none of
-the Slams has positive excess underdog wins. WTA is model-dependent: overall Elo
+Under the frozen primary constructions, ATP agrees across overall Elo,
+surface-adjusted Elo, and market odds that none of the Slams has positive excess
+underdog wins. WTA is model-dependent: overall Elo
 shows positive excess in several events, surface adjustment attenuates it, and
 market odds are near zero for the first three Slams and negative at the US Open.
 For WTA Wimbledon specifically, surface-adjusted Elo is +0.76 [-1.06, 2.65] and
@@ -198,9 +199,12 @@ and `market_benchmark_observations.csv` retain the match-level audit trail.
 ## Robustness synthesis
 
 The exact common sample contains 21,286 matches and 63,858 model observations.
-ATP has negative excess underdog wins at all four Slams under overall Elo,
-surface-adjusted Elo, and market odds; the direction also survives every frozen
-blend weight and alternative Elo history. WTA is model-dependent: under selected
+ATP has negative excess underdog wins at all four Slams under the frozen overall
+Elo, surface-adjusted Elo, and market constructions; the direction also survives
+every frozen blend weight and alternative Elo history. Power de-margining is a
+small exception for the ATP US Open (+0.072 per 100, interval spanning zero), so
+the market sign is not invariant across construction policies. WTA is
+model-dependent: under selected
 surface-adjusted Elo, latest-era expected and model-defined actual rates are
 higher than in 1988–1999 and proper scores are worse, but this is an endpoint
 comparison rather than a monotonic or model-independent trend. Excess flips with
@@ -225,3 +229,12 @@ checks. Top-residual removal is outcome-driven and diagnostic only; the
 extreme-favorite exclusion uses only prespecified pre-match probabilities.
 Lower-tier sensitivity is recorded as infeasible under the locked source scope;
 no proxy is substituted.
+
+The adjacent accuracy follow-up also verifies that retirement and probable-
+duplicate history choices do not reverse the direct Wimbledon conclusion.
+Across all rating replays, including parameter reselection, the direct expected
+and excess contrasts move by at most 0.251 and 0.228 per 100. Across the seven
+market constructions the corresponding maxima are 0.049 and 0.234. Every
+market construction retains lower Brier score and log loss than both Elo models
+in every balanced tour–Slam cell, and no variant yields a robust positive
+Wimbledon excess contrast.

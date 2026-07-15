@@ -30,8 +30,8 @@ odds. This does not support a Wimbledon/grass causal claim.
 
 The independent reviewer found and the implementation fixed one P1: mean
 overround could hide an anomalous individual book. No P0/P1 remains. Repeated
-2,000-replicate builds are byte-identical, the full suite passes 76/76, and 24
-common long-run groups independently reconcile to DuckDB.
+2,000-replicate builds are byte-identical, the full suite passed at that stage,
+and 24 common long-run groups independently reconcile to DuckDB.
 
 Stage 5 supersedes this checkpoint with the completed robustness matrix in
 `artifacts/robustness/`, including screening of all 14 flagged source rows,

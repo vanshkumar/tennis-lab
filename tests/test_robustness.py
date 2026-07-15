@@ -9,6 +9,7 @@ from tennislab.analysis.robustness import (
     RobustnessError,
     _canonical_database_content_sha256,
     _prediction_observation,
+    _write_report,
     paired_model_differences,
     summarize_scenario,
     validate_balanced_model_panel,
@@ -170,3 +171,34 @@ def test_canonical_content_hash_ignores_database_storage_order(tmp_path) -> None
     assert _canonical_database_content_sha256(paths[0]) == (
         _canonical_database_content_sha256(paths[1])
     )
+
+
+def test_robustness_report_preserves_accuracy_followup_appendix(tmp_path) -> None:
+    path = tmp_path / "results.md"
+    appendix = (
+        "## Rating-history accuracy follow-up\n\n"
+        "Preserved rating checkpoint.\n\n"
+        "## Market-probability accuracy follow-up\n\n"
+        "Preserved market checkpoint.\n"
+    )
+    path.write_text(f"stale generated report\n\n{appendix}", encoding="utf-8")
+    _write_report(
+        path,
+        common_rows=[
+            _observation(
+                match_id="m",
+                model="overall_elo",
+                slam="Wimbledon",
+                year=2025,
+                p1=0.7,
+                player_1_won=True,
+            )
+        ],
+        contrast_rows=[],
+        agreement_rows=[],
+        missing_rows=[],
+    )
+    rebuilt = path.read_text(encoding="utf-8")
+    assert rebuilt.startswith("# Robustness and claim selection\n")
+    assert rebuilt.endswith(appendix)
+    assert "stale generated report" not in rebuilt

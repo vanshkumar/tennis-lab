@@ -29,7 +29,7 @@ uv run python analyses/slam_upsets/run_publication.py
 Two complete final builds produced byte-identical PNG, SVG, PDF, data, metadata,
 alt-text, and methodology files. Renderer unit tests cover the frozen panel
 contract, headline guard values, label separation, valid SVG/PNG/PDF output, and
-byte determinism. The complete suite passes 85/85. Independent visual re-review
+byte determinism. The complete suite passed at that stage. Independent visual re-review
 found no remaining P0/P1.
 
 ## Outputs

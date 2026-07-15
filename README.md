@@ -19,12 +19,21 @@ expected upsets per 100 matches, with 95% joint-calendar bootstrap intervals of
 Wimbledon-minus-other-Slam excess is -0.90 [-2.29, 0.38] for ATP and -0.44
 [-2.48, 1.66] for WTA.
 
-ATP excess is negative at every Slam under overall Elo, surface-adjusted Elo,
-and market odds. WTA excess changes with the favorite definition. The selected
-Elo forecast also has higher latest-era expected and model-defined actual WTA
-rates than in 1988–1999 at all four Slams, but the path is not monotonic or
-model-independent. None of these four-event comparisons identifies a causal
-grass effect.
+Under the frozen primary constructions, ATP excess is negative at every Slam
+under overall Elo, surface-adjusted Elo, and market odds. A prespecified power
+de-margining sensitivity makes ATP US Open market excess only +0.07 per 100,
+with a 95% interval spanning -1.07 to +1.25, so that sign is not invariant.
+WTA excess also changes with the favorite definition. Every tested market
+construction nevertheless retains lower Brier score and log loss than both Elo
+models in every balanced tour–Slam cell.
+
+The accuracy follow-up leaves the headline unchanged. Across all rating-history
+replays, including secondary parameter reselection, the direct Wimbledon
+contrast moves by at most 0.251 expected and 0.228 excess upsets per 100 from
+the frozen estimate. Across market constructions, the corresponding maxima are
+0.049 and 0.234. No variant makes Wimbledon a robust positive excess-upset
+outlier, and none of these four-event comparisons identifies a causal grass
+effect.
 
 ![Final Grand Slam upset publication graphic](artifacts/publication/slam_upsets_final.png)
 
@@ -59,6 +68,8 @@ uv run --frozen tennislab build-matches
 uv run --frozen tennislab ratings
 uv run --frozen tennislab analyze-slams
 uv run --frozen tennislab analyze-odds
+uv run --frozen tennislab rating-history-sensitivities
+uv run --frozen tennislab market-probability-sensitivities
 uv run --frozen tennislab robustness
 uv run --frozen tennislab publish-figure
 ```
@@ -116,6 +127,7 @@ model cards document generated prediction layers.
 - [Elo model card](docs/model_cards/elo-v1.md)
 - [Market model card](docs/model_cards/market-odds-v1.md)
 - [Robustness analysis card](docs/model_cards/slam-robustness-v1.md)
+- [Accuracy sensitivity follow-up review](docs/reviews/08_accuracy_sensitivity_review.md)
 - [Rating-history scope decision](docs/decisions/0001-rating-history-scope.md)
 - [Reproducibility/artifact decision](docs/decisions/0002-reproducibility-and-artifact-boundary.md)
 - [Project status](PROJECT_STATUS.md)
@@ -129,6 +141,6 @@ because their reuse terms do not provide a clear redistribution license. See
 [licensing details](LICENSES.md), [source provenance](docs/source_provenance.md),
 and [`CITATION.cff`](CITATION.cff) before redistributing data-derived outputs.
 
-GitHub Actions installs frozen dependencies, runs the 96-test unit/fixture/hygiene
-suite, rebuilds the publication smoke artifacts without external data, and fails
-if tracked outputs change.
+GitHub Actions installs frozen dependencies, runs the unit/fixture/hygiene
+suite, rebuilds the publication smoke artifacts without external data, and
+fails if tracked outputs change.

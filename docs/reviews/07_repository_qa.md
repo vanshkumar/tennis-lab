@@ -51,7 +51,7 @@ byte-identical. The tracked PNG is therefore a reviewed reference export with
 locked byte/pixel hashes; cross-platform CI uses SVG/PDF as its visual sources of
 truth and retains byte comparison for every portable output.
 
-The corrected Ubuntu run passed all 96 tests, rebuilt the publication, and
+The corrected Ubuntu run passed the then-current full suite, rebuilt the publication, and
 reported zero drift for the semantic SVG/PDF, data, metadata, alt text, and
 methodology outputs ([run 29361443953](https://github.com/vanshkumar/tennis-lab/actions/runs/29361443953)).
 

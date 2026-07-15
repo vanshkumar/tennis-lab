@@ -40,6 +40,7 @@ RETIREMENT_POPULATION = "retirement_inclusive"
 COMMON_MODELS = ("overall_elo", "surface_adjusted_elo", "market_odds")
 ROUND_ORDER = ("R128", "R64", "R32", "R16", "QF", "SF", "F")
 SCORE_EPSILON = 1e-12
+ACCURACY_FOLLOWUP_HEADING = "## Rating-history accuracy follow-up"
 
 
 class RobustnessError(RuntimeError):
@@ -1165,6 +1166,13 @@ def _write_report(
     agreement_rows: Sequence[Mapping[str, Any]],
     missing_rows: Sequence[Mapping[str, Any]],
 ) -> None:
+    accuracy_appendix: list[str] = []
+    if path.exists():
+        existing_lines = path.read_text(encoding="utf-8").split("\n")
+        if ACCURACY_FOLLOWUP_HEADING in existing_lines:
+            accuracy_appendix = existing_lines[
+                existing_lines.index(ACCURACY_FOLLOWUP_HEADING) :
+            ]
     common_summary = summarize_scenario(
         common_rows, scenario="common_primary", category="sample", preferred_analysis=True
     )
@@ -1217,6 +1225,7 @@ def _write_report(
             "",
         ]
     )
+    lines.extend(accuracy_appendix)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text("\n".join(lines), encoding="utf-8")

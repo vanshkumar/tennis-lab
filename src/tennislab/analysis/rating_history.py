@@ -14,6 +14,7 @@ from typing import Any, Iterable, Mapping, Sequence
 
 import duckdb
 
+from tennislab.analysis.sensitivity_artifacts import frozen_reviewed_artifact_files
 from tennislab.analysis.robustness import (
     _canonical_database_content_sha256,
     _prediction_observation,
@@ -725,22 +726,7 @@ def build_rating_history_sensitivities(
     source_lock_sha256 = _sha256(source_lock_path)
     _, primary_parameters = load_model_config(elo_config_path)
 
-    generated_artifact_names = {
-        "rating_history_variant_config.csv",
-        "rating_history_sensitivities.csv",
-        "rating_history_paired_differences.csv",
-        "rating_history_wimbledon_contrasts.csv",
-        "rating_history_underdog_identity_changes.csv",
-        "probable_duplicate_representative_audit.csv",
-        "rating_history_selection_sensitivity.csv",
-        "rating_history_selection_diagnostics.csv",
-        "rating_history_metadata.csv",
-    }
-    frozen_files = sorted(
-        path
-        for path in Path("artifacts").rglob("*")
-        if path.is_file() and path.name not in generated_artifact_names
-    )
+    frozen_files = frozen_reviewed_artifact_files()
     frozen_hashes = {path.as_posix(): _sha256(path) for path in frozen_files}
 
     frozen_predictions = _frozen_primary_predictions(predictions_path)

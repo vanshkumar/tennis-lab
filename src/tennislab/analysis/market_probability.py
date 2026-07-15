@@ -11,6 +11,7 @@ from typing import Any, Iterable, Mapping, Sequence
 
 import duckdb
 
+from tennislab.analysis.sensitivity_artifacts import frozen_reviewed_artifact_files
 from tennislab.analysis.rating_history import (
     _common_ids,
     paired_probability_differences,
@@ -573,20 +574,7 @@ def build_market_probability_sensitivities(
             "substitutive market detail must not be written under artifacts/"
         )
 
-    generated_names = {
-        "market_probability_variant_config.csv",
-        "market_probability_sensitivities.csv",
-        "market_probability_paired_differences.csv",
-        "market_probability_wimbledon_contrasts.csv",
-        "market_underdog_identity_changes.csv",
-        "market_variant_coverage.csv",
-        "market_variant_unavailable_rows.csv",
-        "market_probability_metadata.csv",
-    }
-    frozen_files = sorted(
-        path for path in Path("artifacts").rglob("*")
-        if path.is_file() and path.name not in generated_names
-    )
+    frozen_files = frozen_reviewed_artifact_files()
     frozen_hashes = {path.as_posix(): _sha256(path) for path in frozen_files}
 
     source_config = load_odds_source_config(odds_config_path)

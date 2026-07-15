@@ -71,6 +71,12 @@ marginal intervals are not adjusted for familywise multiplicity, and interval
 exclusion or non-overlap is not treated as confirmatory evidence. Robustness
 comparisons can reveal fragility but do not create a multiplicity correction.
 
+Model-specification variation is reported separately from sampling uncertainty.
+An edition-bootstrap interval conditions on one configured probability model;
+the spread across rating-history or market-construction policies instead shows
+how the point estimate changes when a prespecified modeling choice changes.
+Neither quantity is a causal interval.
+
 ## Time and end-state sensitivities
 
 Historical trends use rolling five completed editions, so canceled Wimbledon 2020
@@ -108,7 +114,12 @@ it is not turned into a zero. Betting-model contrasts necessarily use their
 shorter common coverage.
 
 Paired model differences use exact shared match IDs and edition-clustered
-resampling. Fixed eras, rolling five completed editions, early rounds
+resampling. When a sensitivity loses coverage, its ID intersection is applied
+to every compared model, with exactly one row required for every expected
+`(match_id, model)` pair and no imputation. Because underdog orientation is
+model-relative, paired actual/excess differences are calculated only after each
+model's favorite is reconstructed on that exact panel; flip and tie changes are
+reported explicitly. Fixed eras, rolling five completed editions, early rounds
 (R128–R32), and late rounds (R16–final) are labeled sensitivities. Official
 rank/seed ordering is descriptive and never substituted for a probability.
 

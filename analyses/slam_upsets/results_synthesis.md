@@ -5,9 +5,10 @@
 Wimbledon is not a robust excess-upset outlier. Surface-adjusted Elo gives it
 more upset-prone matchups, while market and overall-Elo expected differences are
 small and uncertain. The realized underdog-win rate does not reliably exceed
-expectation. ATP evidence
-is especially consistent: overall Elo, surface-adjusted Elo, and betting odds
-all produce negative long-run excess at every Slam on their exact common sample.
+expectation. Under the frozen primary constructions, ATP evidence is especially
+consistent: overall Elo, surface-adjusted Elo, and betting odds all produce
+negative long-run excess at every Slam on their exact common sample. The market-
+construction sensitivity below contains one small, uncertain sign exception.
 Under selected surface-adjusted Elo, WTA expected and model-defined actual upset
 rates are higher in the latest era than in 1988–1999 at all four Slams, and Elo
 proper scores are worse. This endpoint comparison supports closer modeled
@@ -75,9 +76,10 @@ result, so it is model-dependent rather than a robust Wimbledon effect.
 ## What is model-dependent or concentrated
 
 - On the common WTA sample, overall and surface-adjusted Elo define more realized
-  upsets than expected at all four Slams, while market excess is negative at all
-  four. Long-run WTA Wimbledon is +0.76 [-1.06, +2.65] for surface-adjusted Elo
-  and -0.61 [-2.43, +1.07] for the market. Both intervals include zero.
+  upsets than expected at all four Slams, while excess under the frozen primary
+  market construction is negative at all four. Long-run WTA Wimbledon is +0.76
+  [-1.06, +2.65] for surface-adjusted Elo and -0.61 [-2.43, +1.07] for the
+  market. Both intervals include zero.
 - The latest five WTA Wimbledon editions are close to expectation under the
   selected models: market +0.42 excess per 100 and surface-adjusted Elo +0.23;
   overall Elo gives +3.13. Wimbledon 2022 is influential in that short window.

@@ -12,7 +12,7 @@ implementations, and fixture tests were committed.
 
 The rating-history family replays four retirement policies and three unresolved
 probable-duplicate policies from the beginning of the canonical chronology.
-The market family will compare proportional, power, and additive binary
+The market family compares proportional, power, and additive binary
 de-margining under explicitly configured source hierarchies and mean/median
 bookmaker consensus. Every cross-model result must use an exact balanced ID
 panel; no price or match is imputed, no fuzzy identity proposal is accepted, and
@@ -82,3 +82,49 @@ A post-production boundary review found that the first identity-change artifact
 contained match-level bookmaker probabilities. Before publication it was
 replaced with aggregate flip/tie counts and protected by a schema test; exact
 reconstruction remains possible only from gitignored detail.
+
+## Claim decision
+
+1. Fixed-parameter retirement policies move common-cell expected/excess rates
+   by at most 0.395/0.353 per 100 and do not reverse either tour's direct excess
+   sign. Secondary parameter selection changes larger WTA/ATP cell estimates,
+   but still yields no positive direct Wimbledon excess point contrast.
+2. Probable-duplicate policies are negligible on the common panel: no underdog
+   flips, at most 0.000232 excess movement per 100, and at most 0.000065 direct-
+   contrast movement.
+3. No market construction reverses the market's proper-score advantage: all
+   seven beat both Elo models on Brier score and log loss in all eight cells.
+4. Market excess is not literally negative at every ATP Slam under every
+   construction because power/primary yields the small, uncertain US Open
+   exception reported above.
+5. WTA market excess remains construction- and orientation-dependent; positive
+   power/additive cells all have intervals spanning zero and are not comparable
+   to an Elo-defined “actual upset” without reconstructing the favorite.
+6. No rating or market variant makes Wimbledon a robust positive excess-upset
+   outlier.
+7. The selected surface-adjusted Wimbledon expected-rate distinction remains
+   model-specific. Market direct expected contrasts are only +0.283 to +0.365
+   per 100 and all intervals include zero.
+8. The four-event design still cannot identify a causal grass effect.
+
+Across all rating replays, including policy-reselected parameters, the maximum
+movement from the frozen direct Wimbledon estimate is 0.251 expected and 0.228
+excess upsets per 100. Across market constructions it is 0.049 expected and
+0.234 excess. These movements do not require a change to the central conclusion
+or to the 330-row publication figure-data contract, SVG, PDF, or PNG.
+
+## Review disposition
+
+Agent B approved the prespecified market equations, power solver, hierarchy,
+provenance, edge-case behavior, and outcome independence after all findings were
+resolved. Agent C independently reconstructed both sensitivity families,
+including exact panels, orientation changes, direct and paired contrasts, and a
+complete 2,000-replicate interval for each family, with no material discrepancy.
+
+Agent D verified configuration and input hashes, deterministic ordering,
+CLI/`reproduce` integration, documentation links, the tracked-data boundary,
+and byte preservation of all 330 publication rows and portable outputs. The
+final verification passed the then-current full suite, a complete locked-data
+reproduction, exact repeat manifests for all sensitivity outputs, and repository
+hygiene checks. No
+unresolved P0/P1 review finding remains.

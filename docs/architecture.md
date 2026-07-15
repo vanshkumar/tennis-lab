@@ -13,8 +13,12 @@ flowchart TD
     D --> E["Four-Slam Elo aggregates"]
     B --> F["Audited market probabilities"]
     D --> F
+    D --> R["Rating-history policy replays"]
+    F --> M["Market-probability policy reparse"]
     E --> G["Robustness and claim selection"]
     F --> G
+    R --> G
+    M --> G
     G --> H["Reviewed publication data"]
     E --> H
     F --> H
@@ -31,11 +35,14 @@ flowchart TD
 | Rating pipeline | `tennislab ratings` | canonical matches and source lock | frozen model config, pre-match predictions, diagnostics |
 | Slam analysis | `tennislab analyze-slams` | prediction Parquet | expected/actual/excess aggregates and clustered uncertainty |
 | Market benchmark | `tennislab analyze-odds` | predictions, locked workbooks, reviewed aliases | matched market predictions, audits, common-sample aggregates |
+| Rating-history sensitivity | `tennislab rating-history-sensitivities` | canonical chronology, frozen predictions/config, market common IDs | policy replays, selector checks, exact-panel aggregates |
+| Market-probability sensitivity | `tennislab market-probability-sensitivities` | locked workbooks, reviewed aliases, frozen model panels | policy coverage, scores, contrasts, aggregate orientation changes |
 | Robustness | `tennislab robustness` | canonical/prediction/market layers plus frozen config | alternative histories, contrasts, influence and synthesis tables |
 | Publication | `tennislab publish-figure` | reviewed aggregate CSVs only | exact figure data, metadata, PNG, SVG, and PDF |
 
-`tennislab reproduce` executes stages from the canonical build through
-publication. `tennislab reproduce --fetch` first restores missing raw bytes from
+`tennislab reproduce` executes stages from the canonical build through both
+sensitivity families, robustness, and publication. The
+`tennislab reproduce --fetch` form first restores missing raw bytes from
 the immutable locks. Both commands deterministically rerun pre-1988 Elo
 selection and regenerate `config/elo_model.json`; any drift from the reviewed
 config remains visible in Git. They do not rewrite source locks, aliases, or the
@@ -58,6 +65,8 @@ refuse upstream bytes that differ from a tracked size or SHA-256.
 - `predictions.parquet` with overall, raw-surface, and adjusted-surface rows;
 - `upset_matches.csv`;
 - market and robustness match-level prediction/observation files.
+- rating-history observations, market probability/pair details, and selector
+  work directories used for exact independent reconstruction.
 
 These files preserve detailed provenance but are too large or too restricted for
 source control.
@@ -89,6 +98,11 @@ and output.
 - Common-sample comparisons require one unique row for every expected
   `(match_id, model)` pair. Cross-model exclusions remove the union of affected
   match IDs.
+- Retirement zero-result policy retains count/activity state, while strict skip
+  removes participation history; probable-duplicate policies alter replay state
+  only and never rewrite canonical rows.
+- Market probability magnitude is determined entirely from pre-match odds and a
+  serialized policy. Named-book minimum failures are audited and never imputed.
 - Raw and malformed observations are retained and audited. Validation signals do
   not become silent filtering assumptions.
 

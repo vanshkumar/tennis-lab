@@ -13,6 +13,9 @@ pre-match inputs, not a new production forecasting model.
 - `market-odds-v1` latest-available pre-match prices;
 - reviewed aggregate Stage 3/4 outputs for reference intervals;
 - prespecified settings in `config/robustness.json`.
+- adjacent prespecified state-update and market-construction settings in
+  `config/rating_history_sensitivities.json` and
+  `config/market_probability_sensitivities.json`.
 
 Alternative Elo histories replay only information available before each event
 date and preserve same-date batching. Surface blends recombine stored pre-match
@@ -48,6 +51,30 @@ differences resample tour–Slam editions. The build inherits the 2,000-replicat
 The selected 0.25 blend must reproduce frozen probabilities within `1e-12`.
 Variant names must exactly match the config. Odds matching must remain one-to-
 one with zero identity issues. Common, blend, and alternative panels require
-exactly one row for every expected match/model pair. Unit tests cover scenario separation, joint-year
-bootstrap determinism, paired match use, and primary retirement exclusion.
+exactly one row for every expected match/model pair. Unit tests cover scenario
+separation, joint-year bootstrap determinism, paired match use, and primary
+retirement exclusion.
 Generated metadata records hashes for all prediction and configuration inputs.
+
+## Accuracy sensitivity extensions
+
+The versioned rating-history extension replays the full chronology under four
+retirement policies and three probable-duplicate policies while preserving the
+primary model. It distinguishes zero result delta from strict participation
+skip, retains the conservative duplicate-group key, and audits deterministic
+keep-one selection without changing canonical data. Fixed and policy-reselected
+parameter results are reported separately.
+
+The versioned market extension reparses the locked workbooks under proportional,
+power, and additive de-margining plus primary/named-book mean/median consensus
+policies. Comparisons use each variant's exact balanced match/model panel; five
+one-book IDs are unavailable to the named-book policies and are removed from
+every compared model without imputation. The control reproduces frozen prices
+and provenance exactly.
+
+Independent reconstruction found no unresolved numerical discrepancy. All
+rating replays retain a positive direct Wimbledon expected point contrast and a
+negative direct excess point contrast. All market direct intervals include zero,
+and every market construction retains lower Brier and log loss than both Elo
+models in all eight balanced cells. These are sampling and specification
+sensitivities, not causal surface evidence.

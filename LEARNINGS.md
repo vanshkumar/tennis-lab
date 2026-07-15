@@ -139,6 +139,16 @@
 - Action: Track only aggregate market flip/tie counts and unavailable IDs/reasons without prices; keep exact probability and identity-change reconstruction in gitignored processed detail and enforce the tracked schema with a forbidden-field test.
 - Confidence: high
 
+**[2026-07-14] — Cross-family sensitivity determinism**
+- Observation: Once both accuracy families existed, letting each metadata file hash the other family's generated artifacts created a circular provenance dependency that could change on every alternating rebuild.
+- Action: Exclude both versioned sensitivity-output families from both primary-artifact guards, while continuing to hash every consumed input/detail and protect all frozen primary/publication artifacts.
+- Confidence: high
+
+**[2026-07-14] — Robustness report composition**
+- Observation: The robustness stage regenerated `artifacts/robustness/results.md` after the two sensitivity stages and would erase manually integrated accuracy checkpoints during full reproduction; editing a protected artifact during a sensitivity run also correctly trips its end-of-build guard.
+- Action: Deterministically preserve the versioned accuracy appendix when rebuilding the base robustness report, test that composition, and never edit tracked artifacts while a sensitivity builder is active.
+- Confidence: high
+
 ## What Has Failed
 
 **[2026-07-13] — Historical source retrieval**

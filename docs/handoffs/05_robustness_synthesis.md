@@ -38,7 +38,7 @@ Two complete final builds are byte-identical, including every tracked artifact
 and `data/processed/robustness_predictions.parquet`. The selected 0.25 blend
 reproduces frozen probabilities within `2.3e-16`. Statistical review found no
 remaining P0/P1/P2; narrative review found no remaining material concern.
-The complete repository test suite passes 81/81.
+The complete repository test suite passed at that stage.
 
 ## Next stage
 

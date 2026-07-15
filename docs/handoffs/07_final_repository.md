@@ -20,12 +20,14 @@ the same build:
 uv run --frozen tennislab reproduce --fetch
 ```
 
-The verified production run retained 358,827 canonical matches, generated
+The original verified production run retained 358,827 canonical matches, generated
 1,076,481 Elo prediction rows, produced 226,857 Slam score observations across
 models and populations, matched all 22,098 odds-source Slam rows with 21,970
 usable probabilities, built 704 robustness summaries, and rendered 330 final
-figure-data rows. The complete run is computationally substantial; on the
-verification workstation it took about 34 minutes.
+figure-data rows. The accuracy follow-up adds full chronological rating-history
+replays and seven market-probability constructions to the same orchestration
+path while leaving those frozen primary counts and the 330 publication rows
+unchanged. The complete run is computationally substantial.
 
 ## Determinism and QA
 
@@ -34,10 +36,10 @@ verification workstation it took about 34 minutes.
 - Consecutive robustness builds were byte-identical for all tracked outputs.
 - Consecutive publication builds were byte-identical for PNG, SVG, PDF, figure
   data, metadata, alt text, and methodology.
-- The complete suite passes 96/96, including fixture pipeline, immutable source
+- The complete suite passes, including fixture pipeline, immutable source
   restore, semantic database-hash, link, artifact-boundary, provenance, and
   repository-hygiene checks.
-- An isolated temporary checkout installed from `uv.lock`, passed the same 96
+- An isolated temporary checkout installed from `uv.lock`, passed the same
   tests, and rebuilt every publication file with zero diff from its staged
   snapshot.
 - CI runs frozen/offline tests and byte-checks the semantic SVG/PDF plus every
@@ -56,6 +58,7 @@ verification workstation it took about 34 minutes.
 - [`../../analyses/slam_upsets/results_synthesis.md`](../../analyses/slam_upsets/results_synthesis.md)
 - [Complete output index](../../artifacts/README.md)
 - [Final repository review](../reviews/07_repository_qa.md)
+- [Accuracy sensitivity follow-up review](../reviews/08_accuracy_sensitivity_review.md)
 
 ## Remaining limits and optional next work
 
@@ -64,7 +67,9 @@ duplication, temporal-order, and forward-validation gates in Decision 0001 are
 met. Odds generally represent the latest listed pre-match price but lack exact
 timestamps, and the four-tournament design cannot identify a causal grass
 effect. Raw odds redistribution remains excluded because reuse permission is
-unclear.
+unclear. Policy-reselected Elo parameters vary in two secondary replays, and
+named-book market policies lose five audited one-book rows; both limitations are
+reported on exact balanced panels without replacing the frozen models.
 
 No required stage remains. The most useful optional extension is a separately
 versioned tour-wide ATP/WTA surface analysis to test whether the descriptive
