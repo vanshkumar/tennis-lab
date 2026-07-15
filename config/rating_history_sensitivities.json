@@ -1,0 +1,130 @@
+{
+  "analysis_version": "rating-history-sensitivities-v1",
+  "baseline_commit_sha": "5663b7281ff4e53655a8bcc5b3ddcb31ae693bb3",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20260714,
+  "common_panel_models": [
+    "overall_elo",
+    "surface_adjusted_elo",
+    "market_odds"
+  ],
+  "confidence_level": 0.95,
+  "control_reproduction_tolerance": 1e-12,
+  "common_panel": "exact frozen market-era common match IDs",
+  "direct_wimbledon_contrast": {
+    "bootstrap_unit": "calendar year jointly across all four Slams",
+    "estimand": "Wimbledon minus equal-weight mean of Australian Open, Roland Garros, and US Open"
+  },
+  "fixed_parameter_source": "config/elo_model.json",
+  "full_population": "1988-2025 primary completed non-retirement Slam match IDs",
+  "keep_one_is_canonical_deduplication": false,
+  "paired_upset_policy": "exact shared score IDs; expected, actual, and excess differences use the joint non-tie subset and report tie transitions",
+  "probable_duplicate_group_key": [
+    "tour",
+    "year",
+    "tourney_date",
+    "lower(tourney_name)",
+    "round",
+    "unordered_player_ids"
+  ],
+  "schema_version": 1,
+  "selection_replay_rule": "always publish fixed-primary-parameter replays; add a separately labeled reselected-policy replay only when either tour's selected parameters change",
+  "selection_sensitivity_labels": [
+    "retirement_no_result_delta",
+    "retirement_strict_skip",
+    "probable_duplicates_skip_all"
+  ],
+  "variants": [
+    {
+      "family": "retirement",
+      "label": "retirement_full_update",
+      "probable_duplicate_mode": "current",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 1.0,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    },
+    {
+      "family": "retirement",
+      "label": "retirement_half_result_delta",
+      "probable_duplicate_mode": "current",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 0.5,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    },
+    {
+      "family": "retirement",
+      "label": "retirement_no_result_delta",
+      "probable_duplicate_mode": "current",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 0.0,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    },
+    {
+      "family": "retirement",
+      "label": "retirement_strict_skip",
+      "probable_duplicate_mode": "current",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 0.0,
+      "retirement_updates_participation": false,
+      "schema_version": 1
+    },
+    {
+      "family": "probable_duplicate",
+      "label": "probable_duplicates_current",
+      "probable_duplicate_mode": "current",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 1.0,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    },
+    {
+      "family": "probable_duplicate",
+      "label": "probable_duplicates_skip_all",
+      "probable_duplicate_mode": "skip_all",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 1.0,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    },
+    {
+      "family": "probable_duplicate",
+      "label": "probable_duplicates_keep_one",
+      "probable_duplicate_mode": "keep_one",
+      "probable_duplicate_representative_order": [
+        "source_file",
+        "source_row_number",
+        "match_id"
+      ],
+      "retirement_result_delta_multiplier": 1.0,
+      "retirement_updates_participation": true,
+      "schema_version": 1
+    }
+  ]
+}

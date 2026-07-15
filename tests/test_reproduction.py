@@ -14,6 +14,8 @@ def test_reproduction_cli_distinguishes_locked_and_fetch_modes() -> None:
 
     assert locked.command == "reproduce" and locked.fetch is False
     assert scratch.command == "reproduce" and scratch.fetch is True
+    rating = parser.parse_args(["rating-history-sensitivities"])
+    assert rating.command == "rating-history-sensitivities"
 
 
 def test_reproduce_project_runs_every_stage_in_order(monkeypatch) -> None:
@@ -92,6 +94,11 @@ def test_reproduce_project_runs_every_stage_in_order(monkeypatch) -> None:
     )
     monkeypatch.setattr(
         reproduction,
+        "build_rating_history_sensitivities",
+        record("rating_history", {"sensitivity_rows": 1}),
+    )
+    monkeypatch.setattr(
+        reproduction,
         "build_final_figure",
         record("publication", {"data_rows": 1}),
     )
@@ -110,6 +117,7 @@ def test_reproduce_project_runs_every_stage_in_order(monkeypatch) -> None:
         "slam_report",
         "slam_figures",
         "market",
+        "rating_history",
         "robustness",
         "publication",
     ]

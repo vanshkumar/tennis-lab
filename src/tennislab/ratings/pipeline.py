@@ -22,6 +22,13 @@ from tennislab.ratings.model import (
     initial_rating,
     log_loss,
 )
+from tennislab.ratings.history_policy import (
+    PRIMARY_REPLAY_POLICY,
+    ReplayPolicy,
+    probable_duplicate_group_key,
+    probable_duplicate_representatives,
+    representative_sort_key,
+)
 
 
 MODEL_VERSION = "elo-v1"
@@ -190,11 +197,13 @@ class HistoricalElo:
         model_version: str = MODEL_VERSION,
         config_sha256: str = "",
         source_lock_sha256: str = "",
+        history_policy: ReplayPolicy = PRIMARY_REPLAY_POLICY,
     ):
         self.parameters = parameters
         self.model_version = model_version
         self.config_sha256 = config_sha256
         self.source_lock_sha256 = source_lock_sha256
+        self.history_policy = history_policy
         self.overall: dict[int, float] = {}
         self.surface: dict[str, dict[int, float]] = {
             surface: {} for surface in sorted(RATED_SURFACES)
@@ -269,12 +278,35 @@ class HistoricalElo:
             return
         counts = Counter(str(row["match_id"]) for row in batch)
         batch_duplicates = {match_id for match_id, count in counts.items() if count > 1}
+        representatives = (
+            probable_duplicate_representatives(
+                [row for row in batch if _base_exclusion(row) is None]
+            )
+            if self.history_policy.probable_duplicate_mode == "keep_one"
+            else {}
+        )
+        policy_skip_reasons: dict[int, str] = {}
+        for row in batch:
+            reasons: list[str] = []
+            if row.get("is_retirement") and not self.history_policy.retirement_updates_participation:
+                reasons.append("retirement_strict_skip")
+            if _base_exclusion(row) is None and row.get("unresolved_probable_duplicate"):
+                mode = self.history_policy.probable_duplicate_mode
+                if mode == "skip_all":
+                    reasons.append("probable_duplicate_skip_all")
+                elif mode == "keep_one":
+                    group_key = probable_duplicate_group_key(row)
+                    if representative_sort_key(row) != representatives[group_key]:
+                        reasons.append("probable_duplicate_keep_one_excluded")
+            if reasons:
+                policy_skip_reasons[id(row)] = ";".join(reasons)
         preparation_rows = [
             row
             for row in batch
             if _base_exclusion(row) is None
             and str(row["match_id"]) not in batch_duplicates
             and str(row["match_id"]) not in self.seen_match_ids
+            and id(row) not in policy_skip_reasons
         ]
         self._prepare_players(preparation_rows, current_date)
         overall_deltas: defaultdict[int, float] = defaultdict(float)
@@ -295,6 +327,10 @@ class HistoricalElo:
                 self.seen_match_ids.add(match_id)
             if exclusion is not None:
                 self._emit_ineligible(row, exclusion, emit)
+                continue
+            policy_skip_reason = policy_skip_reasons.get(id(row))
+            if policy_skip_reason is not None:
+                self._emit_ineligible(row, policy_skip_reason, emit)
                 continue
             winner_id = int(row["winner_id"])
             loser_id = int(row["loser_id"])
@@ -368,31 +404,41 @@ class HistoricalElo:
                         winner_probability=probability,
                         surface_weight=surface_weight,
                         exclusion=None if probability is not None else "unsupported_surface",
+                        rating_update_eligible=probability is not None,
                         emit=emit,
                     )
 
-            overall_change = self.parameters.k_factor * (1.0 - overall_probability)
+            result_multiplier = (
+                self.history_policy.retirement_result_delta_multiplier
+                if row.get("is_retirement")
+                else 1.0
+            )
+            overall_change = (
+                self.parameters.k_factor * (1.0 - overall_probability) * result_multiplier
+            )
             overall_deltas[winner_id] += overall_change
             overall_deltas[loser_id] -= overall_change
             update_counts[winner_id] += 1
             update_counts[loser_id] += 1
             if surface_name and raw_surface_probability is not None:
-                surface_change = self.parameters.k_factor * (1.0 - raw_surface_probability)
+                surface_change = (
+                    self.parameters.k_factor
+                    * (1.0 - raw_surface_probability)
+                    * result_multiplier
+                )
                 surface_deltas[surface_name][winner_id] += surface_change
                 surface_deltas[surface_name][loser_id] -= surface_change
                 surface_update_counts[surface_name][winner_id] += 1
                 surface_update_counts[surface_name][loser_id] += 1
 
-        for player_id, delta in overall_deltas.items():
-            self.overall[player_id] += delta
-            self.prior_matches[player_id] += update_counts[player_id]
+        for player_id, count in update_counts.items():
+            self.overall[player_id] += overall_deltas[player_id]
+            self.prior_matches[player_id] += count
             self.last_date[player_id] = current_date
-        for surface, deltas in surface_deltas.items():
-            for player_id, delta in deltas.items():
-                self.surface[surface][player_id] += delta
-                self.surface_prior_matches[surface][player_id] += surface_update_counts[surface][
-                    player_id
-                ]
+        for surface, counts_by_player in surface_update_counts.items():
+            for player_id, count in counts_by_player.items():
+                self.surface[surface][player_id] += surface_deltas[surface][player_id]
+                self.surface_prior_matches[surface][player_id] += count
                 self.surface_last_date[surface][player_id] = current_date
 
     def _emit_ineligible(
@@ -416,6 +462,7 @@ class HistoricalElo:
                 winner_probability=None,
                 surface_weight=weight,
                 exclusion=reason,
+                rating_update_eligible=False,
                 emit=emit,
             )
 
@@ -429,6 +476,7 @@ class HistoricalElo:
         winner_probability: float | None,
         surface_weight: float,
         exclusion: str | None,
+        rating_update_eligible: bool,
         emit: Callable[[dict[str, Any]], None],
     ) -> None:
         winner_is_player_1, player_1, player_2 = _orientation(row)
@@ -531,7 +579,7 @@ class HistoricalElo:
                 "is_walkover": row["is_walkover"],
                 "is_retirement": row["is_retirement"],
                 "prediction_eligible": exclusion is None,
-                "rating_update_eligible": exclusion is None,
+                "rating_update_eligible": rating_update_eligible,
                 "primary_score_eligible": not primary_exclusions,
                 "primary_score_exclusion": ";".join(primary_exclusions) or None,
                 "exclusion_reason": exclusion,
@@ -607,9 +655,14 @@ def _evaluate_candidate(
     tour: str,
     parameters: EloParameters,
     model: str,
+    history_policy: ReplayPolicy = PRIMARY_REPLAY_POLICY,
 ) -> dict[tuple[str, str], list[float]]:
     collector = _MetricCollector(model=model)
-    engine = HistoricalElo(parameters, model_version="selection-candidate")
+    engine = HistoricalElo(
+        parameters,
+        model_version="selection-candidate",
+        history_policy=history_policy,
+    )
     selection_rows = [
         row for row in rows if row["tour"] == tour and row["slam"] is None
     ]
@@ -631,6 +684,8 @@ def select_parameters(
     database_path: Path,
     config_path: Path,
     diagnostics_path: Path,
+    *,
+    history_policy: ReplayPolicy = PRIMARY_REPLAY_POLICY,
 ) -> dict[str, Any]:
     """Select parameters on expanding-origin 1978–1987 non-Slam predictions."""
 
@@ -665,6 +720,7 @@ def select_parameters(
                 tour=tour,
                 parameters=candidate,
                 model="overall_elo",
+                history_policy=history_policy,
             )
             total_brier = total_loss = total_n = 0.0
             for (_, window), values in sorted(metrics.items()):
@@ -711,6 +767,7 @@ def select_parameters(
                     tour=tour,
                     parameters=candidate,
                     model="surface_adjusted_elo",
+                    history_policy=history_policy,
                 )
                 total_brier = total_loss = total_n = 0.0
                 for (_, window), values in sorted(metrics.items()):
@@ -771,7 +828,12 @@ def select_parameters(
             },
             "same_date_batching": True,
         },
-        "retirement_policy": "included as completed result",
+        "retirement_policy": (
+            "included as completed result"
+            if history_policy.retirement_result_delta_multiplier == 1.0
+            and history_policy.retirement_updates_participation
+            else history_policy.label
+        ),
         "walkover_policy": "excluded from prediction and update",
         "tours": {tour: asdict(parameters) for tour, parameters in sorted(selected.items())},
         "sensitivity_tours": {
@@ -781,6 +843,10 @@ def select_parameters(
             }
         },
     }
+    if history_policy != PRIMARY_REPLAY_POLICY:
+        config["rating_history_policy"] = json.loads(history_policy.serialized())
+        config["rating_history_policy_sha256"] = history_policy.sha256
+        config["probable_duplicate_policy"] = history_policy.probable_duplicate_mode
     config_path.parent.mkdir(parents=True, exist_ok=True)
     config_path.write_text(json.dumps(config, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     diagnostics_path.parent.mkdir(parents=True, exist_ok=True)

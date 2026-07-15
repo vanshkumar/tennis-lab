@@ -34,6 +34,11 @@
 
 ## Patterns and Preferences
 
+**[2026-07-14] — Rating-history update sensitivities**
+- Observation: A zero retirement result-delta still needs explicit participation counters and activity refreshes, while a strict-skip or duplicate-skip row must be removed before player preparation or it can silently initialize or inactivity-decay rating state.
+- Action: Keep result-delta multipliers separate from participation updates, and apply all row-absence policies before `_prepare_players`; preserve same-date pre-update capture for every replay.
+- Confidence: high
+
 **[2026-07-14] — Tennis-Data identity resolution**
 - Observation: The same surname/initial key can identify different players in one season (`Kucova K.` for both sisters at the 2010 Australian Open), while `Damm M.` changes identity across eras; exact tour/year/Slam/round/opponent orientation resolves these cases.
 - Action: Keep aliases year-scoped and candidate-preserving, validate every canonical ID/name target, and require a unique full match context; never collapse an abbreviation to one global player or accept a fuzzy proposal.

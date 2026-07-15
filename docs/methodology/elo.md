@@ -129,3 +129,40 @@ matches, plus a separate both-players-have-surface-history check. A real
 lower-tier-history comparison remains infeasible under the locked main-draw-only
 scope described above; the robustness build records that limitation rather than
 calling rank initialization or row deletion “lower-tier included.”
+
+## Prespecified rating-history update sensitivities
+
+The frozen `elo-v1` replay remains unchanged. An adjacent versioned analysis in
+[`config/rating_history_sensitivities.json`](../../config/rating_history_sensitivities.json)
+prespecifies seven complete chronological replays before their production
+results are inspected. Every policy has canonical serialized settings and a
+stable SHA-256; fixed-primary-parameter and any policy-reselected replay are
+kept separate.
+
+Retirement policies distinguish the result from the appearance. The control
+applies the recorded result at full strength. The half-result policy multiplies
+only the result-dependent overall and surface Elo deltas by 0.5. The zero-result
+policy applies no result delta but still increments prior-match counts and
+refreshes overall and surface last-seen state because a match was played. The
+strict-skip policy changes the broader participation history too: it does not
+initialize or decay state, change ratings or counts, or refresh activity from a
+retirement row.
+
+Probable-duplicate history uses the existing conservative key:
+`(tour, year, tourney_date, lower(tourney_name), round, unordered player IDs)`.
+The control retains current history. `skip_all` omits every flagged member from
+rating, count, and activity updates. `keep_one` retains the first member under
+the total order `(source_file, source_row_number, match_id)` and audits every
+member and decision. These are influence sensitivities over unresolved signals,
+not canonical deduplication and not a claim that every flagged group is a true
+duplicate.
+
+All replays preserve tour separation, pre-update probability capture, and
+same-date batching. They are scored on both the full 1988–2025 primary Slam IDs
+and the exact frozen market-era common IDs. Exact 50/50 probabilities remain in
+proper scores but have no unique underdog; paired upset-rate differences use
+the exact shared-ID subset on which both models define an underdog and report
+tie transitions explicitly. Direct Wimbledon contrasts retain the existing
+joint-calendar bootstrap. The pre-1988 non-Slam selector is rerun under the
+zero-result, strict-skip, and duplicate-skip-all policies without overwriting
+`config/elo_model.json`.

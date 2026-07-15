@@ -42,3 +42,11 @@ selected-Elo expected and model-defined actual WTA rates are higher in the
 latest era than the earliest at all four Slams. This is not a monotonic or
 model-independent trend claim. See the
 [`slam-robustness-v1` card](slam-robustness-v1.md).
+
+An adjacent prespecified accuracy follow-up replays retirement-result and
+probable-duplicate history policies without changing this model card's primary
+defaults or the `elo-v1` prediction artifact. Zero retirement result-delta still
+counts the appearance and refreshes activity; strict skip removes the row from
+participation history as well. Probable-duplicate keep-one is an audited
+sensitivity and never rewrites the canonical table. Production findings are
+published only after the policy configuration and fixture tests are committed.

@@ -15,6 +15,10 @@ from tennislab.analysis import (
     write_results_report,
 )
 from tennislab.analysis.robustness import ROBUSTNESS_VERSION, build_robustness_analysis
+from tennislab.analysis.rating_history import (
+    RATING_HISTORY_VERSION,
+    build_rating_history_sensitivities,
+)
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
@@ -51,6 +55,13 @@ DEFAULT_ODDS_MATCHING_ISSUES = Path("data/processed/odds_matching_issues.csv")
 DEFAULT_ROBUSTNESS_CONFIG = Path("config/robustness.json")
 DEFAULT_ROBUSTNESS_ARTIFACTS = Path("artifacts/robustness")
 DEFAULT_ROBUSTNESS_PREDICTIONS = Path("data/processed/robustness_predictions.parquet")
+DEFAULT_RATING_HISTORY_CONFIG = Path("config/rating_history_sensitivities.json")
+DEFAULT_RATING_HISTORY_DETAIL = Path(
+    "data/processed/rating_history_sensitivity_observations.csv"
+)
+DEFAULT_RATING_HISTORY_SELECTION = Path(
+    "data/processed/rating_history_selection"
+)
 DEFAULT_FINAL_FIGURE_CONFIG = Path("config/final_figure.json")
 
 
@@ -176,6 +187,24 @@ def build_parser() -> argparse.ArgumentParser:
     robustness.add_argument("--market-summary", type=Path, default=DEFAULT_ODDS_ARTIFACTS / "benchmark_summary.csv")
     robustness.add_argument("--output-dir", type=Path, default=DEFAULT_ROBUSTNESS_ARTIFACTS)
     robustness.add_argument("--variant-predictions", type=Path, default=DEFAULT_ROBUSTNESS_PREDICTIONS)
+
+    rating_history = subparsers.add_parser(
+        "rating-history-sensitivities",
+        help="run prespecified retirement and probable-duplicate rating-history replays",
+    )
+    rating_history.add_argument("--config", type=Path, default=DEFAULT_RATING_HISTORY_CONFIG)
+    rating_history.add_argument("--database", type=Path, default=DEFAULT_DATABASE)
+    rating_history.add_argument("--predictions", type=Path, default=DEFAULT_PREDICTIONS_PARQUET)
+    rating_history.add_argument(
+        "--market-observations", type=Path, default=DEFAULT_MARKET_OBSERVATIONS
+    )
+    rating_history.add_argument("--elo-config", type=Path, default=DEFAULT_ELO_CONFIG)
+    rating_history.add_argument("--source-lock", type=Path, default=DEFAULT_LOCK)
+    rating_history.add_argument("--output-dir", type=Path, default=DEFAULT_ROBUSTNESS_ARTIFACTS)
+    rating_history.add_argument("--details", type=Path, default=DEFAULT_RATING_HISTORY_DETAIL)
+    rating_history.add_argument(
+        "--selection-work-dir", type=Path, default=DEFAULT_RATING_HISTORY_SELECTION
+    )
 
     publication = subparsers.add_parser(
         "publish-figure", help="render the reviewed final Slam-upsets graphic"
@@ -324,6 +353,20 @@ def main(argv: Sequence[str] | None = None) -> int:
             variant_predictions_path=args.variant_predictions,
         )
         _emit({"robustness_version": ROBUSTNESS_VERSION, **result})
+        return 0
+    if args.command == "rating-history-sensitivities":
+        result = build_rating_history_sensitivities(
+            sensitivity_config_path=args.config,
+            database_path=args.database,
+            predictions_path=args.predictions,
+            market_observations_path=args.market_observations,
+            elo_config_path=args.elo_config,
+            source_lock_path=args.source_lock,
+            output_dir=args.output_dir,
+            detail_path=args.details,
+            selection_work_dir=args.selection_work_dir,
+        )
+        _emit({"rating_history_version": RATING_HISTORY_VERSION, **result})
         return 0
     if args.command == "publish-figure":
         result = build_final_figure(config_path=args.config)

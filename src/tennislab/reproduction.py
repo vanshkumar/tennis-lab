@@ -13,6 +13,7 @@ from tennislab.analysis import (
     write_results_report,
 )
 from tennislab.analysis.robustness import build_robustness_analysis
+from tennislab.analysis.rating_history import build_rating_history_sensitivities
 from tennislab.audit import run_audit
 from tennislab.normalize import build_matches
 from tennislab.odds import build_market_benchmark, fetch_odds_sources
@@ -55,6 +56,13 @@ class ReproductionPaths:
     robustness_artifacts: Path = Path("artifacts/robustness")
     robustness_predictions: Path = Path(
         "data/processed/robustness_predictions.parquet"
+    )
+    rating_history_config: Path = Path("config/rating_history_sensitivities.json")
+    rating_history_detail: Path = Path(
+        "data/processed/rating_history_sensitivity_observations.csv"
+    )
+    rating_history_selection: Path = Path(
+        "data/processed/rating_history_selection"
     )
     publication_config: Path = Path("config/final_figure.json")
 
@@ -142,6 +150,18 @@ def reproduce_project(
         bootstrap_seed=20260714,
     )
 
+    rating_history = build_rating_history_sensitivities(
+        sensitivity_config_path=paths.rating_history_config,
+        database_path=paths.database,
+        predictions_path=paths.predictions_parquet,
+        market_observations_path=paths.market_observations,
+        elo_config_path=paths.elo_config,
+        source_lock_path=paths.source_lock,
+        output_dir=paths.robustness_artifacts,
+        detail_path=paths.rating_history_detail,
+        selection_work_dir=paths.rating_history_selection,
+    )
+
     robustness = build_robustness_analysis(
         robustness_config_path=paths.robustness_config,
         predictions_path=paths.predictions_parquet,
@@ -178,6 +198,7 @@ def reproduce_project(
             "diagnostic_figures": [str(path) for path in slam_figures],
         },
         "market": market,
+        "rating_history_sensitivities": rating_history,
         "robustness": robustness,
         "publication": publication,
     }

@@ -70,6 +70,19 @@ uv run tennislab robustness
 uv run python analyses/slam_upsets/run_robustness.py
 ```
 
+Run the separately versioned rating-history update sensitivities with:
+
+```bash
+uv run --frozen tennislab rating-history-sensitivities
+# or
+uv run --frozen python analyses/slam_upsets/run_rating_history.py
+```
+
+This replay keeps `elo-v1` frozen and writes match-level detail only under the
+gitignored processed-data layer. Compact policy, selection, panel, contrast,
+paired-score, identity-change, and provenance artifacts are adjacent to the
+existing robustness outputs.
+
 Render the reviewed publication graphic from aggregate artifacts only with:
 
 ```bash
