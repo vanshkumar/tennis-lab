@@ -1,0 +1,36 @@
+{
+  "commit": "1813a1309b7ed7ebf1c7e884b32bf675d00e4edf",
+  "files": [
+    {
+      "bytes": 1141817,
+      "git_blob_sha": "7bf0d44611caf3c2becfb77d47db70da57fab4cd",
+      "path": "charting-m-matches.csv",
+      "sha256": "d8dce1ad8d12c04efa01da587441b54ece8e8100530660528312244f632efe80",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-matches.csv"
+    },
+    {
+      "bytes": 36475702,
+      "git_blob_sha": "265f8076b1bd1bd20a710a49b95460b88cbbf927",
+      "path": "charting-m-points-2010s.csv",
+      "sha256": "2719cdc136b64698f24b360cf4f60302e11add24971c2fdd585e1b729178db8c",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-points-2010s.csv"
+    },
+    {
+      "bytes": 56590483,
+      "git_blob_sha": "daa057d60f24dc74b6cdc93b92b17192bdd3c04a",
+      "path": "charting-m-points-2020s.csv",
+      "sha256": "2cd43f73e0530a47ea4c02b99dae40177ca6d58a8ccf9189358eb05dffb4be9a",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-points-2020s.csv"
+    },
+    {
+      "bytes": 482316,
+      "git_blob_sha": "ed4f901d216e7f19f0a0ffdd9eb797f7c96ff3eb",
+      "path": "MatchChart 0.3.2.xlsm",
+      "sha256": "46e2349eee512296a86170449f6e463a6be91be9261a0c7b6b5d5a25c006729f",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/MatchChart%200.3.2.xlsm"
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "repository": "https://github.com/JeffSackmann/tennis_MatchChartingProject",
+  "retrieved_date": "2026-11-25"
+}

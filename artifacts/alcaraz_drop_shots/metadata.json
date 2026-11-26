@@ -1,0 +1,79 @@
+{
+  "analysis_date": "2026-11-25",
+  "audit_counts": {
+    "incomplete_match": 3,
+    "invalid_score": 79,
+    "missing_points": 1,
+    "pressure_exclusion": 1,
+    "scoring_override": 7,
+    "unobservable_shots": 120
+  },
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261125,
+  "canonical_alcaraz_rows_sha256": "128c7a7f32c9d755d3e60e7574510cdc0812fc0695176427cb96891d09a7251e",
+  "canonical_links": {
+    "exact": 201,
+    "unmatched": 21
+  },
+  "code_sha256": {
+    "drop_shot_charting.py": "bd10b6bd76bbf20834d80f364719a56d66a865649e00db2a8ed339b58f628e05",
+    "drop_shot_report.py": "d8fe211cb2e50fa6b56f04b020ba1e9b430c81480450b56d1d3ccd353533b385",
+    "drop_shot_scoring.py": "742e99e034dcedf6b29ee6019daa932c4fa814039c261b8f6975dc098d9f2a95",
+    "drop_shots.py": "5c4f404a1a6133957cd29222104161a1fb876a8b721b2c7e9bc63d490eb50645"
+  },
+  "detail_sha256": "6795764b6c2d8abd08b66fcfdf0eaab88f4eeb5f937c217ceb586260c0c2809a",
+  "first_date": "20190402",
+  "fully_observable_points": 36829,
+  "high_leverage_threshold": 0.1,
+  "last_date": "20260412",
+  "metadata_matches": 222,
+  "output_sha256": {
+    "audit.csv": "9a6b877a7517002339e0e44f7670a34ae6aff1e03756ded2525d3dd61122d26b",
+    "comparisons.csv": "1fe2e90119d3298a03e5de29d0a5bccdbf4ae441132f1c6d881f42e51e72d76d",
+    "coverage.csv": "e0462f01410f51410d405c63b43a2d86161ba5b43f4410d512dcbf24f1c572b0",
+    "descriptive.csv": "af53b542db60a1afbc86bb498430955c84a5e4f47484d4966951c6689511eb8b",
+    "finals_by_set.csv": "7f90d6de537592f0939a52f1c2907f912fc40c058faf809b49f56569afea811d",
+    "finals_by_set.png": "f9267f215ec34acb836188782b50b8d98e6b28e96bc6dfefbb253f66cb98ae09",
+    "match_crosswalk.csv": "9c992f8e4376f8a37b8abe7f1b5204d65f6d45fddb0295f4944654ad8f301166",
+    "pressure_comparisons.png": "b0cd2f1bf50ff1ae7f5b2476f95198b31aac6145bcb380b99552561d6536a0f9",
+    "results.md": "e4351f1bb3a56545b376f39681f9abbab73372f8d9a69dd109548d1618c1fe00"
+  },
+  "point_matches": 221,
+  "primary_eligible_points": 36565,
+  "score_valid_matches": 220,
+  "score_valid_points": 36685,
+  "serve_point_probability": 0.65,
+  "source_commit": "1813a1309b7ed7ebf1c7e884b32bf675d00e4edf",
+  "source_files": [
+    {
+      "bytes": 1141817,
+      "git_blob_sha": "7bf0d44611caf3c2becfb77d47db70da57fab4cd",
+      "path": "charting-m-matches.csv",
+      "sha256": "d8dce1ad8d12c04efa01da587441b54ece8e8100530660528312244f632efe80",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-matches.csv"
+    },
+    {
+      "bytes": 36475702,
+      "git_blob_sha": "265f8076b1bd1bd20a710a49b95460b88cbbf927",
+      "path": "charting-m-points-2010s.csv",
+      "sha256": "2719cdc136b64698f24b360cf4f60302e11add24971c2fdd585e1b729178db8c",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-points-2010s.csv"
+    },
+    {
+      "bytes": 56590483,
+      "git_blob_sha": "daa057d60f24dc74b6cdc93b92b17192bdd3c04a",
+      "path": "charting-m-points-2020s.csv",
+      "sha256": "2cd43f73e0530a47ea4c02b99dae40177ca6d58a8ccf9189358eb05dffb4be9a",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/charting-m-points-2020s.csv"
+    },
+    {
+      "bytes": 482316,
+      "git_blob_sha": "ed4f901d216e7f19f0a0ffdd9eb797f7c96ff3eb",
+      "path": "MatchChart 0.3.2.xlsm",
+      "sha256": "46e2349eee512296a86170449f6e463a6be91be9261a0c7b6b5d5a25c006729f",
+      "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_MatchChartingProject/1813a1309b7ed7ebf1c7e884b32bf675d00e4edf/MatchChart%200.3.2.xlsm"
+    }
+  ],
+  "source_lock_sha256": "57c8622149653eb8aecbf0e27c907937ba95d0be9d31176f40fa6a6154b2081f",
+  "source_points": 36949
+}

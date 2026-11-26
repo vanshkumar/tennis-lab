@@ -34,6 +34,11 @@
 
 ## Patterns and Preferences
 
+**[2026-11-25] — Personal-analysis chart presentation**
+- Observation: For the Alcaraz study, the user prefers charts that lead with the primary result, use minimal text and direct numeric labels, and place methodological qualifications in footnotes.
+- Action: Keep the rate denominator visible, use a clear visual hierarchy for the main comparison, and move sample details and sensitivity caveats into readable footnotes; supply PNG and SVG exports from the same scene.
+- Confidence: high
+
 **[2026-07-14] — Rating-history update sensitivities**
 - Observation: A zero retirement result-delta still needs explicit participation counters and activity refreshes, while a strict-skip or duplicate-skip row must be removed before player preparation or it can silently initialize or inactivity-decay rating state.
 - Action: Keep result-delta multipliers separate from participation updates, and apply all row-absence policies before `_prepare_players`; preserve same-date pre-update capture for every replay.
@@ -150,6 +155,11 @@
 - Confidence: high
 
 ## What Has Failed
+
+**[2026-11-25] — Alcaraz shot-charting analysis**
+- Observation: The MCP snapshot's point scores are server-first and its final-tiebreak metadata can be stale (including Wimbledon 2023); the 2022 Wimbledon Sinner–Alcaraz chart continues for 79 points after recording a third set won. The snapshot also lists one Madrid 2023 match without point records.
+- Action: Sort by point number, apply reviewed edition scoring rules, validate score transitions and terminal states, and retain inconsistent matches in the audit while excluding them from pressure comparisons. Keep shot-observation eligibility separate from score eligibility.
+- Confidence: high
 
 **[2026-07-13] — Historical source retrieval**
 - Observation: The pinned Sackmann ATP and WTA commits visible in GitHub's recent history returned repository/raw HTTP 404 responses, including the first ATP 1968 CSV, so no trustworthy full-data checksums or counts could be produced.

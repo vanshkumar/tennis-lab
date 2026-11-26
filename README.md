@@ -116,6 +116,17 @@ model cards document generated prediction layers.
 
 ## Documentation
 
+Personal follow-on study: [Alcaraz's drop shots under pressure](artifacts/alcaraz_drop_shots/results.md).
+Rebuild it with `uv run --frozen tennislab analyze-drop-shots` (add `--fetch` for
+the first download). It uses a separate pinned shot-charting snapshot and does
+not rebuild or change the original Slam-upset analysis.
+
+Presentation charts: [main result](artifacts/alcaraz_drop_shots_figures/01_primary.png),
+[pressure situations](artifacts/alcaraz_drop_shots_figures/02_situations.png), and
+[the two finals](artifacts/alcaraz_drop_shots_figures/03_finals.png). SVG versions
+sit alongside the PNGs. Rebuild with
+`uv run --frozen python analyses/alcaraz_drop_shots/plot.py`.
+
 - [Architecture](docs/architecture.md)
 - [Canonical schema](docs/canonical_schema.md)
 - [Source provenance](docs/source_provenance.md)

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1060" viewBox="0 0 1500 1060" role="img" aria-labelledby="title desc">
+<title id="title">A little more drop shot when the point matters.</title>
+<desc id="desc">Adjusted attempts increase from 3.59 to 4.27 per 100 baseline strokes, about 19% relatively. Sensitivity checks remain inconclusive.</desc>
+<g font-family="Bitstream Vera Sans, DejaVu Sans, Arial, sans-serif" shape-rendering="geometricPrecision">
+<rect x="0" y="0" width="1500" height="1060" rx="0.0" fill="#F6F3EB" stroke="none" stroke-width="1.0"/>
+<rect x="76" y="52" width="34" height="5" rx="0.0" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="126" y="55.580" fill="#18785D" font-size="19" font-weight="700" text-anchor="start">CARLOS ALCARAZ  /  THE DROP SHOT</text>
+<text x="1424" y="55.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="end">01</text>
+<text x="76" y="153.020" fill="#193C32" font-size="61" font-weight="700" text-anchor="start">A little more drop shot</text>
+<text x="76" y="226.020" fill="#193C32" font-size="61" font-weight="700" text-anchor="start">when the point matters.</text>
+<text x="78" y="296.860" fill="#65716A" font-size="23" font-weight="400" text-anchor="start">Adjusted drop attempts per 100 eligible baseline strokes</text>
+<rect x="265" y="504.2926068632508" width="218" height="265.7073931367492" rx="0.0" fill="#A8BBB0" stroke="none" stroke-width="1.0"/>
+<text x="374" y="468.593" fill="#193C32" font-size="65" font-weight="700" text-anchor="middle">3.59</text>
+<text x="374" y="815.500" fill="#193C32" font-size="25" font-weight="400" text-anchor="middle">Lower importance</text>
+<rect x="665" y="454.0652141116309" width="218" height="315.9347858883691" rx="0.0" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="774" y="418.365" fill="#18785D" font-size="65" font-weight="700" text-anchor="middle">4.27</text>
+<text x="774" y="815.500" fill="#193C32" font-size="25" font-weight="400" text-anchor="middle">Higher importance</text>
+<line x1="180" y1="770" x2="960" y2="770" stroke="#193C32" stroke-width="1.5" stroke-linecap="round"/>
+<text x="158" y="774.760" fill="#65716A" font-size="18" font-weight="400" text-anchor="end">0</text>
+<line x1="1045" y1="390" x2="1045" y2="796" stroke="#D8DDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="1120" y="528.000" fill="#18785D" font-size="100" font-weight="700" text-anchor="start">+19%</text>
+<text x="1126" y="601.420" fill="#18785D" font-size="31" font-weight="400" text-anchor="start">more often</text>
+<text x="1126" y="646.760" fill="#65716A" font-size="18" font-weight="400" text-anchor="start">in the primary comparison</text>
+<line x1="76" y1="891" x2="1424" y2="891" stroke="#D8DDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="76" y="929.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Within-match comparison: 196 matches, 82 editions. High importance = a modeled match-win probability swing of at least 10 pp.</text>
+<text x="76" y="954.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Difference: +0.68 percentage points (95% CI +0.06 to +1.26). Equal-match weighting or removing the two finals yields intervals crossing zero.</text>
+<text x="76" y="979.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Charted matches, 2019–April 2026. Score importance uses an equal-player 65% serve model; this is an association, not a causal effect.</text>
+<text x="76" y="1025.300" fill="#65716A" font-size="15" font-weight="400" text-anchor="start">SOURCE  Tennis Abstract / Jeff Sackmann &amp; MCP contributors  ·  CC BY-NC-SA 4.0</text>
+<text x="1424" y="1025.300" fill="#18785D" font-size="15" font-weight="700" text-anchor="end">TENNIS LAB</text>
+</g>
+</svg>

@@ -1,0 +1,212 @@
+match_id,point,category,reason,source_file,source_row
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,25,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61135
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,29,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61139
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,54,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61164
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,86,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61196
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,90,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61200
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,109,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61219
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,132,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61242
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,133,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61243
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,138,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61248
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,142,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61252
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,158,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61268
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,160,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,61270
+20190410-M-Murcia_CH-R32-Carlos_Alcaraz-Pedro_Martinez,17,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,59153
+20190410-M-Murcia_CH-R32-Carlos_Alcaraz-Pedro_Martinez,97,unobservable_shots,unknown shot type,charting-m-points-2010s.csv,59233
+20200218-M-Rio_de_Janeiro-R32-Carlos_Alcaraz-Albert_Ramos,219,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,531484
+20210830-M-US_Open-R128-Cameron_Norrie-Carlos_Alcaraz,,scoring_override,"A -> tiebreak at 6, target 7",charting-m-matches.csv,2934
+20210830-M-US_Open-R128-Cameron_Norrie-Carlos_Alcaraz,1,unobservable_shots,unobserved point,charting-m-points-2020s.csv,476862
+20210830-M-US_Open-R128-Cameron_Norrie-Carlos_Alcaraz,65,unobservable_shots,unobserved point,charting-m-points-2020s.csv,476926
+20210905-M-US_Open-R16-Peter_Gojowczyk-Carlos_Alcaraz,222,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,471034
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,1,unobservable_shots,unobserved point,charting-m-points-2020s.csv,462474
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,2,unobservable_shots,unobserved point,charting-m-points-2020s.csv,462475
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,3,unobservable_shots,unobserved point,charting-m-points-2020s.csv,462476
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,4,unobservable_shots,unobserved point,charting-m-points-2020s.csv,462477
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,5,unobservable_shots,unobserved point,charting-m-points-2020s.csv,462478
+20220329-M-Miami_Masters-R16-Stefanos_Tsitsipas-Carlos_Alcaraz,57,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,430153
+20220422-M-Barcelona-QF-Stefanos_Tsitsipas-Carlos_Alcaraz,127,unobservable_shots,unobserved point,charting-m-points-2020s.csv,423351
+20220424-M-Barcelona-SF-Alex_De_Minaur-Carlos_Alcaraz,21,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,422671
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,186,invalid_score,invalid score/server,charting-m-points-2020s.csv,398479
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,187,invalid_score,invalid score/server,charting-m-points-2020s.csv,398480
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,188,invalid_score,invalid score/server,charting-m-points-2020s.csv,398481
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,189,invalid_score,invalid score/server,charting-m-points-2020s.csv,398482
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,190,invalid_score,invalid score/server,charting-m-points-2020s.csv,398483
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,191,invalid_score,invalid score/server,charting-m-points-2020s.csv,398484
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,192,invalid_score,invalid score/server,charting-m-points-2020s.csv,398485
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,193,invalid_score,invalid score/server,charting-m-points-2020s.csv,398486
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,194,invalid_score,invalid score/server,charting-m-points-2020s.csv,398487
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,195,invalid_score,invalid score/server,charting-m-points-2020s.csv,398488
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,196,invalid_score,invalid score/server,charting-m-points-2020s.csv,398489
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,197,invalid_score,invalid score/server,charting-m-points-2020s.csv,398490
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,198,invalid_score,invalid score/server,charting-m-points-2020s.csv,398491
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,199,invalid_score,invalid score/server,charting-m-points-2020s.csv,398492
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,200,invalid_score,invalid score/server,charting-m-points-2020s.csv,398493
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,201,invalid_score,invalid score/server,charting-m-points-2020s.csv,398494
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,202,invalid_score,invalid score/server,charting-m-points-2020s.csv,398495
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,203,invalid_score,invalid score/server,charting-m-points-2020s.csv,398496
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,204,invalid_score,invalid score/server,charting-m-points-2020s.csv,398497
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,205,invalid_score,invalid score/server,charting-m-points-2020s.csv,398498
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,206,invalid_score,invalid score/server,charting-m-points-2020s.csv,398499
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,207,invalid_score,invalid score/server,charting-m-points-2020s.csv,398500
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,208,invalid_score,invalid score/server,charting-m-points-2020s.csv,398501
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,209,invalid_score,invalid score/server,charting-m-points-2020s.csv,398502
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,210,invalid_score,invalid score/server,charting-m-points-2020s.csv,398503
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,211,invalid_score,invalid score/server,charting-m-points-2020s.csv,398504
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,212,invalid_score,invalid score/server,charting-m-points-2020s.csv,398505
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,213,invalid_score,invalid score/server,charting-m-points-2020s.csv,398506
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,214,invalid_score,invalid score/server,charting-m-points-2020s.csv,398507
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,215,invalid_score,invalid score/server,charting-m-points-2020s.csv,398508
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,216,invalid_score,invalid score/server,charting-m-points-2020s.csv,398509
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,217,invalid_score,invalid score/server,charting-m-points-2020s.csv,398510
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,218,invalid_score,invalid score/server,charting-m-points-2020s.csv,398511
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,219,invalid_score,invalid score/server,charting-m-points-2020s.csv,398512
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,220,invalid_score,invalid score/server,charting-m-points-2020s.csv,398513
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,221,invalid_score,invalid score/server,charting-m-points-2020s.csv,398514
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,222,invalid_score,invalid score/server,charting-m-points-2020s.csv,398515
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,223,invalid_score,invalid score/server,charting-m-points-2020s.csv,398516
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,224,invalid_score,invalid score/server,charting-m-points-2020s.csv,398517
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,225,invalid_score,invalid score/server,charting-m-points-2020s.csv,398518
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,226,invalid_score,invalid score/server,charting-m-points-2020s.csv,398519
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,227,invalid_score,invalid score/server,charting-m-points-2020s.csv,398520
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,228,invalid_score,invalid score/server,charting-m-points-2020s.csv,398521
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,229,invalid_score,invalid score/server,charting-m-points-2020s.csv,398522
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,230,invalid_score,invalid score/server,charting-m-points-2020s.csv,398523
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,231,invalid_score,invalid score/server,charting-m-points-2020s.csv,398524
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,232,invalid_score,invalid score/server,charting-m-points-2020s.csv,398525
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,233,invalid_score,invalid score/server,charting-m-points-2020s.csv,398526
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,234,invalid_score,invalid score/server,charting-m-points-2020s.csv,398527
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,235,invalid_score,invalid score/server,charting-m-points-2020s.csv,398528
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,236,invalid_score,invalid score/server,charting-m-points-2020s.csv,398529
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,237,invalid_score,invalid score/server,charting-m-points-2020s.csv,398530
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,238,invalid_score,invalid score/server,charting-m-points-2020s.csv,398531
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,239,invalid_score,invalid score/server,charting-m-points-2020s.csv,398532
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,240,invalid_score,invalid score/server,charting-m-points-2020s.csv,398533
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,241,invalid_score,invalid score/server,charting-m-points-2020s.csv,398534
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,242,invalid_score,invalid score/server,charting-m-points-2020s.csv,398535
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,243,invalid_score,invalid score/server,charting-m-points-2020s.csv,398536
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,244,invalid_score,invalid score/server,charting-m-points-2020s.csv,398537
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,245,invalid_score,invalid score/server,charting-m-points-2020s.csv,398538
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,246,invalid_score,invalid score/server,charting-m-points-2020s.csv,398539
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,247,invalid_score,invalid score/server,charting-m-points-2020s.csv,398540
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,248,invalid_score,invalid score/server,charting-m-points-2020s.csv,398541
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,249,invalid_score,invalid score/server,charting-m-points-2020s.csv,398542
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,250,invalid_score,invalid score/server,charting-m-points-2020s.csv,398543
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,251,invalid_score,invalid score/server,charting-m-points-2020s.csv,398544
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,252,invalid_score,invalid score/server,charting-m-points-2020s.csv,398545
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,253,invalid_score,invalid score/server,charting-m-points-2020s.csv,398546
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,254,invalid_score,invalid score/server,charting-m-points-2020s.csv,398547
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,255,invalid_score,invalid score/server,charting-m-points-2020s.csv,398548
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,256,invalid_score,invalid score/server,charting-m-points-2020s.csv,398549
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,257,invalid_score,invalid score/server,charting-m-points-2020s.csv,398550
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,258,invalid_score,invalid score/server,charting-m-points-2020s.csv,398551
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,259,invalid_score,invalid score/server,charting-m-points-2020s.csv,398552
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,260,invalid_score,invalid score/server,charting-m-points-2020s.csv,398553
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,261,invalid_score,invalid score/server,charting-m-points-2020s.csv,398554
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,262,invalid_score,invalid score/server,charting-m-points-2020s.csv,398555
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,263,invalid_score,invalid score/server,charting-m-points-2020s.csv,398556
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,264,invalid_score,invalid score/server,charting-m-points-2020s.csv,398557
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,,pressure_exclusion,entire match excluded from pressure comparisons; shot observations retained,charting-m-matches.csv,2462
+20220719-M-Hamburg-R32-Nicola_Kuhn-Carlos_Alcaraz,61,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,393468
+20220907-M-US_Open-QF-Jannik_Sinner-Carlos_Alcaraz,,scoring_override,"1 -> tiebreak at 6, target 10",charting-m-matches.csv,2316
+20230225-M-Rio_de_Janeiro-SF-Nicolas_Jarry-Carlos_Alcaraz,96,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,324609
+20230225-M-Rio_de_Janeiro-SF-Nicolas_Jarry-Carlos_Alcaraz,97,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,324610
+20230225-M-Rio_de_Janeiro-SF-Nicolas_Jarry-Carlos_Alcaraz,100,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,324613
+20230225-M-Rio_de_Janeiro-SF-Nicolas_Jarry-Carlos_Alcaraz,101,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,324614
+20230428-M-Madrid_Masters-R64-Emil_Ruusuvuori-Carlos_Alcaraz,69,unobservable_shots,unobserved point,charting-m-points-2020s.csv,305206
+20230503-M-Madrid Masters-QF-Karen_Khachanov-Carlos_Alcaraz,,missing_points,metadata match has no points in either source file,charting-m-matches.csv,1876
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,8,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303706
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,9,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303707
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,20,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303718
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,23,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303721
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,51,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303749
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,61,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303759
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,66,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303764
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,72,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303770
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,73,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303771
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,87,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303785
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,97,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303795
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,107,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303805
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,109,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303807
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,114,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303812
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,129,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,303827
+20230515-M-Rome_Masters-R32-Fabian_Marozsan-Carlos_Alcaraz,11,unobservable_shots,unobserved point,charting-m-points-2020s.csv,301375
+20230515-M-Rome_Masters-R32-Fabian_Marozsan-Carlos_Alcaraz,83,unobservable_shots,point ending before last stroke,charting-m-points-2020s.csv,301447
+20230529-M-Roland_Garros-R128-Flavio_Cobolli-Carlos_Alcaraz,67,unobservable_shots,missing point ending,charting-m-points-2020s.csv,299160
+20230602-M-Roland_Garros-R32-Carlos_Alcaraz-Denis_Shapovalov,7,unobservable_shots,missing point ending,charting-m-points-2020s.csv,295715
+20230602-M-Roland_Garros-R32-Carlos_Alcaraz-Denis_Shapovalov,27,unobservable_shots,missing point ending,charting-m-points-2020s.csv,295735
+20230604-M-Roland_Garros-R16-Carlos_Alcaraz-Lorenzo_Musetti,140,unobservable_shots,unobserved point,charting-m-points-2020s.csv,294318
+20230609-M-Roland_Garros-SF-Novak_Djokovic-Carlos_Alcaraz,,scoring_override,"0 -> tiebreak at 6, target 10",charting-m-matches.csv,1813
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,190,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280415
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,191,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280416
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,192,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280417
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,193,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280418
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,194,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280419
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,195,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280420
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,196,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280421
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,197,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280422
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,198,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280423
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,199,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280424
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,200,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280425
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,211,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280436
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,212,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280437
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,213,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280438
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,214,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280439
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,215,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280440
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,216,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280441
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,217,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280442
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,218,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280443
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,239,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280464
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,240,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280465
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,241,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280466
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,242,unobservable_shots,unobserved point,charting-m-points-2020s.csv,280467
+20230714-M-Wimbledon-SF-Carlos_Alcaraz-Daniil_Medvedev,97,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,278464
+20230714-M-Wimbledon-SF-Carlos_Alcaraz-Daniil_Medvedev,105,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,278472
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,,scoring_override,"T -> tiebreak at 6, target 10",charting-m-matches.csv,1738
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,21,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,273966
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,70,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274015
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,71,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274016
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,103,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274048
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,104,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274049
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,114,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274059
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,122,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274067
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,160,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274105
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,176,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274121
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,181,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,274126
+20230812-M-Canada_Masters-QF-Carlos_Alcaraz-Tommy_Paul,37,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,273340
+20230819-M-Cincinnati_Masters-SF-Hubert_Hurkacz-Carlos_Alcaraz,34,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,271483
+20230819-M-Cincinnati_Masters-SF-Hubert_Hurkacz-Carlos_Alcaraz,59,unobservable_shots,unrecognized rally prefix,charting-m-points-2020s.csv,271508
+20230819-M-Cincinnati_Masters-SF-Hubert_Hurkacz-Carlos_Alcaraz,99,unobservable_shots,second serve without a recognizable first-serve fault,charting-m-points-2020s.csv,271548
+20230829-M-US_Open-R128-Dominik_Koepfer-Carlos_Alcaraz,,scoring_override,"1 -> tiebreak at 6, target 10",charting-m-matches.csv,1682
+20230829-M-US_Open-R128-Dominik_Koepfer-Carlos_Alcaraz,,incomplete_match,recorded match ends before match point; retain observed prefix (possible retirement),charting-m-matches.csv,1682
+20230906-M-US_Open-QF-Carlos_Alcaraz-Alexander_Zverev,,scoring_override,"1 -> tiebreak at 6, target 10",charting-m-matches.csv,1654
+20230909-M-US_Open-SF-Carlos_Alcaraz-Daniil_Medvedev,,scoring_override,"1 -> tiebreak at 6, target 10",charting-m-matches.csv,1652
+20240124-M-Australian_Open-QF-Alexander_Zverev-Carlos_Alcaraz,171,unobservable_shots,missing point ending,charting-m-points-2020s.csv,230315
+20240216-M-Buenos_Aires-QF-Andrea_Vavassori-Carlos_Alcaraz,47,unobservable_shots,unobserved point,charting-m-points-2020s.csv,222860
+20240217-M-Buenos_Aires-SF-Carlos_Alcaraz-Nicolas_Jarry,98,unobservable_shots,unobserved point,charting-m-points-2020s.csv,222556
+20240217-M-Buenos_Aires-SF-Carlos_Alcaraz-Nicolas_Jarry,99,unobservable_shots,unobserved point,charting-m-points-2020s.csv,222557
+20240217-M-Buenos_Aires-SF-Carlos_Alcaraz-Nicolas_Jarry,100,unobservable_shots,unobserved point,charting-m-points-2020s.csv,222558
+20240316-M-Indian_Wells_Masters-SF-Jannik_Sinner-Carlos_Alcaraz,26,unobservable_shots,point ending before last stroke,charting-m-points-2020s.csv,210768
+20240328-M-Miami_Masters-QF-Grigor_Dimitrov-Carlos_Alcaraz,41,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,204703
+20240526-M-Roland_Garros-R128-Carlos_Alcaraz-J_J_Wolf,103,unobservable_shots,unobserved point,charting-m-points-2020s.csv,189242
+20240526-M-Roland_Garros-R128-Carlos_Alcaraz-J_J_Wolf,107,unobservable_shots,unobserved point,charting-m-points-2020s.csv,189246
+20240526-M-Roland_Garros-R128-Carlos_Alcaraz-J_J_Wolf,115,unobservable_shots,unobserved point,charting-m-points-2020s.csv,189254
+20240602-M-Roland_Garros-R16-Carlos_Alcaraz-Felix_Auger_Aliassime,7,unobservable_shots,unrecognized serve sequence,charting-m-points-2020s.csv,181369
+20240709-M-Wimbledon-QF-Tommy_Paul-Carlos_Alcaraz,171,unobservable_shots,point ending before last stroke,charting-m-points-2020s.csv,166886
+20240712-M-Wimbledon-SF-Daniil_Medvedev-Carlos_Alcaraz,116,unobservable_shots,missing point ending,charting-m-points-2020s.csv,166150
+20241005-M-Shanghai_Masters-R64-Juncheng_Shang-Carlos_Alcaraz,17,unobservable_shots,missing point ending,charting-m-points-2020s.csv,137864
+20241020-M-Six_Kings_Slam-F-Jannik_Sinner-Carlos_Alcaraz,42,unobservable_shots,unobserved point,charting-m-points-2020s.csv,134343
+20250419-M-Barcelona-SF-Arthur_Fils-Carlos_Alcaraz,74,unobservable_shots,unobserved point,charting-m-points-2020s.csv,81586
+20250528-M-Roland_Garros-R64-Fabian_Marozsan-Carlos_Alcaraz,46,unobservable_shots,unobserved point,charting-m-points-2020s.csv,68751
+20250528-M-Roland_Garros-R64-Fabian_Marozsan-Carlos_Alcaraz,121,unobservable_shots,unobserved point,charting-m-points-2020s.csv,68826
+20250528-M-Roland_Garros-R64-Fabian_Marozsan-Carlos_Alcaraz,157,unobservable_shots,unobserved point,charting-m-points-2020s.csv,68862
+20250528-M-Roland_Garros-R64-Fabian_Marozsan-Carlos_Alcaraz,158,unobservable_shots,unobserved point,charting-m-points-2020s.csv,68863
+20250606-M-Roland_Garros-SF-Lorenzo_Musetti-Carlos_Alcaraz,,incomplete_match,recorded match ends before match point; retain observed prefix (possible retirement),charting-m-matches.csv,402
+20250606-M-Roland_Garros-SF-Lorenzo_Musetti-Carlos_Alcaraz,28,unobservable_shots,missing point ending,charting-m-points-2020s.csv,63618
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,369,unobservable_shots,point ending before last stroke,charting-m-points-2020s.csv,63066
+20250814-M-Cincinnati_Masters-R16-Carlos_Alcaraz-Luca_Nardi,17,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,47037
+20250814-M-Cincinnati_Masters-R16-Carlos_Alcaraz-Luca_Nardi,37,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,47057
+20250814-M-Cincinnati_Masters-R16-Carlos_Alcaraz-Luca_Nardi,52,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,47072
+20250818-M-Cincinnati_Masters-F-Jannik_Sinner-Carlos_Alcaraz,,incomplete_match,recorded match ends before match point; retain observed prefix (possible retirement),charting-m-matches.csv,306
+20250826-M-US_Open-R128-Reilly_Opelka-Carlos_Alcaraz,130,unobservable_shots,unobserved point,charting-m-points-2020s.csv,44997
+20250930-M-Tokyo-F-Taylor_Fritz-Carlos_Alcaraz,9,unobservable_shots,point ending before last stroke,charting-m-points-2020s.csv,38621
+20260307-M-Indian_Wells_Masters-R64-Carlos_Alcaraz-Grigor_Dimitrov,91,unobservable_shots,unknown shot type,charting-m-points-2020s.csv,9777

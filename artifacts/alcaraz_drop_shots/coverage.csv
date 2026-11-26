@@ -1,0 +1,223 @@
+match_id,date,year,tournament,surface,round,opponent,edition,charted_by,points,observable_points,score_valid,complete
+20190402-M-Alicante_CH-R64-Carlos_Alcaraz-Jannik_Sinner,20190402,2019,Alicante CH,Clay,R64,Jannik Sinner,2019:Alicante CH,Zindaras,162,150,True,True
+20190410-M-Murcia_CH-R32-Carlos_Alcaraz-Pedro_Martinez,20190410,2019,Murcia CH,Clay,R32,Pedro Martinez,2019:Murcia CH,Big4,152,150,True,True
+20200218-M-Rio_de_Janeiro-R32-Carlos_Alcaraz-Albert_Ramos,20200218,2020,Rio de Janeiro,Clay,R32,Albert Ramos,2020:Rio de Janeiro,Zindaras,291,290,True,True
+20200219-M-Rio_de_Janeiro-R16-Carlos_Alcaraz-Federico_Coria,20200219,2020,Rio de Janeiro,Clay,R16,Federico Coria,2020:Rio de Janeiro,Big4,192,192,True,True
+20200921-M-Roland_Garros-Q1-Carlos_Alcaraz-Aleksandar_Vukic,20200921,2020,Roland Garros,Clay,Q1,Aleksandar Vukic,2020:Roland Garros,ojustino,202,202,True,True
+20210209-M-Australian_Open-R128-Carlos_Alcaraz-Botic_Van_De_Zandschulp,20210209,2021,Australian Open,Hard,R128,Botic Van De Zandschulp,2021:Australian Open,Zindaras,174,174,True,True
+20210324-M-Miami_Masters-R128-Carlos_Alcaraz-Emil_Ruusuvuori,20210324,2021,Miami Masters,Hard,R128,Emil Ruusuvuori,2021:Miami Masters,BG,177,177,True,True
+20210506-M-Madrid_Masters-R32-Rafael_Nadal-Carlos_Alcaraz,20210506,2021,Madrid Masters,Clay,R32,Rafael Nadal,2021:Madrid Masters,garibaldireds,83,83,True,True
+20210701-M-Wimbledon-R64-Daniil_Medvedev-Carlos_Alcaraz,20210701,2021,Wimbledon,Grass,R64,Daniil Medvedev,2021:Wimbledon,Lowell,146,146,True,True
+20210720-M-Umag-R32-Lucas_Pouille-Carlos_Alcaraz,20210720,2021,Umag,Clay,R32,Lucas Pouille,2021:Umag,BG,159,159,True,True
+20210722-M-Umag-R16-Andrej_Martin-Carlos_Alcaraz,20210722,2021,Umag,Clay,R16,Andrej Martin,2021:Umag,BG,100,100,True,True
+20210830-M-US_Open-R128-Cameron_Norrie-Carlos_Alcaraz,20210830,2021,US Open,Hard,R128,Cameron Norrie,2021:US Open,BG,170,168,True,True
+20210903-M-US_Open-R32-Stefanos_Tsitsipas-Carlos_Alcaraz,20210903,2021,US Open,Hard,R32,Stefanos Tsitsipas,2021:US Open,Edo,326,326,True,True
+20210905-M-US_Open-R16-Peter_Gojowczyk-Carlos_Alcaraz,20210905,2021,US Open,Hard,R16,Peter Gojowczyk,2021:US Open,Zindaras,291,290,True,True
+20211010-M-Indian_Wells_Masters-R64-Andy_Murray-Carlos_Alcaraz,20211010,2021,Indian Wells Masters,Hard,R64,Andy Murray,2021:Indian Wells Masters,Zindaras,197,197,True,True
+20211025-M-Vienna-R32-Carlos_Alcaraz-Daniel_Evans,20211025,2021,Vienna,Hard,R32,Daniel Evans,2021:Vienna,Ludo,108,108,True,True
+20211102-M-Paris_Masters-R64-Carlos_Alcaraz-Pierre_Hugues_Herbert,20211102,2021,Paris Masters,Hard,R64,Pierre Hugues Herbert,2021:Paris Masters,BG,235,230,True,True
+20211103-M-Paris_Masters-R32-Carlos_Alcaraz-Jannik_Sinner,20211103,2021,Paris Masters,Hard,R32,Jannik Sinner,2021:Paris Masters,BG,164,164,True,True
+20211104-M-Paris_Masters-R16-Carlos_Alcaraz-Hugo_Gaston,20211104,2021,Paris Masters,Hard,R16,Hugo Gaston,2021:Paris Masters,BG,127,127,True,True
+20220121-M-Australian_Open-R32-Carlos_Alcaraz-Matteo_Berrettini,20220121,2022,Australian Open,Hard,R32,Matteo Berrettini,2022:Australian Open,Edo,318,318,True,True
+20220214-M-Rio_de_Janeiro-R32-Carlos_Alcaraz-Jaume_Munar,20220214,2022,Rio de Janeiro,Clay,R32,Jaume Munar,2022:Rio de Janeiro,BG,151,151,True,True
+20220217-M-Rio_de_Janeiro-R16-Federico_Delbonis-Carlos_Alcaraz,20220217,2022,Rio de Janeiro,Clay,R16,Federico Delbonis,2022:Rio de Janeiro,BG,130,130,True,True
+20220219-M-Rio_de_Janeiro-QF-Carlos_Alcaraz-Matteo_Berrettini,20220219,2022,Rio de Janeiro,Clay,QF,Matteo Berrettini,2022:Rio de Janeiro,Angel Moreno,129,129,True,True
+20220219-M-Rio_de_Janeiro-SF-Fabio_Fognini-Carlos_Alcaraz,20220219,2022,Rio de Janeiro,Clay,SF,Fabio Fognini,2022:Rio de Janeiro,Angel Moreno,144,144,True,True
+20220220-M-Rio_de_Janeiro-F-Diego_Schwartzman-Carlos_Alcaraz,20220220,2022,Rio de Janeiro,Clay,F,Diego Schwartzman,2022:Rio de Janeiro,Edo,99,99,True,True
+20220314-M-Indian_Wells_Masters-R32-Roberto_Bautista_Agut-Carlos_Alcaraz,20220314,2022,Indian Wells Masters,Hard,R32,Roberto Bautista Agut,2022:Indian Wells Masters,Ludo,87,87,True,True
+20220317-M-Indian_Wells_Masters-R16-Gael_Monfils-Carlos_Alcaraz,20220317,2022,Indian Wells Masters,Hard,R16,Gael Monfils,2022:Indian Wells Masters,Ludo,110,110,True,True
+20220319-M-Indian_Wells_Masters-SF-Rafael_Nadal-Carlos_Alcaraz,20220319,2022,Indian Wells Masters,Hard,SF,Rafael Nadal,2022:Indian Wells Masters,Edo,208,208,True,True
+20220329-M-Miami_Masters-R16-Stefanos_Tsitsipas-Carlos_Alcaraz,20220329,2022,Miami Masters,Hard,R16,Stefanos Tsitsipas,2022:Miami Masters,Angel Moreno,150,149,True,True
+20220331-M-Miami_Masters-QF-Miomir_Kecmanovic-Carlos_Alcaraz,20220331,2022,Miami Masters,Hard,QF,Miomir Kecmanovic,2022:Miami Masters,Zindaras,201,201,True,True
+20220401-M-Miami_Masters-SF-Hubert_Hurkacz-Carlos_Alcaraz,20220401,2022,Miami Masters,Hard,SF,Hubert Hurkacz,2022:Miami Masters,Zindaras,167,167,True,True
+20220403-M-Miami_Masters-F-Casper_Ruud-Carlos_Alcaraz,20220403,2022,Miami Masters,Hard,F,Casper Ruud,2022:Miami Masters,Edo,141,141,True,True
+20220413-M-Monte_Carlo_Masters-R32-Sebastian_Korda-Carlos_Alcaraz,20220413,2022,Monte Carlo Masters,Clay,R32,Sebastian Korda,2022:Monte Carlo Masters,BG,253,253,True,True
+20220422-M-Barcelona-QF-Stefanos_Tsitsipas-Carlos_Alcaraz,20220422,2022,Barcelona,Clay,QF,Stefanos Tsitsipas,2022:Barcelona,BG,170,169,True,True
+20220424-M-Barcelona-F-Pablo_Carreno_Busta-Carlos_Alcaraz,20220424,2022,Barcelona,Clay,F,Pablo Carreno Busta,2022:Barcelona,Edo,93,93,True,True
+20220424-M-Barcelona-SF-Alex_De_Minaur-Carlos_Alcaraz,20220424,2022,Barcelona,Clay,SF,Alex De Minaur,2022:Barcelona,Zindaras,283,282,True,True
+20220506-M-Madrid_Masters-QF-Rafael_Nadal-Carlos_Alcaraz,20220506,2022,Madrid Masters,Clay,QF,Rafael Nadal,2022:Madrid Masters,Angel Moreno,144,144,True,True
+20220508-M-Madrid_Masters-F-Carlos_Alcaraz-Alexander_Zverev,20220508,2022,Madrid Masters,Clay,F,Alexander Zverev,2022:Madrid Masters,Ludo,85,85,True,True
+20220531-M-Roland_Garros-QF-Carlos_Alcaraz-Alexander_Zverev,20220531,2022,Roland Garros,Clay,QF,Alexander Zverev,2022:Roland Garros,Angel Moreno,263,263,True,True
+20220603-M-Roland_Garros-R64-Carlos_Alcaraz-Albert_Ramos,20220603,2022,Roland Garros,Clay,R64,Albert Ramos,2022:Roland Garros,Edo,352,352,True,True
+20220703-M-Wimbledon-R16-Jannik_Sinner-Carlos_Alcaraz,20220703,2022,Wimbledon,Grass,R16,Jannik Sinner,2022:Wimbledon,Edo,264,264,False,False
+20220719-M-Hamburg-R32-Nicola_Kuhn-Carlos_Alcaraz,20220719,2022,Hamburg,Clay,R32,Nicola Kuhn,2022:Hamburg,BG,186,185,True,True
+20220724-M-Hamburg-F-Carlos_Alcaraz-Lorenzo_Musetti,20220724,2022,Hamburg,Clay,F,Lorenzo Musetti,2022:Hamburg,Zindaras,195,195,True,True
+20220731-M-Umag-F-Jannik_Sinner-Carlos_Alcaraz,20220731,2022,Umag,Clay,F,Jannik Sinner,2022:Umag,Edo,167,167,True,True
+20220810-M-Canada_Masters-R32-Tommy_Paul-Carlos_Alcaraz,20220810,2022,Canada Masters,Hard,R32,Tommy Paul,2022:Canada Masters,BG,255,255,True,True
+20220816-M-Cincinnati_Masters-R32-Mackenzie_Mcdonald-Carlos_Alcaraz,20220816,2022,Cincinnati Masters,Hard,R32,Mackenzie Mcdonald,2022:Cincinnati Masters,BG,94,94,True,True
+20220903-M-US_Open-R32-Carlos_Alcaraz-Jenson_Brooksby,20220903,2022,US Open,Hard,R32,Jenson Brooksby,2022:US Open,Zindaras,167,167,True,True
+20220905-M-US_Open-R16-Marin_Cilic-Carlos_Alcaraz,20220905,2022,US Open,Hard,R16,Marin Cilic,2022:US Open,Zindaras,285,285,True,True
+20220907-M-US_Open-QF-Jannik_Sinner-Carlos_Alcaraz,20220907,2022,US Open,Hard,QF,Jannik Sinner,2022:US Open,Edo,382,382,True,True
+20220909-M-US_Open-SF-Frances_Tiafoe-Carlos_Alcaraz,20220909,2022,US Open,Hard,SF,Frances Tiafoe,2022:US Open,Zindaras,313,313,True,True
+20220911-M-US_Open-F-Casper_Ruud-Carlos_Alcaraz,20220911,2022,US Open,Hard,F,Casper Ruud,2022:US Open,Edo,249,249,True,True
+20221004-M-Astana-R32-David_Goffin-Carlos_Alcaraz,20221004,2022,Astana,Hard,R32,David Goffin,2022:Astana,Ludo,137,137,True,True
+20221024-M-Basel-R32-Carlos_Alcaraz-Jack_Draper,20221024,2022,Basel,Hard,R32,Jack Draper,2022:Basel,BG,176,176,True,True
+20221026-M-Basel-R16-Botic_Van_De_Zandschulp-Carlos_Alcaraz,20221026,2022,Basel,Hard,R16,Botic Van De Zandschulp,2022:Basel,BG,115,115,True,True
+20221029-M-Basel-SF-Felix_Auger_Aliassime-Carlos_Alcaraz,20221029,2022,Basel,Hard,SF,Felix Auger Aliassime,2022:Basel,Ludo,100,100,True,True
+20221102-M-Paris_Masters-R32-Yoshihito_Nishioka-Carlos_Alcaraz,20221102,2022,Paris Masters,Hard,R32,Yoshihito Nishioka,2022:Paris Masters,BG,105,105,True,True
+20221103-M-Paris_Masters-R16-Grigor_Dimitrov-Carlos_Alcaraz,20221103,2022,Paris Masters,Hard,R16,Grigor Dimitrov,2022:Paris Masters,BG,106,106,True,True
+20230215-M-Buenos_Aires-R16-Laslo_Djere-Carlos_Alcaraz,20230215,2023,Buenos Aires,Clay,R16,Laslo Djere,2023:Buenos Aires,BG,150,150,True,True
+20230217-M-Buenos_Aires-QF-Carlos_Alcaraz-Dusan_Lajovic,20230217,2023,Buenos Aires,Clay,QF,Dusan Lajovic,2023:Buenos Aires,BG,121,121,True,True
+20230222-M-Rio_de_Janeiro-R32-Mateus_Alves-Carlos_Alcaraz,20230222,2023,Rio de Janeiro,Clay,R32,Mateus Alves,2023:Rio de Janeiro,BG,132,132,True,True
+20230225-M-Rio_de_Janeiro-SF-Nicolas_Jarry-Carlos_Alcaraz,20230225,2023,Rio de Janeiro,Clay,SF,Nicolas Jarry,2023:Rio de Janeiro,Zindaras,189,185,True,True
+20230311-M-Indian_Wells_Masters-R64-Carlos_Alcaraz-Thanasi_Kokkinakis,20230311,2023,Indian Wells Masters,Hard,R64,Thanasi Kokkinakis,2023:Indian Wells Masters,BG,103,103,True,True
+20230313-M-Indian_Wells_Masters-R32-Tallon_Griekspoor-Carlos_Alcaraz,20230313,2023,Indian Wells Masters,Hard,R32,Tallon Griekspoor,2023:Indian Wells Masters,Zindaras,141,141,True,True
+20230316-M-Indian_Wells_Masters-QF-Felix_Auger_Aliassime-Carlos_Alcaraz,20230316,2023,Indian Wells Masters,Hard,QF,Felix Auger Aliassime,2023:Indian Wells Masters,BG,140,140,True,True
+20230318-M-Indian_Wells_Masters-SF-Jannik_Sinner-Carlos_Alcaraz,20230318,2023,Indian Wells Masters,Hard,SF,Jannik Sinner,2023:Indian Wells Masters,Edo,144,144,True,True
+20230319-M-Indian_Wells_Masters-F-Carlos_Alcaraz-Daniil_Medvedev,20230319,2023,Indian Wells Masters,Hard,F,Daniil Medvedev,2023:Indian Wells Masters,Zindaras,97,97,True,True
+20230326-M-Miami_Masters-R32-Dusan_Lajovic-Carlos_Alcaraz,20230326,2023,Miami Masters,Hard,R32,Dusan Lajovic,2023:Miami Masters,Carrie,126,126,True,True
+20230328-M-Miami_Masters-R16-Tommy_Paul-Carlos_Alcaraz,20230328,2023,Miami Masters,Hard,R16,Tommy Paul,2023:Miami Masters,BG,124,124,True,True
+20230330-M-Miami_Masters-QF-Taylor_Fritz-Carlos_Alcaraz,20230330,2023,Miami Masters,Hard,QF,Taylor Fritz,2023:Miami Masters,BG,111,111,True,True
+20230401-M-Miami_Masters-SF-Jannik_Sinner-Carlos_Alcaraz,20230401,2023,Miami Masters,Hard,SF,Jannik Sinner,2023:Miami Masters,Edo,217,217,True,True
+20230423-M-Barcelona-F-Carlos_Alcaraz-Stefanos_Tsitsipas,20230423,2023,Barcelona,Clay,F,Stefanos Tsitsipas,2023:Barcelona,Edo,101,101,True,True
+20230428-M-Madrid_Masters-R64-Emil_Ruusuvuori-Carlos_Alcaraz,20230428,2023,Madrid Masters,Clay,R64,Emil Ruusuvuori,2023:Madrid Masters,BG,172,171,True,True
+20230503-M-Madrid Masters-QF-Karen_Khachanov-Carlos_Alcaraz,20230503,2023,Madrid Masters,Clay,QF,Karen Khachanov,2023:Madrid Masters,Tom,0,0,False,False
+20230503-M-Madrid_Masters-QF-Karen_Khachanov-Carlos_Alcaraz,20230503,2023,Madrid Masters,Clay,QF,Karen Khachanov,2023:Madrid Masters,Tom,143,128,True,True
+20230507-M-Madrid_Masters-F-Jan_Lennard_Struff-Carlos_Alcaraz,20230507,2023,Madrid Masters,Clay,F,Jan Lennard Struff,2023:Madrid Masters,Zindaras,195,195,True,True
+20230513-M-Rome_Masters-R64-Carlos_Alcaraz-Albert_Ramos,20230513,2023,Rome Masters,Clay,R64,Albert Ramos,2023:Rome Masters,Shreyas,111,111,True,True
+20230515-M-Rome_Masters-R32-Fabian_Marozsan-Carlos_Alcaraz,20230515,2023,Rome Masters,Clay,R32,Fabian Marozsan,2023:Rome Masters,BG,137,135,True,True
+20230529-M-Roland_Garros-R128-Flavio_Cobolli-Carlos_Alcaraz,20230529,2023,Roland Garros,Clay,R128,Flavio Cobolli,2023:Roland Garros,Evilariniesta,160,159,True,True
+20230602-M-Roland_Garros-R32-Carlos_Alcaraz-Denis_Shapovalov,20230602,2023,Roland Garros,Clay,R32,Denis Shapovalov,2023:Roland Garros,Evilariniesta,165,163,True,True
+20230604-M-Roland_Garros-R16-Carlos_Alcaraz-Lorenzo_Musetti,20230604,2023,Roland Garros,Clay,R16,Lorenzo Musetti,2023:Roland Garros,BG,165,164,True,True
+20230606-M-Roland_Garros-QF-Stefanos_Tsitsipas-Carlos_Alcaraz,20230606,2023,Roland Garros,Clay,QF,Stefanos Tsitsipas,2023:Roland Garros,BG,170,170,True,True
+20230609-M-Roland_Garros-SF-Novak_Djokovic-Carlos_Alcaraz,20230609,2023,Roland Garros,Clay,SF,Novak Djokovic,2023:Roland Garros,Edo,228,228,True,True
+20230620-M-Queens_Club-R32-Arthur_Rinderknech-Carlos_Alcaraz,20230620,2023,Queens Club,Grass,R32,Arthur Rinderknech,2023:Queens Club,BG,204,204,True,True
+20230622-M-Queens_Club-R16-Carlos_Alcaraz-Jiri_Lehecka,20230622,2023,Queens Club,Grass,R16,Jiri Lehecka,2023:Queens Club,BG,126,126,True,True
+20230623-M-Queens_Club-QF-Grigor_Dimitrov-Carlos_Alcaraz,20230623,2023,Queens Club,Grass,QF,Grigor Dimitrov,2023:Queens Club,BG,128,128,True,True
+20230704-M-Wimbledon-R128-Jeremy_Chardy-Carlos_Alcaraz,20230704,2023,Wimbledon,Grass,R128,Jeremy Chardy,2023:Wimbledon,BG,167,167,True,True
+20230707-M-Wimbledon-R64-Alexandre_Muller-Carlos_Alcaraz,20230707,2023,Wimbledon,Grass,R64,Alexandre Muller,2023:Wimbledon,BG,229,229,True,True
+20230708-M-Wimbledon-R32-Carlos_Alcaraz-Nicolas_Jarry,20230708,2023,Wimbledon,Grass,R32,Nicolas Jarry,2023:Wimbledon,BG,297,274,True,True
+20230710-M-Wimbledon-R16-Matteo_Berrettini-Carlos_Alcaraz,20230710,2023,Wimbledon,Grass,R16,Matteo Berrettini,2023:Wimbledon,Edo,225,225,True,True
+20230712-M-Wimbledon-QF-Carlos_Alcaraz-Holger_Rune,20230712,2023,Wimbledon,Grass,QF,Holger Rune,2023:Wimbledon,BG,189,189,True,True
+20230714-M-Wimbledon-SF-Carlos_Alcaraz-Daniil_Medvedev,20230714,2023,Wimbledon,Grass,SF,Daniil Medvedev,2023:Wimbledon,Zindaras,159,157,True,True
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,20230716,2023,Wimbledon,Grass,F,Novak Djokovic,2023:Wimbledon,Edo,334,334,True,True
+20230810-M-Canada_Masters-R16-Hubert_Hurkacz-Carlos_Alcaraz,20230810,2023,Canada Masters,Hard,R16,Hubert Hurkacz,2023:Canada Masters,Carrie,207,197,True,True
+20230812-M-Canada_Masters-QF-Carlos_Alcaraz-Tommy_Paul,20230812,2023,Canada Masters,Hard,QF,Tommy Paul,2023:Canada Masters,Ludo,186,185,True,True
+20230819-M-Cincinnati_Masters-SF-Hubert_Hurkacz-Carlos_Alcaraz,20230819,2023,Cincinnati Masters,Hard,SF,Hubert Hurkacz,2023:Cincinnati Masters,Carrie,198,195,True,True
+20230820-M-Cincinnati_Masters-F-Novak_Djokovic-Carlos_Alcaraz,20230820,2023,Cincinnati Masters,Hard,F,Novak Djokovic,2023:Cincinnati Masters,BG,261,261,True,True
+20230829-M-US_Open-R128-Dominik_Koepfer-Carlos_Alcaraz,20230829,2023,US Open,Hard,R128,Dominik Koepfer,2023:US Open,sireland13,88,88,True,False
+20230831-M-US_Open-R64-Lloyd_Harris-Carlos_Alcaraz,20230831,2023,US Open,Hard,R64,Lloyd Harris,2023:US Open,BG,196,196,True,True
+20230902-M-US_Open-R32-Daniel_Evans-Carlos_Alcaraz,20230902,2023,US Open,Hard,R32,Daniel Evans,2023:US Open,Isaac,238,238,True,True
+20230906-M-US_Open-QF-Carlos_Alcaraz-Alexander_Zverev,20230906,2023,US Open,Hard,QF,Alexander Zverev,2023:US Open,Edo,174,174,True,True
+20230909-M-US_Open-SF-Carlos_Alcaraz-Daniil_Medvedev,20230909,2023,US Open,Hard,SF,Daniil Medvedev,2023:US Open,Edo,262,262,True,True
+20231002-M-Beijing-QF-Casper_Ruud-Carlos_Alcaraz,20231002,2023,Beijing,Hard,QF,Casper Ruud,2023:Beijing,Ludo,132,132,True,True
+20231011-M-Shanghai_Masters-R16-Carlos_Alcaraz-Grigor_Dimitrov,20231011,2023,Shanghai Masters,Hard,R16,Grigor Dimitrov,2023:Shanghai Masters,BG,164,164,True,True
+20231113-M-Tour_Finals-RR-Carlos_Alcaraz-Alexander_Zverev,20231113,2023,Tour Finals,Hard,RR,Alexander Zverev,2023:Tour Finals,BG,189,189,True,True
+20231115-M-Tour_Finals-RR-Andrey_Rublev-Carlos_Alcaraz,20231115,2023,Tour Finals,Hard,RR,Andrey Rublev,2023:Tour Finals,Ludo,108,108,True,True
+20231118-M-Tour_Finals-SF-Novak_Djokovic-Carlos_Alcaraz,20231118,2023,Tour Finals,Hard,SF,Novak Djokovic,2023:Tour Finals,BG,111,111,True,True
+20240122-M-Australian_Open-R16-Miomir_Kecmanovic-Carlos_Alcaraz,20240122,2024,Australian Open,Hard,R16,Miomir Kecmanovic,2024:Australian Open,BG,153,153,True,True
+20240124-M-Australian_Open-QF-Alexander_Zverev-Carlos_Alcaraz,20240124,2024,Australian Open,Hard,QF,Alexander Zverev,2024:Australian Open,Edo,228,227,True,True
+20240215-M-Buenos_Aires-R16-Carlos_Alcaraz-Camilo_Ugo_Carabelli,20240215,2024,Buenos Aires,Clay,R16,Camilo Ugo Carabelli,2024:Buenos Aires,BG,137,137,True,True
+20240216-M-Buenos_Aires-QF-Andrea_Vavassori-Carlos_Alcaraz,20240216,2024,Buenos Aires,Clay,QF,Andrea Vavassori,2024:Buenos Aires,BG,134,133,True,True
+20240217-M-Buenos_Aires-SF-Carlos_Alcaraz-Nicolas_Jarry,20240217,2024,Buenos Aires,Clay,SF,Nicolas Jarry,2024:Buenos Aires,Ludo,137,134,True,True
+20240308-M-Indian_Wells_Masters-R64-Matteo_Arnaldi-Carlos_Alcaraz,20240308,2024,Indian Wells Masters,Hard,R64,Matteo Arnaldi,2024:Indian Wells Masters,BG,168,168,True,True
+20240310-M-Indian_Wells_Masters-R32-Felix_Auger_Aliassime-Carlos_Alcaraz,20240310,2024,Indian Wells Masters,Hard,R32,Felix Auger Aliassime,2024:Indian Wells Masters,BG,96,96,True,True
+20240312-M-Indian_Wells_Masters-R16-Fabian_Marozsan-Carlos_Alcaraz,20240312,2024,Indian Wells Masters,Hard,R16,Fabian Marozsan,2024:Indian Wells Masters,Ludo,107,107,True,True
+20240314-M-Indian_Wells_Masters-QF-Carlos_Alcaraz-Alexander_Zverev,20240314,2024,Indian Wells Masters,Hard,QF,Alexander Zverev,2024:Indian Wells Masters,Xuanyu,102,102,True,True
+20240316-M-Indian_Wells_Masters-SF-Jannik_Sinner-Carlos_Alcaraz,20240316,2024,Indian Wells Masters,Hard,SF,Jannik Sinner,2024:Indian Wells Masters,Edo,146,145,True,True
+20240317-M-Indian_Wells_Masters-F-Daniil_Medvedev-Carlos_Alcaraz,20240317,2024,Indian Wells Masters,Hard,F,Daniil Medvedev,2024:Indian Wells Masters,Edo,141,141,True,True
+20240323-M-Miami_Masters-R64-Roberto_Carballes_Baena-Carlos_Alcaraz,20240323,2024,Miami Masters,Hard,R64,Roberto Carballes Baena,2024:Miami Masters,BG,101,101,True,True
+20240326-M-Miami_Masters-R16-Lorenzo_Musetti-Carlos_Alcaraz,20240326,2024,Miami Masters,Hard,R16,Lorenzo Musetti,2024:Miami Masters,BG,114,114,True,True
+20240326-M-Miami_Masters-R32-Gael_Monfils-Carlos_Alcaraz,20240326,2024,Miami Masters,Hard,R32,Gael Monfils,2024:Miami Masters,Ludo,94,94,True,True
+20240328-M-Miami_Masters-QF-Grigor_Dimitrov-Carlos_Alcaraz,20240328,2024,Miami Masters,Hard,QF,Grigor Dimitrov,2024:Miami Masters,Zindaras,115,114,True,True
+20240426-M-Madrid_Masters-R64-Alexander_Shevchenko-Carlos_Alcaraz,20240426,2024,Madrid Masters,Clay,R64,Alexander Shevchenko,2024:Madrid Masters,Ludo,93,93,True,True
+20240501-M-Madrid_Masters-QF-Andrey_Rublev-Carlos_Alcaraz,20240501,2024,Madrid Masters,Clay,QF,Andrey Rublev,2024:Madrid Masters,Ludo,167,167,True,True
+20240526-M-Roland_Garros-R128-Carlos_Alcaraz-J_J_Wolf,20240526,2024,Roland Garros,Clay,R128,J J Wolf,2024:Roland Garros,BG,133,130,True,True
+20240529-M-Roland_Garros-R64-Jesper_De_Jong-Carlos_Alcaraz,20240529,2024,Roland Garros,Clay,R64,Jesper De Jong,2024:Roland Garros,Zindaras,236,236,True,True
+20240531-M-Roland_Garros-R32-Sebastian_Korda-Carlos_Alcaraz,20240531,2024,Roland Garros,Clay,R32,Sebastian Korda,2024:Roland Garros,Edo,214,214,True,True
+20240602-M-Roland_Garros-R16-Carlos_Alcaraz-Felix_Auger_Aliassime,20240602,2024,Roland Garros,Clay,R16,Felix Auger Aliassime,2024:Roland Garros,Ludo,163,162,True,True
+20240607-M-Roland_Garros-SF-Carlos_Alcaraz-Jannik_Sinner,20240607,2024,Roland Garros,Clay,SF,Jannik Sinner,2024:Roland Garros,Zindaras,292,292,True,True
+20240609-M-Roland_Garros-F-Alexander_Zverev-Carlos_Alcaraz,20240609,2024,Roland Garros,Clay,F,Alexander Zverev,2024:Roland Garros,Ludo,292,292,True,True
+20240701-M-Wimbledon-R128-Carlos_Alcaraz-Mark_Lajal,20240701,2024,Wimbledon,Grass,R128,Mark Lajal,2024:Wimbledon,Zindaras,191,191,True,True
+20240709-M-Wimbledon-QF-Tommy_Paul-Carlos_Alcaraz,20240709,2024,Wimbledon,Grass,QF,Tommy Paul,2024:Wimbledon,Edo,255,254,True,True
+20240712-M-Wimbledon-SF-Daniil_Medvedev-Carlos_Alcaraz,20240712,2024,Wimbledon,Grass,SF,Daniil Medvedev,2024:Wimbledon,Edo,244,243,True,True
+20240729-M-Olympics-R32-Carlos_Alcaraz-Tallon_Griekspoor,20240729,2024,Olympics,Clay,R32,Tallon Griekspoor,2024:Olympics,Zindaras,128,128,True,True
+20240802-M-Olympics-SF-Felix_Auger_Aliassime-Carlos_Alcaraz,20240802,2024,Olympics,Clay,SF,Felix Auger Aliassime,2024:Olympics,Isaac,93,93,True,True
+20240815-M-Cincinnati_Masters-R32-Gael_Monfils-Carlos_Alcaraz,20240815,2024,Cincinnati Masters,Hard,R32,Gael Monfils,2024:Cincinnati Masters,Zindaras,218,218,True,True
+20240827-M-US_Open-R128-Li_Tu-Carlos_Alcaraz,20240827,2024,US Open,Hard,R128,Li Tu,2024:US Open,BG,211,211,True,True
+20240829-M-US_Open-R64-Botic_Van_De_Zandschulp-Carlos_Alcaraz,20240829,2024,US Open,Hard,R64,Botic Van De Zandschulp,2024:US Open,Zindaras,165,165,True,True
+20240927-M-Beijing-R32-Giovanni_Mpetshi_Perricard-Carlos_Alcaraz,20240927,2024,Beijing,Hard,R32,Giovanni Mpetshi Perricard,2024:Beijing,Ludo,111,111,True,True
+20240929-M-Beijing-R16-Carlos_Alcaraz-Tallon_Griekspoor,20240929,2024,Beijing,Hard,R16,Tallon Griekspoor,2024:Beijing,Ludo,84,84,True,True
+20240930-M-Beijing-QF-Karen_Khachanov-Carlos_Alcaraz,20240930,2024,Beijing,Hard,QF,Karen Khachanov,2024:Beijing,Ludo,134,134,True,True
+20241001-M-Beijing-SF-Daniil_Medvedev-Carlos_Alcaraz,20241001,2024,Beijing,Hard,SF,Daniil Medvedev,2024:Beijing,Ludo,119,119,True,True
+20241002-M-Beijing-F-Carlos_Alcaraz-Jannik_Sinner,20241002,2024,Beijing,Hard,F,Jannik Sinner,2024:Beijing,Ludo,252,252,True,True
+20241005-M-Shanghai_Masters-R64-Juncheng_Shang-Carlos_Alcaraz,20241005,2024,Shanghai Masters,Hard,R64,Juncheng Shang,2024:Shanghai Masters,Ludo,99,98,True,True
+20241009-M-Shanghai_Masters-R16-Gael_Monfils-Carlos_Alcaraz,20241009,2024,Shanghai Masters,Hard,R16,Gael Monfils,2024:Shanghai Masters,Ludo,129,129,True,True
+20241010-M-Shanghai_Masters-QF-Tomas_Machac-Carlos_Alcaraz,20241010,2024,Shanghai Masters,Hard,QF,Tomas Machac,2024:Shanghai Masters,Ludo,160,160,True,True
+20241020-M-Six_Kings_Slam-F-Jannik_Sinner-Carlos_Alcaraz,20241020,2024,Six Kings Slam,Hard,F,Jannik Sinner,2024:Six Kings Slam,Edo,190,189,True,True
+20241029-M-Paris_Masters-R32-Carlos_Alcaraz-Nicolas_Jarry,20241029,2024,Paris Masters,Hard,R32,Nicolas Jarry,2024:Paris Masters,Ludo,118,118,True,True
+20241111-M-Tour_Finals-RR-Casper_Ruud-Carlos_Alcaraz,20241111,2024,Tour Finals,Hard,RR,Casper Ruud,2024:Tour Finals,BG,118,118,True,True
+20241119-M-Davis_Cup_Finals-QF-Tallon_Griekspoor-Carlos_Alcaraz,20241119,2024,Davis Cup Finals,Hard,QF,Tallon Griekspoor,2024:Davis Cup Finals,Zindaras,115,115,True,True
+20250113-M-Australian_Open-R128-Alexander_Shevchenko-Carlos_Alcaraz,20250113,2025,Australian Open,Hard,R128,Alexander Shevchenko,2025:Australian Open,Ludo,170,170,True,True
+20250115-M-Australian_Open-R64-Carlos_Alcaraz-Yoshihito_Nishioka,20250115,2025,Australian Open,Hard,R64,Yoshihito Nishioka,2025:Australian Open,Ludo,121,121,True,True
+20250117-M-Australian_Open-R32-Nuno_Borges-Carlos_Alcaraz,20250117,2025,Australian Open,Hard,R32,Nuno Borges,2025:Australian Open,BG,246,246,True,True
+20250121-M-Australian_Open-QF-Novak_Djokovic-Carlos_Alcaraz,20250121,2025,Australian Open,Hard,QF,Novak Djokovic,2025:Australian Open,Zindaras,261,261,True,True
+20250204-M-Rotterdam-R32-Carlos_Alcaraz-Botic_Van_De_Zandschulp,20250204,2025,Rotterdam,Hard,R32,Botic Van De Zandschulp,2025:Rotterdam,Ludo,195,195,True,True
+20250206-M-Rotterdam-R16-Andrea_Vavassori-Carlos_Alcaraz,20250206,2025,Rotterdam,Hard,R16,Andrea Vavassori,2025:Rotterdam,Ludo,95,95,True,True
+20250207-M-Rotterdam-QF-Pedro_Martinez-Carlos_Alcaraz,20250207,2025,Rotterdam,Hard,QF,Pedro Martinez,2025:Rotterdam,Ludo,93,93,True,True
+20250208-M-Rotterdam-SF-Hubert_Hurkacz-Carlos_Alcaraz,20250208,2025,Rotterdam,Hard,SF,Hubert Hurkacz,2025:Rotterdam,Ludo,195,195,True,True
+20250209-M-Rotterdam-F-Alex_De_Minaur-Carlos_Alcaraz,20250209,2025,Rotterdam,Hard,F,Alex De Minaur,2025:Rotterdam,Ludo,154,154,True,True
+20250217-M-Doha-R32-Marin_Cilic-Carlos_Alcaraz,20250217,2025,Doha,Hard,R32,Marin Cilic,2025:Doha,Ludo,134,134,True,True
+20250219-M-Doha-R16-Luca_Nardi-Carlos_Alcaraz,20250219,2025,Doha,Hard,R16,Luca Nardi,2025:Doha,BG,158,158,True,True
+20250220-M-Doha-QF-Jiri_Lehecka-Carlos_Alcaraz,20250220,2025,Doha,Hard,QF,Jiri Lehecka,2025:Doha,Ludo,172,172,True,True
+20250308-M-Indian_Wells_Masters-R64-Quentin_Halys-Carlos_Alcaraz,20250308,2025,Indian Wells Masters,Hard,R64,Quentin Halys,2025:Indian Wells Masters,Ludo,97,97,True,True
+20250310-M-Indian_Wells_Masters-R32-Denis_Shapovalov-Carlos_Alcaraz,20250310,2025,Indian Wells Masters,Hard,R32,Denis Shapovalov,2025:Indian Wells Masters,Ludo,122,122,True,True
+20250312-M-Indian_Wells_Masters-R16-Grigor_Dimitrov-Carlos_Alcaraz,20250312,2025,Indian Wells Masters,Hard,R16,Grigor Dimitrov,2025:Indian Wells Masters,Ludo,103,103,True,True
+20250313-M-Indian_Wells_Masters-QF-Carlos_Alcaraz-Francisco_Cerundolo,20250313,2025,Indian Wells Masters,Hard,QF,Francisco Cerundolo,2025:Indian Wells Masters,Ludo,146,146,True,True
+20250315-M-Indian_Wells_Masters-SF-Jack_Draper-Carlos_Alcaraz,20250315,2025,Indian Wells Masters,Hard,SF,Jack Draper,2025:Indian Wells Masters,Ludo,139,139,True,True
+20250409-M-Monte_Carlo_Masters-R32-Francisco_Cerundolo-Carlos_Alcaraz,20250409,2025,Monte Carlo Masters,Clay,R32,Francisco Cerundolo,2025:Monte Carlo Masters,BG,131,131,True,True
+20250411-M-Monte_Carlo_Masters-QF-Carlos_Alcaraz-Arthur_Fils,20250411,2025,Monte Carlo Masters,Clay,QF,Arthur Fils,2025:Monte Carlo Masters,Ludo,204,204,True,True
+20250412-M-Monte_Carlo_Masters-SF-Carlos_Alcaraz-Alejandro_Davidovich_Fokina,20250412,2025,Monte Carlo Masters,Clay,SF,Alejandro Davidovich Fokina,2025:Monte Carlo Masters,BG,182,182,True,True
+20250417-M-Barcelona-R16-Laslo_Djere-Carlos_Alcaraz,20250417,2025,Barcelona,Clay,R16,Laslo Djere,2025:Barcelona,Ludo,99,99,True,True
+20250419-M-Barcelona-SF-Arthur_Fils-Carlos_Alcaraz,20250419,2025,Barcelona,Clay,SF,Arthur Fils,2025:Barcelona,Ludo,109,108,True,True
+20250420-M-Barcelona-F-Holger_Rune-Carlos_Alcaraz,20250420,2025,Barcelona,Clay,F,Holger Rune,2025:Barcelona,Ludo,129,129,True,True
+20250509-M-Rome_Masters-R64-Dusan_Lajovic-Carlos_Alcaraz,20250509,2025,Rome Masters,Clay,R64,Dusan Lajovic,2025:Rome Masters,Ludo,118,118,True,True
+20250514-M-Rome_Masters-QF-Jack_Draper-Carlos_Alcaraz,20250514,2025,Rome Masters,Clay,QF,Jack Draper,2025:Rome Masters,Angel Moreno,127,127,True,True
+20250516-M-Rome_Masters-SF-Lorenzo_Musetti-Carlos_Alcaraz,20250516,2025,Rome Masters,Clay,SF,Lorenzo Musetti,2025:Rome Masters,Edo,165,165,True,True
+20250518-M-Rome_Masters-F-Jannik_Sinner-Carlos_Alcaraz,20250518,2025,Rome Masters,Clay,F,Jannik Sinner,2025:Rome Masters,Ludo,133,133,True,True
+20250526-M-Roland_Garros-R128-Carlos_Alcaraz-Giulio_Zeppieri,20250526,2025,Roland Garros,Clay,R128,Giulio Zeppieri,2025:Roland Garros,BG,171,171,True,True
+20250528-M-Roland_Garros-R64-Fabian_Marozsan-Carlos_Alcaraz,20250528,2025,Roland Garros,Clay,R64,Fabian Marozsan,2025:Roland Garros,BG,205,201,True,True
+20250601-M-Roland_Garros-R16-Ben_Shelton-Carlos_Alcaraz,20250601,2025,Roland Garros,Clay,R16,Ben Shelton,2025:Roland Garros,BG,271,271,True,True
+20250603-M-Roland_Garros-QF-Carlos_Alcaraz-Tommy_Paul,20250603,2025,Roland Garros,Clay,QF,Tommy Paul,2025:Roland Garros,BG,142,142,True,True
+20250606-M-Roland_Garros-SF-Lorenzo_Musetti-Carlos_Alcaraz,20250606,2025,Roland Garros,Clay,SF,Lorenzo Musetti,2025:Roland Garros,Edo,183,182,True,False
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,20250608,2025,Roland Garros,Clay,F,Jannik Sinner,2025:Roland Garros,Edo,385,384,True,True
+20250617-M-Queens_Club-R32-Adam_Walton-Carlos_Alcaraz,20250617,2025,Queens Club,Grass,R32,Adam Walton,2025:Queens Club,Jpenney,147,147,True,True
+20250619-M-Queens_Club-R16-Jaume_Munar-Carlos_Alcaraz,20250619,2025,Queens Club,Grass,R16,Jaume Munar,2025:Queens Club,Jpenney,256,256,True,True
+20250620-M-Queens_Club-QF-Arthur_Rinderknech-Carlos_Alcaraz,20250620,2025,Queens Club,Grass,QF,Arthur Rinderknech,2025:Queens Club,Ludo,114,114,True,True
+20250621-M-Queens_Club-SF-Roberto_Bautista_Agut-Carlos_Alcaraz,20250621,2025,Queens Club,Grass,SF,Roberto Bautista Agut,2025:Queens Club,BG,130,130,True,True
+20250630-M-Wimbledon-R128-Fabio_Fognini-Carlos_Alcaraz,20250630,2025,Wimbledon,Grass,R128,Fabio Fognini,2025:Wimbledon,Edo,357,357,True,True
+20250711-M-Wimbledon-SF-Taylor_Fritz-Carlos_Alcaraz,20250711,2025,Wimbledon,Grass,SF,Taylor Fritz,2025:Wimbledon,BG,234,234,True,True
+20250713-M-Wimbledon-F-Carlos_Alcaraz-Jannik_Sinner,20250713,2025,Wimbledon,Grass,F,Jannik Sinner,2025:Wimbledon,Edo,238,238,True,True
+20250812-M-Cincinnati_Masters-R32-Hamad_Medjedovic-Carlos_Alcaraz,20250812,2025,Cincinnati Masters,Hard,R32,Hamad Medjedovic,2025:Cincinnati Masters,Ludo,136,136,True,True
+20250814-M-Cincinnati_Masters-R16-Carlos_Alcaraz-Luca_Nardi,20250814,2025,Cincinnati Masters,Hard,R16,Luca Nardi,2025:Cincinnati Masters,elarmitage,112,109,True,True
+20250818-M-Cincinnati_Masters-F-Jannik_Sinner-Carlos_Alcaraz,20250818,2025,Cincinnati Masters,Hard,F,Jannik Sinner,2025:Cincinnati Masters,stard54,29,29,True,False
+20250826-M-US_Open-R128-Reilly_Opelka-Carlos_Alcaraz,20250826,2025,US Open,Hard,R128,Reilly Opelka,2025:US Open,Ludo,189,188,True,True
+20250828-M-US_Open-R64-Carlos_Alcaraz-Mattia_Bellucci,20250828,2025,US Open,Hard,R64,Mattia Bellucci,2025:US Open,Ludo,141,141,True,True
+20250829-M-US_Open-R32-Carlos_Alcaraz-Luciano_Darderi,20250829,2025,US Open,Hard,R32,Luciano Darderi,2025:US Open,Ludo,147,147,True,True
+20250902-M-US_Open-QF-Jiri_Lehecka-Carlos_Alcaraz,20250902,2025,US Open,Hard,QF,Jiri Lehecka,2025:US Open,Isaac,157,157,True,True
+20250905-M-US_Open-SF-Novak_Djokovic-Carlos_Alcaraz,20250905,2025,US Open,Hard,SF,Novak Djokovic,2025:US Open,Ludo,182,182,True,True
+20250907-M-US_Open-F-Jannik_Sinner-Carlos_Alcaraz,20250907,2025,US Open,Hard,F,Jannik Sinner,2025:US Open,Zindaras,201,201,True,True
+20250925-M-Tokyo-R32-Sebastian_Baez-Carlos_Alcaraz,20250925,2025,Tokyo,Hard,R32,Sebastian Baez,2025:Tokyo,Ludo,110,110,True,True
+20250927-M-Tokyo-R16-Carlos_Alcaraz-Zizou_Bergs,20250927,2025,Tokyo,Hard,R16,Zizou Bergs,2025:Tokyo,Ludo,112,112,True,True
+20250928-M-Tokyo-QF-Brandon_Nakashima-Carlos_Alcaraz,20250928,2025,Tokyo,Hard,QF,Brandon Nakashima,2025:Tokyo,Ludo,109,109,True,True
+20250929-M-Tokyo-SF-Casper_Ruud-Carlos_Alcaraz,20250929,2025,Tokyo,Hard,SF,Casper Ruud,2025:Tokyo,Ludo,170,170,True,True
+20250930-M-Tokyo-F-Taylor_Fritz-Carlos_Alcaraz,20250930,2025,Tokyo,Hard,F,Taylor Fritz,2025:Tokyo,Ludo,129,128,True,True
+20251018-M-Six_Kings_Slam-F-Carlos_Alcaraz-Jannik_Sinner,20251018,2025,Six Kings Slam,Hard,F,Jannik Sinner,2025:Six Kings Slam,Edo,103,103,True,True
+20251028-M-Paris_Masters-R32-Cameron_Norrie-Carlos_Alcaraz,20251028,2025,Paris Masters,Hard,R32,Cameron Norrie,2025:Paris Masters,Isaac,187,187,True,True
+20251113-M-Tour_Finals-RR-Carlos_Alcaraz-Lorenzo_Musetti,20251113,2025,Tour Finals,Hard,RR,Lorenzo Musetti,2025:Tour Finals,Ludo,106,106,True,True
+20251115-M-Tour_Finals-SF-Carlos_Alcaraz-Felix_Auger_Aliassime,20251115,2025,Tour Finals,Hard,SF,Felix Auger Aliassime,2025:Tour Finals,Ludo,108,108,True,True
+20251116-M-Tour_Finals-F-Carlos_Alcaraz-Jannik_Sinner,20251116,2025,Tour Finals,Hard,F,Jannik Sinner,2025:Tour Finals,Ludo,150,150,True,True
+20260123-M-Australian_Open-R32-Corentin_Moutet-Carlos_Alcaraz,20260123,2026,Australian Open,Hard,R32,Corentin Moutet,2026:Australian Open,Zindaras,165,165,True,True
+20260127-M-Australian_Open-QF-Carlos_Alcaraz-Alex_De_Minaur,20260127,2026,Australian Open,Hard,QF,Alex De Minaur,2026:Australian Open,stard54,176,176,True,True
+20260130-M-Australian_Open-SF-Alexander_Zverev-Carlos_Alcaraz,20260130,2026,Australian Open,Hard,SF,Alexander Zverev,2026:Australian Open,Edo,394,394,True,True
+20260201-M-Australian_Open-F-Novak_Djokovic-Carlos_Alcaraz,20260201,2026,Australian Open,Hard,F,Novak Djokovic,2026:Australian Open,Zindaras,224,224,True,True
+20260219-M-Doha-QF-Carlos_Alcaraz-Karen_Khachanov,20260219,2026,Doha,Hard,QF,Karen Khachanov,2026:Doha,Angel Moreno,202,202,True,True
+20260221-M-Doha-F-Arthur_Fils-Carlos_Alcaraz,20260221,2026,Doha,Hard,F,Arthur Fils,2026:Doha,stard54,76,76,True,True
+20260307-M-Indian_Wells_Masters-R64-Carlos_Alcaraz-Grigor_Dimitrov,20260307,2026,Indian Wells Masters,Hard,R64,Grigor Dimitrov,2026:Indian Wells Masters,stard54,97,96,True,True
+20260311-M-Indian_Wells_Masters-R16-Casper_Ruud-Carlos_Alcaraz,20260311,2026,Indian Wells Masters,Hard,R16,Casper Ruud,2026:Indian Wells Masters,Ludo,126,126,True,True
+20260314-M-Indian_Wells_Masters-SF-Daniil_Medvedev-Carlos_Alcaraz,20260314,2026,Indian Wells Masters,Hard,SF,Daniil Medvedev,2026:Indian Wells Masters,Ludo,137,137,True,True
+20260320-M-Miami_Masters-R64-Joao_Fonseca-Carlos_Alcaraz,20260320,2026,Miami Masters,Hard,R64,Joao Fonseca,2026:Miami Masters,Ludo,130,130,True,True
+20260322-M-Miami_Masters-R32-Sebastian_Korda-Carlos_Alcaraz,20260322,2026,Miami Masters,Hard,R32,Sebastian Korda,2026:Miami Masters,Angel Moreno,198,198,True,True
+20260410-M-Monte_Carlo_Masters-QF-Alexander_Bublik-Carlos_Alcaraz,20260410,2026,Monte Carlo Masters,Clay,QF,Alexander Bublik,2026:Monte Carlo Masters,Ludo,97,97,True,True
+20260411-M-Monte_Carlo_Masters-SF-Valentin_Vacherot-Carlos_Alcaraz,20260411,2026,Monte Carlo Masters,Clay,SF,Valentin Vacherot,2026:Monte Carlo Masters,Ludo,110,110,True,True
+20260412-M-Monte_Carlo_Masters-F-Carlos_Alcaraz-Jannik_Sinner,20260412,2026,Monte Carlo Masters,Clay,F,Jannik Sinner,2026:Monte Carlo Masters,Ludo,167,167,True,True

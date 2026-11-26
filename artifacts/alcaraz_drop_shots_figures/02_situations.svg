@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1060" viewBox="0 0 1500 1060" role="img" aria-labelledby="title desc">
+<title id="title">Tiebreaks and deciding sets show the clearest lift.</title>
+<desc id="desc">Within-match changes with 95% intervals: tiebreaks +1.62, deciding sets +0.86, high importance +0.68; break-point comparisons overlap zero.</desc>
+<g font-family="Bitstream Vera Sans, DejaVu Sans, Arial, sans-serif" shape-rendering="geometricPrecision">
+<rect x="0" y="0" width="1500" height="1060" rx="0.0" fill="#F6F3EB" stroke="none" stroke-width="1.0"/>
+<rect x="76" y="52" width="34" height="5" rx="0.0" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="126" y="55.580" fill="#18785D" font-size="19" font-weight="700" text-anchor="start">CARLOS ALCARAZ  /  THE DROP SHOT</text>
+<text x="1424" y="55.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="end">02</text>
+<text x="76" y="153.020" fill="#193C32" font-size="61" font-weight="700" text-anchor="start">Tiebreaks and deciding sets</text>
+<text x="76" y="226.020" fill="#193C32" font-size="61" font-weight="700" text-anchor="start">show the clearest lift.</text>
+<text x="78" y="296.860" fill="#65716A" font-size="23" font-weight="400" text-anchor="start">Change in drop attempts per 100 eligible baseline strokes</text>
+<line x1="691.25" y1="382" x2="691.25" y2="802" stroke="#D8DDD5" stroke-width="0.7" stroke-linecap="round"/>
+<text x="691.25" y="839.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="middle">-1</text>
+<line x1="826.6666666666666" y1="382" x2="826.6666666666666" y2="802" stroke="#A8BBB0" stroke-width="2" stroke-linecap="round"/>
+<text x="826.6666666666666" y="839.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="middle">0</text>
+<line x1="962.0833333333333" y1="382" x2="962.0833333333333" y2="802" stroke="#D8DDD5" stroke-width="0.7" stroke-linecap="round"/>
+<text x="962.0833333333333" y="839.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="middle">+1</text>
+<line x1="1097.5" y1="382" x2="1097.5" y2="802" stroke="#D8DDD5" stroke-width="0.7" stroke-linecap="round"/>
+<text x="1097.5" y="839.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="middle">+2</text>
+<line x1="1232.9166666666665" y1="382" x2="1232.9166666666665" y2="802" stroke="#D8DDD5" stroke-width="0.7" stroke-linecap="round"/>
+<text x="1232.9166666666665" y="839.580" fill="#65716A" font-size="19" font-weight="400" text-anchor="middle">+3</text>
+<text x="826.6666666666666" y="355.300" fill="#65716A" font-size="15" font-weight="400" text-anchor="middle">NO CHANGE</text>
+<text x="78" y="424.780" fill="#193C32" font-size="29" font-weight="700" text-anchor="start">Tiebreaks</text>
+<line x1="899.265101845034" y1="418" x2="1231.650835028613" y2="418" stroke="#18785D" stroke-width="3" stroke-linecap="round"/>
+<line x1="899.265101845034" y1="412" x2="899.265101845034" y2="424" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<line x1="1231.650835028613" y1="412" x2="1231.650835028613" y2="424" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="1046.456829190938" cy="418" r="9" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="1420" y="422.520" fill="#18785D" font-size="36" font-weight="700" text-anchor="end">+1.62</text>
+<text x="78" y="510.780" fill="#193C32" font-size="29" font-weight="700" text-anchor="start">Deciding sets</text>
+<line x1="879.7631874545481" y1="504" x2="1011.1265753258908" y2="504" stroke="#18785D" stroke-width="3" stroke-linecap="round"/>
+<line x1="879.7631874545481" y1="498" x2="879.7631874545481" y2="510" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<line x1="1011.1265753258908" y1="498" x2="1011.1265753258908" y2="510" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="943.7689584893207" cy="504" r="9" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="1420" y="508.520" fill="#18785D" font-size="36" font-weight="700" text-anchor="end">+0.86</text>
+<text x="78" y="596.780" fill="#193C32" font-size="29" font-weight="400" text-anchor="start">High-importance points</text>
+<line x1="834.4199888493134" y1="590" x2="996.8889190946411" y2="590" stroke="#18785D" stroke-width="3" stroke-linecap="round"/>
+<line x1="834.4199888493134" y1="584" x2="834.4199888493134" y2="596" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<line x1="996.8889190946411" y1="584" x2="996.8889190946411" y2="596" stroke="#18785D" stroke-width="2" stroke-linecap="round"/>
+<circle cx="918.5805329069622" cy="590" r="9" fill="#18785D" stroke="none" stroke-width="1.0"/>
+<text x="1420" y="594.520" fill="#18785D" font-size="36" font-weight="700" text-anchor="end">+0.68</text>
+<text x="78" y="682.780" fill="#193C32" font-size="29" font-weight="400" text-anchor="start">Break points faced</text>
+<line x1="642.6747336939557" y1="676" x2="905.2132267558961" y2="676" stroke="#65716A" stroke-width="3" stroke-linecap="round"/>
+<line x1="642.6747336939557" y1="670" x2="642.6747336939557" y2="682" stroke="#65716A" stroke-width="2" stroke-linecap="round"/>
+<line x1="905.2132267558961" y1="670" x2="905.2132267558961" y2="682" stroke="#65716A" stroke-width="2" stroke-linecap="round"/>
+<circle cx="770.9107757948483" cy="676" r="7" fill="#65716A" stroke="none" stroke-width="1.0"/>
+<text x="1420" y="680.520" fill="#65716A" font-size="36" font-weight="700" text-anchor="end">-0.41</text>
+<text x="78" y="768.780" fill="#193C32" font-size="29" font-weight="400" text-anchor="start">Break points earned</text>
+<line x1="689.5541879994099" y1="762" x2="874.9343183364488" y2="762" stroke="#65716A" stroke-width="3" stroke-linecap="round"/>
+<line x1="689.5541879994099" y1="756" x2="689.5541879994099" y2="768" stroke="#65716A" stroke-width="2" stroke-linecap="round"/>
+<line x1="874.9343183364488" y1="756" x2="874.9343183364488" y2="768" stroke="#65716A" stroke-width="2" stroke-linecap="round"/>
+<circle cx="779.8131662191848" cy="762" r="7" fill="#65716A" stroke="none" stroke-width="1.0"/>
+<text x="1420" y="766.520" fill="#65716A" font-size="36" font-weight="700" text-anchor="end">-0.35</text>
+<line x1="76" y1="891" x2="1424" y2="891" stroke="#D8DDD5" stroke-width="1.5" stroke-linecap="round"/>
+<text x="76" y="929.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Each situation is compared with other points in the same matches, adjusted for serving status and stroke order. Lines show 95% CIs.</text>
+<text x="76" y="954.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Selected contexts; the report includes all splits. Tiebreak/deciding-set results are exploratory. Both break-point intervals include zero.</text>
+<text x="76" y="979.940" fill="#65716A" font-size="17" font-weight="400" text-anchor="start">Sample sizes: 75 / 65 / 196 / 188 / 218 matches, respectively. Intervals are not adjusted for multiple comparisons.</text>
+<text x="76" y="1025.300" fill="#65716A" font-size="15" font-weight="400" text-anchor="start">SOURCE  Tennis Abstract / Jeff Sackmann &amp; MCP contributors  ·  CC BY-NC-SA 4.0</text>
+<text x="1424" y="1025.300" fill="#18785D" font-size="15" font-weight="700" text-anchor="end">TENNIS LAB</text>
+</g>
+</svg>

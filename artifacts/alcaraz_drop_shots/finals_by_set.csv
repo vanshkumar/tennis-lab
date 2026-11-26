@@ -1,0 +1,11 @@
+match_id,set,points,observed_points,unknown_shot_points,eligible_strokes,primary_drops,primary_drop_points,drops_per_100_strokes,drop_points_per_100,drop_points_won,drop_success_pct,all_drop_attempts,all_drop_points,all_drop_points_won,drop_volleys,return_drops,redrops,net_drops
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,1,45,45,0,62,1,1,1.6129032258064515,2.2222222222222223,0,0.0,1,1,0,0,0,0,0
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,2,94,94,0,154,8,8,5.194805194805195,8.51063829787234,3,37.5,9,9,4,1,0,1,0
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,3,70,70,0,115,2,2,1.7391304347826086,2.857142857142857,1,50.0,2,2,1,0,0,0,0
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,4,64,64,0,84,3,3,3.5714285714285716,4.6875,2,66.66666666666667,3,3,2,0,0,0,0
+20230716-M-Wimbledon-F-Novak_Djokovic-Carlos_Alcaraz,5,61,61,0,74,5,5,6.756756756756757,8.19672131147541,4,80.0,5,5,4,0,0,0,0
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,1,75,75,0,108,2,2,1.8518518518518519,2.6666666666666665,1,50.0,2,2,1,0,0,0,0
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,2,80,80,0,120,6,6,5.0,7.5,2,33.333333333333336,6,6,2,0,0,0,0
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,3,60,60,0,91,4,4,4.395604395604396,6.666666666666667,2,50.0,4,4,2,0,0,0,0
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,4,78,78,0,140,1,1,0.7142857142857143,1.2820512820512822,0,0.0,1,1,0,0,0,0,0
+20250608-M-Roland_Garros-F-Jannik_Sinner-Carlos_Alcaraz,5,92,91,1,136,9,9,6.617647058823529,9.89010989010989,7,77.77777777777777,9,9,7,0,0,0,0

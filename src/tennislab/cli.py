@@ -94,6 +94,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="tennislab")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
+    drop_shots = subparsers.add_parser("analyze-drop-shots", help="study Alcaraz drop-shot choices under pressure")
+    drop_shots.add_argument("--fetch", action="store_true", help="restore missing pinned charting files")
+
     fetch = subparsers.add_parser("fetch", help="fetch pinned raw CSVs and write checksums")
     _add_source_paths(fetch)
 
@@ -280,6 +283,10 @@ def _emit(result: object) -> None:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+    if args.command == "analyze-drop-shots":
+        from tennislab.analysis.drop_shots import build
+        _emit(build(fetch=args.fetch))
+        return 0
     if args.command == "fetch":
         manifest = fetch_sources(args.config, args.raw_dir, args.lock)
         _emit({"files": len(manifest["files"]), "lock": str(args.lock)})

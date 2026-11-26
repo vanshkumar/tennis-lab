@@ -1,0 +1,16 @@
+{
+  "code_sha256": "276c9ac629a176aaa1e1e65dc47970b272dbceeff6176ab7b855e4c77beda2e9",
+  "inputs": {
+    "artifacts/alcaraz_drop_shots/comparisons.csv": "1fe2e90119d3298a03e5de29d0a5bccdbf4ae441132f1c6d881f42e51e72d76d",
+    "artifacts/alcaraz_drop_shots/finals_by_set.csv": "7f90d6de537592f0939a52f1c2907f912fc40c058faf809b49f56569afea811d"
+  },
+  "outputs": {
+    "01_primary.png": "3352bf53e37ed4f87aa01731bfaef45d31f7e5e33f1324910066ed19636f3cfc",
+    "01_primary.svg": "30751b79082ebad0f102dc691ba5ac5a9b901bd8058df547340b81986c0f1a59",
+    "02_situations.png": "e857a53763602b1167e9b617f0e75e5196f9dd4742b9fd06335873bc29298409",
+    "02_situations.svg": "7d06db206a8b46d79832a9753ffa7df9204be30f01a1c164f408105d8e5ff307",
+    "03_finals.png": "d34a5a8787ed6b8ad8466a281fd3f3fbe5912349fca64ee681c6aa717ebfd8cb",
+    "03_finals.svg": "511df8019b166a772e3845b608b7cb6c02c482dea95837968905485f4fd2a42a"
+  },
+  "renderer_sha256": "7996cf8d945b16950ed7dc6718c3d9dff89d19bd28b1a9f352d50c9d5e93409f"
+}
